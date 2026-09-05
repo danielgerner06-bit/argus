@@ -146,7 +146,7 @@
       "pe": 43.9,
       "perf6mAtAdd": 78.97,
       "perf1mBefore": -6.47,
-      "sektorPsiAtAdd": null,
+      "sektorPsiAtAdd": 0.0051,
       "analysts": 1,
       "div": 1.15,
       "forwardPe": 21.35,
