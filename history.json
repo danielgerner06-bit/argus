@@ -10821,7 +10821,9 @@
       "seen": "2026-08-07",
       "seenMs": 1786060800000,
       "startPrice": 226.5,
-      "perf": [],
+      "perf": [
+        10.84
+      ],
       "outperformPct": null,
       "forwardPe": 24.83,
       "priceToBook": 9.39,
@@ -10862,7 +10864,8 @@
       "hitRate24m": 56,
       "maxDd24m": -33.8,
       "distTo3yHigh": -20.77,
-      "trendR2_24m": 0.6
+      "trendR2_24m": 0.6,
+      "prov": false
     },
     "PHN": {
       "ticker": "PHN",
@@ -10882,7 +10885,9 @@
       "seen": "2026-08-07",
       "seenMs": 1786060800000,
       "startPrice": 84.25,
-      "perf": [],
+      "perf": [
+        -2.96
+      ],
       "outperformPct": null,
       "forwardPe": 26.67,
       "priceToBook": 10.53,
@@ -10922,7 +10927,8 @@
       "hitRate24m": 56,
       "maxDd24m": -34.97,
       "distTo3yHigh": -9.58,
-      "trendR2_24m": 0.4
+      "trendR2_24m": 0.4,
+      "prov": false
     },
     "EQS": {
       "ticker": "EQS",
@@ -10942,7 +10948,9 @@
       "seen": "2026-08-07",
       "seenMs": 1786060800000,
       "startPrice": 33.95000076293945,
-      "perf": [],
+      "perf": [
+        -4.27
+      ],
       "outperformPct": null,
       "forwardPe": 10.14,
       "priceToBook": 1.99,
@@ -10982,7 +10990,8 @@
       "hitRate24m": 44,
       "maxDd24m": -42.18,
       "distTo3yHigh": -57.3,
-      "trendR2_24m": 0.27
+      "trendR2_24m": 0.27,
+      "prov": false
     },
     "LBIRD": {
       "ticker": "LBIRD",
@@ -11620,53 +11629,53 @@
     "factors": [
       {
         "name": "Kursziel",
-        "spread": 12,
+        "spread": 11.9,
         "best": {
           "k": "40%+",
-          "avg": 7.4,
-          "n": 152
+          "avg": 7.3,
+          "n": 153
         },
         "worst": {
           "k": "<10%",
           "avg": -4.6,
-          "n": 39
+          "n": 40
         }
       },
       {
         "name": "Strong Buy",
-        "spread": 11.6,
+        "spread": 11.7,
         "best": {
           "k": "<70%",
-          "avg": 5.6,
-          "n": 22
+          "avg": 5.9,
+          "n": 23
         },
         "worst": {
           "k": "95%+",
-          "avg": -6,
-          "n": 14
+          "avg": -5.8,
+          "n": 15
         }
       },
       {
         "name": "Dividende",
-        "spread": 9.5,
+        "spread": 9.6,
         "best": {
           "k": "2-4%",
-          "avg": 6.3,
-          "n": 58
+          "avg": 6.4,
+          "n": 59
         },
         "worst": {
           "k": "<2%",
           "avg": -3.2,
-          "n": 89
+          "n": 90
         }
       },
       {
         "name": "KGV",
-        "spread": 8.5,
+        "spread": 8.3,
         "best": {
           "k": "<15",
-          "avg": 8.6,
-          "n": 66
+          "avg": 8.4,
+          "n": 67
         },
         "worst": {
           "k": "40+",
@@ -11676,7 +11685,7 @@
       },
       {
         "name": "Analysten",
-        "spread": 7.3,
+        "spread": 7.1,
         "best": {
           "k": "5-14",
           "avg": 4.7,
@@ -11684,8 +11693,8 @@
         },
         "worst": {
           "k": "1-4",
-          "avg": -2.6,
-          "n": 103
+          "avg": -2.4,
+          "n": 106
         }
       }
     ],
@@ -11695,7 +11704,7 @@
       "avg": -10.7,
       "n": 6
     },
-    "sampleSize": 374,
+    "sampleSize": 377,
     "maxMonths": 3,
     "provisional": false
   }
