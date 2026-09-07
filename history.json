@@ -9111,7 +9111,8 @@
       "hitRate24m": 52,
       "maxDd24m": -29.55,
       "distTo3yHigh": -20.9,
-      "trendR2_24m": 0.65
+      "trendR2_24m": 0.65,
+      "recMean": 1
     },
     "GF": {
       "ticker": "GF",
@@ -9300,7 +9301,8 @@
       "hitRate24m": 56,
       "maxDd24m": -46.97,
       "distTo3yHigh": -34.5,
-      "trendR2_24m": 0.37
+      "trendR2_24m": 0.37,
+      "recMean": 1.17
     },
     "ADMCM.HE": {
       "ticker": "ADMCM.HE",
@@ -10614,7 +10616,8 @@
       "maxDd24m": -27.63,
       "distTo3yHigh": -21.65,
       "trendR2_24m": 0.02,
-      "prov": false
+      "prov": false,
+      "recMean": 1.5
     },
     "ATEA": {
       "ticker": "ATEA",
