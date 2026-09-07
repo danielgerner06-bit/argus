@@ -1,6 +1,6 @@
 {
   "updated": "2026-09-07",
-  "updatedAt": "2026-09-07T12:29:32.675Z",
+  "updatedAt": "2026-09-07T13:00:37.805Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -4345,5 +4345,6 @@
       "BMEA": "health"
     }
   },
-  "blacklist": {}
+  "blacklist": {},
+  "yahooAt": "2026-09-07T13:00:37.805Z"
 }
