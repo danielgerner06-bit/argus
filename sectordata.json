@@ -1,6 +1,6 @@
 {
   "updated": "2026-09-06",
-  "updatedAt": "2026-09-07T02:00:37.805Z",
+  "updatedAt": "2026-09-07T03:00:37.880Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -3268,8 +3268,8 @@
       "verifiedAt": "2026-09-01",
       "verifiedSource": "yahoo",
       "seen": "2026-06-29",
-      "perf6m": -27.21,
-      "perf6mAt": "2026-09-02",
+      "perf6m": -27.83,
+      "perf6mAt": "2026-09-07",
       "perf1mBefore": -3.85,
       "pe": null,
       "eps": -0.09,
@@ -4340,5 +4340,5 @@
     }
   },
   "blacklist": {},
-  "yahooAt": "2026-09-07T02:00:37.805Z"
+  "yahooAt": "2026-09-07T03:00:37.880Z"
 }
