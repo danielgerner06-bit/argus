@@ -1,6 +1,6 @@
 {
   "updated": "2026-09-08",
-  "updatedAt": "2026-09-08T17:00:37.802Z",
+  "updatedAt": "2026-09-08T18:00:37.803Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -195,15 +195,15 @@
     },
     {
       "id": "industrial",
-      "perf": -5.45,
+      "perf": -5.42,
       "avg30": 1.61,
-      "perf6m": 2.43
+      "perf6m": 2.45
     },
     {
       "id": "energy",
-      "perf": 12.35,
+      "perf": 12.37,
       "avg30": 3.34,
-      "perf6m": 14.38
+      "perf6m": 14.4
     },
     {
       "id": "materials",
@@ -219,9 +219,9 @@
     },
     {
       "id": "realestate",
-      "perf": -1.93,
+      "perf": -2,
       "avg30": 0.63,
-      "perf6m": 2.63
+      "perf6m": 2.56
     }
   ],
   "bars30Region": [
@@ -245,9 +245,9 @@
     },
     {
       "id": "japan",
-      "perf": 3.05,
+      "perf": 3.25,
       "avg30": 1.7,
-      "perf6m": 14.5
+      "perf6m": 14.72
     },
     {
       "id": "china",
@@ -4351,5 +4351,5 @@
     }
   },
   "blacklist": {},
-  "yahooAt": "2026-09-08T17:00:37.802Z"
+  "yahooAt": "2026-09-08T18:00:37.803Z"
 }
