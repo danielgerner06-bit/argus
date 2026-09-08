@@ -658,7 +658,8 @@
       "startPrice": 1193500,
       "perf": [
         11.93,
-        -22.27
+        -22.27,
+        -8.14
       ],
       "outperformPct": null,
       "prov": false,
@@ -7971,7 +7972,8 @@
       "pos52Band": 80.6,
       "distTo50dma": -0.83,
       "distTo200dma": 10.72,
-      "targetSpread": 16.5
+      "targetSpread": 16.5,
+      "recMean": 1.17
     },
     "AOF.DE": {
       "ticker": "AOF.DE",
@@ -8941,7 +8943,8 @@
       "startPrice": 583000,
       "perf": [
         9.67,
-        -12.18
+        -12.18,
+        4.84
       ],
       "outperformPct": null,
       "prov": false,
@@ -10025,7 +10028,8 @@
       "seenMs": 1783641600000,
       "startPrice": 408.5749969482422,
       "perf": [
-        26.46
+        26.46,
+        27.21
       ],
       "outperformPct": null,
       "prov": false,
@@ -11014,7 +11018,9 @@
       "seen": "2026-08-09",
       "seenMs": 1786233600000,
       "startPrice": 26.800000190734863,
-      "perf": [],
+      "perf": [
+        -9.26
+      ],
       "outperformPct": null,
       "forwardPe": 20.04,
       "priceToBook": 2.7,
@@ -11054,7 +11060,8 @@
       "hitRate24m": 64,
       "maxDd24m": -37.9,
       "distTo3yHigh": -3.91,
-      "trendR2_24m": 0.86
+      "trendR2_24m": 0.86,
+      "prov": false
     },
     "VU": {
       "ticker": "VU",
@@ -11631,12 +11638,26 @@
   "findings": {
     "factors": [
       {
+        "name": "Strong Buy",
+        "spread": 13.2,
+        "best": {
+          "k": "<70%",
+          "avg": 7.2,
+          "n": 23
+        },
+        "worst": {
+          "k": "95%+",
+          "avg": -6,
+          "n": 16
+        }
+      },
+      {
         "name": "Kursziel",
-        "spread": 11.9,
+        "spread": 12.3,
         "best": {
           "k": "40%+",
-          "avg": 7.3,
-          "n": 153
+          "avg": 7.7,
+          "n": 152
         },
         "worst": {
           "k": "<10%",
@@ -11645,22 +11666,8 @@
         }
       },
       {
-        "name": "Strong Buy",
-        "spread": 11.7,
-        "best": {
-          "k": "<70%",
-          "avg": 5.9,
-          "n": 23
-        },
-        "worst": {
-          "k": "95%+",
-          "avg": -5.8,
-          "n": 15
-        }
-      },
-      {
         "name": "Dividende",
-        "spread": 9.6,
+        "spread": 9.3,
         "best": {
           "k": "2-4%",
           "avg": 6.4,
@@ -11668,8 +11675,8 @@
         },
         "worst": {
           "k": "<2%",
-          "avg": -3.2,
-          "n": 90
+          "avg": -2.9,
+          "n": 91
         }
       },
       {
@@ -11688,26 +11695,26 @@
       },
       {
         "name": "Analysten",
-        "spread": 7.1,
+        "spread": 7.4,
         "best": {
           "k": "5-14",
-          "avg": 4.7,
+          "avg": 4.9,
           "n": 155
         },
         "worst": {
           "k": "1-4",
-          "avg": -2.4,
-          "n": 106
+          "avg": -2.5,
+          "n": 107
         }
       }
     ],
     "combo": {
-      "f1": "Kursziel 40%+",
-      "f2": "Strong Buy <70%",
-      "avg": -10.7,
+      "f1": "Strong Buy <70%",
+      "f2": "Kursziel 40%+",
+      "avg": -5.5,
       "n": 6
     },
-    "sampleSize": 377,
+    "sampleSize": 378,
     "maxMonths": 3,
     "provisional": false
   }
