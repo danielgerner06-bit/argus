@@ -175,6 +175,22 @@ export async function measureHighs(hist, budget = 60) {
     }
     if (high.length) x.perfHigh = high;
 
+    // Der Gipfel MIT seinem Tag. Ohne den Tag laesst sich die Marke im
+    // Diagramm nur auf einen Monatsstichtag setzen — und dort lag der Gipfel
+    // so gut wie nie.
+    {
+      let bestC = -1e18, bestT = null;
+      for (const r of rows) {
+        if (r.t < x.seenMs) continue;
+        if (r.c > bestC) { bestC = r.c; bestT = r.t; }
+      }
+      if (bestT != null) {
+        x.peakPerf = +(((bestC - base) / base) * 100).toFixed(2);
+        x.peakDay = new Date(bestT).toISOString().slice(0, 10);
+        x.peakMs = bestT;
+      }
+    }
+
     // Ziel-Treffer ueber die ganze Reihe bis heute, nicht nur ueber volle
     // Monate — sonst faellt ein Treffer im laufenden Monat hinten runter.
     if (x.upside != null && x.upside > 0) {
