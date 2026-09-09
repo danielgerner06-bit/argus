@@ -86,10 +86,12 @@ jobs:
           cp prices.json "$RUNNER_TEMP/prices.json"
           git worktree add --detach "$RUNNER_TEMP/pw"
           cd "$RUNNER_TEMP/pw"
-          git checkout --orphan prices
+          # Eindeutiger Zweigname: `--orphan prices` scheitert, sobald der
+          # Zweig lokal schon existiert (z. B. nach einem fetch).
+          git checkout --orphan pricespub-tmp
           git rm -rf --cached . >/dev/null 2>&1 || true
           find . -maxdepth 1 -mindepth 1 ! -name .git -exec rm -rf {} +
           cp "$RUNNER_TEMP/prices.json" prices.json
           git add prices.json
           git commit -m "Kursreihen ($(date -u +%Y-%m-%d))"
-          git push -f origin prices
+          git push -f origin HEAD:prices
