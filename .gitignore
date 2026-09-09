@@ -1,1 +1,4 @@
 .claude/
+# Kursreihen: liegen im Zweig `prices` (eine Version, keine Historie),
+# nicht auf main — sonst waechst das Repository um ~100 MB im Jahr.
+prices.json

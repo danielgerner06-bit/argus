@@ -47,6 +47,12 @@ jobs:
           GEMINI_DEBUG: ${{ (github.event_name == 'workflow_dispatch' && inputs.debug) && '1' || '' }}
         run: node scripts/update-sectors.mjs
 
+      - name: Tagesschlusskurse auffrischen
+        env:
+          # Vier Läufe am Tag × 120 = jede der ~390 Aktien einmal täglich.
+          PRICES_BUDGET: '120'
+        run: node scripts/prices-daily.mjs || echo "Kursreihen übersprungen."
+
       - name: Änderungen committen
         run: |
           if git diff --quiet sectordata.json history.json; then
@@ -63,3 +69,27 @@ jobs:
               git pull --rebase -X ours origin main || git rebase --abort
             done
           fi
+
+      # Die Kursreihen (~1 MB) landen NICHT auf main: sie ändern sich jeden
+      # Handelstag komplett, das wären über 100 MB Git-Historie im Jahr für
+      # Daten, deren alte Stände niemand braucht. Stattdessen ein eigener
+      # Zweig mit genau EINEM Commit, der jedes Mal überschrieben wird.
+      - name: Kursreihen veröffentlichen (Zweig `prices`, ohne Historie)
+        if: always()
+        run: |
+          if [ ! -s prices.json ]; then
+            echo "Keine prices.json – übersprungen."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          cp prices.json "$RUNNER_TEMP/prices.json"
+          git worktree add --detach "$RUNNER_TEMP/pw"
+          cd "$RUNNER_TEMP/pw"
+          git checkout --orphan prices
+          git rm -rf --cached . >/dev/null 2>&1 || true
+          find . -maxdepth 1 -mindepth 1 ! -name .git -exec rm -rf {} +
+          cp "$RUNNER_TEMP/prices.json" prices.json
+          git add prices.json
+          git commit -m "Kursreihen ($(date -u +%Y-%m-%d))"
+          git push -f origin prices
