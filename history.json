@@ -22,7 +22,12 @@
         -20.4,
         -16.09
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        2.49,
+        2.49,
+        2.49
+      ]
     },
     "2603": {
       "ticker": "2603",
@@ -46,7 +51,14 @@
         -12.82,
         0.11
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        6.57
+      ],
+      "targetHitMonth": 3,
+      "targetHitDay": "2026-08-20"
     },
     "3659": {
       "ticker": "3659",
@@ -70,7 +82,12 @@
         6.46,
         -4.43
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        3.84,
+        12.17,
+        12.17
+      ]
     },
     "3854": {
       "ticker": "3854",
@@ -133,7 +150,11 @@
       "distTo3yHigh": -44.56,
       "trendR2_24m": 0.33,
       "prov": false,
-      "recMean": 1
+      "recMean": 1,
+      "perfHigh": [
+        14.62
+      ],
+      "sektorHitAtAdd": 0.3736
     },
     "4417": {
       "ticker": "4417",
@@ -188,7 +209,8 @@
       "seenMs": 1788566400000,
       "startPrice": 4302.5,
       "perf": [],
-      "outperformPct": null
+      "outperformPct": null,
+      "sektorHitAtAdd": 0.2804
     },
     "4502": {
       "ticker": "4502",
@@ -212,7 +234,12 @@
         15.78,
         19.69
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        10.49,
+        20.56,
+        20.82
+      ]
     },
     "4776": {
       "ticker": "4776",
@@ -275,7 +302,13 @@
       "maxDd24m": -52.65,
       "distTo3yHigh": -34.24,
       "trendR2_24m": 0.04,
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        23.93
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-08-28",
+      "sektorHitAtAdd": 0.3736
     },
     "6080": {
       "ticker": "6080",
@@ -336,7 +369,8 @@
       "hitRate24m": 72,
       "maxDd24m": -22.46,
       "distTo3yHigh": -0.72,
-      "trendR2_24m": 0.86
+      "trendR2_24m": 0.86,
+      "sektorHitAtAdd": 0.1476
     },
     "6701": {
       "ticker": "6701",
@@ -400,7 +434,11 @@
       "hitRate24m": 68,
       "maxDd24m": -39.53,
       "distTo3yHigh": -30.19,
-      "trendR2_24m": 0.63
+      "trendR2_24m": 0.63,
+      "perfHigh": [
+        21.63
+      ],
+      "sektorHitAtAdd": 0.3344
     },
     "6723": {
       "ticker": "6723",
@@ -424,7 +462,12 @@
         -31.2,
         -30.49
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        6.2,
+        6.2,
+        6.2
+      ]
     },
     "6946": {
       "ticker": "6946",
@@ -485,7 +528,8 @@
       "hitRate24m": 72,
       "maxDd24m": -47.84,
       "distTo3yHigh": -33.71,
-      "trendR2_24m": 0.82
+      "trendR2_24m": 0.82,
+      "sektorHitAtAdd": 0.5676
     },
     "7203": {
       "ticker": "7203",
@@ -509,7 +553,12 @@
         8.88,
         12.5
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        2.06,
+        13.36,
+        14.03
+      ]
     },
     "8464": {
       "ticker": "8464",
@@ -573,7 +622,11 @@
       "hitRate24m": 48,
       "maxDd24m": -42.7,
       "distTo3yHigh": -30.16,
-      "trendR2_24m": 0.42
+      "trendR2_24m": 0.42,
+      "perfHigh": [
+        10.56
+      ],
+      "sektorHitAtAdd": 0.2261
     },
     "9958": {
       "ticker": "9958",
@@ -637,7 +690,11 @@
       "hitRate24m": 28,
       "maxDd24m": -59.11,
       "distTo3yHigh": -69.59,
-      "trendR2_24m": 0.71
+      "trendR2_24m": 0.71,
+      "perfHigh": [
+        2.65
+      ],
+      "sektorHitAtAdd": 0.7111
     },
     "402340": {
       "ticker": "402340",
@@ -702,7 +759,13 @@
       "hitRate24m": 72,
       "maxDd24m": -34.02,
       "distTo3yHigh": -13.08,
-      "trendR2_24m": 0.83
+      "trendR2_24m": 0.83,
+      "perfHigh": [
+        60.42,
+        60.42,
+        60.42
+      ],
+      "sektorHitAtAdd": 0.3876
     },
     "CRBU": {
       "ticker": "CRBU",
@@ -726,7 +789,12 @@
         -35.99,
         -31.36
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        0
+      ]
     },
     "SLGL": {
       "ticker": "SLGL",
@@ -750,7 +818,12 @@
         17.09,
         -4.93
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        11.89,
+        25.51,
+        25.51
+      ]
     },
     "STRO": {
       "ticker": "STRO",
@@ -774,7 +847,12 @@
         -9.88,
         -24.24
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        22.7,
+        22.7,
+        22.7
+      ]
     },
     "CGEM": {
       "ticker": "CGEM",
@@ -798,7 +876,12 @@
         10.89,
         40.73
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        20.47,
+        20.47,
+        49.61
+      ]
     },
     "CLDX": {
       "ticker": "CLDX",
@@ -822,7 +905,12 @@
         28.57,
         31.05
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        25.76,
+        34.13,
+        50.72
+      ]
     },
     "SLDP": {
       "ticker": "SLDP",
@@ -846,7 +934,12 @@
         -39.52,
         -31.3
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        6.45,
+        6.45,
+        6.45
+      ]
     },
     "INSM": {
       "ticker": "INSM",
@@ -870,7 +963,12 @@
         -3.67,
         14.49
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        3.02,
+        13.86,
+        29.74
+      ]
     },
     "CGEN": {
       "ticker": "CGEN",
@@ -894,7 +992,12 @@
         3.76,
         14.99
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        10.18,
+        26.99
+      ]
     },
     "SRZN": {
       "ticker": "SRZN",
@@ -918,7 +1021,12 @@
         -12.41,
         -9.52
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        5.62,
+        5.62,
+        5.62
+      ]
     },
     "SKYH": {
       "ticker": "SKYH",
@@ -942,7 +1050,12 @@
         14.73,
         14.73
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        8.99,
+        15.93,
+        24.49
+      ]
     },
     "INR": {
       "ticker": "INR",
@@ -966,7 +1079,12 @@
         -2.69,
         17.88
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        5,
+        5,
+        16.52
+      ]
     },
     "SPAI": {
       "ticker": "SPAI",
@@ -990,7 +1108,12 @@
         -34.25,
         -21.47
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0.42,
+        0.42,
+        3.09
+      ]
     },
     "TDUP": {
       "ticker": "TDUP",
@@ -1014,7 +1137,12 @@
         27.46,
         -40.81
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        53.17,
+        53.83,
+        53.83
+      ]
     },
     "TYRA": {
       "ticker": "TYRA",
@@ -1038,7 +1166,12 @@
         13.29,
         -10.75
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        12.04,
+        15.35,
+        15.35
+      ]
     },
     "TRVI": {
       "ticker": "TRVI",
@@ -1062,7 +1195,12 @@
         35.74,
         28
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        38.15,
+        44.44,
+        44.44
+      ]
     },
     "ACRS": {
       "ticker": "ACRS",
@@ -1086,7 +1224,12 @@
         19,
         35.41
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        20.81,
+        29.19,
+        47.85
+      ]
     },
     "TBN": {
       "ticker": "TBN",
@@ -1110,7 +1253,12 @@
         -0.54,
         13.58
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        21.96,
+        21.96,
+        21.96
+      ]
     },
     "TREE": {
       "ticker": "TREE",
@@ -1134,7 +1282,12 @@
         -12.33,
         -22.34
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        24.1,
+        29.32,
+        29.32
+      ]
     },
     "SMC": {
       "ticker": "SMC",
@@ -1158,7 +1311,12 @@
         3.06,
         15.65
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        1.04,
+        4.4,
+        17.51
+      ]
     },
     "IMNM": {
       "ticker": "IMNM",
@@ -1182,7 +1340,12 @@
         15.7,
         38.89
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        8.48,
+        23.12,
+        50.56
+      ]
     },
     "KOD": {
       "ticker": "KOD",
@@ -1206,7 +1369,12 @@
         24.12,
         10.45
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        15.03,
+        27.72,
+        34.04
+      ]
     },
     "GWH": {
       "ticker": "GWH",
@@ -1230,7 +1398,12 @@
         -23.16,
         -63.72
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        3.06,
+        4.08,
+        4.08
+      ]
     },
     "IMTX": {
       "ticker": "IMTX",
@@ -1254,7 +1427,12 @@
         -12.49,
         -7.81
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0.54,
+        0.54
+      ]
     },
     "TMC": {
       "ticker": "TMC",
@@ -1278,7 +1456,12 @@
         -43.55,
         -24.65
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        2.04,
+        2.04,
+        2.04
+      ]
     },
     "SHEN": {
       "ticker": "SHEN",
@@ -1302,7 +1485,12 @@
         -26.47,
         -23.24
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        1.67,
+        1.67,
+        1.67
+      ]
     },
     "CLYM": {
       "ticker": "CLYM",
@@ -1326,7 +1514,12 @@
         7.05,
         28.13
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        19.29,
+        25,
+        59.29
+      ]
     },
     "SIBN": {
       "ticker": "SIBN",
@@ -1350,7 +1543,12 @@
         28.41,
         37.25
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        24.5,
+        32.47,
+        43.39
+      ]
     },
     "ISSC": {
       "ticker": "ISSC",
@@ -1373,7 +1571,12 @@
         5.26,
         5.02
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        null,
+        3.89,
+        33.95
+      ]
     },
     "IRTC": {
       "ticker": "IRTC",
@@ -1397,7 +1600,12 @@
         11.97,
         12.72
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        18.04,
+        19.89,
+        21.82
+      ]
     },
     "TARS": {
       "ticker": "TARS",
@@ -1421,7 +1629,12 @@
         0.9,
         21.42
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        14.21,
+        20.06,
+        24.98
+      ]
     },
     "TSQ": {
       "ticker": "TSQ",
@@ -1445,7 +1658,12 @@
         -11.16,
         -11.31
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        10.86,
+        10.86,
+        10.86
+      ]
     },
     "SLSR": {
       "ticker": "SLSR",
@@ -1469,7 +1687,12 @@
         -28.54,
         -19.35
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        3,
+        3,
+        3
+      ]
     },
     "JBS": {
       "ticker": "JBS",
@@ -1493,7 +1716,12 @@
         16.98,
         12.69
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        3.64,
+        18.1,
+        18.1
+      ]
     },
     "TCMD": {
       "ticker": "TCMD",
@@ -1517,7 +1745,12 @@
         15.65,
         -5.67
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        25.77,
+        30.78,
+        30.78
+      ]
     },
     "SOPH": {
       "ticker": "SOPH",
@@ -1541,7 +1774,14 @@
         15.69,
         65.89
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        21.05,
+        31.58,
+        80.57
+      ],
+      "targetHitMonth": 3,
+      "targetHitDay": "2026-08-19"
     },
     "CNL": {
       "ticker": "CNL",
@@ -1565,7 +1805,12 @@
         -20.51,
         -5.26
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        4.68,
+        4.68,
+        4.68
+      ]
     },
     "SMTI": {
       "ticker": "SMTI",
@@ -1589,7 +1834,14 @@
         59.74,
         62.61
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        15.62,
+        60.21,
+        63.08
+      ],
+      "targetHitMonth": 2,
+      "targetHitDay": "2026-07-30"
     },
     "IE": {
       "ticker": "IE",
@@ -1613,7 +1865,12 @@
         -32.43,
         -18.33
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        4.16,
+        4.16,
+        4.16
+      ]
     },
     "KVYO": {
       "ticker": "KVYO",
@@ -1637,7 +1894,12 @@
         6.76,
         19.53
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        14.28,
+        18.88
+      ]
     },
     "SOUN": {
       "ticker": "SOUN",
@@ -1661,7 +1923,12 @@
         -30.44,
         -19.5
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        0
+      ]
     },
     "STOK": {
       "ticker": "STOK",
@@ -1685,7 +1952,12 @@
         -0.03,
         6.3
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        11.07,
+        12.08,
+        13.58
+      ]
     },
     "STEP": {
       "ticker": "STEP",
@@ -1709,7 +1981,12 @@
         -5.05,
         9.06
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        4.86,
+        4.86,
+        12.78
+      ]
     },
     "JCAP": {
       "ticker": "JCAP",
@@ -1733,7 +2010,12 @@
         22.39,
         27.97
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        19.5,
+        25.11,
+        46.25
+      ]
     },
     "SRAD": {
       "ticker": "SRAD",
@@ -1757,7 +2039,12 @@
         6.87,
         -6.36
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        23.98,
+        23.98,
+        23.98
+      ]
     },
     "CHDN": {
       "ticker": "CHDN",
@@ -1781,7 +2068,12 @@
         -4.66,
         2.26
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        5.39,
+        5.39,
+        7
+      ]
     },
     "TOI": {
       "ticker": "TOI",
@@ -1804,7 +2096,12 @@
         17.54,
         8.17
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        null,
+        2.19,
+        22.21
+      ]
     },
     "TRAK": {
       "ticker": "TRAK",
@@ -1828,7 +2125,12 @@
         -15.45,
         -20.99
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        0
+      ]
     },
     "UPBD": {
       "ticker": "UPBD",
@@ -1852,7 +2154,12 @@
         8.54,
         3.27
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        16.59,
+        25.05,
+        25.05
+      ]
     },
     "SI": {
       "ticker": "SI",
@@ -1876,7 +2183,14 @@
         64.04,
         50.82
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        62.79,
+        73.21,
+        73.21
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-06-25"
     },
     "CGON": {
       "ticker": "CGON",
@@ -1900,7 +2214,12 @@
         29.86,
         38.82
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        32.78,
+        35.49,
+        45.29
+      ]
     },
     "TWI": {
       "ticker": "TWI",
@@ -1924,7 +2243,12 @@
         -5.45,
         -8.04
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        4.02,
+        6.87,
+        6.87
+      ]
     },
     "CRIS": {
       "ticker": "CRIS",
@@ -1948,7 +2272,12 @@
         -7.42,
         11.7
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        9.35,
+        18.84,
+        18.84
+      ]
     },
     "KYMR": {
       "ticker": "KYMR",
@@ -1972,7 +2301,14 @@
         43.7,
         63.26
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        59.08,
+        63.02,
+        73.9
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-06-25"
     },
     "ZAL": {
       "ticker": "ZAL",
@@ -1996,7 +2332,12 @@
         22.45,
         3.77
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        12.89,
+        29.45,
+        29.45
+      ]
     },
     "MIRM": {
       "ticker": "MIRM",
@@ -2020,7 +2361,12 @@
         18.55,
         7.3
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        34.28,
+        39.49,
+        39.49
+      ]
     },
     "TATT": {
       "ticker": "TATT",
@@ -2044,7 +2390,12 @@
         -6,
         -13.12
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        13.78,
+        13.78,
+        13.78
+      ]
     },
     "STKE": {
       "ticker": "STKE",
@@ -2068,7 +2419,12 @@
         -24.36,
         -4.14
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        20.3,
+        20.3,
+        20.3
+      ]
     },
     "THC": {
       "ticker": "THC",
@@ -2092,7 +2448,14 @@
         53.94,
         61.87
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        15.99,
+        59.32,
+        70.33
+      ],
+      "targetHitMonth": 2,
+      "targetHitDay": "2026-07-28"
     },
     "TRMB": {
       "ticker": "TRMB",
@@ -2116,7 +2479,12 @@
         2.01,
         9.05
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        4.81,
+        10.48
+      ]
     },
     "SEPN": {
       "ticker": "SEPN",
@@ -2140,7 +2508,14 @@
         16.13,
         31.12
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        24.55,
+        26.22,
+        60.74
+      ],
+      "targetHitMonth": 3,
+      "targetHitDay": "2026-08-11"
     },
     "VIA": {
       "ticker": "VIA",
@@ -2164,7 +2539,12 @@
         32.3,
         83.87
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        26.37,
+        35.27,
+        86.98
+      ]
     },
     "VFF": {
       "ticker": "VFF",
@@ -2188,7 +2568,12 @@
         -20.85,
         16.19
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        17.81
+      ]
     },
     "USAU": {
       "ticker": "USAU",
@@ -2212,7 +2597,12 @@
         -15.44,
         3.06
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        5.23,
+        5.87,
+        5.87
+      ]
     },
     "VTVT": {
       "ticker": "VTVT",
@@ -2236,7 +2626,12 @@
         -1.47,
         -1.82
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        14.09,
+        14.09,
+        14.09
+      ]
     },
     "USAS": {
       "ticker": "USAS",
@@ -2260,7 +2655,12 @@
         -34.01,
         -5.53
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        0
+      ]
     },
     "INDV": {
       "ticker": "INDV",
@@ -2284,7 +2684,12 @@
         15.01,
         0.67
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        19.93,
+        19.93,
+        19.93
+      ]
     },
     "VTOL": {
       "ticker": "VTOL",
@@ -2308,7 +2713,12 @@
         6.96,
         8.4
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        4.44,
+        9.55,
+        13.42
+      ]
     },
     "SSRM": {
       "ticker": "SSRM",
@@ -2332,7 +2742,12 @@
         -12.28,
         28.51
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        6.78,
+        6.78,
+        31.53
+      ]
     },
     "BAYN": {
       "ticker": "BAYN",
@@ -2356,7 +2771,14 @@
         39.03,
         41.33
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        41.21,
+        53.78,
+        53.78
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-06-30"
     },
     "AOF": {
       "ticker": "AOF",
@@ -2380,7 +2802,12 @@
         4.56,
         25.12
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        9.61,
+        25.37
+      ]
     },
     "SRTA": {
       "ticker": "SRTA",
@@ -2404,7 +2831,12 @@
         -18.6,
         -4.75
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0.81,
+        0.81,
+        0.81
+      ]
     },
     "PLTK": {
       "ticker": "PLTK",
@@ -2428,7 +2860,12 @@
         17.75,
         -32.4
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        16.86,
+        22.19,
+        22.19
+      ]
     },
     "SLDE": {
       "ticker": "SLDE",
@@ -2452,7 +2889,12 @@
         15.65,
         34.38
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        15.02,
+        27.39,
+        36.02
+      ]
     },
     "SCZM": {
       "ticker": "SCZM",
@@ -2476,7 +2918,12 @@
         -18.67,
         19.04
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        2.33,
+        2.33,
+        23.1
+      ]
     },
     "DEF": {
       "ticker": "DEF",
@@ -2500,7 +2947,12 @@
         -6.67,
         -17.5
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0.42,
+        0.42,
+        0.42
+      ]
     },
     "SGHC": {
       "ticker": "SGHC",
@@ -2524,7 +2976,12 @@
         10.29,
         7.5
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        9.74,
+        22.47,
+        22.47
+      ]
     },
     "VST": {
       "ticker": "VST",
@@ -2548,7 +3005,12 @@
         -3.51,
         -10.77
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        9.08,
+        9.87,
+        9.87
+      ]
     },
     "UCAR": {
       "ticker": "UCAR",
@@ -2572,7 +3034,12 @@
         -27.86,
         -56.63
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        1.43,
+        1.43,
+        1.43
+      ]
     },
     "SUPN": {
       "ticker": "SUPN",
@@ -2596,7 +3063,12 @@
         2.38,
         -0.75
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        7.58,
+        14.45,
+        14.45
+      ]
     },
     "SCL": {
       "ticker": "SCL",
@@ -2620,7 +3092,12 @@
         23.6,
         19.78
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        6.77,
+        26.54,
+        26.54
+      ]
     },
     "MUM": {
       "ticker": "MUM",
@@ -2644,7 +3121,12 @@
         -1.97,
         -4.33
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0.26,
+        1.44,
+        1.44
+      ]
     },
     "KGC": {
       "ticker": "KGC",
@@ -2668,7 +3150,12 @@
         -19.42,
         5.83
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        15.49
+      ]
     },
     "TYL": {
       "ticker": "TYL",
@@ -2692,7 +3179,12 @@
         2.7,
         21.47
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        3.23,
+        8.23,
+        22.65
+      ]
     },
     "SION": {
       "ticker": "SION",
@@ -2716,7 +3208,12 @@
         27.94,
         -83.57
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        19.86,
+        34.63,
+        39.07
+      ]
     },
     "IRON": {
       "ticker": "IRON",
@@ -2740,7 +3237,12 @@
         11.02,
         11.83
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        6.54,
+        13.8,
+        17.51
+      ]
     },
     "VSEC": {
       "ticker": "VSEC",
@@ -2764,7 +3266,12 @@
         7.09,
         12.92
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        28.94,
+        32.09,
+        35.12
+      ]
     },
     "VINP": {
       "ticker": "VINP",
@@ -2788,7 +3295,12 @@
         0.2,
         -0.53
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        3.25,
+        3.25,
+        3.25
+      ]
     },
     "SDGR": {
       "ticker": "SDGR",
@@ -2812,7 +3324,12 @@
         2.04,
         31.86
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        16.4,
+        16.4,
+        36.61
+      ]
     },
     "SYRE": {
       "ticker": "SYRE",
@@ -2836,7 +3353,14 @@
         41.64,
         26.64
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        42.22,
+        45.59,
+        54.41
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-06-22"
     },
     "TMUS": {
       "ticker": "TMUS",
@@ -2860,7 +3384,12 @@
         -7.34,
         -2.88
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        1.26,
+        4.77,
+        4.77
+      ]
     },
     "VTSI": {
       "ticker": "VTSI",
@@ -2884,7 +3413,12 @@
         -5.87,
         -8.43
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        4.82,
+        4.82,
+        4.82
+      ]
     },
     "VYX": {
       "ticker": "VYX",
@@ -2908,7 +3442,12 @@
         14.9,
         19.72
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        21.68,
+        22.52,
+        33.15
+      ]
     },
     "VCEL": {
       "ticker": "VCEL",
@@ -2932,7 +3471,12 @@
         34.67,
         15.72
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        35.23,
+        39.06,
+        39.06
+      ]
     },
     "USPH": {
       "ticker": "USPH",
@@ -2956,7 +3500,12 @@
         28.65,
         25.66
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        16.94,
+        29.51,
+        33.76
+      ]
     },
     "VNCE": {
       "ticker": "VNCE",
@@ -2980,7 +3529,14 @@
         40.42,
         48.55
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        75.28,
+        75.28,
+        75.28
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-06-16"
     },
     "URGN": {
       "ticker": "URGN",
@@ -3004,7 +3560,14 @@
         49.12,
         62.56
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        42.93,
+        64.59,
+        89.06
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-07-01"
     },
     "UUUU": {
       "ticker": "UUUU",
@@ -3028,7 +3591,12 @@
         -35.69,
         -19.53
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        0
+      ]
     },
     "CRDF": {
       "ticker": "CRDF",
@@ -3052,7 +3620,12 @@
         -43.38,
         -33.11
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        5.3,
+        5.3,
+        5.3
+      ]
     },
     "TGEN": {
       "ticker": "TGEN",
@@ -3076,7 +3649,12 @@
         -52.2,
         -55.13
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        1.17,
+        1.17,
+        1.17
+      ]
     },
     "VOXR": {
       "ticker": "VOXR",
@@ -3100,7 +3678,12 @@
         -23.38,
         -4.95
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0.53,
+        0.53,
+        2.28
+      ]
     },
     "ADPT": {
       "ticker": "ADPT",
@@ -3124,7 +3707,14 @@
         53.48,
         63.62
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        46.88,
+        58.77,
+        73.6
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-06-04"
     },
     "SHC": {
       "ticker": "SHC",
@@ -3148,7 +3738,12 @@
         16.93,
         23.77
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        16.24,
+        20.63,
+        28.16
+      ]
     },
     "SGC": {
       "ticker": "SGC",
@@ -3172,7 +3767,12 @@
         -6.08,
         -5.07
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        8.18,
+        8.18,
+        10.13
+      ]
     },
     "TTAN": {
       "ticker": "TTAN",
@@ -3196,7 +3796,14 @@
         9.6,
         30.16
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        5.35,
+        13.31,
+        35.4
+      ],
+      "targetHitMonth": 3,
+      "targetHitDay": "2026-08-27"
     },
     "USFD": {
       "ticker": "USFD",
@@ -3220,7 +3827,14 @@
         22.35,
         28.65
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        26.87,
+        26.87,
+        34.96
+      ],
+      "targetHitMonth": 3,
+      "targetHitDay": "2026-08-11"
     },
     "SRRK": {
       "ticker": "SRRK",
@@ -3244,7 +3858,14 @@
         7.75,
         27.13
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        23.1,
+        29.68,
+        34.38
+      ],
+      "targetHitMonth": 3,
+      "targetHitDay": "2026-08-26"
     },
     "NVDA": {
       "ticker": "NVDA",
@@ -3268,7 +3889,12 @@
         -11.19,
         -2.37
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        2.32
+      ]
     },
     "CLBT": {
       "ticker": "CLBT",
@@ -3292,7 +3918,12 @@
         -2.14,
         -19.96
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        3.14,
+        10.88,
+        10.88
+      ]
     },
     "CIFR": {
       "ticker": "CIFR",
@@ -3316,7 +3947,12 @@
         -14.3,
         -42.19
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        11.2,
+        11.2,
+        11.2
+      ]
     },
     "KOPN": {
       "ticker": "KOPN",
@@ -3340,7 +3976,12 @@
         -41.8,
         -27.21
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        4.75,
+        4.75,
+        4.75
+      ]
     },
     "STNG": {
       "ticker": "STNG",
@@ -3364,7 +4005,12 @@
         1.52,
         4.38
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        9.13,
+        9.13,
+        9.13
+      ]
     },
     "DTE": {
       "ticker": "DTE",
@@ -3388,7 +4034,12 @@
         -2.85,
         1
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        1.89,
+        1.89,
+        3.84
+      ]
     },
     "KNSA": {
       "ticker": "KNSA",
@@ -3412,7 +4063,14 @@
         59.39,
         64.33
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        33.65,
+        69.11,
+        69.11
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-06-30"
     },
     "ICUI": {
       "ticker": "ICUI",
@@ -3436,7 +4094,14 @@
         29.06,
         32.51
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        14.03,
+        29.11,
+        43.47
+      ],
+      "targetHitMonth": 3,
+      "targetHitDay": "2026-08-03"
     },
     "VLN": {
       "ticker": "VLN",
@@ -3460,7 +4125,12 @@
         -51.55,
         -45.82
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        0
+      ]
     },
     "TGTX": {
       "ticker": "TGTX",
@@ -3484,7 +4154,14 @@
         41.09,
         45.15
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        49.24,
+        57.87,
+        57.87
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-06-12"
     },
     "TH": {
       "ticker": "TH",
@@ -3508,7 +4185,12 @@
         -12.95,
         8.56
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        20.28,
+        20.28,
+        20.28
+      ]
     },
     "ADEA": {
       "ticker": "ADEA",
@@ -3532,7 +4214,12 @@
         -15.12,
         -17.71
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        7.63,
+        7.63,
+        7.63
+      ]
     },
     "IXX": {
       "ticker": "IXX",
@@ -3556,7 +4243,12 @@
         -7.11,
         -11.57
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        3.92,
+        3.92,
+        3.92
+      ]
     },
     "ADSK": {
       "ticker": "ADSK",
@@ -3580,7 +4272,12 @@
         -0.88,
         9.24
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        3.63,
+        14.33
+      ]
     },
     "WRN": {
       "ticker": "WRN",
@@ -3604,7 +4301,12 @@
         -29.18,
         -16.89
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        0
+      ]
     },
     "XGN": {
       "ticker": "XGN",
@@ -3628,7 +4330,12 @@
         -3.97,
         50.94
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        3.34,
+        65.34
+      ]
     },
     "WAY": {
       "ticker": "WAY",
@@ -3652,7 +4359,12 @@
         3.98,
         28.44
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        16.02,
+        21.27,
+        29.77
+      ]
     },
     "ALNY": {
       "ticker": "ALNY",
@@ -3676,7 +4388,12 @@
         -29.76,
         -16.81
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        6.9,
+        10.57,
+        10.57
+      ]
     },
     "XENE": {
       "ticker": "XENE",
@@ -3700,7 +4417,12 @@
         19.7,
         13.44
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        15.04,
+        33.91,
+        33.91
+      ]
     },
     "WK": {
       "ticker": "WK",
@@ -3724,7 +4446,14 @@
         18.72,
         57.2
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        4.19,
+        23.29,
+        60.51
+      ],
+      "targetHitMonth": 3,
+      "targetHitDay": "2026-08-27"
     },
     "WINA": {
       "ticker": "WINA",
@@ -3748,7 +4477,12 @@
         -11.52,
         -12.33
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        14.52,
+        14.52,
+        14.52
+      ]
     },
     "WGS": {
       "ticker": "WGS",
@@ -3772,7 +4506,14 @@
         26.17,
         59.63
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        34.97,
+        34.97,
+        69.93
+      ],
+      "targetHitMonth": 3,
+      "targetHitDay": "2026-08-07"
     },
     "WEAV": {
       "ticker": "WEAV",
@@ -3796,7 +4537,12 @@
         13.52,
         26.6
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        14.04,
+        28.77,
+        28.77
+      ]
     },
     "XPER": {
       "ticker": "XPER",
@@ -3820,7 +4566,12 @@
         -1.68,
         -24.36
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        11.34,
+        11.34,
+        11.34
+      ]
     },
     "WPM": {
       "ticker": "WPM",
@@ -3844,7 +4595,12 @@
         -13.41,
         15.14
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        27.48
+      ]
     },
     "WMS": {
       "ticker": "WMS",
@@ -3868,7 +4624,12 @@
         4.16,
         0.55
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        18.45,
+        18.45,
+        18.45
+      ]
     },
     "WULF": {
       "ticker": "WULF",
@@ -3892,7 +4653,12 @@
         -32.26,
         -43.15
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        10.65,
+        10.65,
+        10.65
+      ]
     },
     "WYNN": {
       "ticker": "WYNN",
@@ -3916,7 +4682,12 @@
         -4.41,
         -13.08
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        2.99,
+        2.99,
+        2.99
+      ]
     },
     "KTN": {
       "ticker": "KTN",
@@ -3940,7 +4711,12 @@
         -1.02,
         -4.86
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0.94,
+        1.79,
+        1.79
+      ]
     },
     "GEV": {
       "ticker": "GEV",
@@ -3964,7 +4740,12 @@
         2.37,
         -6.73
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        21.96,
+        21.96,
+        21.96
+      ]
     },
     "SLI": {
       "ticker": "SLI",
@@ -3988,7 +4769,12 @@
         -50.24,
         -35.77
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0.97,
+        0.97,
+        0.97
+      ]
     },
     "UAMY": {
       "ticker": "UAMY",
@@ -4012,7 +4798,12 @@
         -43.83,
         -47.87
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        0
+      ]
     },
     "SPGI": {
       "ticker": "SPGI",
@@ -4036,7 +4827,12 @@
         4.69,
         10.35
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        5.07,
+        15.81,
+        15.81
+      ]
     },
     "SHOP": {
       "ticker": "SHOP",
@@ -4060,7 +4856,14 @@
         2.36,
         25.95
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        3.95,
+        11.34,
+        35.48
+      ],
+      "targetHitMonth": 3,
+      "targetHitDay": "2026-08-07"
     },
     "HNR1": {
       "ticker": "HNR1",
@@ -4084,7 +4887,12 @@
         11.78,
         14.58
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        9.6,
+        14.58,
+        14.76
+      ]
     },
     "USAR": {
       "ticker": "USAR",
@@ -4108,7 +4916,12 @@
         -47.11,
         -37.31
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        0
+      ]
     },
     "TMO": {
       "ticker": "TMO",
@@ -4132,7 +4945,14 @@
         19.39,
         28.01
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        6.48,
+        19.64,
+        31.45
+      ],
+      "targetHitMonth": 3,
+      "targetHitDay": "2026-08-19"
     },
     "TLN": {
       "ticker": "TLN",
@@ -4156,7 +4976,12 @@
         -12.19,
         -22.35
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        15.42,
+        15.42,
+        15.42
+      ]
     },
     "VNOM": {
       "ticker": "VNOM",
@@ -4180,7 +5005,12 @@
         -5.04,
         -2.76
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        1.1,
+        1.1,
+        1.1
+      ]
     },
     "KGS": {
       "ticker": "KGS",
@@ -4204,7 +5034,12 @@
         -12.96,
         -11.37
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        13.51,
+        13.51,
+        13.51
+      ]
     },
     "V": {
       "ticker": "V",
@@ -4228,7 +5063,12 @@
         15.4,
         18.5
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        14.12,
+        16.2,
+        21.06
+      ]
     },
     "TVTX": {
       "ticker": "TVTX",
@@ -4252,7 +5092,14 @@
         25.19,
         46.01
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        30.6,
+        30.6,
+        49.38
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-06-24"
     },
     "300995.SZ": {
       "ticker": "300995.SZ",
@@ -4276,7 +5123,12 @@
         -28.85,
         -19.28
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        0
+      ]
     },
     "EXPE": {
       "ticker": "EXPE",
@@ -4300,7 +5152,14 @@
         29.8,
         37.24
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        18.7,
+        34.41,
+        49.81
+      ],
+      "targetHitMonth": 2,
+      "targetHitDay": "2026-07-28"
     },
     "ZYME": {
       "ticker": "ZYME",
@@ -4324,7 +5183,12 @@
         -8.32,
         21.31
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        8.05,
+        11.17,
+        20.78
+      ]
     },
     "ABAT": {
       "ticker": "ABAT",
@@ -4348,7 +5212,12 @@
         -44.34,
         -28.71
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        2.43,
+        2.43,
+        2.43
+      ]
     },
     "YUMC": {
       "ticker": "YUMC",
@@ -4372,7 +5241,12 @@
         10.21,
         4.2
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        3.94,
+        12.2,
+        15.32
+      ]
     },
     "ABSI": {
       "ticker": "ABSI",
@@ -4396,7 +5270,14 @@
         21.42,
         40.79
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        82.99,
+        82.99,
+        82.99
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-06-24"
     },
     "FRAMERY": {
       "ticker": "FRAMERY",
@@ -4420,7 +5301,12 @@
         -11.75,
         -15.4
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        0
+      ]
     },
     "SONY": {
       "ticker": "SONY",
@@ -4444,7 +5330,12 @@
         3.53,
         11.04
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        4.68,
+        11.79
+      ]
     },
     "RELIANCE": {
       "ticker": "RELIANCE",
@@ -4468,7 +5359,12 @@
         -0.25,
         -2.38
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        1.48,
+        1.48,
+        1.64
+      ]
     },
     "EVT": {
       "ticker": "EVT",
@@ -4492,7 +5388,12 @@
         -32.66,
         -36.29
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0.98,
+        1.08,
+        1.08
+      ]
     },
     "LC": {
       "ticker": "LC",
@@ -4538,7 +5439,12 @@
         -3.5,
         -6.16
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        13.16,
+        13.16,
+        13.16
+      ]
     },
     "SVCO": {
       "ticker": "SVCO",
@@ -4562,7 +5468,12 @@
         -36.85,
         -42.97
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        13.31,
+        13.31,
+        13.31
+      ]
     },
     "TTWO": {
       "ticker": "TTWO",
@@ -4586,7 +5497,12 @@
         13.17,
         0.47
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        17.7,
+        19.28,
+        19.28
+      ]
     },
     "CENX": {
       "ticker": "CENX",
@@ -4610,7 +5526,12 @@
         -33.14,
         -31.55
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        2.58,
+        2.58,
+        2.58
+      ]
     },
     "SEI": {
       "ticker": "SEI",
@@ -4634,7 +5555,12 @@
         -28.61,
         -29.41
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        15.24,
+        15.24,
+        15.24
+      ]
     },
     "SGML": {
       "ticker": "SGML",
@@ -4658,7 +5584,12 @@
         -39.33,
         -22.92
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0.73,
+        0.73,
+        0.73
+      ]
     },
     "UBCP": {
       "ticker": "UBCP",
@@ -4682,7 +5613,12 @@
         -5.42,
         -2.9
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        1.87,
+        3.55,
+        3.55
+      ]
     },
     "VRTX": {
       "ticker": "VRTX",
@@ -4706,7 +5642,14 @@
         11.92,
         27.85
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        23.28,
+        23.64,
+        29.07
+      ],
+      "targetHitMonth": 3,
+      "targetHitDay": "2026-08-19"
     },
     "TBCH": {
       "ticker": "TBCH",
@@ -4730,7 +5673,12 @@
         -6.74,
         -2.51
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        4.79,
+        4.79,
+        6.16
+      ]
     },
     "SMP": {
       "ticker": "SMP",
@@ -4754,7 +5702,12 @@
         -1.06,
         -2.96
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        4.55,
+        4.55,
+        5.79
+      ]
     },
     "UEC": {
       "ticker": "UEC",
@@ -4778,7 +5731,12 @@
         -31.61,
         -17.75
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        0
+      ]
     },
     "SKY": {
       "ticker": "SKY",
@@ -4802,7 +5760,14 @@
         10.33,
         23.17
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        22.54,
+        22.54,
+        32.88
+      ],
+      "targetHitMonth": 3,
+      "targetHitDay": "2026-08-05"
     },
     "SSB": {
       "ticker": "SSB",
@@ -4826,7 +5791,12 @@
         13.69,
         13.38
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        9.58,
+        15.23,
+        20.62
+      ]
     },
     "SMTC": {
       "ticker": "SMTC",
@@ -4850,7 +5820,12 @@
         -28.92,
         -18.68
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        6.87,
+        6.87,
+        6.87
+      ]
     },
     "TEN": {
       "ticker": "TEN",
@@ -4874,7 +5849,12 @@
         6.87,
         13.55
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        10.2,
+        10.2,
+        14.38
+      ]
     },
     "UTHR": {
       "ticker": "UTHR",
@@ -4898,7 +5878,12 @@
         -4.73,
         -6.81
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        1.5,
+        2.92,
+        2.92
+      ]
     },
     "KARO": {
       "ticker": "KARO",
@@ -4922,7 +5907,14 @@
         29.25,
         34.04
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        1.98,
+        31.32,
+        35.43
+      ],
+      "targetHitMonth": 2,
+      "targetHitDay": "2026-07-16"
     },
     "SN": {
       "ticker": "SN",
@@ -4946,7 +5938,14 @@
         32.93,
         57.42
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        24.53,
+        33.57,
+        57.72
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-06-30"
     },
     "ALMS": {
       "ticker": "ALMS",
@@ -4970,7 +5969,12 @@
         42.43,
         -49.25
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        40.14,
+        50.9,
+        50.9
+      ]
     },
     "AMPY": {
       "ticker": "AMPY",
@@ -4994,7 +5998,12 @@
         -18.34,
         5.54
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        4.9
+      ]
     },
     "XZO": {
       "ticker": "XZO",
@@ -5018,7 +6027,12 @@
         19.6,
         28.19
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        42.78,
+        43.01,
+        43.01
+      ]
     },
     "ABCL": {
       "ticker": "ABCL",
@@ -5042,7 +6056,14 @@
         -7.01,
         85.01
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        32.46,
+        32.46,
+        103.92
+      ],
+      "targetHitMonth": 3,
+      "targetHitDay": "2026-08-13"
     },
     "AMLX": {
       "ticker": "AMLX",
@@ -5066,7 +6087,14 @@
         54.48,
         154.4
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        40.71,
+        56.13,
+        198.42
+      ],
+      "targetHitMonth": 3,
+      "targetHitDay": "2026-08-06"
     },
     "ALLT": {
       "ticker": "ALLT",
@@ -5090,7 +6118,12 @@
         -2.58,
         -2.58
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        14.05,
+        14.05,
+        14.05
+      ]
     },
     "ANAB": {
       "ticker": "ANAB",
@@ -5114,7 +6147,12 @@
         5.74,
         9.46
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        31.68,
+        36.19,
+        36.19
+      ]
     },
     "AKTS": {
       "ticker": "AKTS",
@@ -5138,7 +6176,14 @@
         13.3,
         30.67
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        62.04,
+        62.04,
+        62.04
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-06-30"
     },
     "ALTO": {
       "ticker": "ALTO",
@@ -5162,7 +6207,12 @@
         -15.19,
         -27.31
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        8.14,
+        8.14,
+        8.14
+      ]
     },
     "AGI": {
       "ticker": "AGI",
@@ -5186,7 +6236,12 @@
         -27.18,
         -6.24
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        1.06
+      ]
     },
     "AIRJ": {
       "ticker": "AIRJ",
@@ -5210,7 +6265,12 @@
         -21.35,
         -19.15
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        5.66,
+        5.66,
+        16.79
+      ]
     },
     "BTAI": {
       "ticker": "BTAI",
@@ -5234,7 +6294,12 @@
         -32.73,
         -87.54
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        18.49,
+        18.49,
+        18.49
+      ]
     },
     "AMNF": {
       "ticker": "AMNF",
@@ -5258,7 +6323,12 @@
         -2.05,
         9.96
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        13.63
+      ]
     },
     "AMRX": {
       "ticker": "AMRX",
@@ -5282,7 +6352,14 @@
         42.99,
         37.32
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        34.52,
+        48.35,
+        48.35
+      ],
+      "targetHitMonth": 2,
+      "targetHitDay": "2026-07-16"
     },
     "600519.SS": {
       "ticker": "600519.SS",
@@ -5306,7 +6383,12 @@
         5.32,
         1.37
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0.78,
+        6.23,
+        6.23
+      ]
     },
     "AMG": {
       "ticker": "AMG",
@@ -5330,7 +6412,12 @@
         17.49,
         17.57
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        14.73,
+        21.82,
+        23.04
+      ]
     },
     "AMZN": {
       "ticker": "AMZN",
@@ -5354,7 +6441,12 @@
         -0.1,
         0.54
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        7.01,
+        11.91
+      ]
     },
     "WMT": {
       "ticker": "WMT",
@@ -5378,7 +6470,12 @@
         -4.91,
         -9.38
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        3.55,
+        3.55,
+        3.55
+      ]
     },
     "SFBS": {
       "ticker": "SFBS",
@@ -5402,7 +6499,12 @@
         16.43,
         12.16
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        15.75,
+        17.15,
+        19.26
+      ]
     },
     "VIAV": {
       "ticker": "VIAV",
@@ -5426,7 +6528,12 @@
         -31.92,
         -34.17
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        2.21,
+        2.21,
+        2.21
+      ]
     },
     "SPOT": {
       "ticker": "SPOT",
@@ -5450,7 +6557,12 @@
         1.95,
         8.5
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0.33,
+        4.49,
+        10.18
+      ]
     },
     "SFD": {
       "ticker": "SFD",
@@ -5474,7 +6586,12 @@
         2,
         -15.08
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        4.15,
+        5.97,
+        5.97
+      ]
     },
     "TNL": {
       "ticker": "TNL",
@@ -5498,7 +6615,12 @@
         8.19,
         -1.59
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        11.69,
+        12.28,
+        12.28
+      ]
     },
     "CFG": {
       "ticker": "CFG",
@@ -5522,7 +6644,14 @@
         16.51,
         11.93
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        16.72,
+        20.92,
+        21.45
+      ],
+      "targetHitMonth": 3,
+      "targetHitDay": "2026-08-14"
     },
     "VBK": {
       "ticker": "VBK",
@@ -5546,7 +6675,12 @@
         -29,
         -22.04
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        2.64,
+        2.64,
+        2.64
+      ]
     },
     "ABUS": {
       "ticker": "ABUS",
@@ -5570,7 +6704,12 @@
         0.57,
         17.01
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        11.95,
+        20,
+        20
+      ]
     },
     "REGN": {
       "ticker": "REGN",
@@ -5594,7 +6733,14 @@
         21.25,
         33.1
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        5.71,
+        23.21,
+        35.85
+      ],
+      "targetHitMonth": 3,
+      "targetHitDay": "2026-08-19"
     },
     "TCS.NS": {
       "ticker": "TCS.NS",
@@ -5618,7 +6764,12 @@
         5.32,
         3.12
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        6.51,
+        6.51,
+        7.67
+      ]
     },
     "SLS": {
       "ticker": "SLS",
@@ -5642,7 +6793,14 @@
         21.85,
         58.7
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        85.47,
+        85.47,
+        85.59
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-06-25"
     },
     "TSSI": {
       "ticker": "TSSI",
@@ -5666,7 +6824,12 @@
         -32.16,
         -45.76
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        0
+      ]
     },
     "PVA": {
       "ticker": "PVA",
@@ -5690,7 +6853,12 @@
         -23.46,
         -29.03
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        6.1,
+        6.1,
+        6.1
+      ]
     },
     "ORSTED": {
       "ticker": "ORSTED",
@@ -5714,7 +6882,12 @@
         -13.22,
         -17.93
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        0
+      ]
     },
     "EVO": {
       "ticker": "EVO",
@@ -5738,7 +6911,14 @@
         5.09,
         13.04
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        4.53,
+        13.22
+      ],
+      "targetHitMonth": 2,
+      "targetHitDay": "2026-07-29"
     },
     "MOD": {
       "ticker": "MOD",
@@ -5762,7 +6942,12 @@
         -34.61,
         -40.57
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        0
+      ]
     },
     "WKL": {
       "ticker": "WKL",
@@ -5786,7 +6971,12 @@
         -16.29,
         -10.57
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0.57,
+        0.57,
+        0.57
+      ]
     },
     "YSN": {
       "ticker": "YSN",
@@ -5810,7 +7000,12 @@
         -13.38,
         -12.9
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        1.95,
+        1.95,
+        1.95
+      ]
     },
     "ALFA": {
       "ticker": "ALFA",
@@ -5834,7 +7029,14 @@
         4.06,
         4.56
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        7.42,
+        9.2,
+        9.2
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-06-17"
     },
     "ING": {
       "ticker": "ING",
@@ -5858,7 +7060,14 @@
         14.63,
         16.06
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        7.2,
+        15.59,
+        17.33
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-07-02"
     },
     "BNP": {
       "ticker": "BNP",
@@ -5882,7 +7091,12 @@
         17.19,
         9.38
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        9.61,
+        16.7,
+        20.04
+      ]
     },
     "ENEL": {
       "ticker": "ENEL",
@@ -5906,7 +7120,12 @@
         2.95,
         -3.42
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        5.76,
+        7.45,
+        7.45
+      ]
     },
     "UBS": {
       "ticker": "UBS",
@@ -5930,7 +7149,12 @@
         13.16,
         17.83
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        10.03,
+        17.83,
+        18.49
+      ]
     },
     "AXA": {
       "ticker": "AXA",
@@ -5954,7 +7178,12 @@
         14.1,
         9.81
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        11.18,
+        15.54,
+        15.54
+      ]
     },
     "IBE": {
       "ticker": "IBE",
@@ -5978,7 +7207,12 @@
         5.19,
         1.71
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        11.68,
+        11.68,
+        11.68
+      ]
     },
     "VNA": {
       "ticker": "VNA",
@@ -6002,7 +7236,14 @@
         20.96,
         22.74
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        14.32,
+        21.85,
+        24.23
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-06-11"
     },
     "DB1": {
       "ticker": "DB1",
@@ -6026,7 +7267,14 @@
         9.25,
         17.22
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        3.06,
+        11.73,
+        20.28
+      ],
+      "targetHitMonth": 3,
+      "targetHitDay": "2026-08-27"
     },
     "EON": {
       "ticker": "EON",
@@ -6050,7 +7298,12 @@
         4.78,
         -1.85
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        1.94,
+        8.53,
+        8.53
+      ]
     },
     "RWE": {
       "ticker": "RWE",
@@ -6074,7 +7327,12 @@
         0.7,
         4.98
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        3.05,
+        5.7,
+        5.99
+      ]
     },
     "WCH": {
       "ticker": "WCH",
@@ -6098,7 +7356,12 @@
         -16.29,
         -10.57
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0.57,
+        0.57,
+        0.57
+      ]
     },
     "VOW3": {
       "ticker": "VOW3",
@@ -6122,7 +7385,12 @@
         -14.39,
         -14.26
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        1.23,
+        1.23,
+        1.23
+      ]
     },
     "HEI": {
       "ticker": "HEI",
@@ -6146,7 +7414,12 @@
         -8.93,
         -8.23
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        6.58,
+        6.58,
+        6.58
+      ]
     },
     "EOAN": {
       "ticker": "EOAN",
@@ -6170,7 +7443,12 @@
         4.78,
         -1.85
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        1.94,
+        8.53,
+        8.53
+      ]
     },
     "DTG": {
       "ticker": "DTG",
@@ -6194,7 +7472,14 @@
         17.16,
         10.52
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        2.3,
+        16.25,
+        17.81
+      ],
+      "targetHitMonth": 2,
+      "targetHitDay": "2026-07-24"
     },
     "DTE.DE": {
       "ticker": "DTE.DE",
@@ -6218,7 +7503,12 @@
         -2.15,
         1
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        1.89,
+        1.89,
+        3.84
+      ]
     },
     "LIN.DE": {
       "ticker": "LIN.DE",
@@ -6242,7 +7532,12 @@
         -2.03,
         -4.15
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        8.52,
+        8.52,
+        8.52
+      ]
     },
     "COK.DE": {
       "ticker": "COK.DE",
@@ -6266,7 +7561,12 @@
         -11.3,
         -18.99
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        0
+      ]
     },
     "SU": {
       "ticker": "SU",
@@ -6290,7 +7590,12 @@
         1.16,
         1.68
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        3.28,
+        3.28,
+        9.72
+      ]
     },
     "VIV.PA": {
       "ticker": "VIV.PA",
@@ -6314,7 +7619,12 @@
         -21.12,
         -31.15
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        0
+      ]
     },
     "ALV.DE": {
       "ticker": "ALV.DE",
@@ -6338,7 +7648,14 @@
         16.52,
         21.41
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        12.69,
+        16.48,
+        22
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-06-16"
     },
     "MUV2.DE": {
       "ticker": "MUV2.DE",
@@ -6362,7 +7679,12 @@
         18.29,
         18.59
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        13.03,
+        19.45,
+        19.45
+      ]
     },
     "CBK.DE": {
       "ticker": "CBK.DE",
@@ -6386,7 +7708,12 @@
         4.1,
         9.6
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        4.66,
+        6.44,
+        11.62
+      ]
     },
     "HEI.DE": {
       "ticker": "HEI.DE",
@@ -6410,7 +7737,12 @@
         -10.04,
         -8.23
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        6.58,
+        6.58,
+        6.58
+      ]
     },
     "IFX.DE": {
       "ticker": "IFX.DE",
@@ -6434,7 +7766,12 @@
         -29.99,
         -36.62
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        0
+      ]
     },
     "VOW3.DE": {
       "ticker": "VOW3.DE",
@@ -6458,7 +7795,12 @@
         -15.23,
         -14.26
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        1.23,
+        1.23,
+        1.23
+      ]
     },
     "FRE.DE": {
       "ticker": "FRE.DE",
@@ -6482,7 +7824,12 @@
         22.85,
         22.87
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        15.56,
+        23.13,
+        29.36
+      ]
     },
     "TM": {
       "ticker": "TM",
@@ -6506,7 +7853,12 @@
         5.55,
         9.89
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        7,
+        9.51
+      ]
     },
     "A000660": {
       "ticker": "A000660",
@@ -6530,7 +7882,12 @@
         -28.52,
         -27.15
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        27.02,
+        27.02,
+        27.02
+      ]
     },
     "INFY": {
       "ticker": "INFY",
@@ -6554,7 +7911,12 @@
         -4.61,
         -4.53
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0.24,
+        0.24
+      ]
     },
     "VRSN": {
       "ticker": "VRSN",
@@ -6578,7 +7940,12 @@
         -2.96,
         -2.93
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        0.71
+      ]
     },
     "PLOW": {
       "ticker": "PLOW",
@@ -6602,7 +7969,12 @@
         -2.88,
         -8.28
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        21.04,
+        21.04,
+        21.04
+      ]
     },
     "AMBA": {
       "ticker": "AMBA",
@@ -6626,7 +7998,12 @@
         8.46,
         -8.09
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        19.7,
+        19.7,
+        19.7
+      ]
     },
     "WGO": {
       "ticker": "WGO",
@@ -6650,7 +8027,12 @@
         4.99,
         3.9
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        8.84,
+        10.88,
+        13.47
+      ]
     },
     "MRVL": {
       "ticker": "MRVL",
@@ -6674,7 +8056,12 @@
         -38.53,
         -30.25
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        4.9,
+        4.9,
+        4.9
+      ]
     },
     "ATLS": {
       "ticker": "ATLS",
@@ -6698,7 +8085,12 @@
         28.64,
         10.03
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        34.29,
+        34.29,
+        35.96
+      ]
     },
     "ON": {
       "ticker": "ON",
@@ -6722,7 +8114,12 @@
         -37.28,
         -44.89
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        1.6,
+        1.6,
+        1.6
+      ]
     },
     "SMCI": {
       "ticker": "SMCI",
@@ -6746,7 +8143,12 @@
         -40.82,
         -21.97
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        0
+      ]
     },
     "LRCX": {
       "ticker": "LRCX",
@@ -6770,7 +8172,12 @@
         -12.2,
         -13.74
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        28.81,
+        28.81,
+        28.81
+      ]
     },
     "ACGL": {
       "ticker": "ACGL",
@@ -6794,7 +8201,12 @@
         14.73,
         11.74
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        16.28,
+        21.15,
+        21.15
+      ]
     },
     "SNU": {
       "ticker": "SNU",
@@ -6818,7 +8230,12 @@
         -11.95,
         -12.88
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        1.22,
+        1.22,
+        1.22
+      ]
     },
     "ATOSS": {
       "ticker": "ATOSS",
@@ -6842,7 +8259,12 @@
         8.27,
         25
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        12.37,
+        28.54
+      ]
     },
     "SMT": {
       "ticker": "SMT",
@@ -6866,7 +8288,12 @@
         -22.24,
         -27.76
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        18.14,
+        18.14,
+        18.14
+      ]
     },
     "SMI": {
       "ticker": "SMI",
@@ -6890,7 +8317,12 @@
         -22.24,
         -27.76
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        18.14,
+        18.14,
+        18.14
+      ]
     },
     "ADTN": {
       "ticker": "ADTN",
@@ -6914,7 +8346,12 @@
         -51.79,
         -57.18
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        0
+      ]
     },
     "HYQ": {
       "ticker": "HYQ",
@@ -6938,7 +8375,12 @@
         3.27,
         2.9
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        7.72,
+        13.59,
+        13.59
+      ]
     },
     "SRT": {
       "ticker": "SRT",
@@ -6962,7 +8404,12 @@
         -6.04,
         10.62
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        2.68,
+        5.81,
+        10.51
+      ]
     },
     "ASMI": {
       "ticker": "ASMI",
@@ -6986,7 +8433,12 @@
         -10.78,
         -11.49
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        21.51,
+        21.51,
+        21.51
+      ]
     },
     "CRDO": {
       "ticker": "CRDO",
@@ -7010,7 +8462,14 @@
         -4.92,
         -13.36
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        40.97,
+        40.97,
+        40.97
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-06-09"
     },
     "BESI": {
       "ticker": "BESI",
@@ -7034,7 +8493,12 @@
         -30.25,
         -32.19
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        12.94,
+        12.94,
+        12.94
+      ]
     },
     "PRAX": {
       "ticker": "PRAX",
@@ -7058,7 +8522,12 @@
         16.26,
         34.27
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        32.41,
+        32.41,
+        45.92
+      ]
     },
     "VRDN": {
       "ticker": "VRDN",
@@ -7082,7 +8551,14 @@
         18.72,
         40.09
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        18.65,
+        25.2,
+        51.68
+      ],
+      "targetHitMonth": 3,
+      "targetHitDay": "2026-08-05"
     },
     "SBS.DE": {
       "ticker": "SBS.DE",
@@ -7106,7 +8582,12 @@
         17.42,
         47.44
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        9.99,
+        23.07,
+        50.71
+      ]
     },
     "TCS": {
       "ticker": "TCS",
@@ -7130,7 +8611,12 @@
         7.97,
         4.77
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        9.17,
+        10.38
+      ]
     },
     "AMAT": {
       "ticker": "AMAT",
@@ -7154,7 +8640,14 @@
         0.79,
         -12.1
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        44.38,
+        44.38,
+        44.38
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-06-11"
     },
     "ASML": {
       "ticker": "ASML",
@@ -7178,7 +8671,14 @@
         -4.34,
         -3.35
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        15.9,
+        15.9,
+        15.9
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-06-11"
     },
     "4502.T": {
       "ticker": "4502.T",
@@ -7202,7 +8702,12 @@
         12.59,
         20.52
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        10.49,
+        20.56,
+        20.82
+      ]
     },
     "SNPS": {
       "ticker": "SNPS",
@@ -7226,7 +8731,12 @@
         -23.04,
         -15.99
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        0
+      ]
     },
     "NXPI": {
       "ticker": "NXPI",
@@ -7250,7 +8760,12 @@
         -26.32,
         -29.96
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0.42,
+        0.42,
+        0.42
+      ]
     },
     "CRSP": {
       "ticker": "CRSP",
@@ -7274,7 +8789,12 @@
         -7.42,
         9.2
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        15.36,
+        18.84,
+        18.84
+      ]
     },
     "SBS": {
       "ticker": "SBS",
@@ -7298,7 +8818,12 @@
         17.42,
         47.44
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        9.99,
+        23.07,
+        50.71
+      ]
     },
     "RWE.DE": {
       "ticker": "RWE.DE",
@@ -7322,7 +8847,12 @@
         1.16,
         3.75
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        3.25,
+        5.32,
+        5.61
+      ]
     },
     "BNP.PA": {
       "ticker": "BNP.PA",
@@ -7346,7 +8876,12 @@
         17.79,
         10.09
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        9.98,
+        17.1,
+        20.45
+      ]
     },
     "IBE.MC": {
       "ticker": "IBE.MC",
@@ -7370,7 +8905,14 @@
         5.24,
         0.54
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        11.66,
+        11.66,
+        11.66
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-06-05"
     },
     "UBSG.SW": {
       "ticker": "UBSG.SW",
@@ -7394,7 +8936,14 @@
         13.23,
         18.36
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        10.03,
+        17.83,
+        18.49
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-06-15"
     },
     "INGA.AS": {
       "ticker": "INGA.AS",
@@ -7418,7 +8967,14 @@
         15.15,
         19.19
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        7.69,
+        15.87,
+        17.62
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-06-19"
     },
     "DB1.DE": {
       "ticker": "DB1.DE",
@@ -7442,7 +8998,14 @@
         8.21,
         15.53
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        1.83,
+        10.27,
+        18.71
+      ],
+      "targetHitMonth": 3,
+      "targetHitDay": "2026-08-24"
     },
     "214450.KS": {
       "ticker": "214450.KS",
@@ -7464,7 +9027,12 @@
       "perf": [
         20.74
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        null,
+        17.86,
+        39.11
+      ]
     },
     "9065.T": {
       "ticker": "9065.T",
@@ -7488,7 +9056,12 @@
         8.53,
         -7.16
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        1.08,
+        9.05,
+        9.05
+      ]
     },
     "2603.TW": {
       "ticker": "2603.TW",
@@ -7512,7 +9085,14 @@
         -12.82,
         0.85
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        6.57
+      ],
+      "targetHitMonth": 3,
+      "targetHitDay": "2026-08-20"
     },
     "402340.KS": {
       "ticker": "402340.KS",
@@ -7536,7 +9116,12 @@
         -31.76,
         -27.04
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        46.36,
+        46.36,
+        46.36
+      ]
     },
     "034730.KS": {
       "ticker": "034730.KS",
@@ -7560,7 +9145,12 @@
         -23.24,
         -18.41
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        28.44,
+        28.44,
+        28.44
+      ]
     },
     "001740.KS": {
       "ticker": "001740.KS",
@@ -7584,7 +9174,12 @@
         -46.38,
         -50.23
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        11.29,
+        11.29,
+        11.29
+      ]
     },
     "NBIS": {
       "ticker": "NBIS",
@@ -7608,7 +9203,12 @@
         -19.63,
         -19.56
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        13.91,
+        13.91,
+        13.91
+      ]
     },
     "FRE": {
       "ticker": "FRE",
@@ -7632,7 +9232,12 @@
         22.24,
         22.13
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        15.71,
+        22.39,
+        28.58
+      ]
     },
     "MP": {
       "ticker": "MP",
@@ -7656,7 +9261,12 @@
         -35.12,
         -16.7
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        0
+      ]
     },
     "SND": {
       "ticker": "SND",
@@ -7680,7 +9290,14 @@
         1.95,
         1.74
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        3.87,
+        3.87,
+        10.34
+      ],
+      "targetHitMonth": 3,
+      "targetHitDay": "2026-08-07"
     },
     "SMHN": {
       "ticker": "SMHN",
@@ -7704,7 +9321,14 @@
         -21.79,
         -27.92
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        18.14,
+        18.14,
+        18.14
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-06-15"
     },
     "CBK": {
       "ticker": "CBK",
@@ -7728,7 +9352,14 @@
         3.75,
         10.94
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        4.66,
+        6.44,
+        11.62
+      ],
+      "targetHitMonth": 3,
+      "targetHitDay": "2026-08-26"
     },
     "COK": {
       "ticker": "COK",
@@ -7752,7 +9383,12 @@
         -10.56,
         -18.03
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0.73,
+        0.73,
+        0.73
+      ]
     },
     "ABP": {
       "ticker": "ABP",
@@ -7776,7 +9412,12 @@
         10.1,
         19.23
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        14.42,
+        16.35,
+        21.15
+      ]
     },
     "GLE": {
       "ticker": "GLE",
@@ -7800,7 +9441,14 @@
         16.84,
         4.31
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        12.33,
+        15.73,
+        19.88
+      ],
+      "targetHitMonth": 2,
+      "targetHitDay": "2026-07-30"
     },
     "RI": {
       "ticker": "RI",
@@ -7824,7 +9472,12 @@
         11.75,
         2.52
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        8.38,
+        11.71,
+        15.05
+      ]
     },
     "BEI": {
       "ticker": "BEI",
@@ -7848,7 +9501,12 @@
         18.37,
         14.12
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        13.5,
+        20.93,
+        21.67
+      ]
     },
     "RHM": {
       "ticker": "RHM",
@@ -7872,7 +9530,12 @@
         -3.59,
         -10.05
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        1.63,
+        1.63,
+        1.63
+      ]
     },
     "SAX": {
       "ticker": "SAX",
@@ -7896,7 +9559,12 @@
         14.26,
         7.77
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0.74,
+        13.38,
+        16.27
+      ]
     },
     "CDA": {
       "ticker": "CDA",
@@ -7920,7 +9588,12 @@
         -8.08,
         -10.05
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        4.07,
+        4.07,
+        4.07
+      ]
     },
     "SL": {
       "ticker": "SL",
@@ -7974,7 +9647,13 @@
       "distTo50dma": -0.83,
       "distTo200dma": 10.72,
       "targetSpread": 16.5,
-      "recMean": 1.17
+      "recMean": 1.17,
+      "perfHigh": [
+        0.05,
+        1.41,
+        3.91
+      ],
+      "sektorHitAtAdd": 0.1585
     },
     "AOF.DE": {
       "ticker": "AOF.DE",
@@ -7998,7 +9677,12 @@
         9.56,
         23.42
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0.25,
+        12.66,
+        28.86
+      ]
     },
     "SMHN.DE": {
       "ticker": "SMHN.DE",
@@ -8022,7 +9706,14 @@
         -21.79,
         -27.92
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        18.14,
+        18.14,
+        18.14
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-06-15"
     },
     "TPE.DE": {
       "ticker": "TPE.DE",
@@ -8046,7 +9737,14 @@
         -21.39,
         -29.55
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        7.15,
+        7.15,
+        7.15
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-06-17"
     },
     "CRH": {
       "ticker": "CRH",
@@ -8070,7 +9768,12 @@
         -9.34,
         -12.79
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        6.76,
+        6.76,
+        6.76
+      ]
     },
     "EOAN.DE": {
       "ticker": "EOAN.DE",
@@ -8094,7 +9797,12 @@
         4.49,
         -3.56
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        5.91,
+        8.26,
+        8.26
+      ]
     },
     "KTN.DE": {
       "ticker": "KTN.DE",
@@ -8120,7 +9828,13 @@
       ],
       "strongBuyPct": 71,
       "sektorPsiAtAdd": 0.0095,
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        1.72,
+        1.72,
+        1.72
+      ],
+      "sektorHitAtAdd": 0.2165
     },
     "A214450": {
       "ticker": "A214450",
@@ -8142,7 +9856,12 @@
       "perf": [
         20.74
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        null,
+        17.86,
+        39.11
+      ]
     },
     "A001740": {
       "ticker": "A001740",
@@ -8166,7 +9885,12 @@
         -46.38,
         -50.23
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        11.29,
+        11.29,
+        11.29
+      ]
     },
     "AIR.PA": {
       "ticker": "AIR.PA",
@@ -8190,7 +9914,14 @@
         16.38,
         11.24
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        16.47,
+        19.77,
+        21.69
+      ],
+      "targetHitMonth": 2,
+      "targetHitDay": "2026-07-06"
     },
     "SU.PA": {
       "ticker": "SU.PA",
@@ -8214,7 +9945,14 @@
         1.95,
         1.74
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        3.87,
+        3.87,
+        10.34
+      ],
+      "targetHitMonth": 3,
+      "targetHitDay": "2026-08-07"
     },
     "SIE.DE": {
       "ticker": "SIE.DE",
@@ -8238,7 +9976,14 @@
         4.1,
         0.64
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        4.43,
+        4.43,
+        6.54
+      ],
+      "targetHitMonth": 3,
+      "targetHitDay": "2026-08-04"
     },
     "ABBN.SW": {
       "ticker": "ABBN.SW",
@@ -8262,7 +10007,12 @@
         -5.74,
         -8.5
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        4.61,
+        4.61,
+        4.61
+      ]
     },
     "SAF.PA": {
       "ticker": "SAF.PA",
@@ -8286,7 +10036,14 @@
         15.85,
         11.09
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        19.5,
+        19.63,
+        21.81
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-06-25"
     },
     "GE": {
       "ticker": "GE",
@@ -8310,7 +10067,14 @@
         10.58,
         1.05
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        15.22,
+        15.57,
+        16.35
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-06-16"
     },
     "KCR.HE": {
       "ticker": "KCR.HE",
@@ -8334,7 +10098,12 @@
         -2.28,
         5.73
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        1.89,
+        3.41,
+        10.37
+      ]
     },
     "WCH.DE": {
       "ticker": "WCH.DE",
@@ -8358,7 +10127,12 @@
         -14.01,
         -9.66
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        0
+      ]
     },
     "LIN": {
       "ticker": "LIN",
@@ -8382,7 +10156,14 @@
         -5.85,
         -4.1
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        7.7,
+        7.7,
+        7.7
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-07-02"
     },
     "BAS.DE": {
       "ticker": "BAS.DE",
@@ -8406,7 +10187,14 @@
         -0.1,
         5.12
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0.39,
+        0.91,
+        4.43
+      ],
+      "targetHitMonth": 4,
+      "targetHitDay": "2026-09-02"
     },
     "SL.MI": {
       "ticker": "SL.MI",
@@ -8430,7 +10218,12 @@
         -1.25,
         -2.81
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0.05,
+        1.41,
+        3.91
+      ]
     },
     "CDA.PA": {
       "ticker": "CDA.PA",
@@ -8454,7 +10247,12 @@
         -7.24,
         -10.05
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        4.07,
+        4.07,
+        4.07
+      ]
     },
     "SB1.DE": {
       "ticker": "SB1.DE",
@@ -8478,7 +10276,12 @@
         -27.78,
         -29.71
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0,
+        0,
+        0
+      ]
     },
     "1INN.DE": {
       "ticker": "1INN.DE",
@@ -8531,7 +10334,13 @@
       "distTo200dma": -2.26,
       "recMean": 1,
       "targetSpread": 11.8,
-      "earningsGrowth": 24
+      "earningsGrowth": 24,
+      "perfHigh": [
+        2.24,
+        2.24,
+        2.24
+      ],
+      "sektorHitAtAdd": 0.0951
     },
     "TPE": {
       "ticker": "TPE",
@@ -8555,7 +10364,14 @@
         -21.08,
         -29.55
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        7.15,
+        7.15,
+        7.15
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-06-17"
     },
     "A1OS": {
       "ticker": "A1OS",
@@ -8579,7 +10395,14 @@
         108.31,
         107.38
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        1.54,
+        108.62,
+        109.85
+      ],
+      "targetHitMonth": 2,
+      "targetHitDay": "2026-07-16"
     },
     "OCGN": {
       "ticker": "OCGN",
@@ -8603,7 +10426,12 @@
         -4.62,
         2.31
       ],
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        28.46,
+        28.46,
+        28.46
+      ]
     },
     "1INN": {
       "ticker": "1INN",
@@ -8664,7 +10492,12 @@
       "hitRate24m": 35.71,
       "maxDd24m": -52.79,
       "distTo3yHigh": -34.59,
-      "trendR2_24m": 0.55
+      "trendR2_24m": 0.55,
+      "perfHigh": [
+        0,
+        0,
+        2.98
+      ]
     },
     "HYQ.DE": {
       "ticker": "HYQ.DE",
@@ -8730,7 +10563,13 @@
       "hitRate24m": 32,
       "maxDd24m": -79.62,
       "distTo3yHigh": -76.56,
-      "trendR2_24m": 0.88
+      "trendR2_24m": 0.88,
+      "perfHigh": [
+        17.88,
+        17.88,
+        17.88
+      ],
+      "sektorHitAtAdd": 0.1813
     },
     "SB1": {
       "ticker": "SB1",
@@ -8793,7 +10632,13 @@
       "hitRate24m": 56,
       "maxDd24m": -25.08,
       "distTo3yHigh": -22.15,
-      "trendR2_24m": 0.76
+      "trendR2_24m": 0.76,
+      "perfHigh": [
+        0,
+        0,
+        0
+      ],
+      "sektorHitAtAdd": 0.1813
     },
     "A1OS.DE": {
       "ticker": "A1OS.DE",
@@ -8856,7 +10701,13 @@
       "hitRate24m": 48,
       "maxDd24m": -53,
       "distTo3yHigh": -48.58,
-      "trendR2_24m": 0.66
+      "trendR2_24m": 0.66,
+      "perfHigh": [
+        1.23,
+        107.98,
+        109.2
+      ],
+      "sektorHitAtAdd": 0.5848
     },
     "IXX.DE": {
       "ticker": "IXX.DE",
@@ -8922,7 +10773,13 @@
       "hitRate24m": 52,
       "maxDd24m": -25.94,
       "distTo3yHigh": -2.39,
-      "trendR2_24m": 0.57
+      "trendR2_24m": 0.57,
+      "perfHigh": [
+        2.53,
+        2.53,
+        2.53
+      ],
+      "sektorHitAtAdd": 0.5848
     },
     "034730": {
       "ticker": "034730",
@@ -8987,7 +10844,15 @@
       "hitRate24m": 60,
       "maxDd24m": -38.81,
       "distTo3yHigh": -14.85,
-      "trendR2_24m": 0.75
+      "trendR2_24m": 0.75,
+      "perfHigh": [
+        48.19,
+        48.19,
+        48.19
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-06-25",
+      "sektorHitAtAdd": 0.3578
     },
     "LUVE": {
       "ticker": "LUVE",
@@ -9051,7 +10916,12 @@
       "hitRate24m": 72,
       "maxDd24m": -18.81,
       "distTo3yHigh": -5.05,
-      "trendR2_24m": 0.8
+      "trendR2_24m": 0.8,
+      "perfHigh": [
+        2.48,
+        2.48
+      ],
+      "sektorHitAtAdd": 0.6369
     },
     "ORS": {
       "ticker": "ORS",
@@ -9116,7 +10986,12 @@
       "maxDd24m": -29.55,
       "distTo3yHigh": -20.9,
       "trendR2_24m": 0.65,
-      "recMean": 1
+      "recMean": 1,
+      "perfHigh": [
+        9.62,
+        9.62
+      ],
+      "sektorHitAtAdd": 0.2639
     },
     "GF": {
       "ticker": "GF",
@@ -9179,7 +11054,12 @@
       "hitRate24m": 64,
       "maxDd24m": -15.86,
       "distTo3yHigh": -12.62,
-      "trendR2_24m": 0.96
+      "trendR2_24m": 0.96,
+      "perfHigh": [
+        6.81,
+        6.81
+      ],
+      "sektorHitAtAdd": 0.2044
     },
     "SIT": {
       "ticker": "SIT",
@@ -9241,7 +11121,12 @@
       "hitRate24m": 52,
       "maxDd24m": -55.21,
       "distTo3yHigh": -48.1,
-      "trendR2_24m": 0.6
+      "trendR2_24m": 0.6,
+      "perfHigh": [
+        4.09,
+        25
+      ],
+      "sektorHitAtAdd": 0.6369
     },
     "GFT": {
       "ticker": "GFT",
@@ -9306,7 +11191,12 @@
       "maxDd24m": -46.97,
       "distTo3yHigh": -34.5,
       "trendR2_24m": 0.37,
-      "recMean": 1.17
+      "recMean": 1.17,
+      "perfHigh": [
+        2.44,
+        10.89
+      ],
+      "sektorHitAtAdd": 0.137
     },
     "ADMCM.HE": {
       "ticker": "ADMCM.HE",
@@ -9370,7 +11260,12 @@
       "hitRate24m": 40,
       "maxDd24m": -51.99,
       "distTo3yHigh": -50.54,
-      "trendR2_24m": 0.55
+      "trendR2_24m": 0.55,
+      "perfHigh": [
+        0,
+        2.01
+      ],
+      "sektorHitAtAdd": 0.2031
     },
     "JST.DE": {
       "ticker": "JST.DE",
@@ -9435,7 +11330,12 @@
       "hitRate24m": 52,
       "maxDd24m": -26.52,
       "distTo3yHigh": -16.94,
-      "trendR2_24m": 0.7
+      "trendR2_24m": 0.7,
+      "perfHigh": [
+        0,
+        4.11
+      ],
+      "sektorHitAtAdd": 0.7342
     },
     "EXL.DE": {
       "ticker": "EXL.DE",
@@ -9498,7 +11398,12 @@
       "hitRate24m": 40,
       "maxDd24m": -45.71,
       "distTo3yHigh": -32.12,
-      "trendR2_24m": 0.02
+      "trendR2_24m": 0.02,
+      "perfHigh": [
+        1.23,
+        1.23
+      ],
+      "sektorHitAtAdd": 0.2621
     },
     "6701.T": {
       "ticker": "6701.T",
@@ -9563,7 +11468,14 @@
       "hitRate24m": 68,
       "maxDd24m": -39.53,
       "distTo3yHigh": -36.58,
-      "trendR2_24m": 0.7
+      "trendR2_24m": 0.7,
+      "perfHigh": [
+        15.86,
+        34.16
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-07-14",
+      "sektorHitAtAdd": 0.3161
     },
     "300760.SZ": {
       "ticker": "300760.SZ",
@@ -9628,7 +11540,12 @@
       "maxDd24m": -56.85,
       "distTo3yHigh": -56.85,
       "trendR2_24m": 0.8,
-      "recMean": 1.19
+      "recMean": 1.19,
+      "perfHigh": [
+        10.35,
+        15.43
+      ],
+      "sektorHitAtAdd": 0.0388
     },
     "ADMCM": {
       "ticker": "ADMCM",
@@ -9692,7 +11609,12 @@
       "hitRate24m": 40,
       "maxDd24m": -56.5,
       "distTo3yHigh": -54.24,
-      "trendR2_24m": 0.58
+      "trendR2_24m": 0.58,
+      "perfHigh": [
+        4.84,
+        8.33
+      ],
+      "sektorHitAtAdd": 0.2923
     },
     "JST": {
       "ticker": "JST",
@@ -9757,7 +11679,12 @@
       "hitRate24m": 54.17,
       "maxDd24m": -26.52,
       "distTo3yHigh": -24.07,
-      "trendR2_24m": 0.69
+      "trendR2_24m": 0.69,
+      "perfHigh": [
+        11.15,
+        23.29
+      ],
+      "sektorHitAtAdd": 0.6579
     },
     "YOC": {
       "ticker": "YOC",
@@ -9818,7 +11745,12 @@
       "hitRate24m": 33.33,
       "maxDd24m": -74.75,
       "distTo3yHigh": -71.2,
-      "trendR2_24m": 0.76
+      "trendR2_24m": 0.76,
+      "perfHigh": [
+        2.57,
+        2.57
+      ],
+      "sektorHitAtAdd": 0.3338
     },
     "EXL": {
       "ticker": "EXL",
@@ -9881,7 +11813,12 @@
       "hitRate24m": 41.67,
       "maxDd24m": -45.71,
       "distTo3yHigh": -42.46,
-      "trendR2_24m": 0.01
+      "trendR2_24m": 0.01,
+      "perfHigh": [
+        6.19,
+        6.19
+      ],
+      "sektorHitAtAdd": 0.3797
     },
     "F3C.DE": {
       "ticker": "F3C.DE",
@@ -9944,7 +11881,12 @@
       "hitRate24m": 52,
       "maxDd24m": -55.95,
       "distTo3yHigh": -24.58,
-      "trendR2_24m": 0.15
+      "trendR2_24m": 0.15,
+      "perfHigh": [
+        9.25,
+        9.25
+      ],
+      "sektorHitAtAdd": 0.099
     },
     "JDC": {
       "ticker": "JDC",
@@ -10008,7 +11950,12 @@
       "hitRate24m": 52,
       "maxDd24m": -36.25,
       "distTo3yHigh": -28.44,
-      "trendR2_24m": 0.07
+      "trendR2_24m": 0.07,
+      "perfHigh": [
+        2.67,
+        7.56
+      ],
+      "sektorHitAtAdd": 0.1764
     },
     "KALN.NS": {
       "ticker": "KALN.NS",
@@ -10069,7 +12016,14 @@
       "hitRate24m": 56,
       "maxDd24m": -58.01,
       "distTo3yHigh": -43.77,
-      "trendR2_24m": 0.65
+      "trendR2_24m": 0.65,
+      "perfHigh": [
+        33.28,
+        33.28
+      ],
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-07-14",
+      "sektorHitAtAdd": 0.0824
     },
     "CSH.DE": {
       "ticker": "CSH.DE",
@@ -10131,7 +12085,11 @@
       "hitRate24m": 40,
       "maxDd24m": -55.7,
       "distTo3yHigh": -51.39,
-      "trendR2_24m": 0.54
+      "trendR2_24m": 0.54,
+      "perfHigh": [
+        1.35
+      ],
+      "sektorHitAtAdd": 0.3794
     },
     "NEAG": {
       "ticker": "NEAG",
@@ -10193,7 +12151,11 @@
       "hitRate24m": 36,
       "maxDd24m": -28.72,
       "distTo3yHigh": -29.86,
-      "trendR2_24m": 0.37
+      "trendR2_24m": 0.37,
+      "perfHigh": [
+        4.87
+      ],
+      "sektorHitAtAdd": 0.2227
     },
     "001740": {
       "ticker": "001740",
@@ -10256,7 +12218,11 @@
       "hitRate24m": 52,
       "maxDd24m": -44.16,
       "distTo3yHigh": -44.16,
-      "trendR2_24m": 0.32
+      "trendR2_24m": 0.32,
+      "perfHigh": [
+        0.61
+      ],
+      "sektorHitAtAdd": 0.656
     },
     "YOC.DE": {
       "ticker": "YOC.DE",
@@ -10316,7 +12282,11 @@
       "hitRate24m": 32,
       "maxDd24m": -73.44,
       "distTo3yHigh": -72.41,
-      "trendR2_24m": 0.78
+      "trendR2_24m": 0.78,
+      "perfHigh": [
+        0
+      ],
+      "sektorHitAtAdd": 0.3051
     },
     "F3C": {
       "ticker": "F3C",
@@ -10378,7 +12348,11 @@
       "hitRate24m": 48,
       "maxDd24m": -55.95,
       "distTo3yHigh": -26.08,
-      "trendR2_24m": 0.11
+      "trendR2_24m": 0.11,
+      "perfHigh": [
+        6.09
+      ],
+      "sektorHitAtAdd": 0.1597
     },
     "HABA": {
       "ticker": "HABA",
@@ -10440,7 +12414,11 @@
       "hitRate24m": 44,
       "maxDd24m": -35.98,
       "distTo3yHigh": -37.07,
-      "trendR2_24m": 0.82
+      "trendR2_24m": 0.82,
+      "perfHigh": [
+        0.57
+      ],
+      "sektorHitAtAdd": 0.4016
     },
     "KALYANKJIL": {
       "ticker": "KALYANKJIL",
@@ -10500,7 +12478,11 @@
       "maxDd24m": -58.01,
       "distTo3yHigh": -22.25,
       "trendR2_24m": 0.57,
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        3.5
+      ],
+      "sektorHitAtAdd": 0.2736
     },
     "HIGH.DE": {
       "ticker": "HIGH.DE",
@@ -10558,7 +12540,11 @@
       "maxDd24m": -63.98,
       "distTo3yHigh": -51.28,
       "trendR2_24m": 0,
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        6.38
+      ],
+      "sektorHitAtAdd": 0.2594
     },
     "NOHO": {
       "ticker": "NOHO",
@@ -10622,7 +12608,11 @@
       "distTo3yHigh": -21.65,
       "trendR2_24m": 0.02,
       "prov": false,
-      "recMean": 1.5
+      "recMean": 1.5,
+      "perfHigh": [
+        6.84
+      ],
+      "sektorHitAtAdd": 0.3376
     },
     "ATEA": {
       "ticker": "ATEA",
@@ -10686,7 +12676,11 @@
       "distTo3yHigh": -1.95,
       "trendR2_24m": 0.46,
       "recMean": 1,
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        4.32
+      ],
+      "sektorHitAtAdd": 0.3097
     },
     "ADXR": {
       "ticker": "ADXR",
@@ -10749,7 +12743,11 @@
       "maxDd24m": -37.99,
       "distTo3yHigh": -39.68,
       "trendR2_24m": 0.78,
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        2.02
+      ],
+      "sektorHitAtAdd": 0.3717
     },
     "089970": {
       "ticker": "089970",
@@ -10809,7 +12807,11 @@
       "maxDd24m": -57.73,
       "distTo3yHigh": -43.02,
       "trendR2_24m": 0.86,
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        8.22
+      ],
+      "sektorHitAtAdd": 0.7042
     },
     "MEDI": {
       "ticker": "MEDI",
@@ -10873,7 +12875,11 @@
       "maxDd24m": -33.8,
       "distTo3yHigh": -20.77,
       "trendR2_24m": 0.6,
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        16.37
+      ],
+      "sektorHitAtAdd": 0.0672
     },
     "PHN": {
       "ticker": "PHN",
@@ -10936,7 +12942,11 @@
       "maxDd24m": -34.97,
       "distTo3yHigh": -9.58,
       "trendR2_24m": 0.4,
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        0.24
+      ],
+      "sektorHitAtAdd": 0.0672
     },
     "EQS": {
       "ticker": "EQS",
@@ -10999,7 +13009,11 @@
       "maxDd24m": -42.18,
       "distTo3yHigh": -57.3,
       "trendR2_24m": 0.27,
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        1.33
+      ],
+      "sektorHitAtAdd": 0.3988
     },
     "LBIRD": {
       "ticker": "LBIRD",
@@ -11062,7 +13076,11 @@
       "maxDd24m": -37.9,
       "distTo3yHigh": -3.91,
       "trendR2_24m": 0.86,
-      "prov": false
+      "prov": false,
+      "perfHigh": [
+        2.52
+      ],
+      "sektorHitAtAdd": 0.2918
     },
     "VU": {
       "ticker": "VU",
@@ -11120,7 +13138,8 @@
       "hitRate24m": 44,
       "maxDd24m": -63.23,
       "distTo3yHigh": -53.49,
-      "trendR2_24m": 0.05
+      "trendR2_24m": 0.05,
+      "sektorHitAtAdd": 0.4762
     },
     "SCANFL": {
       "ticker": "SCANFL",
@@ -11181,7 +13200,10 @@
       "maxDd24m": -18.2,
       "distTo3yHigh": -15.53,
       "trendR2_24m": 0.88,
-      "recMean": 2
+      "recMean": 2,
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-08-12",
+      "sektorHitAtAdd": 0.4762
     },
     "BSL": {
       "ticker": "BSL",
@@ -11242,7 +13264,8 @@
       "hitRate24m": 44,
       "maxDd24m": -50.1,
       "distTo3yHigh": -27.9,
-      "trendR2_24m": 0.8
+      "trendR2_24m": 0.8,
+      "sektorHitAtAdd": 0.5567
     },
     "DR0G": {
       "ticker": "DR0G",
@@ -11303,7 +13326,8 @@
       "hitRate24m": 68,
       "maxDd24m": -33.84,
       "distTo3yHigh": -22.23,
-      "trendR2_24m": 0.79
+      "trendR2_24m": 0.79,
+      "sektorHitAtAdd": 0.0801
     },
     "DEZ": {
       "ticker": "DEZ",
@@ -11358,7 +13382,8 @@
       "seenMs": 1787961600000,
       "startPrice": 12.230000019073486,
       "perf": [],
-      "outperformPct": null
+      "outperformPct": null,
+      "sektorHitAtAdd": 0.5882
     },
     "093520.KQ": {
       "ticker": "093520.KQ",
@@ -11413,7 +13438,8 @@
       "seenMs": 1788220800000,
       "startPrice": 26750,
       "perf": [],
-      "outperformPct": null
+      "outperformPct": null,
+      "sektorHitAtAdd": 0.2841
     },
     "6531.TW": {
       "ticker": "6531.TW",
@@ -11468,7 +13494,8 @@
       "seenMs": 1788220800000,
       "startPrice": 942.5,
       "perf": [],
-      "outperformPct": null
+      "outperformPct": null,
+      "sektorHitAtAdd": 0.2841
     },
     "6139.TW": {
       "ticker": "6139.TW",
@@ -11523,7 +13550,8 @@
       "seenMs": 1788220800000,
       "startPrice": 762.5,
       "perf": [],
-      "outperformPct": null
+      "outperformPct": null,
+      "sektorHitAtAdd": 0.6489
     },
     "ILM1": {
       "ticker": "ILM1",
@@ -11578,7 +13606,8 @@
       "seenMs": 1788220800000,
       "startPrice": 11.100000381469727,
       "perf": [],
-      "outperformPct": null
+      "outperformPct": null,
+      "sektorHitAtAdd": 0.0761
     },
     "LTRN": {
       "ticker": "LTRN",

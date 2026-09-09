@@ -6,6 +6,18 @@ import fs from 'node:fs';
 import { priceAtDate, perfBetween } from './prices.mjs';
 import { chartRows, historyFactors } from './histfactors.mjs';
 
+// Median der drei Handelstage um ein Datum — dieselbe Regel wie priceAtDate
+// in prices.mjs, hier auf einer schon geholten Kursreihe.
+function medianAt(rows, dateMs) {
+  let idx = rows.findIndex(r => r.t >= dateMs);
+  if (idx < 0) idx = rows.length - 1;
+  const v = rows.slice(Math.max(0, idx - 1), Math.min(rows.length, idx + 2))
+    .map(r => r.c).sort((a, b) => a - b);
+  if (!v.length) return null;
+  const m = Math.floor(v.length / 2);
+  return v.length % 2 ? v[m] : (v[m - 1] + v[m]) / 2;
+}
+
 const FILE = 'history.json';
 const MS_DAY = 86400000;
 const MONTHS = 12;
@@ -41,6 +53,7 @@ function factorsFrom(s) {
     buyPct: s.buyPct ?? null, strongBuyPct: s.strongBuyPct ?? null,
     upside: s.upside ?? null, pe: s.pe ?? null, perf6mAtAdd: s.perf6m ?? null,
     perf1mBefore: s.perf1mBefore ?? null, sektorPsiAtAdd: s.sektorPsiAtAdd ?? null,
+    sektorHitAtAdd: s.sektorHitAtAdd ?? null,
     analysts: s.analysts ?? null, div: s.div ?? null,
     ...(s.factors || {}),   // die breiten Yahoo-Faktoren aus enrichStock
   };
@@ -115,6 +128,73 @@ export async function measureMilestones(hist, budget = 30) {
     }
   }
   return measured;
+}
+
+/* Hoechststaende + Kursziel-Treffer.
+
+   `perf[]` haelt nur den Stand AM Monatsstichtag fest. Eine Perle, die ihr
+   Ziel zwischendurch erreicht und wieder abgibt, sieht darin aus, als haette
+   sie es nie geschafft — bei der ersten Auswertung war das jeder DRITTE
+   Treffer. Deshalb hier gegen JEDEN Tagesabschluss:
+
+     perfHigh[m-1]   hoechster Tagesabschluss bis Monatsende, in %
+     targetHitMonth  erster Monat mit einem Abschluss auf/ueber dem Kursziel
+     targetHitDay    der Tag dazu
+     highAt          wann zuletzt gemessen (fuer die Reihum-Auswahl)
+
+   Basis ist der Kurs bei Aufnahme AUS DERSELBEN Reihe, nicht das gespeicherte
+   startPrice: Yahoo passt Kurse rueckwirkend an (Dividenden, Splits), und ein
+   Hoechststand von heute gegen einen Aufnahmekurs von damals waere ein
+   Vergleich zweier verschiedener Kursreihen. */
+export async function measureHighs(hist, budget = 60) {
+  const now = Date.now();
+  const list = Object.values(hist.entries)
+    .filter(x => x.seenMs)
+    .sort((a, b) => (a.highAt || '').localeCompare(b.highAt || ''));
+  let done = 0;
+  for (const x of list) {
+    if (done >= budget) break;
+    const sym = x.yahoo || x.ticker;
+    let rows = null;
+    try { rows = await chartRows(sym, x.seenMs - 6 * MS_DAY, now); } catch { rows = null; }
+    if (!rows || rows.length < 3) continue;
+    const base = medianAt(rows, x.seenMs);
+    if (!base) continue;
+
+    const high = [];
+    for (let m = 1; m <= MONTHS; m++) {
+      const dueMs = x.seenMs + m * 30 * MS_DAY;
+      if (now < dueMs) break;
+      const win = rows.filter(r => r.t >= x.seenMs && r.t <= dueMs);
+      if (!win.length) { high.push(null); continue; }
+      const hi = Math.max(...win.map(r => r.c));
+      high.push(+(((hi - base) / base) * 100).toFixed(2));
+    }
+    for (let i = 1; i < high.length; i++) {
+      if (high[i] != null && high[i - 1] != null && high[i] < high[i - 1]) high[i] = high[i - 1];
+    }
+    if (high.length) x.perfHigh = high;
+
+    // Ziel-Treffer ueber die ganze Reihe bis heute, nicht nur ueber volle
+    // Monate — sonst faellt ein Treffer im laufenden Monat hinten runter.
+    if (x.upside != null && x.upside > 0) {
+      const target = base * (1 + x.upside / 100);
+      let hitMs = null;
+      for (const r of rows) {
+        if (r.t < x.seenMs) continue;
+        if (r.c >= target) { hitMs = r.t; break; }
+      }
+      if (hitMs != null) {
+        x.targetHitMonth = Math.max(1, Math.ceil((hitMs - x.seenMs) / (30 * MS_DAY)));
+        x.targetHitDay = new Date(hitMs).toISOString().slice(0, 10);
+      } else {
+        delete x.targetHitMonth; delete x.targetHitDay;
+      }
+    }
+    x.highAt = todayStr();
+    done++;
+  }
+  return done;
 }
 
 // Provisorischer 1-Monats-Punkt JETZT: tut so, als wäre die Perle vor 1 Monat gefunden

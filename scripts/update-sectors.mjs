@@ -21,7 +21,7 @@ import { checkCandidates, discoverNew, verifyNoHold, MIN_BUY_PCT } from './gemin
 import { verifyAcrossSources } from './ratings.mjs';
 import { SEED_CANDIDATES } from './candidates.mjs';
 import { SEED_SECTOR_NOTES, SEED_REGION_NOTES } from './seed-notes.mjs';
-import { loadHistory, saveHistory, snapshotStocks, measureMilestones, pruneHistory, computeFindings } from './history.mjs';
+import { loadHistory, saveHistory, snapshotStocks, measureMilestones, measureHighs, pruneHistory, computeFindings } from './history.mjs';
 
 const OUT = 'sectordata.json';
 const FINNHUB_KEY = process.env.FINNHUB_API_KEY;
@@ -589,8 +589,13 @@ const today = () => new Date().toISOString().slice(0, 10);
     // NUR echte Monatswerte: für jeden vergangenen Monat seit Aufnahme die Performance messen.
     // KEIN provisorischer 1M-Wert mehr (seedBacktest1m) — echte Daten reifen über die Monate.
     const measured = await measureMilestones(hist, Number(process.env.MILESTONE_BUDGET || 40));
+    // Hoechststaende + Kursziel-Treffer gegen JEDEN Tagesabschluss. Reihum die
+    // am laengsten nicht gemessenen Eintraege, damit ein Lauf nicht 400
+    // Yahoo-Abrufe braucht. Ein spaet entdeckter Treffer wird trotzdem auf
+    // seinen echten Tag datiert — die Reihenfolge kostet nur Aktualitaet.
+    const highs = await measureHighs(hist, Number(process.env.HIGH_BUDGET || 60));
     const pruned = pruneHistory(hist);
-    console.log(`Historie: ${Object.keys(hist.entries).length} Aktien (${snapped} neu, ${measured} Monatspunkte, ${pruned} entfernt).`);
+    console.log(`Historie: ${Object.keys(hist.entries).length} Aktien (${snapped} neu, ${measured} Monatspunkte, ${highs} Hoechststaende, ${pruned} entfernt).`);
 
     // KI-Analyse der stärksten Faktoren — 1× pro Tag (Budget-schonend)
     const findings = computeFindings(hist);
@@ -640,10 +645,16 @@ const today = () => new Date().toISOString().slice(0, 10);
       const secPerf = perfMap[s.sector];
       const relSec = secPerf != null ? Math.max(0.05, (secPerf - sMin) / sSpan) : 1;
       s.sektorPsi = +(hit / relSec).toFixed(4);
+      s.sektorHit = +(hit * 100).toFixed(4);
       // beim ersten Mal (Aufnahme) den Sektor-PSI einfrieren
       if (s.sektorPsiAtAdd === undefined) s.sektorPsiAtAdd = s.sektorPsi;
+      // ... und daneben die reine Trefferquote des Sektors. Ψ mischt sie mit
+      // der relativen 30T-Position; als eigener Faktor ist sie einzeln
+      // auswertbar. Nachtraeglich laesst sie sich nur ueber die Git-Historie
+      // von sectordata.json zurueckrechnen — also lieber gleich mitschreiben.
+      if (s.sektorHitAtAdd === undefined) s.sektorHitAtAdd = s.sektorHit;
       delete s.aktienPsi; delete s.perf30;     // Aktien-PSI/30T-Aktienperf entfernt
-      db[s.ticker] = { ...db[s.ticker], sektorPsi: s.sektorPsi, sektorPsiAtAdd: s.sektorPsiAtAdd };
+      db[s.ticker] = { ...db[s.ticker], sektorPsi: s.sektorPsi, sektorPsiAtAdd: s.sektorPsiAtAdd, sektorHit: s.sektorHit, sektorHitAtAdd: s.sektorHitAtAdd };
       delete db[s.ticker].aktienPsi; delete db[s.ticker].perf30;
     }
 
