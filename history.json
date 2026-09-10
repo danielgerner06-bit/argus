@@ -69,7 +69,7 @@
       "peakPerf": 14.62,
       "peakDay": "2026-08-31",
       "peakMs": 1788134400000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "4417": {
       "ticker": "4417",
@@ -129,7 +129,7 @@
       "peakPerf": 2.3,
       "peakDay": "2026-09-07",
       "peakMs": 1788739200000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "4776": {
       "ticker": "4776",
@@ -202,7 +202,7 @@
       "peakPerf": 23.93,
       "peakDay": "2026-08-28",
       "peakMs": 1787875200000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "6080": {
       "ticker": "6080",
@@ -268,7 +268,7 @@
       "peakPerf": 3.24,
       "peakDay": "2026-08-31",
       "peakMs": 1788134400000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "6946": {
       "ticker": "6946",
@@ -334,7 +334,7 @@
       "peakPerf": 9.06,
       "peakDay": "2026-09-09",
       "peakMs": 1788912000000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "8464": {
       "ticker": "8464",
@@ -406,7 +406,7 @@
       "peakPerf": 10.56,
       "peakDay": "2026-08-11",
       "peakMs": 1786410000000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "9958": {
       "ticker": "9958",
@@ -478,7 +478,7 @@
       "peakPerf": 2.65,
       "peakDay": "2026-08-10",
       "peakMs": 1786323600000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "402340": {
       "ticker": "402340",
@@ -553,7 +553,7 @@
       "peakPerf": 60.42,
       "peakDay": "2026-06-22",
       "peakMs": 1782086400000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "SL": {
       "ticker": "SL",
@@ -617,7 +617,7 @@
       "peakPerf": 3.91,
       "peakDay": "2026-08-14",
       "peakMs": 1786690800000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "1INN.DE": {
       "ticker": "1INN.DE",
@@ -680,7 +680,7 @@
       "peakPerf": 2.24,
       "peakDay": "2026-06-04",
       "peakMs": 1780556400000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "HYQ.DE": {
       "ticker": "HYQ.DE",
@@ -756,7 +756,7 @@
       "peakPerf": 17.88,
       "peakDay": "2026-07-03",
       "peakMs": 1783062000000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "SB1": {
       "ticker": "SB1",
@@ -829,7 +829,7 @@
       "peakPerf": 0,
       "peakDay": "2026-06-05",
       "peakMs": 1780642800000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "A1OS.DE": {
       "ticker": "A1OS.DE",
@@ -902,7 +902,7 @@
       "peakPerf": 109.2,
       "peakDay": "2026-08-14",
       "peakMs": 1786690800000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "IXX.DE": {
       "ticker": "IXX.DE",
@@ -978,7 +978,7 @@
       "peakPerf": 2.53,
       "peakDay": "2026-06-12",
       "peakMs": 1781247600000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "034730": {
       "ticker": "034730",
@@ -1055,7 +1055,7 @@
       "peakPerf": 48.19,
       "peakDay": "2026-06-25",
       "peakMs": 1782345600000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "LUVE": {
       "ticker": "LUVE",
@@ -1128,7 +1128,7 @@
       "peakPerf": 2.48,
       "peakDay": "2026-06-17",
       "peakMs": 1781679600000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "ORS": {
       "ticker": "ORS",
@@ -1199,10 +1199,10 @@
         9.62
       ],
       "sektorHitAtAdd": 0.2639,
-      "peakPerf": 9.62,
-      "peakDay": "2026-07-13",
-      "peakMs": 1783926000000,
-      "highAt": "2026-09-09"
+      "peakPerf": 10.89,
+      "peakDay": "2026-09-10",
+      "peakMs": 1789023600000,
+      "highAt": "2026-09-10"
     },
     "GF": {
       "ticker": "GF",
@@ -1274,7 +1274,7 @@
       "peakPerf": 6.81,
       "peakDay": "2026-07-01",
       "peakMs": 1782889200000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "SIT": {
       "ticker": "SIT",
@@ -1345,7 +1345,7 @@
       "peakPerf": 25,
       "peakDay": "2026-08-04",
       "peakMs": 1785826800000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "GFT": {
       "ticker": "GFT",
@@ -1419,7 +1419,7 @@
       "peakPerf": 17.33,
       "peakDay": "2026-09-03",
       "peakMs": 1788418800000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "ADMCM.HE": {
       "ticker": "ADMCM.HE",
@@ -1492,7 +1492,7 @@
       "peakPerf": 2.19,
       "peakDay": "2026-08-14",
       "peakMs": 1786690800000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "JST.DE": {
       "ticker": "JST.DE",
@@ -1566,7 +1566,7 @@
       "peakPerf": 12.7,
       "peakDay": "2026-08-27",
       "peakMs": 1787814000000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "EXL.DE": {
       "ticker": "EXL.DE",
@@ -1638,7 +1638,7 @@
       "peakPerf": 1.23,
       "peakDay": "2026-06-19",
       "peakMs": 1781852400000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "6701.T": {
       "ticker": "6701.T",
@@ -1714,7 +1714,7 @@
       "peakPerf": 34.16,
       "peakDay": "2026-08-14",
       "peakMs": 1786665600000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "300760.SZ": {
       "ticker": "300760.SZ",
@@ -1788,7 +1788,7 @@
       "peakPerf": 21.38,
       "peakDay": "2026-09-08",
       "peakMs": 1788831000000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "YOC": {
       "ticker": "YOC",
@@ -1858,7 +1858,7 @@
       "peakPerf": 2.57,
       "peakDay": "2026-06-29",
       "peakMs": 1782716400000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "F3C.DE": {
       "ticker": "F3C.DE",
@@ -1930,7 +1930,7 @@
       "peakPerf": 9.25,
       "peakDay": "2026-07-06",
       "peakMs": 1783321200000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "JDC": {
       "ticker": "JDC",
@@ -2003,7 +2003,7 @@
       "peakPerf": 7.56,
       "peakDay": "2026-08-11",
       "peakMs": 1786431600000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "KALN.NS": {
       "ticker": "KALN.NS",
@@ -2075,7 +2075,7 @@
       "peakPerf": 33.28,
       "peakDay": "2026-07-30",
       "peakMs": 1785383100000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "CSH.DE": {
       "ticker": "CSH.DE",
@@ -2096,7 +2096,8 @@
       "seenMs": 1783814400000,
       "startPrice": 7.480000019073486,
       "perf": [
-        -8.63
+        -8.63,
+        0.4
       ],
       "outperformPct": null,
       "prov": false,
@@ -2139,13 +2140,14 @@
       "distTo3yHigh": -51.39,
       "trendR2_24m": 0.54,
       "perfHigh": [
-        1.35
+        1.35,
+        3.77
       ],
       "sektorHitAtAdd": 0.3794,
       "peakPerf": 3.77,
       "peakDay": "2026-09-08",
       "peakMs": 1788850800000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "NEAG": {
       "ticker": "NEAG",
@@ -2215,7 +2217,7 @@
       "peakPerf": 4.87,
       "peakDay": "2026-07-20",
       "peakMs": 1784530800000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "001740": {
       "ticker": "001740",
@@ -2286,7 +2288,7 @@
       "peakPerf": 0.61,
       "peakDay": "2026-07-15",
       "peakMs": 1784073600000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "HABA": {
       "ticker": "HABA",
@@ -2356,7 +2358,7 @@
       "peakPerf": 0.57,
       "peakDay": "2026-07-24",
       "peakMs": 1784876400000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "HIGH.DE": {
       "ticker": "HIGH.DE",
@@ -2422,7 +2424,7 @@
       "peakPerf": 6.38,
       "peakDay": "2026-08-25",
       "peakMs": 1787641200000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "NOHO": {
       "ticker": "NOHO",
@@ -2494,7 +2496,7 @@
       "peakPerf": 6.84,
       "peakDay": "2026-08-04",
       "peakMs": 1785826800000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "ATEA": {
       "ticker": "ATEA",
@@ -2566,7 +2568,7 @@
       "peakPerf": 4.32,
       "peakDay": "2026-08-14",
       "peakMs": 1786690800000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "ADXR": {
       "ticker": "ADXR",
@@ -2637,7 +2639,7 @@
       "peakPerf": 2.02,
       "peakDay": "2026-08-27",
       "peakMs": 1787814000000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "089970": {
       "ticker": "089970",
@@ -2705,7 +2707,7 @@
       "peakPerf": 8.22,
       "peakDay": "2026-08-11",
       "peakMs": 1786406400000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "MEDI": {
       "ticker": "MEDI",
@@ -2777,7 +2779,7 @@
       "peakPerf": 16.37,
       "peakDay": "2026-08-25",
       "peakMs": 1787641200000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "PHN": {
       "ticker": "PHN",
@@ -2848,7 +2850,7 @@
       "peakPerf": 0.24,
       "peakDay": "2026-08-10",
       "peakMs": 1786345200000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "EQS": {
       "ticker": "EQS",
@@ -2919,7 +2921,7 @@
       "peakPerf": 1.33,
       "peakDay": "2026-08-17",
       "peakMs": 1786950000000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "LBIRD": {
       "ticker": "LBIRD",
@@ -2990,7 +2992,7 @@
       "peakPerf": 2.52,
       "peakDay": "2026-08-12",
       "peakMs": 1786518000000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "VU": {
       "ticker": "VU",
@@ -3010,7 +3012,9 @@
       "seen": "2026-08-11",
       "seenMs": 1786406400000,
       "startPrice": 128.0999984741211,
-      "perf": [],
+      "perf": [
+        -8.7
+      ],
       "outperformPct": null,
       "forwardPe": 11.23,
       "priceToBook": 4.79,
@@ -3053,7 +3057,11 @@
       "peakPerf": 3.98,
       "peakDay": "2026-08-13",
       "peakMs": 1786604400000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10",
+      "prov": false,
+      "perfHigh": [
+        3.98
+      ]
     },
     "SCANFL": {
       "ticker": "SCANFL",
@@ -3073,7 +3081,9 @@
       "seen": "2026-08-11",
       "seenMs": 1786406400000,
       "startPrice": 11.440000057220459,
-      "perf": [],
+      "perf": [
+        6.81
+      ],
       "outperformPct": null,
       "forwardPe": 13.88,
       "priceToBook": 2.38,
@@ -3121,7 +3131,11 @@
       "peakPerf": 7.16,
       "peakDay": "2026-09-09",
       "peakMs": 1788937200000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10",
+      "prov": false,
+      "perfHigh": [
+        7.16
+      ]
     },
     "BSL": {
       "ticker": "BSL",
@@ -3187,7 +3201,7 @@
       "peakPerf": 8.22,
       "peakDay": "2026-08-27",
       "peakMs": 1787814000000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "DR0G": {
       "ticker": "DR0G",
@@ -3253,7 +3267,7 @@
       "peakPerf": 4.04,
       "peakDay": "2026-09-09",
       "peakMs": 1788937200000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "DEZ": {
       "ticker": "DEZ",
@@ -3313,7 +3327,7 @@
       "peakPerf": 4.63,
       "peakDay": "2026-09-09",
       "peakMs": 1788937200000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "093520.KQ": {
       "ticker": "093520.KQ",
@@ -3373,7 +3387,7 @@
       "peakPerf": 2.07,
       "peakDay": "2026-09-07",
       "peakMs": 1788739200000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "6531.TW": {
       "ticker": "6531.TW",
@@ -3430,10 +3444,10 @@
       "perf": [],
       "outperformPct": null,
       "sektorHitAtAdd": 0.2841,
-      "peakPerf": 4.39,
-      "peakDay": "2026-09-09",
-      "peakMs": 1788915600000,
-      "highAt": "2026-09-09"
+      "peakPerf": 7.63,
+      "peakDay": "2026-09-10",
+      "peakMs": 1789002000000,
+      "highAt": "2026-09-10"
     },
     "6139.TW": {
       "ticker": "6139.TW",
@@ -3493,7 +3507,7 @@
       "peakPerf": 1.99,
       "peakDay": "2026-09-01",
       "peakMs": 1788224400000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "ILM1": {
       "ticker": "ILM1",
@@ -3553,7 +3567,7 @@
       "peakPerf": 0.36,
       "peakDay": "2026-09-01",
       "peakMs": 1788246000000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "LTRN": {
       "ticker": "LTRN",
@@ -3612,7 +3626,7 @@
       "peakPerf": 0,
       "peakDay": "2026-09-04",
       "peakMs": 1788528600000,
-      "highAt": "2026-09-09"
+      "highAt": "2026-09-10"
     },
     "TIMA": {
       "ticker": "TIMA",
@@ -3667,86 +3681,88 @@
       "seenMs": 1788912000000,
       "startPrice": 43.05000114440918,
       "perf": [],
-      "peakPerf": 0.35,
+      "peakPerf": 0.23,
       "peakDay": "2026-09-09",
-      "peakMs": 1788937200000
+      "peakMs": 1788937200000,
+      "sektorHitAtAdd": 0.2174,
+      "highAt": "2026-09-10"
     }
   },
   "findings": {
     "factors": [
       {
         "name": "Kursziel",
-        "spread": 40,
+        "spread": 33.3,
         "best": {
           "k": "<10%",
-          "avg": 34.5,
-          "n": 3
+          "avg": 27.6,
+          "n": 4
         },
         "worst": {
           "k": "40%+",
-          "avg": -5.5,
-          "n": 19
+          "avg": -5.7,
+          "n": 18
         }
       },
       {
         "name": "KGV",
-        "spread": 23.5,
+        "spread": 29.3,
         "best": {
           "k": "40+",
-          "avg": 19.2,
-          "n": 8
+          "avg": 26.1,
+          "n": 5
         },
         "worst": {
           "k": "<15",
-          "avg": -4.3,
+          "avg": -3.2,
           "n": 8
-        }
-      },
-      {
-        "name": "Dividende",
-        "spread": 15,
-        "best": {
-          "k": "<2%",
-          "avg": 9.9,
-          "n": 15
-        },
-        "worst": {
-          "k": "keine",
-          "avg": -5.1,
-          "n": 12
         }
       },
       {
         "name": "Strong Buy",
-        "spread": 13.2,
+        "spread": 15.1,
         "best": {
           "k": "<70%",
-          "avg": 7.2,
-          "n": 23
+          "avg": 8.1,
+          "n": 20
         },
         "worst": {
           "k": "95%+",
-          "avg": -6,
-          "n": 16
+          "avg": -7,
+          "n": 14
+        }
+      },
+      {
+        "name": "Dividende",
+        "spread": 14.3,
+        "best": {
+          "k": "<2%",
+          "avg": 9.5,
+          "n": 13
+        },
+        "worst": {
+          "k": "keine",
+          "avg": -4.8,
+          "n": 9
         }
       },
       {
         "name": "Analysten",
-        "spread": 4.3,
+        "spread": 2.7,
         "best": {
           "k": "5-14",
-          "avg": 4.4,
-          "n": 13
+          "avg": 3.1,
+          "n": 11
         },
         "worst": {
           "k": "1-4",
-          "avg": 0.1,
-          "n": 33
+          "avg": 0.4,
+          "n": 29
         }
       }
     ],
     "combo": null,
-    "sampleSize": 47,
+    "sampleSize": 41,
     "maxMonths": 3,
     "provisional": false
   }

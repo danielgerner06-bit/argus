@@ -315,7 +315,7 @@
       "eps": 0.04,
       "div": 2.88,
       "enrichAt": "2026-09-08",
-      "sektorPsi": 0.0104,
+      "sektorPsi": 0.0103,
       "sektorPsiAtAdd": 0.0082,
       "recheckAt": "2026-09-09",
       "miss": 0,
@@ -349,7 +349,7 @@
         "recMean": null,
         "targetSpread": 4.3
       },
-      "sektorHit": 0.2999,
+      "sektorHit": 0.2994,
       "sektorHitAtAdd": 0.2999
     },
     {
@@ -369,7 +369,7 @@
       "strongBuyPct": 100,
       "via": "gemini",
       "source": "stockanalysis+yahoo",
-      "verifiedAt": "2026-09-03",
+      "verifiedAt": "2026-09-10",
       "verifiedSource": "stockanalysis+yahoo",
       "seen": "2026-06-16",
       "perf6m": -10.96,
@@ -380,9 +380,9 @@
       "eps": 0.11,
       "div": 0,
       "enrichAt": "2026-09-09",
-      "sektorPsi": 0.0085,
+      "sektorPsi": 0.0067,
       "sektorPsiAtAdd": 0.007,
-      "recheckAt": "2026-09-03",
+      "recheckAt": "2026-09-10",
       "miss": 0,
       "factors": {
         "forwardPe": 17.71,
@@ -414,7 +414,7 @@
         "recMean": null,
         "targetSpread": 27
       },
-      "sektorHit": 0.2777,
+      "sektorHit": 0.2215,
       "sektorHitAtAdd": 0.2777
     },
     {
@@ -448,7 +448,7 @@
       "eps": -0.63,
       "div": 0,
       "enrichAt": "2026-09-08",
-      "sektorPsi": 0.005,
+      "sektorPsi": 0.0049,
       "sektorPsiAtAdd": 0.0085,
       "recheckAt": "2026-09-05",
       "miss": 0,
@@ -482,73 +482,8 @@
         "recMean": null,
         "targetSpread": 9
       },
-      "sektorHit": 0.138,
+      "sektorHit": 0.1377,
       "sektorHitAtAdd": 0.138
-    },
-    {
-      "ticker": "EXL",
-      "name": "Exasol AG",
-      "yahoo": "EXL.DE",
-      "sector": "software",
-      "buyPct": 100,
-      "ratingCounts": {
-        "buy": 2,
-        "outperform": 0,
-        "hold": 0,
-        "underperform": 0,
-        "sell": 0
-      },
-      "analysts": 2,
-      "strongBuyPct": 100,
-      "via": "gemini",
-      "source": "stockanalysis+yahoo",
-      "verifiedAt": "2026-09-09",
-      "verifiedSource": "stockanalysis+yahoo",
-      "seen": "2026-06-30",
-      "perf6m": -10.96,
-      "perf6mAt": "2026-09-08",
-      "perf1mBefore": -10.44,
-      "pe": 17.3,
-      "eps": 0.11,
-      "div": 0,
-      "enrichAt": "2026-09-08",
-      "sektorPsi": 0.0085,
-      "sektorPsiAtAdd": 0.0256,
-      "recheckAt": "2026-09-09",
-      "miss": 0,
-      "upside": 95,
-      "factors": {
-        "forwardPe": 18.1,
-        "priceToBook": 6.55,
-        "priceToSales": 1.28,
-        "evEbitda": 14.94,
-        "evRevenue": 0.77,
-        "grossMargin": 30.32,
-        "operatingMargin": 5.79,
-        "profitMargin": 7.18,
-        "ebitdaMargin": 5.14,
-        "roe": 37.91,
-        "roa": 5.16,
-        "revenueGrowth": -11.4,
-        "earningsGrowth": null,
-        "earningsQGrowth": -12.3,
-        "debtToEquity": null,
-        "currentRatio": 20.47,
-        "quickRatio": 18.12,
-        "payoutRatio": 0,
-        "heldInsiders": 35.61,
-        "heldInstitutions": 8.46,
-        "marketCap": 50510284,
-        "beta": 1.5,
-        "distTo52High": -45.24,
-        "pos52Band": 5.1,
-        "distTo50dma": -6.64,
-        "distTo200dma": -16.8,
-        "recMean": null,
-        "targetSpread": 27
-      },
-      "sektorHit": 0.2777,
-      "sektorHitAtAdd": 0.2777
     },
     {
       "ticker": "6139.TW",
@@ -608,11 +543,11 @@
         "targetSpread": 0
       },
       "enrichAt": "2026-09-06",
-      "sektorPsi": 0.126,
+      "sektorPsi": 0.1131,
       "sektorPsiAtAdd": 0.0345,
       "recheckAt": "2026-09-09",
       "miss": 0,
-      "sektorHit": 0.6301,
+      "sektorHit": 0.5653,
       "sektorHitAtAdd": 0.6301
     },
     {
@@ -677,7 +612,7 @@
       "sektorPsiAtAdd": 0.0016,
       "recheckAt": "2026-09-09",
       "miss": 0,
-      "sektorHit": 0.0744,
+      "sektorHit": 0.0741,
       "sektorHitAtAdd": 0.0744
     },
     {
@@ -708,7 +643,7 @@
       "eps": 4.62,
       "div": 2.89,
       "enrichAt": "2026-09-06",
-      "sektorPsi": 0.0104,
+      "sektorPsi": 0.0103,
       "sektorPsiAtAdd": 0.0031,
       "recheckAt": "2026-09-08",
       "miss": 0,
@@ -742,7 +677,7 @@
         "recMean": null,
         "targetSpread": 0
       },
-      "sektorHit": 0.2999,
+      "sektorHit": 0.2994,
       "sektorHitAtAdd": 0.2999
     },
     {
@@ -762,7 +697,7 @@
       "strongBuyPct": 0,
       "via": "gemini",
       "source": "yahoo",
-      "verifiedAt": "2026-09-03",
+      "verifiedAt": "2026-09-10",
       "verifiedSource": "yahoo",
       "seen": "2026-08-05",
       "perf6m": 32,
@@ -772,9 +707,9 @@
       "pe": null,
       "div": null,
       "enrichAt": "2026-09-09",
-      "sektorPsi": 0.126,
+      "sektorPsi": 0.1131,
       "sektorPsiAtAdd": 0.015,
-      "recheckAt": "2026-09-03",
+      "recheckAt": "2026-09-10",
       "miss": 0,
       "factors": {
         "forwardPe": 11.67,
@@ -806,7 +741,7 @@
         "recMean": null,
         "targetSpread": 94.7
       },
-      "sektorHit": 0.6301,
+      "sektorHit": 0.5653,
       "sektorHitAtAdd": 0.6301
     },
     {
@@ -837,7 +772,7 @@
       "eps": -0.1,
       "div": 9.15,
       "enrichAt": "2026-09-07",
-      "sektorPsi": 0.0282,
+      "sektorPsi": 0.0141,
       "sektorPsiAtAdd": 0.0076,
       "recheckAt": "2026-09-05",
       "miss": 0,
@@ -871,7 +806,7 @@
         "recMean": null,
         "targetSpread": 43.5
       },
-      "sektorHit": 0.5935,
+      "sektorHit": 0.2976,
       "sektorHitAtAdd": 0.5935
     },
     {
@@ -905,7 +840,7 @@
       "eps": 4.29,
       "div": 0,
       "enrichAt": "2026-09-08",
-      "sektorPsi": 0.005,
+      "sektorPsi": 0.0049,
       "sektorPsiAtAdd": 0.0085,
       "recheckAt": "2026-09-05",
       "miss": 0,
@@ -939,7 +874,7 @@
         "recMean": null,
         "targetSpread": 32.8
       },
-      "sektorHit": 0.138,
+      "sektorHit": 0.1377,
       "sektorHitAtAdd": 0.138
     },
     {
@@ -965,20 +900,20 @@
       "perf6m": 18.15,
       "perf6mAt": "2026-09-10",
       "perf1mBefore": -9.44,
-      "upside": 82,
-      "pe": 11.1,
+      "upside": 83,
+      "pe": 11,
       "eps": 0.67,
       "div": 0,
-      "enrichAt": "2026-09-05",
-      "sektorPsi": 0.0085,
+      "enrichAt": "2026-09-10",
+      "sektorPsi": 0.0067,
       "sektorPsiAtAdd": 0.0344,
       "recheckAt": "2026-09-07",
       "miss": 0,
       "factors": {
-        "forwardPe": 8.63,
+        "forwardPe": 8.6,
         "priceToBook": 1.5,
         "priceToSales": 0.3,
-        "evEbitda": 5.34,
+        "evEbitda": 5.38,
         "evRevenue": 0.38,
         "grossMargin": 15.52,
         "operatingMargin": 2.91,
@@ -995,16 +930,16 @@
         "payoutRatio": 0,
         "heldInsiders": 0.52,
         "heldInstitutions": 34.01,
-        "marketCap": 63672216,
+        "marketCap": 63500592,
         "beta": 0.67,
-        "distTo52High": -24.75,
-        "pos52Band": 40.2,
-        "distTo50dma": 1.77,
-        "distTo200dma": 3.76,
+        "distTo52High": -24.95,
+        "pos52Band": 39.7,
+        "distTo50dma": 2.21,
+        "distTo200dma": 3.36,
         "recMean": null,
         "targetSpread": 12.9
       },
-      "sektorHit": 0.2777,
+      "sektorHit": 0.2215,
       "sektorHitAtAdd": 0.2777
     },
     {
@@ -1035,7 +970,7 @@
       "eps": -0.33,
       "div": 0,
       "enrichAt": "2026-09-06",
-      "sektorPsi": 0.0082,
+      "sektorPsi": 0.0081,
       "sektorPsiAtAdd": 0.0037,
       "recheckAt": "2026-09-07",
       "miss": 0,
@@ -1069,7 +1004,7 @@
         "recMean": 1.33,
         "targetSpread": 9.5
       },
-      "sektorHit": 0.2077,
+      "sektorHit": 0.2062,
       "sektorHitAtAdd": 0.2077
     },
     {
@@ -1100,7 +1035,7 @@
       "eps": 0.46,
       "div": 0,
       "enrichAt": "2026-09-07",
-      "sektorPsi": 0.005,
+      "sektorPsi": 0.0049,
       "sektorPsiAtAdd": 0.0019,
       "recheckAt": "2026-09-06",
       "miss": 0,
@@ -1134,7 +1069,7 @@
         "recMean": 1,
         "targetSpread": 7.7
       },
-      "sektorHit": 0.138,
+      "sektorHit": 0.1377,
       "sektorHitAtAdd": 0.138
     },
     {
@@ -1154,7 +1089,7 @@
       "strongBuyPct": 83,
       "via": "gemini",
       "source": "stockanalysis+yahoo",
-      "verifiedAt": "2026-09-09",
+      "verifiedAt": "2026-09-10",
       "verifiedSource": "stockanalysis+yahoo",
       "seen": "2026-09-09",
       "perf6m": -13.65,
@@ -1195,10 +1130,12 @@
         "targetSpread": 17.3
       },
       "enrichAt": "2026-09-09",
-      "sektorPsi": 0.0434,
+      "sektorPsi": 0.0433,
       "sektorPsiAtAdd": 0.0434,
-      "sektorHit": 0.2174,
-      "sektorHitAtAdd": 0.2174
+      "sektorHit": 0.2167,
+      "sektorHitAtAdd": 0.2174,
+      "recheckAt": "2026-09-10",
+      "miss": 0
     },
     {
       "ticker": "EQS",
@@ -1228,7 +1165,7 @@
       "eps": 2.59,
       "div": 4.31,
       "enrichAt": "2026-09-06",
-      "sektorPsi": 0.0085,
+      "sektorPsi": 0.0067,
       "sektorPsiAtAdd": 0.004,
       "recheckAt": "2026-09-05",
       "miss": 0,
@@ -1262,7 +1199,7 @@
         "recMean": null,
         "targetSpread": 23.2
       },
-      "sektorHit": 0.2777,
+      "sektorHit": 0.2215,
       "sektorHitAtAdd": 0.2777
     },
     {
@@ -1288,21 +1225,21 @@
       "perf6m": 9.74,
       "perf6mAt": "2026-09-10",
       "perf1mBefore": -4.55,
-      "upside": 66,
-      "pe": 15.4,
+      "upside": 74,
+      "pe": 14.7,
       "eps": 8.02,
-      "div": 0.74,
-      "enrichAt": "2026-09-05",
+      "div": 0.77,
+      "enrichAt": "2026-09-10",
       "sektorPsi": 0.0108,
       "sektorPsiAtAdd": 0.0112,
       "recheckAt": "2026-09-09",
       "miss": 0,
       "factors": {
-        "forwardPe": 10.81,
-        "priceToBook": 4.61,
-        "priceToSales": 1.41,
-        "evEbitda": 10.16,
-        "evRevenue": 1.11,
+        "forwardPe": 10.27,
+        "priceToBook": 4.39,
+        "priceToSales": 1.34,
+        "evEbitda": 9.43,
+        "evRevenue": 1.03,
         "grossMargin": 29.81,
         "operatingMargin": 10.68,
         "profitMargin": 9.74,
@@ -1317,17 +1254,17 @@
         "quickRatio": 0.82,
         "payoutRatio": 7.48,
         "heldInsiders": 40.57,
-        "heldInstitutions": 27.03,
-        "marketCap": 2081031936,
+        "heldInstitutions": 26.77,
+        "marketCap": 1978327296,
         "beta": 0.56,
-        "distTo52High": -52.82,
-        "pos52Band": 14.6,
-        "distTo50dma": -4.15,
-        "distTo200dma": -10.6,
+        "distTo52High": -55.15,
+        "pos52Band": 10.8,
+        "distTo50dma": -8.83,
+        "distTo200dma": -14.22,
         "recMean": null,
         "targetSpread": 39
       },
-      "sektorHit": 0.4085,
+      "sektorHit": 0.4075,
       "sektorHitAtAdd": 0.4085
     },
     {
@@ -1347,7 +1284,7 @@
       "strongBuyPct": 40,
       "via": "gemini",
       "source": "yahoo",
-      "verifiedAt": "2026-09-03",
+      "verifiedAt": "2026-09-10",
       "verifiedSource": "yahoo",
       "seen": "2026-06-10",
       "perf6m": 103.07,
@@ -1359,7 +1296,7 @@
       "enrichAt": "2026-09-08",
       "sektorPsi": 0.0073,
       "sektorPsiAtAdd": 0.0039,
-      "recheckAt": "2026-09-03",
+      "recheckAt": "2026-09-10",
       "miss": 0,
       "factors": {
         "forwardPe": 2.67,
@@ -1391,7 +1328,7 @@
         "recMean": null,
         "targetSpread": 53.7
       },
-      "sektorHit": 0.2522,
+      "sektorHit": 0.2516,
       "sektorHitAtAdd": 0.2522
     },
     {
@@ -1456,7 +1393,7 @@
       "sektorPsiAtAdd": 0.012,
       "recheckAt": "2026-09-09",
       "miss": 0,
-      "sektorHit": 0.277,
+      "sektorHit": 0.2766,
       "sektorHitAtAdd": 0.277
     },
     {
@@ -1521,7 +1458,7 @@
         "recMean": 1,
         "targetSpread": 12.3
       },
-      "sektorHit": 0.4085,
+      "sektorHit": 0.4075,
       "sektorHitAtAdd": 0.4085
     },
     {
@@ -1541,7 +1478,7 @@
       "strongBuyPct": 100,
       "via": "gemini",
       "source": "stockanalysis+yahoo",
-      "verifiedAt": "2026-09-03",
+      "verifiedAt": "2026-09-10",
       "verifiedSource": "stockanalysis+yahoo",
       "seen": "2026-06-14",
       "perf6m": -12.89,
@@ -1552,9 +1489,9 @@
       "eps": 1.64,
       "div": 2.97,
       "enrichAt": "2026-09-07",
-      "sektorPsi": 0.0082,
+      "sektorPsi": 0.0081,
       "sektorPsiAtAdd": 0.008,
-      "recheckAt": "2026-09-03",
+      "recheckAt": "2026-09-10",
       "miss": 0,
       "factors": {
         "forwardPe": 10.13,
@@ -1586,7 +1523,7 @@
         "recMean": 1,
         "targetSpread": 9.1
       },
-      "sektorHit": 0.2077,
+      "sektorHit": 0.2062,
       "sektorHitAtAdd": 0.2077
     },
     {
@@ -1606,7 +1543,7 @@
       "strongBuyPct": 0,
       "via": "gemini",
       "source": "yahoo",
-      "verifiedAt": "2026-09-03",
+      "verifiedAt": "2026-09-10",
       "verifiedSource": "yahoo",
       "seen": "2026-08-05",
       "perf6m": -13.65,
@@ -1617,9 +1554,9 @@
       "eps": 167.01,
       "div": 3.23,
       "enrichAt": "2026-09-09",
-      "sektorPsi": 0.0085,
+      "sektorPsi": 0.0067,
       "sektorPsiAtAdd": 0.0052,
-      "recheckAt": "2026-09-03",
+      "recheckAt": "2026-09-10",
       "miss": 0,
       "factors": {
         "forwardPe": 26.74,
@@ -1651,7 +1588,7 @@
         "recMean": 1,
         "targetSpread": 0
       },
-      "sektorHit": 0.2777,
+      "sektorHit": 0.2215,
       "sektorHitAtAdd": 0.2777
     },
     {
@@ -1716,7 +1653,7 @@
         "recMean": 2,
         "targetSpread": 2.4
       },
-      "sektorHit": 0.0766,
+      "sektorHit": 0.0763,
       "sektorHitAtAdd": 0.0766
     },
     {
@@ -1736,7 +1673,7 @@
       "strongBuyPct": 0,
       "via": "gemini",
       "source": "yahoo",
-      "verifiedAt": "2026-09-03",
+      "verifiedAt": "2026-09-10",
       "verifiedSource": "yahoo",
       "seen": "2026-06-14",
       "perf6m": -4.62,
@@ -1747,9 +1684,9 @@
       "eps": 0.11,
       "div": 0,
       "enrichAt": "2026-09-07",
-      "sektorPsi": 0.126,
+      "sektorPsi": 0.1131,
       "sektorPsiAtAdd": 0.0229,
-      "recheckAt": "2026-09-03",
+      "recheckAt": "2026-09-10",
       "miss": 0,
       "factors": {
         "forwardPe": 5.57,
@@ -1781,7 +1718,7 @@
         "recMean": null,
         "targetSpread": 0
       },
-      "sektorHit": 0.6301,
+      "sektorHit": 0.5653,
       "sektorHitAtAdd": 0.6301
     },
     {
@@ -1801,7 +1738,7 @@
       "strongBuyPct": 17,
       "via": "gemini",
       "source": "yahoo",
-      "verifiedAt": "2026-09-03",
+      "verifiedAt": "2026-09-10",
       "verifiedSource": "yahoo",
       "seen": "2026-06-21",
       "perf6m": -5.78,
@@ -1814,7 +1751,7 @@
       "enrichAt": "2026-09-09",
       "sektorPsi": 0.0019,
       "sektorPsiAtAdd": 0.0009,
-      "recheckAt": "2026-09-03",
+      "recheckAt": "2026-09-10",
       "miss": 0,
       "factors": {
         "forwardPe": 20.88,
@@ -1846,7 +1783,7 @@
         "recMean": 1.19,
         "targetSpread": 45.7
       },
-      "sektorHit": 0.0744,
+      "sektorHit": 0.0741,
       "sektorHitAtAdd": 0.0744
     },
     {
@@ -1866,7 +1803,7 @@
       "strongBuyPct": 50,
       "via": "gemini",
       "source": "yahoo",
-      "verifiedAt": "2026-09-03",
+      "verifiedAt": "2026-09-10",
       "verifiedSource": "yahoo",
       "seen": "2026-06-10",
       "perf6m": 74.07,
@@ -1876,9 +1813,9 @@
       "pe": null,
       "div": 1.31,
       "enrichAt": "2026-09-08",
-      "sektorPsi": 0.126,
+      "sektorPsi": 0.1131,
       "sektorPsiAtAdd": 0.0102,
-      "recheckAt": "2026-09-03",
+      "recheckAt": "2026-09-10",
       "miss": 0,
       "factors": {
         "forwardPe": 4.3,
@@ -1910,7 +1847,7 @@
         "recMean": null,
         "targetSpread": 58.5
       },
-      "sektorHit": 0.6301,
+      "sektorHit": 0.5653,
       "sektorHitAtAdd": 0.6301
     },
     {
@@ -1930,7 +1867,7 @@
       "strongBuyPct": 100,
       "via": "gemini",
       "source": "stockanalysis+yahoo",
-      "verifiedAt": "2026-09-03",
+      "verifiedAt": "2026-09-10",
       "verifiedSource": "stockanalysis+yahoo",
       "seen": "2026-06-14",
       "perf6m": -20.68,
@@ -1941,9 +1878,9 @@
       "eps": 2.06,
       "div": 6.45,
       "enrichAt": "2026-09-07",
-      "sektorPsi": 0.005,
+      "sektorPsi": 0.0049,
       "sektorPsiAtAdd": 0.0047,
-      "recheckAt": "2026-09-03",
+      "recheckAt": "2026-09-10",
       "miss": 0,
       "factors": {
         "forwardPe": 7.63,
@@ -1975,7 +1912,7 @@
         "recMean": null,
         "targetSpread": 8.5
       },
-      "sektorHit": 0.138,
+      "sektorHit": 0.1377,
       "sektorHitAtAdd": 0.138
     },
     {
@@ -2005,7 +1942,7 @@
       "pe": null,
       "div": 4.22,
       "enrichAt": "2026-09-07",
-      "sektorPsi": 0.126,
+      "sektorPsi": 0.1131,
       "sektorPsiAtAdd": 0.0123,
       "recheckAt": "2026-09-09",
       "miss": 0,
@@ -2039,7 +1976,7 @@
         "recMean": 1.5,
         "targetSpread": 43.6
       },
-      "sektorHit": 0.6301,
+      "sektorHit": 0.5653,
       "sektorHitAtAdd": 0.6301
     },
     {
@@ -2065,16 +2002,16 @@
       "perf6m": 76.33,
       "perf6mAt": "2026-09-10",
       "perf1mBefore": -6.47,
-      "upside": 34,
-      "pe": 43.9,
-      "eps": 98.95,
-      "div": 1.15,
+      "upside": 31,
+      "pe": 44.6,
+      "eps": 98.93,
+      "div": 1.14,
       "factors": {
-        "forwardPe": 21.35,
-        "priceToBook": 14.66,
-        "priceToSales": 5.63,
-        "evEbitda": 26.56,
-        "evRevenue": 5.61,
+        "forwardPe": 21.72,
+        "priceToBook": 14.92,
+        "priceToSales": 5.73,
+        "evEbitda": 26.44,
+        "evRevenue": 5.59,
         "grossMargin": 36.78,
         "operatingMargin": 18.04,
         "profitMargin": 13.9,
@@ -2090,21 +2027,21 @@
         "payoutRatio": 35.03,
         "heldInsiders": 65.79,
         "heldInstitutions": 18.91,
-        "marketCap": 358539175,
+        "marketCap": 369454644,
         "beta": 1.33,
-        "distTo52High": -14.23,
-        "pos52Band": 74.8,
-        "distTo50dma": 0.11,
-        "distTo200dma": 33.27,
+        "distTo52High": -12.75,
+        "pos52Band": 77.4,
+        "distTo50dma": 0.63,
+        "distTo200dma": 34.94,
         "recMean": null,
         "targetSpread": 0
       },
-      "enrichAt": "2026-09-05",
-      "sektorPsi": 0.0085,
+      "enrichAt": "2026-09-10",
+      "sektorPsi": 0.0067,
       "sektorPsiAtAdd": 0.0051,
       "recheckAt": "2026-09-06",
       "miss": 0,
-      "sektorHit": 0.2777,
+      "sektorHit": 0.2215,
       "sektorHitAtAdd": 0.2777
     },
     {
@@ -2131,20 +2068,20 @@
       "perf6mAt": "2026-09-10",
       "perf1mBefore": -10.76,
       "upside": 34,
-      "pe": 57.9,
+      "pe": 57.8,
       "eps": 0.36,
       "div": 0,
-      "enrichAt": "2026-09-05",
-      "sektorPsi": 0.0012,
+      "enrichAt": "2026-09-10",
+      "sektorPsi": 0.0006,
       "sektorPsiAtAdd": 0.0045,
       "recheckAt": "2026-09-04",
       "miss": 0,
       "factors": {
-        "forwardPe": 19.18,
-        "priceToBook": 2.47,
-        "priceToSales": 2.39,
-        "evEbitda": 15.23,
-        "evRevenue": 2.22,
+        "forwardPe": 19.13,
+        "priceToBook": 2.46,
+        "priceToSales": 2.38,
+        "evEbitda": 15.07,
+        "evRevenue": 2.2,
         "grossMargin": 43.34,
         "operatingMargin": 21.5,
         "profitMargin": 4.14,
@@ -2159,82 +2096,17 @@
         "quickRatio": 2.47,
         "payoutRatio": 0,
         "heldInsiders": 4.29,
-        "heldInstitutions": 28.33,
-        "marketCap": 362747808,
+        "heldInstitutions": 29.05,
+        "marketCap": 361877888,
         "beta": 1.28,
-        "distTo52High": -15.76,
-        "pos52Band": 71,
-        "distTo50dma": 3.56,
-        "distTo200dma": 22.73,
+        "distTo52High": -15.96,
+        "pos52Band": 70.6,
+        "distTo50dma": 2.98,
+        "distTo200dma": 21.49,
         "recMean": null,
         "targetSpread": 17.9
       },
-      "sektorHit": 0.1193,
-      "sektorHitAtAdd": 0.1193
-    },
-    {
-      "ticker": "F3C",
-      "name": "SFC Energy AG",
-      "yahoo": "F3C.DE",
-      "sector": "energy",
-      "buyPct": 100,
-      "ratingCounts": {
-        "buy": 4,
-        "outperform": 1,
-        "hold": 0,
-        "underperform": 0,
-        "sell": 0
-      },
-      "analysts": 5,
-      "strongBuyPct": 80,
-      "via": "gemini",
-      "source": "stockanalysis+yahoo",
-      "verifiedAt": "2026-09-05",
-      "verifiedSource": "stockanalysis+yahoo",
-      "seen": "2026-07-24",
-      "perf6m": 36.45,
-      "perf6mAt": "2026-09-07",
-      "perf1mBefore": -5.25,
-      "upside": 33,
-      "pe": 58.2,
-      "eps": 0.36,
-      "div": 0,
-      "enrichAt": "2026-09-07",
-      "sektorPsi": 0.0012,
-      "sektorPsiAtAdd": 0.0016,
-      "recheckAt": "2026-09-05",
-      "miss": 0,
-      "factors": {
-        "forwardPe": 19.27,
-        "priceToBook": 2.48,
-        "priceToSales": 2.4,
-        "evEbitda": 15.23,
-        "evRevenue": 2.22,
-        "grossMargin": 43.34,
-        "operatingMargin": 21.5,
-        "profitMargin": 4.14,
-        "ebitdaMargin": 14.57,
-        "roe": 4.29,
-        "roa": 6.09,
-        "revenueGrowth": 37.9,
-        "earningsGrowth": null,
-        "earningsQGrowth": null,
-        "debtToEquity": 12.85,
-        "currentRatio": 3.5,
-        "quickRatio": 2.47,
-        "payoutRatio": 0,
-        "heldInsiders": 4.29,
-        "heldInstitutions": 28.41,
-        "marketCap": 364487616,
-        "beta": 1.28,
-        "distTo52High": -15.35,
-        "pos52Band": 71.7,
-        "distTo50dma": 3.92,
-        "distTo200dma": 23.02,
-        "recMean": null,
-        "targetSpread": 17.9
-      },
-      "sektorHit": 0.1193,
+      "sektorHit": 0.0596,
       "sektorHitAtAdd": 0.1193
     },
     {
@@ -2299,7 +2171,7 @@
         "recMean": 1,
         "targetSpread": 4.5
       },
-      "sektorHit": 0.0744,
+      "sektorHit": 0.0741,
       "sektorHitAtAdd": 0.0744
     },
     {
@@ -2330,7 +2202,7 @@
       "eps": 22.82,
       "div": 4.43,
       "enrichAt": "2026-09-08",
-      "sektorPsi": 0.0434,
+      "sektorPsi": 0.0433,
       "sektorPsiAtAdd": 0.004,
       "recheckAt": "2026-09-08",
       "miss": 0,
@@ -2364,7 +2236,7 @@
         "recMean": null,
         "targetSpread": 34.3
       },
-      "sektorHit": 0.2174,
+      "sektorHit": 0.2167,
       "sektorHitAtAdd": 0.2174
     },
     {
@@ -2384,7 +2256,7 @@
       "strongBuyPct": 100,
       "via": "gemini",
       "source": "stockanalysis+yahoo",
-      "verifiedAt": "2026-09-03",
+      "verifiedAt": "2026-09-10",
       "verifiedSource": "stockanalysis+yahoo",
       "seen": "2026-06-16",
       "perf6m": -0.16,
@@ -2395,9 +2267,9 @@
       "eps": 1.23,
       "div": 2.39,
       "enrichAt": "2026-09-09",
-      "sektorPsi": 0.126,
+      "sektorPsi": 0.1131,
       "sektorPsiAtAdd": 0.025,
-      "recheckAt": "2026-09-03",
+      "recheckAt": "2026-09-10",
       "miss": 0,
       "factors": {
         "forwardPe": 8.67,
@@ -2429,7 +2301,7 @@
         "recMean": null,
         "targetSpread": 20.8
       },
-      "sektorHit": 0.6301,
+      "sektorHit": 0.5653,
       "sektorHitAtAdd": 0.6301
     },
     {
@@ -2494,7 +2366,7 @@
         "recMean": null,
         "targetSpread": 15.5
       },
-      "sektorHit": 0.4085,
+      "sektorHit": 0.4075,
       "sektorHitAtAdd": 0.4085
     },
     {
@@ -2514,7 +2386,7 @@
       "strongBuyPct": 100,
       "via": "gemini",
       "source": "stockanalysis+yahoo",
-      "verifiedAt": "2026-09-03",
+      "verifiedAt": "2026-09-10",
       "verifiedSource": "stockanalysis+yahoo",
       "seen": "2026-08-19",
       "perf6m": 57.46,
@@ -2525,9 +2397,9 @@
       "eps": 0.94,
       "div": 0.47,
       "enrichAt": "2026-09-08",
-      "sektorPsi": 0.126,
+      "sektorPsi": 0.1131,
       "sektorPsiAtAdd": 0.0109,
-      "recheckAt": "2026-09-03",
+      "recheckAt": "2026-09-10",
       "miss": 0,
       "factors": {
         "forwardPe": 20.2,
@@ -2559,7 +2431,7 @@
         "recMean": 1,
         "targetSpread": 6.7
       },
-      "sektorHit": 0.6301,
+      "sektorHit": 0.5653,
       "sektorHitAtAdd": 0.6301
     },
     {
@@ -2623,73 +2495,8 @@
       "sektorPsiAtAdd": 0.012,
       "recheckAt": "2026-09-09",
       "miss": 0,
-      "sektorHit": 0.277,
+      "sektorHit": 0.2766,
       "sektorHitAtAdd": 0.277
-    },
-    {
-      "ticker": "JST",
-      "name": "Jost Werke AG",
-      "yahoo": "JST.DE",
-      "sector": "industrial",
-      "buyPct": 100,
-      "ratingCounts": {
-        "buy": 4,
-        "outperform": 0,
-        "hold": 0,
-        "underperform": 0,
-        "sell": 0
-      },
-      "analysts": 4,
-      "strongBuyPct": 100,
-      "via": "gemini",
-      "source": "stockanalysis+yahoo",
-      "verifiedAt": "2026-09-08",
-      "verifiedSource": "stockanalysis+yahoo",
-      "seen": "2026-06-29",
-      "perf6m": -2.37,
-      "perf6mAt": "2026-09-07",
-      "perf1mBefore": -9.59,
-      "upside": 25,
-      "pe": 50,
-      "eps": 1.23,
-      "div": 2.41,
-      "enrichAt": "2026-09-07",
-      "sektorPsi": 0.126,
-      "sektorPsiAtAdd": 0.008,
-      "recheckAt": "2026-09-08",
-      "miss": 0,
-      "factors": {
-        "forwardPe": 8.85,
-        "priceToBook": 2.33,
-        "priceToSales": 0.62,
-        "evEbitda": 6.49,
-        "evRevenue": 0.9,
-        "grossMargin": 29.1,
-        "operatingMargin": 7.41,
-        "profitMargin": -0.15,
-        "ebitdaMargin": 13.85,
-        "roe": 5.59,
-        "roa": 6.09,
-        "revenueGrowth": 12.7,
-        "earningsGrowth": 114.8,
-        "earningsQGrowth": 136.3,
-        "debtToEquity": 136.41,
-        "currentRatio": 1.55,
-        "quickRatio": 0.84,
-        "payoutRatio": 121.95,
-        "heldInsiders": 0,
-        "heldInstitutions": 72.47,
-        "marketCap": 1007985024,
-        "beta": 1.22,
-        "distTo52High": -9.29,
-        "pos52Band": 68.2,
-        "distTo50dma": 8.08,
-        "distTo200dma": 8.32,
-        "recMean": null,
-        "targetSpread": 20.8
-      },
-      "sektorHit": 0.6301,
-      "sektorHitAtAdd": 0.6301
     },
     {
       "ticker": "GFT",
@@ -2708,7 +2515,7 @@
       "strongBuyPct": 83,
       "via": "gemini",
       "source": "stockanalysis+yahoo",
-      "verifiedAt": "2026-09-03",
+      "verifiedAt": "2026-09-10",
       "verifiedSource": "stockanalysis+yahoo",
       "seen": "2026-06-14",
       "perf6m": 42.86,
@@ -2719,9 +2526,9 @@
       "eps": 1.43,
       "div": 1.94,
       "enrichAt": "2026-09-07",
-      "sektorPsi": 0.0085,
+      "sektorPsi": 0.0067,
       "sektorPsiAtAdd": 0.0038,
-      "recheckAt": "2026-09-03",
+      "recheckAt": "2026-09-10",
       "miss": 0,
       "factors": {
         "forwardPe": 12.63,
@@ -2753,7 +2560,7 @@
         "recMean": 1.17,
         "targetSpread": 22.7
       },
-      "sektorHit": 0.2777,
+      "sektorHit": 0.2215,
       "sektorHitAtAdd": 0.2777
     },
     {
@@ -2784,7 +2591,7 @@
       "eps": 0.5,
       "div": 5.08,
       "enrichAt": "2026-09-07",
-      "sektorPsi": 0.0434,
+      "sektorPsi": 0.0433,
       "sektorPsiAtAdd": 0.0071,
       "recheckAt": "2026-09-08",
       "miss": 0,
@@ -2818,7 +2625,7 @@
         "recMean": 1.5,
         "targetSpread": 1.1
       },
-      "sektorHit": 0.2174,
+      "sektorHit": 0.2167,
       "sektorHitAtAdd": 0.2174
     },
     {
@@ -2838,7 +2645,7 @@
       "strongBuyPct": 86,
       "via": "gemini",
       "source": "stockanalysis+yahoo",
-      "verifiedAt": "2026-09-03",
+      "verifiedAt": "2026-09-10",
       "verifiedSource": "stockanalysis+yahoo",
       "seen": "2026-07-15",
       "perf6m": 24.19,
@@ -2849,9 +2656,9 @@
       "eps": 3.1,
       "div": 2.68,
       "enrichAt": "2026-09-08",
-      "sektorPsi": 0.0434,
+      "sektorPsi": 0.0433,
       "sektorPsiAtAdd": 0.0029,
-      "recheckAt": "2026-09-03",
+      "recheckAt": "2026-09-10",
       "miss": 0,
       "factors": {
         "forwardPe": 12.46,
@@ -2883,7 +2690,7 @@
         "recMean": 1.17,
         "targetSpread": 9.6
       },
-      "sektorHit": 0.2174,
+      "sektorHit": 0.2167,
       "sektorHitAtAdd": 0.2174
     },
     {
@@ -2914,7 +2721,7 @@
       "eps": 183.3,
       "div": 3.46,
       "enrichAt": "2026-09-06",
-      "sektorPsi": 0.005,
+      "sektorPsi": 0.0049,
       "sektorPsiAtAdd": 0.0037,
       "recheckAt": "2026-09-06",
       "miss": 0,
@@ -2948,7 +2755,7 @@
         "recMean": 1.33,
         "targetSpread": 20.4
       },
-      "sektorHit": 0.138,
+      "sektorHit": 0.1377,
       "sektorHitAtAdd": 0.138
     },
     {
@@ -3009,11 +2816,11 @@
         "targetSpread": 42.5
       },
       "enrichAt": "2026-09-08",
-      "sektorPsi": 0.126,
+      "sektorPsi": 0.1131,
       "sektorPsiAtAdd": 0.034,
       "recheckAt": "2026-09-06",
       "miss": 0,
-      "sektorHit": 0.6301,
+      "sektorHit": 0.5653,
       "sektorHitAtAdd": 0.6301
     },
     {
@@ -3033,7 +2840,7 @@
       "strongBuyPct": 100,
       "via": "gemini",
       "source": "yahoo",
-      "verifiedAt": "2026-09-03",
+      "verifiedAt": "2026-09-10",
       "verifiedSource": "yahoo",
       "seen": "2026-08-12",
       "perf6m": -27.98,
@@ -3046,7 +2853,7 @@
       "enrichAt": "2026-09-06",
       "sektorPsi": 0.0108,
       "sektorPsiAtAdd": 0.0133,
-      "recheckAt": "2026-09-03",
+      "recheckAt": "2026-09-10",
       "miss": 0,
       "factors": {
         "forwardPe": 39.73,
@@ -3078,7 +2885,7 @@
         "recMean": null,
         "targetSpread": 0
       },
-      "sektorHit": 0.4085,
+      "sektorHit": 0.4075,
       "sektorHitAtAdd": 0.4085
     },
     {
@@ -3098,7 +2905,7 @@
       "strongBuyPct": 60,
       "via": "gemini",
       "source": "stockanalysis+yahoo",
-      "verifiedAt": "2026-09-03",
+      "verifiedAt": "2026-09-10",
       "verifiedSource": "stockanalysis+yahoo",
       "seen": "2026-06-14",
       "perf6m": 51.25,
@@ -3109,9 +2916,9 @@
       "eps": 2.18,
       "div": 0.75,
       "enrichAt": "2026-09-07",
-      "sektorPsi": 0.126,
+      "sektorPsi": 0.1131,
       "sektorPsiAtAdd": 0.0229,
-      "recheckAt": "2026-09-03",
+      "recheckAt": "2026-09-10",
       "miss": 0,
       "factors": {
         "forwardPe": 22.21,
@@ -3143,7 +2950,7 @@
         "recMean": 1.4,
         "targetSpread": 7.1
       },
-      "sektorHit": 0.6301,
+      "sektorHit": 0.5653,
       "sektorHitAtAdd": 0.6301
     },
     {
@@ -3174,7 +2981,7 @@
       "eps": 10.28,
       "div": 4.39,
       "enrichAt": "2026-09-07",
-      "sektorPsi": 0.0085,
+      "sektorPsi": 0.0067,
       "sektorPsiAtAdd": 0.0043,
       "recheckAt": "2026-09-08",
       "miss": 0,
@@ -3208,7 +3015,7 @@
         "recMean": 1,
         "targetSpread": 0
       },
-      "sektorHit": 0.2777,
+      "sektorHit": 0.2215,
       "sektorHitAtAdd": 0.2777
     },
     {
@@ -3234,21 +3041,21 @@
       "perf6m": 1.18,
       "perf6mAt": "2026-09-10",
       "perf1mBefore": -0.52,
-      "upside": 1,
-      "pe": 18.3,
+      "upside": -1,
+      "pe": 18.8,
       "eps": 0.65,
-      "div": 2.09,
-      "enrichAt": "2026-09-05",
+      "div": 2.04,
+      "enrichAt": "2026-09-10",
       "sektorPsi": 0.0108,
       "sektorPsiAtAdd": 0.0112,
       "recheckAt": "2026-09-09",
       "miss": 0,
       "factors": {
-        "forwardPe": 14.17,
-        "priceToBook": 2.43,
-        "priceToSales": 0.88,
-        "evEbitda": 13.21,
-        "evRevenue": 1.03,
+        "forwardPe": 14.52,
+        "priceToBook": 2.49,
+        "priceToSales": 0.9,
+        "evEbitda": 13.57,
+        "evRevenue": 1.06,
         "grossMargin": 31.08,
         "operatingMargin": 6.6,
         "profitMargin": 4.82,
@@ -3262,18 +3069,18 @@
         "currentRatio": 1.52,
         "quickRatio": 0.84,
         "payoutRatio": 38.46,
-        "heldInsiders": 72.59,
-        "heldInstitutions": 12.78,
-        "marketCap": 781827072,
+        "heldInsiders": 72.52,
+        "heldInstitutions": 12.77,
+        "marketCap": 802369664,
         "beta": 0.68,
-        "distTo52High": -13.52,
-        "pos52Band": 55.2,
-        "distTo50dma": 1.41,
-        "distTo200dma": 2.67,
+        "distTo52High": -11.34,
+        "pos52Band": 62.4,
+        "distTo50dma": 4.39,
+        "distTo200dma": 5.04,
         "recMean": 2,
         "targetSpread": 11.2
       },
-      "sektorHit": 0.4085,
+      "sektorHit": 0.4075,
       "sektorHitAtAdd": 0.4085
     },
     {
@@ -3338,7 +3145,7 @@
         "recMean": null,
         "targetSpread": 12.3
       },
-      "sektorHit": 0.0744,
+      "sektorHit": 0.0741,
       "sektorHitAtAdd": 0.0744
     },
     {
@@ -3368,7 +3175,7 @@
       "eps": 5.13,
       "div": 4.9,
       "enrichAt": "2026-09-08",
-      "sektorPsi": 0.0085,
+      "sektorPsi": 0.0067,
       "sektorPsiAtAdd": 0.0015,
       "recheckAt": "2026-09-05",
       "miss": 0,
@@ -3402,7 +3209,7 @@
         "recMean": 1,
         "targetSpread": 11.8
       },
-      "sektorHit": 0.2777,
+      "sektorHit": 0.2215,
       "sektorHitAtAdd": 0.2777
     },
     {
@@ -3466,102 +3273,8 @@
         "recMean": null,
         "targetSpread": 0
       },
-      "sektorHit": 0.2522,
+      "sektorHit": 0.2516,
       "sektorHitAtAdd": 0.2522
-    },
-    {
-      "ticker": "YOC.DE",
-      "name": "YOC AG",
-      "yahoo": "YOC.DE",
-      "sector": "software",
-      "buyPct": 100,
-      "ratingCounts": {
-        "buy": 0,
-        "outperform": 1,
-        "hold": 0,
-        "underperform": 0,
-        "sell": 0
-      },
-      "analysts": 1,
-      "strongBuyPct": 0,
-      "via": "gemini",
-      "source": "yahoo",
-      "verifiedAt": "2026-09-09",
-      "verifiedSource": "yahoo",
-      "seen": "2026-07-21",
-      "perf6m": -24.77,
-      "perf6mAt": "2026-09-09",
-      "perf1mBefore": -11.04,
-      "pe": null,
-      "eps": -0.09,
-      "div": 0,
-      "enrichAt": "2026-09-09",
-      "sektorPsi": 0.0085,
-      "sektorPsiAtAdd": 0.0035,
-      "recheckAt": "2026-09-09",
-      "miss": 0,
-      "factors": {
-        "forwardPe": 6.72,
-        "priceToBook": 2.36,
-        "priceToSales": 0.46,
-        "evEbitda": null,
-        "evRevenue": null,
-        "grossMargin": 13.59,
-        "operatingMargin": -0.65,
-        "profitMargin": -0.85,
-        "ebitdaMargin": 10.42,
-        "roe": -4.32,
-        "roa": 11.02,
-        "revenueGrowth": -1,
-        "earningsGrowth": null,
-        "earningsQGrowth": null,
-        "debtToEquity": 28.06,
-        "currentRatio": 0.77,
-        "quickRatio": 0.73,
-        "payoutRatio": 0,
-        "heldInsiders": 43.43,
-        "heldInstitutions": 11.67,
-        "marketCap": 17278100,
-        "beta": 1.17,
-        "distTo52High": -67.52,
-        "pos52Band": 1.1,
-        "distTo50dma": -11.23,
-        "distTo200dma": -30.53,
-        "recMean": null,
-        "targetSpread": 0
-      },
-      "sektorHit": 0.2777,
-      "sektorHitAtAdd": 0.2777
-    },
-    {
-      "ticker": "HABAN.DE",
-      "name": "Hamborner Reit AG",
-      "yahoo": "HABAN.DE",
-      "sector": "realestate",
-      "buyPct": 100,
-      "ratingCounts": {
-        "buy": 5,
-        "outperform": 0,
-        "hold": 0,
-        "underperform": 0,
-        "sell": 0
-      },
-      "analysts": 5,
-      "strongBuyPct": 100,
-      "via": "gemini",
-      "source": "gemini",
-      "verifiedAt": "2026-09-08",
-      "verifiedSource": "gemini",
-      "seen": "2026-08-17",
-      "perf1mBefore": null,
-      "enrichAt": "2026-09-06",
-      "div": null,
-      "sektorPsi": 0.0282,
-      "sektorPsiAtAdd": 0.0214,
-      "recheckAt": "2026-09-08",
-      "miss": 0,
-      "sektorHit": 0.5935,
-      "sektorHitAtAdd": 0.5935
     }
   ],
   "psiHistory": [
@@ -3980,27 +3693,31 @@
   "news": {
     "items": [
       {
-        "text": "EU-Kommission plant schärfere Regeln für Airbnb und Ferienwohnungen.",
-        "stamp": "09.09.26"
+        "text": "EZB hebt Leitzins an, US-Inflation sinkt, starkes US-Stellenplus im August",
+        "stamp": "10.09.26"
       },
       {
-        "text": "Euro legt gegenüber kanadischem Dollar aufgrund hawkischer EZB-Stimmung zu.",
-        "stamp": "09.09.26"
+        "text": "Ölpreis über 100 USD belastet Aktien, EZB-Entscheidung erwartet",
+        "stamp": "10.09.26"
       },
       {
-        "text": "Benzinpreise steigen auf Jahreshöchststand, Ölpreis knackt 100 Dollar.",
-        "stamp": "09.09.26"
+        "text": "Apple enthüllt Falt-iPhone, Lockheed Martin hochgestuft",
+        "stamp": "10.09.26"
       },
       {
-        "text": "Apple könnte heute mit wichtiger iPhone-Tradition brechen.",
-        "stamp": "09.09.26"
+        "text": "US-Goldreserve: Plant Amerika den großen Gold-Schachzug?",
+        "stamp": "10.09.26"
       },
       {
-        "text": "Bundesregierung will Krypto-Gewinne künftig wie Aktiengewinne besteuern.",
-        "stamp": "09.09.26"
+        "text": "Rheinmetall-Aktie unter 1.000 Euro, JPMorgan wird skeptischer",
+        "stamp": "10.09.26"
+      },
+      {
+        "text": "Deutsche Exporte sinken im Juli, Sentix-Konjunkturindex steigt",
+        "stamp": "10.09.26"
       }
     ],
-    "date": "2026-09-09"
+    "date": "2026-09-10"
   },
   "inflation": {
     "year": 2026,
@@ -4012,14 +3729,9 @@
   "scan": {
     "universe": 8855,
     "scanned": 8855,
-    "lastCursor": 4750,
-    "candCursor": 356,
+    "lastCursor": 5050,
+    "candCursor": 364,
     "candidates": [
-      "Mynaric AG",
-      "Vectron Systems AG",
-      "JDC Group AG",
-      "Basler AG",
-      "Südzucker AG",
       "Nordex SE",
       "Drägerwerk AG & Co. KGaA",
       "Salzgitter AG",
@@ -4414,48 +4126,53 @@
       "Riber S.A.",
       "Assurant",
       "ArrowMark Financial Corp.",
-      "Gunkul Engineering PCL"
+      "Gunkul Engineering PCL",
+      "Energiekontor AG",
+      "SÜSS MicroTec SE",
+      "Elmos Semiconductor SE",
+      "ADLER Group S.A.",
+      "SDAX"
     ],
     "noteCursor": 10,
-    "focusCursor": 0,
+    "focusCursor": 1,
     "recheckCursor": 16,
     "regionNoteCursor": 6,
     "notesDay": "2026-08-26",
     "seenBySector": {
-      "cons_cycl": 1836,
-      "cons_def": 961,
-      "materials": 1304,
-      "health": 5370,
-      "finance": 3617,
-      "energy": 1674,
-      "hardware": 1219,
-      "software": 3591,
-      "industrial": 1577,
-      "utilities": 665,
-      "comm": 791,
-      "ai_semi": 720,
+      "cons_cycl": 1842,
+      "cons_def": 968,
+      "materials": 1310,
+      "health": 5391,
+      "finance": 3627,
+      "energy": 1676,
+      "hardware": 1222,
+      "software": 3604,
+      "industrial": 1583,
+      "utilities": 666,
+      "comm": 793,
+      "ai_semi": 721,
       "realestate": 335
     },
     "pendingReject": [],
     "evaluatedBySector": {
-      "cons_cycl": 1840,
-      "cons_def": 963,
-      "materials": 1305,
-      "health": 5374,
-      "finance": 3622,
-      "energy": 1676,
-      "hardware": 1224,
-      "software": 3601,
-      "industrial": 1587,
-      "utilities": 667,
-      "comm": 793,
-      "ai_semi": 722,
-      "realestate": 337
+      "cons_cycl": 1846,
+      "cons_def": 970,
+      "materials": 1311,
+      "health": 5395,
+      "finance": 3632,
+      "energy": 1677,
+      "hardware": 1227,
+      "software": 3612,
+      "industrial": 1592,
+      "utilities": 668,
+      "comm": 795,
+      "ai_semi": 723,
+      "realestate": 336
     },
-    "heavyAt": "2026-09-09T13:54:28.343Z",
+    "heavyAt": "2026-09-10T10:53:09.052Z",
     "revalidateTag": "multi-source-v9",
     "fmpRetryTag": "grades-summary-fix",
-    "heavyDay": "2026-09-09",
+    "heavyDay": "2026-09-10",
     "rejectedTickers": {
       "4776": "software",
       "ALGT": "cons_cycl",
@@ -4489,7 +4206,8 @@
       "SFQ": "industrial",
       "ELIS": "industrial",
       "ALLT": "software",
-      "INTD": "comm"
+      "INTD": "comm",
+      "CLPT": "health"
     }
   },
   "blacklist": {},
