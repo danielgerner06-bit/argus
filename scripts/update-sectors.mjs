@@ -491,6 +491,66 @@ const today = () => new Date().toISOString().slice(0, 10);
   // Scan/Discovery sie zwischenzeitlich wieder gefunden hat.
   for (const tk of Object.keys(db)) if (isBlacklisted(tk)) delete db[tk];
   cleanInconsistent('Ende');   // von Discovery/Re-Validierung neu eingebrachte Fehler vor dem Speichern raus
+
+  /* DUBLETTEN: dieselbe Aktie unter zwei Ticker-Schreibweisen.
+     Die Datenbank ist nach TICKER geschluesselt. Findet der Scan dieselbe
+     Aktie einmal als `JST` und einmal als `JST.DE`, stehen zwei Eintraege
+     drin — mit demselben Yahoo-Symbol. In der App zaehlte die Firma damit in
+     JEDER Auswertung doppelt: im Durchschnitt, in den Faktor-Toepfen, im
+     Zufallstest, in der Kursziel-Quote. Gemessen am 2026-09-10 waren 8 von 61
+     Perlen Dubletten (13 %); ohne sie stand der Ø Hoechststand nach drei
+     Monaten bei 30,6 statt 27,5 Prozent.
+
+     Behalten wird der Eintrag mit dem FRUEHEREN Fundtag — das ist der Moment,
+     in dem die Aktie wirklich zuerst gefunden wurde; der spaetere ist nur eine
+     zweite Schreibweise derselben Sache. Gleicher Tag → der mit dem
+     ausfuehrlicheren Ticker (`JST.DE` statt `JST`), weil der die Boerse nennt. */
+  {
+    // ZWEI Stufen, weil es zwei Arten von Dubletten gibt:
+    //   1. dasselbe Wertpapier unter zwei Ticker-Schreibweisen
+    //      (`JST` und `JST.DE`, beide mit Yahoo-Symbol JST.DE)
+    //   2. dieselbe Firma an ZWEI Boersenplaetzen, also mit verschiedenen
+    //      Yahoo-Symbolen (Hamborner Reit: HABA.DE und HABAN.DE)
+    // Stufe 2 verlangt zusaetzlich denselben Sektor — sonst koennten zwei
+    // wirklich verschiedene Firmen zusammenfallen, deren Namen sich nur nach
+    // dem Streichen der Rechtsform gleichen.
+    const normName = (n) => String(n || '').toLowerCase()
+      .replace(/[.,()&-]/g, ' ')
+      .replace(/\b(aktiengesellschaft|ag|se|sa|spa|plc|nv|oyj|ab|asa|inc|corp|corporation|co|ltd|limited|holdings?|group|company|kgaa|gmbh)\b/g, ' ')
+      .replace(/\s+/g, ' ').trim();
+    // Der frueher gefundene Eintrag gewinnt — das ist der Moment, in dem die
+    // Aktie wirklich zuerst da war. Gleicher Tag → der ausfuehrlichere Ticker
+    // (`JST.DE` statt `JST`), weil der die Boerse nennt.
+    const besser = (a, b) => {
+      const af = String(a.seen || '9999'), bf = String(b.seen || '9999');
+      if (af !== bf) return af < bf ? a : b;
+      return String(a.ticker || '').length >= String(b.ticker || '').length ? a : b;
+    };
+    const falten = (liste, schluessel) => {
+      const beste = new Map();
+      for (const s of liste) {
+        const k = schluessel(s);
+        if (!k) continue;
+        const alt = beste.get(k);
+        beste.set(k, alt ? besser(s, alt) : s);
+      }
+      return [...beste.values()];
+    };
+    const vorher = Object.keys(db).length;
+    let liste = Object.values(db);
+    liste = falten(liste, (s) => {
+      const y = String(s.yahoo || '').trim().toUpperCase();
+      return y ? 'Y:' + y : 'T:' + String(s.ticker || '').toUpperCase();
+    });
+    liste = falten(liste, (s) => {
+      const n = normName(s.name);
+      return n ? 'N:' + n + '|' + String(s.sector || '') : 'T:' + s.ticker;
+    });
+    const behalten = new Set(liste.map((s) => s.ticker));
+    for (const tk of Object.keys(db)) if (!behalten.has(tk)) delete db[tk];
+    const weg = vorher - Object.keys(db).length;
+    if (weg) console.log(`Dubletten entfernt: ${weg} (${Object.keys(db).length} bleiben).`);
+  }
   let topStocks = Object.values(db)
     .sort((a, b) => (b.upside ?? -999) - (a.upside ?? -999) || (b.buyPct || 0) - (a.buyPct || 0));
 
