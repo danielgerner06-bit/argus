@@ -1,6 +1,6 @@
 {
   "updated": "2026-09-11",
-  "updatedAt": "2026-09-11T13:56:06.870Z",
+  "updatedAt": "2026-09-11T14:00:46.552Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -147,15 +147,15 @@
   "bars30": [
     {
       "id": "software",
-      "perf": -2.02,
+      "perf": -2.01,
       "avg30": -0.46,
-      "perf6m": 18.88
+      "perf6m": 18.89
     },
     {
       "id": "ai_semi",
-      "perf": -1.23,
+      "perf": -1.41,
       "avg30": 6.92,
-      "perf6m": 55.73
+      "perf6m": 55.45
     },
     {
       "id": "hardware",
@@ -171,9 +171,9 @@
     },
     {
       "id": "health",
-      "perf": -1.34,
+      "perf": -1.29,
       "avg30": 1.96,
-      "perf6m": 8.73
+      "perf6m": 8.77
     },
     {
       "id": "finance",
@@ -201,27 +201,27 @@
     },
     {
       "id": "energy",
-      "perf": 7.02,
+      "perf": 7.19,
       "avg30": 3.45,
-      "perf6m": 14.43
+      "perf6m": 14.62
     },
     {
       "id": "materials",
-      "perf": -3.9,
+      "perf": -3.87,
       "avg30": 1.55,
-      "perf6m": 2.54
+      "perf6m": 2.57
     },
     {
       "id": "utilities",
-      "perf": -1.93,
+      "perf": -2.25,
       "avg30": 0.05,
-      "perf6m": -7.98
+      "perf6m": -8.28
     },
     {
       "id": "realestate",
-      "perf": -2.23,
+      "perf": -2.43,
       "avg30": 0.62,
-      "perf6m": 2.36
+      "perf6m": 2.15
     }
   ],
   "bars30Region": [
@@ -239,9 +239,9 @@
     },
     {
       "id": "germany",
-      "perf": -2.05,
+      "perf": -2.07,
       "avg30": 0.6,
-      "perf6m": 5.32
+      "perf6m": 5.29
     },
     {
       "id": "japan",
@@ -251,15 +251,15 @@
     },
     {
       "id": "china",
-      "perf": -4.44,
+      "perf": -4.37,
       "avg30": -1.5,
-      "perf6m": -8.85
+      "perf6m": -8.78
     },
     {
       "id": "em",
-      "perf": 3.85,
+      "perf": 3.74,
       "avg30": 2.27,
-      "perf6m": 15.8
+      "perf6m": 15.68
     },
     {
       "id": "apac",
@@ -269,15 +269,15 @@
     },
     {
       "id": "india",
-      "perf": -3.29,
+      "perf": -3.28,
       "avg30": -0.52,
-      "perf6m": -1.68
+      "perf6m": -1.67
     },
     {
       "id": "latam",
-      "perf": 7.21,
+      "perf": 7.14,
       "avg30": 2.07,
-      "perf6m": 3.59
+      "perf6m": 3.52
     },
     {
       "id": "world",
@@ -4487,5 +4487,6 @@
       "SLS": "health"
     }
   },
-  "blacklist": {}
+  "blacklist": {},
+  "yahooAt": "2026-09-11T14:00:46.552Z"
 }
