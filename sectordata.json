@@ -1,6 +1,6 @@
 {
   "updated": "2026-09-11",
-  "updatedAt": "2026-09-11T18:00:43.515Z",
+  "updatedAt": "2026-09-11T19:00:42.781Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -147,15 +147,15 @@
   "bars30": [
     {
       "id": "software",
-      "perf": -2.21,
+      "perf": -2.09,
       "avg30": -0.46,
-      "perf6m": 18.65
+      "perf6m": 18.8
     },
     {
       "id": "ai_semi",
-      "perf": -0.74,
-      "avg30": 6.93,
-      "perf6m": 56.5
+      "perf": -1.05,
+      "avg30": 6.92,
+      "perf6m": 56.02
     },
     {
       "id": "hardware",
@@ -201,21 +201,21 @@
     },
     {
       "id": "energy",
-      "perf": 6.61,
+      "perf": 6.69,
       "avg30": 3.45,
-      "perf6m": 14
+      "perf6m": 14.08
     },
     {
       "id": "materials",
-      "perf": -4.08,
+      "perf": -4.3,
       "avg30": 1.55,
-      "perf6m": 2.35
+      "perf6m": 2.11
     },
     {
       "id": "utilities",
-      "perf": -2.3,
+      "perf": -2.54,
       "avg30": 0.05,
-      "perf6m": -8.33
+      "perf6m": -8.56
     },
     {
       "id": "realestate",
@@ -233,15 +233,15 @@
     },
     {
       "id": "europe",
-      "perf": -2.36,
+      "perf": -2.51,
       "avg30": 1.35,
-      "perf6m": 6.57
+      "perf6m": 6.41
     },
     {
       "id": "germany",
-      "perf": -2.1,
+      "perf": -2.21,
       "avg30": 0.6,
-      "perf6m": 5.27
+      "perf6m": 5.15
     },
     {
       "id": "japan",
@@ -251,15 +251,15 @@
     },
     {
       "id": "china",
-      "perf": -4.71,
+      "perf": -4.75,
       "avg30": -1.5,
-      "perf6m": -9.11
+      "perf6m": -9.14
     },
     {
       "id": "em",
-      "perf": 3.78,
+      "perf": 3.52,
       "avg30": 2.27,
-      "perf6m": 15.71
+      "perf6m": 15.43
     },
     {
       "id": "apac",
@@ -269,9 +269,9 @@
     },
     {
       "id": "india",
-      "perf": -3.13,
+      "perf": -3.23,
       "avg30": -0.52,
-      "perf6m": -1.52
+      "perf6m": -1.62
     },
     {
       "id": "latam",
@@ -4488,5 +4488,5 @@
     }
   },
   "blacklist": {},
-  "yahooAt": "2026-09-11T18:00:43.515Z"
+  "yahooAt": "2026-09-11T19:00:42.781Z"
 }
