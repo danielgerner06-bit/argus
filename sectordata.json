@@ -1,6 +1,6 @@
 {
   "updated": "2026-09-11",
-  "updatedAt": "2026-09-11T16:00:57.506Z",
+  "updatedAt": "2026-09-11T17:00:42.790Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -153,9 +153,9 @@
     },
     {
       "id": "ai_semi",
-      "perf": -0.86,
+      "perf": -0.85,
       "avg30": 6.93,
-      "perf6m": 56.31
+      "perf6m": 56.33
     },
     {
       "id": "hardware",
@@ -171,9 +171,9 @@
     },
     {
       "id": "health",
-      "perf": -1.65,
+      "perf": -1.63,
       "avg30": 1.96,
-      "perf6m": 8.38
+      "perf6m": 8.4
     },
     {
       "id": "finance",
@@ -201,21 +201,21 @@
     },
     {
       "id": "energy",
-      "perf": 7.08,
+      "perf": 6.93,
       "avg30": 3.45,
-      "perf6m": 14.51
+      "perf6m": 14.34
     },
     {
       "id": "materials",
-      "perf": -3.93,
+      "perf": -4.01,
       "avg30": 1.55,
-      "perf6m": 2.51
+      "perf6m": 2.43
     },
     {
       "id": "utilities",
-      "perf": -2.44,
+      "perf": -2.37,
       "avg30": 0.05,
-      "perf6m": -8.46
+      "perf6m": -8.4
     },
     {
       "id": "realestate",
@@ -233,15 +233,15 @@
     },
     {
       "id": "europe",
-      "perf": -2.44,
-      "avg30": 1.35,
-      "perf6m": 6.48
+      "perf": -2.33,
+      "avg30": 1.36,
+      "perf6m": 6.6
     },
     {
       "id": "germany",
-      "perf": -2.15,
+      "perf": -2.07,
       "avg30": 0.6,
-      "perf6m": 5.21
+      "perf6m": 5.29
     },
     {
       "id": "japan",
@@ -251,15 +251,15 @@
     },
     {
       "id": "china",
-      "perf": -4.64,
+      "perf": -4.65,
       "avg30": -1.5,
-      "perf6m": -9.04
+      "perf6m": -9.05
     },
     {
       "id": "em",
-      "perf": 3.84,
+      "perf": 3.78,
       "avg30": 2.27,
-      "perf6m": 15.78
+      "perf6m": 15.71
     },
     {
       "id": "apac",
@@ -269,9 +269,9 @@
     },
     {
       "id": "india",
-      "perf": -3.32,
+      "perf": -3.2,
       "avg30": -0.52,
-      "perf6m": -1.72
+      "perf6m": -1.59
     },
     {
       "id": "latam",
@@ -4488,5 +4488,5 @@
     }
   },
   "blacklist": {},
-  "yahooAt": "2026-09-11T16:00:57.506Z"
+  "yahooAt": "2026-09-11T17:00:42.790Z"
 }
