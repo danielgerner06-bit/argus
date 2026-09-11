@@ -1,6 +1,6 @@
 {
   "updated": "2026-09-11",
-  "updatedAt": "2026-09-11T20:55:03.591Z",
+  "updatedAt": "2026-09-11T21:01:19.771Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -4487,5 +4487,6 @@
       "SLS": "health"
     }
   },
-  "blacklist": {}
+  "blacklist": {},
+  "yahooAt": "2026-09-11T21:01:19.771Z"
 }
