@@ -126,9 +126,9 @@
       "perf": [],
       "outperformPct": null,
       "sektorHitAtAdd": 0.2804,
-      "peakPerf": 2.3,
-      "peakDay": "2026-09-07",
-      "peakMs": 1788739200000,
+      "peakPerf": 13.48,
+      "peakDay": "2026-09-14",
+      "peakMs": 1789344000000,
       "highAt": "2026-09-14"
     },
     "4776": {
@@ -333,9 +333,9 @@
       "distTo3yHigh": -33.71,
       "trendR2_24m": 0.82,
       "sektorHitAtAdd": 0.5676,
-      "peakPerf": 9.06,
-      "peakDay": "2026-09-09",
-      "peakMs": 1788912000000,
+      "peakPerf": 10.43,
+      "peakDay": "2026-09-14",
+      "peakMs": 1789344000000,
       "highAt": "2026-09-14",
       "prov": false,
       "perfHigh": [
@@ -3293,9 +3293,9 @@
       "distTo3yHigh": -22.23,
       "trendR2_24m": 0.79,
       "sektorHitAtAdd": 0.0801,
-      "peakPerf": 6.47,
-      "peakDay": "2026-09-14",
-      "peakMs": 1789369200000,
+      "peakPerf": 4.04,
+      "peakDay": "2026-09-09",
+      "peakMs": 1788937200000,
       "highAt": "2026-09-14"
     },
     "DEZ": {
