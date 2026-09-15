@@ -129,7 +129,9 @@
       "peakPerf": 22.12,
       "peakDay": "2026-09-15",
       "peakMs": 1789430400000,
-      "highAt": "2026-09-15"
+      "highAt": "2026-09-15",
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-09-14"
     },
     "4776": {
       "ticker": "4776",
@@ -3295,9 +3297,9 @@
       "distTo3yHigh": -22.23,
       "trendR2_24m": 0.79,
       "sektorHitAtAdd": 0.0801,
-      "peakPerf": 6.7,
-      "peakDay": "2026-09-15",
-      "peakMs": 1789455600000,
+      "peakPerf": 6.47,
+      "peakDay": "2026-09-14",
+      "peakMs": 1789369200000,
       "highAt": "2026-09-15"
     },
     "DEZ": {
@@ -3772,7 +3774,7 @@
       "seenMs": 1789084800000,
       "startPrice": 108.48999786376953,
       "perf": [],
-      "peakPerf": 0.26,
+      "peakPerf": 0.13,
       "peakDay": "2026-09-11",
       "peakMs": 1789098300000,
       "highAt": "2026-09-15"
@@ -3831,7 +3833,7 @@
       "seenMs": 1789084800000,
       "startPrice": 1683.449951171875,
       "perf": [],
-      "peakPerf": 0,
+      "peakPerf": -0.91,
       "peakDay": "2026-09-11",
       "peakMs": 1789098300000,
       "highAt": "2026-09-15"
@@ -3890,7 +3892,7 @@
       "seenMs": 1789084800000,
       "startPrice": 505.3249969482422,
       "perf": [],
-      "peakPerf": 0.07,
+      "peakPerf": 0.03,
       "peakDay": "2026-09-11",
       "peakMs": 1789098300000,
       "highAt": "2026-09-15"
@@ -3949,7 +3951,7 @@
       "seenMs": 1789084800000,
       "startPrice": 4709.800048828125,
       "perf": [],
-      "peakPerf": 0,
+      "peakPerf": -0.25,
       "peakDay": "2026-09-11",
       "peakMs": 1789098300000,
       "highAt": "2026-09-15"
