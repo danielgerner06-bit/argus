@@ -1,6 +1,6 @@
 {
   "updated": "2026-09-17",
-  "updatedAt": "2026-09-17T16:01:13.770Z",
+  "updatedAt": "2026-09-17T17:00:51.582Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -177,9 +177,9 @@
     },
     {
       "id": "finance",
-      "perf": -3.2,
+      "perf": -3.19,
       "avg30": 0.73,
-      "perf6m": 13.57
+      "perf6m": 13.58
     },
     {
       "id": "cons_cycl",
@@ -189,9 +189,9 @@
     },
     {
       "id": "cons_def",
-      "perf": -2.63,
-      "avg30": 0.8,
-      "perf6m": -1.62
+      "perf": -2.55,
+      "avg30": 0.81,
+      "perf6m": -1.53
     },
     {
       "id": "industrial",
@@ -201,9 +201,9 @@
     },
     {
       "id": "energy",
-      "perf": 2.32,
-      "avg30": 3.58,
-      "perf6m": 9.58
+      "perf": 2.63,
+      "avg30": 3.59,
+      "perf6m": 9.92
     },
     {
       "id": "materials",
@@ -219,9 +219,9 @@
     },
     {
       "id": "realestate",
-      "perf": -3.95,
+      "perf": -4.06,
       "avg30": 0.59,
-      "perf6m": 1.13
+      "perf6m": 1.01
     }
   ],
   "bars30Region": [
@@ -275,9 +275,9 @@
     },
     {
       "id": "latam",
-      "perf": 5.39,
+      "perf": 5.43,
       "avg30": 2.21,
-      "perf6m": 3.78
+      "perf6m": 3.82
     },
     {
       "id": "world",
@@ -4513,5 +4513,5 @@
     }
   },
   "blacklist": {},
-  "yahooAt": "2026-09-17T16:01:13.770Z"
+  "yahooAt": "2026-09-17T17:00:51.582Z"
 }
