@@ -1,6 +1,6 @@
 {
   "updated": "2026-09-18",
-  "updatedAt": "2026-09-18T15:00:32.977Z",
+  "updatedAt": "2026-09-18T16:00:35.987Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -159,9 +159,9 @@
     },
     {
       "id": "hardware",
-      "perf": 1.21,
+      "perf": 1.24,
       "avg30": 2.73,
-      "perf6m": 35.71
+      "perf6m": 35.75
     },
     {
       "id": "comm",
@@ -171,9 +171,9 @@
     },
     {
       "id": "health",
-      "perf": -0.95,
+      "perf": -1.04,
       "avg30": 1.87,
-      "perf6m": 14.26
+      "perf6m": 14.15
     },
     {
       "id": "finance",
@@ -183,9 +183,9 @@
     },
     {
       "id": "cons_cycl",
-      "perf": -4.59,
+      "perf": -4.93,
       "avg30": -0.22,
-      "perf6m": 0.74
+      "perf6m": 0.38
     },
     {
       "id": "cons_def",
@@ -195,9 +195,9 @@
     },
     {
       "id": "industrial",
-      "perf": -8.05,
+      "perf": -8.1,
       "avg30": 1.3,
-      "perf6m": 2.19
+      "perf6m": 2.14
     },
     {
       "id": "energy",
@@ -227,9 +227,9 @@
   "bars30Region": [
     {
       "id": "usa",
-      "perf": -1.19,
+      "perf": -1.34,
       "avg30": 1.33,
-      "perf6m": 14.89
+      "perf6m": 14.72
     },
     {
       "id": "europe",
@@ -257,33 +257,33 @@
     },
     {
       "id": "em",
-      "perf": 0.85,
+      "perf": 0.83,
       "avg30": 2.23,
-      "perf6m": 15.72
+      "perf6m": 15.69
     },
     {
       "id": "apac",
-      "perf": 1.35,
+      "perf": 1.37,
       "avg30": 2.62,
-      "perf6m": 15.9
+      "perf6m": 15.91
     },
     {
       "id": "india",
-      "perf": -3.1,
+      "perf": -3.13,
       "avg30": -0.59,
-      "perf6m": 0.6
+      "perf6m": 0.57
     },
     {
       "id": "latam",
-      "perf": 4.13,
+      "perf": 4.15,
       "avg30": 2.23,
-      "perf6m": 3.49
+      "perf6m": 3.5
     },
     {
       "id": "world",
-      "perf": -1.41,
+      "perf": -1.48,
       "avg30": 1.31,
-      "perf6m": 13.48
+      "perf6m": 13.39
     }
   ],
   "topStocks": [
@@ -4516,5 +4516,5 @@
     }
   },
   "blacklist": {},
-  "yahooAt": "2026-09-18T15:00:32.977Z"
+  "yahooAt": "2026-09-18T16:00:35.987Z"
 }
