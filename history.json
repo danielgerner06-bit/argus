@@ -691,9 +691,9 @@
         2.24
       ],
       "sektorHitAtAdd": 0.0951,
-      "peakPerf": 2.72,
-      "peakDay": "2026-09-18",
-      "peakMs": 1789714800000,
+      "peakPerf": 2.48,
+      "peakDay": "2026-09-17",
+      "peakMs": 1789628400000,
       "highAt": "2026-09-18"
     },
     "HYQ.DE": {
@@ -1064,8 +1064,6 @@
         48.19,
         48.19
       ],
-      "targetHitMonth": 1,
-      "targetHitDay": "2026-06-25",
       "sektorHitAtAdd": 0.3578,
       "peakPerf": 48.19,
       "peakDay": "2026-06-25",
@@ -2180,7 +2178,7 @@
         3.77
       ],
       "sektorHitAtAdd": 0.3794,
-      "peakPerf": 8.89,
+      "peakPerf": 7.28,
       "peakDay": "2026-09-18",
       "peakMs": 1789714800000,
       "highAt": "2026-09-18"
