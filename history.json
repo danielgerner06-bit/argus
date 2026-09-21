@@ -697,7 +697,7 @@
         2.24
       ],
       "sektorHitAtAdd": 0.0951,
-      "peakPerf": 5.31,
+      "peakPerf": 3.07,
       "peakDay": "2026-09-21",
       "peakMs": 1789974000000,
       "highAt": "2026-09-21"
@@ -2186,7 +2186,7 @@
         3.77
       ],
       "sektorHitAtAdd": 0.3794,
-      "peakPerf": 10.51,
+      "peakPerf": 11.86,
       "peakDay": "2026-09-21",
       "peakMs": 1789974000000,
       "highAt": "2026-09-21"
@@ -4034,7 +4034,7 @@
       "startPrice": 159.4000015258789,
       "perf": [],
       "highAt": "2026-09-21",
-      "peakPerf": 0.92,
+      "peakPerf": 0.06,
       "peakDay": "2026-09-21",
       "peakMs": 1789974000000
     },
@@ -4050,8 +4050,8 @@
       "pe": 16.5,
       "perf6mAtAdd": -2.27,
       "perf1mBefore": -8.06,
-      "sektorPsiAtAdd": null,
-      "sektorHitAtAdd": null,
+      "sektorPsiAtAdd": 0.0043,
+      "sektorHitAtAdd": 0.369,
       "analysts": 2,
       "div": 1.41,
       "forwardPe": 14.19,
@@ -4092,7 +4092,7 @@
       "seenMs": 1789948800000,
       "startPrice": 8.550000190734863,
       "perf": [],
-      "peakPerf": 0.58,
+      "peakPerf": 0.82,
       "peakDay": "2026-09-21",
       "peakMs": 1789974000000,
       "highAt": "2026-09-21"
