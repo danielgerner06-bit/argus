@@ -12,8 +12,8 @@
       "pe": null,
       "perf6mAtAdd": -57.76,
       "perf1mBefore": -3.76,
-      "sektorPsiAtAdd": null,
-      "sektorHitAtAdd": null,
+      "sektorPsiAtAdd": 0.002,
+      "sektorHitAtAdd": 0.0895,
       "analysts": 2,
       "div": 0,
       "forwardPe": 37.89,
@@ -54,7 +54,10 @@
       "seenMs": 1790035200000,
       "startPrice": 1.2799999713897705,
       "perf": [],
-      "highAt": "2026-09-22"
+      "highAt": "2026-09-22",
+      "peakPerf": 0,
+      "peakDay": "2026-09-22",
+      "peakMs": 1790040600000
     },
     "3854": {
       "ticker": "3854",
@@ -568,8 +571,8 @@
       "pe": null,
       "perf6mAtAdd": 62.81,
       "perf1mBefore": 6.86,
-      "sektorPsiAtAdd": null,
-      "sektorHitAtAdd": null,
+      "sektorPsiAtAdd": 0.0058,
+      "sektorHitAtAdd": 0.5534,
       "analysts": 6,
       "div": 0.5,
       "forwardPe": 19.66,
@@ -1566,7 +1569,7 @@
       "peakMs": 1789628400000,
       "highAt": "2026-09-22",
       "targetHitMonth": 3,
-      "targetHitDay": "2026-09-03"
+      "targetHitDay": "2026-08-27"
     },
     "ADMCM.HE": {
       "ticker": "ADMCM.HE",
@@ -2731,7 +2734,9 @@
       "peakPerf": 4.32,
       "peakDay": "2026-08-14",
       "peakMs": 1786690800000,
-      "highAt": "2026-09-22"
+      "highAt": "2026-09-22",
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-08-14"
     },
     "ADXR": {
       "ticker": "ADXR",
@@ -4150,7 +4155,7 @@
       "seenMs": 1789862400000,
       "startPrice": 159.4000015258789,
       "perf": [],
-      "highAt": "2026-09-21",
+      "highAt": "2026-09-22",
       "peakPerf": 0.06,
       "peakDay": "2026-09-21",
       "peakMs": 1789974000000
@@ -4212,7 +4217,7 @@
       "peakPerf": 0.82,
       "peakDay": "2026-09-21",
       "peakMs": 1789974000000,
-      "highAt": "2026-09-21"
+      "highAt": "2026-09-22"
     },
     "095610": {
       "ticker": "095610",
@@ -4226,8 +4231,8 @@
       "pe": null,
       "perf6mAtAdd": 135.87,
       "perf1mBefore": 11.77,
-      "sektorPsiAtAdd": null,
-      "sektorHitAtAdd": null,
+      "sektorPsiAtAdd": 0.0058,
+      "sektorHitAtAdd": 0.5534,
       "analysts": 4,
       "div": null,
       "forwardPe": null,
@@ -4277,22 +4282,8 @@
   "findings": {
     "factors": [
       {
-        "name": "Kursziel",
-        "spread": 36.4,
-        "best": {
-          "k": "<10%",
-          "avg": 29.7,
-          "n": 4
-        },
-        "worst": {
-          "k": "40%+",
-          "avg": -6.7,
-          "n": 20
-        }
-      },
-      {
         "name": "KGV",
-        "spread": 31.4,
+        "spread": 32.1,
         "best": {
           "k": "40+",
           "avg": 27.9,
@@ -4300,8 +4291,22 @@
         },
         "worst": {
           "k": "<15",
-          "avg": -3.5,
-          "n": 10
+          "avg": -4.2,
+          "n": 9
+        }
+      },
+      {
+        "name": "Kursziel",
+        "spread": 28.7,
+        "best": {
+          "k": "<10%",
+          "avg": 22.9,
+          "n": 5
+        },
+        "worst": {
+          "k": "40%+",
+          "avg": -5.8,
+          "n": 21
         }
       },
       {
