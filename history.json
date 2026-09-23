@@ -691,7 +691,9 @@
       "peakPerf": 60.42,
       "peakDay": "2026-06-22",
       "peakMs": 1782086400000,
-      "highAt": "2026-09-23"
+      "highAt": "2026-09-23",
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-06-22"
     },
     "SL": {
       "ticker": "SL",
@@ -1192,7 +1194,9 @@
       "peakPerf": 48.19,
       "peakDay": "2026-06-25",
       "peakMs": 1782345600000,
-      "highAt": "2026-09-23"
+      "highAt": "2026-09-23",
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-06-25"
     },
     "LUVE": {
       "ticker": "LUVE",
@@ -4037,7 +4041,7 @@
       "seenMs": 1789084800000,
       "startPrice": 505.3249969482422,
       "perf": [],
-      "peakPerf": 0.37,
+      "peakPerf": 0.3,
       "peakDay": "2026-09-23",
       "peakMs": 1790135100000,
       "highAt": "2026-09-23"
@@ -4214,10 +4218,10 @@
       "seenMs": 1789948800000,
       "startPrice": 8.550000190734863,
       "perf": [],
-      "peakPerf": 0.82,
-      "peakDay": "2026-09-21",
-      "peakMs": 1789974000000,
-      "highAt": "2026-09-22"
+      "peakPerf": 1.85,
+      "peakDay": "2026-09-22",
+      "peakMs": 1790060400000,
+      "highAt": "2026-09-23"
     },
     "095610": {
       "ticker": "095610",
@@ -4273,10 +4277,10 @@
       "seenMs": 1790035200000,
       "startPrice": 149100,
       "perf": [],
-      "peakPerf": -0.34,
-      "peakDay": "2026-09-22",
-      "peakMs": 1790035200000,
-      "highAt": "2026-09-22"
+      "peakPerf": 8.22,
+      "peakDay": "2026-09-23",
+      "peakMs": 1790121600000,
+      "highAt": "2026-09-23"
     }
   },
   "findings": {
@@ -4297,7 +4301,7 @@
       },
       {
         "name": "Kursziel",
-        "spread": 28.7,
+        "spread": 29.2,
         "best": {
           "k": "<10%",
           "avg": 22.9,
@@ -4305,8 +4309,8 @@
         },
         "worst": {
           "k": "40%+",
-          "avg": -5.8,
-          "n": 21
+          "avg": -6.3,
+          "n": 20
         }
       },
       {
