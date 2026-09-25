@@ -2308,9 +2308,9 @@
         3.77
       ],
       "sektorHitAtAdd": 0.3794,
-      "peakPerf": 11.86,
-      "peakDay": "2026-09-21",
-      "peakMs": 1789974000000,
+      "peakPerf": 14.56,
+      "peakDay": "2026-09-25",
+      "peakMs": 1790319600000,
       "highAt": "2026-09-25"
     },
     "NEAG": {
@@ -3305,9 +3305,9 @@
       "targetHitMonth": 1,
       "targetHitDay": "2026-08-12",
       "sektorHitAtAdd": 0.4762,
-      "peakPerf": 7.85,
-      "peakDay": "2026-09-07",
-      "peakMs": 1788764400000,
+      "peakPerf": 11.52,
+      "peakDay": "2026-09-24",
+      "peakMs": 1790233200000,
       "highAt": "2026-09-25",
       "prov": false,
       "perfHigh": [
@@ -4110,7 +4110,7 @@
       "peakPerf": 0,
       "peakDay": "2026-09-11",
       "peakMs": 1789098300000,
-      "highAt": "2026-09-24"
+      "highAt": "2026-09-25"
     },
     "ALFA": {
       "ticker": "ALFA",
@@ -4166,7 +4166,7 @@
       "seenMs": 1789862400000,
       "startPrice": 159.4000015258789,
       "perf": [],
-      "highAt": "2026-09-24",
+      "highAt": "2026-09-25",
       "peakPerf": 0,
       "peakDay": "2026-09-21",
       "peakMs": 1789974000000
@@ -4294,7 +4294,7 @@
     "factors": [
       {
         "name": "KGV",
-        "spread": 31.7,
+        "spread": 31.2,
         "best": {
           "k": "40+",
           "avg": 27.9,
@@ -4302,8 +4302,8 @@
         },
         "worst": {
           "k": "<15",
-          "avg": -3.8,
-          "n": 10
+          "avg": -3.3,
+          "n": 9
         }
       },
       {
