@@ -1,6 +1,6 @@
 {
   "updated": "2026-09-26",
-  "updatedAt": "2026-09-26T23:00:08.531Z",
+  "updatedAt": "2026-09-26T23:56:59.833Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -4320,28 +4320,28 @@
   "news": {
     "items": [
       {
-        "text": "US-China-Gipfel: Trump und Xi verlängern Handelswaffenstillstand",
+        "text": "Europas Börsen fester, US-Börsen mit Gewinnen ins Wochenende",
         "stamp": "26.09.26"
       },
       {
-        "text": "Transporteure fordern staatliche Entlastung wegen hoher Kosten",
+        "text": "Rheinmetall-Aktie mit -51% – hält diese Schlüsselzone?",
         "stamp": "26.09.26"
       },
       {
-        "text": "US-Iran-Gespräche über Hormus-Straße: Phasenweiser Deal möglich",
-        "stamp": "25.09.26"
+        "text": "Evonik-Aktie explodiert – möglicher Mega-Deal im Hintergrund",
+        "stamp": "26.09.26"
       },
       {
-        "text": "Verbraucherstimmung in USA sinkt wegen Inflationsängsten auf Viermonatstief",
-        "stamp": "25.09.26"
+        "text": "Google baut mit SpaceX erstes KI-Rechenzentrum im Orbit",
+        "stamp": "26.09.26"
       },
       {
-        "text": "Microsoft stellt neuen KI-Copilot für Arbeit und Entwicklung vor",
-        "stamp": "25.09.26"
+        "text": "Erste Group Bank AG plant Übernahmeangebot für polnische Tochter",
+        "stamp": "26.09.26"
       },
       {
-        "text": "Net digital AG hebt Umsatz- und EBITDA-Prognose für 2026 an",
-        "stamp": "25.09.26"
+        "text": "Ölpreis fällt, Aktien steigen: Was Bitcoin und Gold jetzt verraten",
+        "stamp": "26.09.26"
       }
     ],
     "date": "2026-09-26"
@@ -4357,11 +4357,8 @@
     "universe": 8854,
     "scanned": 8854,
     "lastCursor": 8350,
-    "candCursor": 147,
+    "candCursor": 155,
     "candidates": [
-      "LPL Financial Holdings Inc.",
-      "Blue Bird Corporation",
-      "PMV Pharmaceuticals, Inc.",
       "John Wiley & Sons Inc.",
       "MediWound Ltd.",
       "Mama's Creations, Inc.",
@@ -4758,10 +4755,13 @@
       "Myseum.AI, Inc.",
       "Quoin Pharmaceuticals, Ltd.",
       "Charge Enterprises, Inc.",
-      "Linkage Global Inc."
+      "Linkage Global Inc.",
+      "Bechtle AG",
+      "Rational AG",
+      "Renk Group AG"
     ],
     "noteCursor": 10,
-    "focusCursor": 0,
+    "focusCursor": 1,
     "recheckCursor": 16,
     "regionNoteCursor": 6,
     "notesDay": "2026-08-26",
@@ -4796,7 +4796,7 @@
       "ai_semi": 764,
       "realestate": 350
     },
-    "heavyAt": "2026-09-26T11:17:55.305Z",
+    "heavyAt": "2026-09-26T23:53:38.574Z",
     "revalidateTag": "multi-source-v9",
     "fmpRetryTag": "grades-summary-fix",
     "heavyDay": "2026-09-25",
@@ -4867,6 +4867,5 @@
       "ATX": "software"
     }
   },
-  "blacklist": {},
-  "yahooAt": "2026-09-26T23:00:08.531Z"
+  "blacklist": {}
 }
