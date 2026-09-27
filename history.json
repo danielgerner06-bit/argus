@@ -1571,9 +1571,7 @@
       "peakPerf": 19.33,
       "peakDay": "2026-09-17",
       "peakMs": 1789628400000,
-      "highAt": "2026-09-27",
-      "targetHitMonth": 3,
-      "targetHitDay": "2026-08-27"
+      "highAt": "2026-09-27"
     },
     "ADMCM.HE": {
       "ticker": "ADMCM.HE",
@@ -2740,9 +2738,7 @@
       "peakPerf": 4.32,
       "peakDay": "2026-08-14",
       "peakMs": 1786690800000,
-      "highAt": "2026-09-27",
-      "targetHitMonth": 1,
-      "targetHitDay": "2026-08-14"
+      "highAt": "2026-09-27"
     },
     "ADXR": {
       "ticker": "ADXR",
@@ -4231,7 +4227,7 @@
       "peakPerf": 5.09,
       "peakDay": "2026-09-25",
       "peakMs": 1790319600000,
-      "highAt": "2026-09-26"
+      "highAt": "2026-09-27"
     },
     "095610": {
       "ticker": "095610",
@@ -4290,18 +4286,20 @@
       "peakPerf": 8.22,
       "peakDay": "2026-09-23",
       "peakMs": 1790121600000,
-      "highAt": "2026-09-26"
+      "highAt": "2026-09-27",
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-09-23"
     }
   },
   "findings": {
     "factors": [
       {
         "name": "KGV",
-        "spread": 31.2,
+        "spread": 40.7,
         "best": {
           "k": "40+",
-          "avg": 27.9,
-          "n": 5
+          "avg": 37.4,
+          "n": 4
         },
         "worst": {
           "k": "<15",
@@ -4311,7 +4309,7 @@
       },
       {
         "name": "Kursziel",
-        "spread": 28.9,
+        "spread": 30.7,
         "best": {
           "k": "<10%",
           "avg": 22.9,
@@ -4319,17 +4317,17 @@
         },
         "worst": {
           "k": "40%+",
-          "avg": -6,
+          "avg": -7.8,
           "n": 21
         }
       },
       {
         "name": "Dividende",
-        "spread": 17.2,
+        "spread": 17.1,
         "best": {
           "k": "<2%",
-          "avg": 9.3,
-          "n": 15
+          "avg": 9.2,
+          "n": 14
         },
         "worst": {
           "k": "4%+",
