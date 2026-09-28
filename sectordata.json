@@ -1,6 +1,6 @@
 {
   "updated": "2026-09-28",
-  "updatedAt": "2026-09-28T13:52:41.108Z",
+  "updatedAt": "2026-09-28T14:00:04.129Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -159,9 +159,9 @@
     },
     {
       "id": "hardware",
-      "perf": 6.55,
+      "perf": 6.75,
       "avg30": 2.79,
-      "perf6m": 47.03
+      "perf6m": 47.31
     },
     {
       "id": "comm",
@@ -177,9 +177,9 @@
     },
     {
       "id": "finance",
-      "perf": -6.31,
+      "perf": -6.39,
       "avg30": 0.67,
-      "perf6m": 11.28
+      "perf6m": 11.19
     },
     {
       "id": "cons_cycl",
@@ -189,21 +189,21 @@
     },
     {
       "id": "cons_def",
-      "perf": -5.05,
+      "perf": -4.88,
       "avg30": 0.65,
-      "perf6m": 0.49
+      "perf6m": 0.67
     },
     {
       "id": "industrial",
-      "perf": -5.32,
+      "perf": -5.25,
       "avg30": 1.13,
-      "perf6m": 4.97
+      "perf6m": 5.05
     },
     {
       "id": "energy",
-      "perf": 0.28,
+      "perf": 0.36,
       "avg30": 3.69,
-      "perf6m": 1.54
+      "perf6m": 1.62
     },
     {
       "id": "materials",
@@ -227,27 +227,27 @@
   "bars30Region": [
     {
       "id": "usa",
-      "perf": 0.2,
+      "perf": 0.28,
       "avg30": 1.3,
-      "perf6m": 18.99
+      "perf6m": 19.08
     },
     {
       "id": "europe",
-      "perf": -4.65,
+      "perf": -4.69,
       "avg30": 1.09,
-      "perf6m": 10.26
+      "perf6m": 10.22
     },
     {
       "id": "germany",
-      "perf": -5.39,
+      "perf": -5.17,
       "avg30": 0.37,
-      "perf6m": 8.75
+      "perf6m": 9
     },
     {
       "id": "japan",
-      "perf": 1.39,
+      "perf": 1.5,
       "avg30": 1.72,
-      "perf6m": 17.23
+      "perf6m": 17.35
     },
     {
       "id": "china",
@@ -263,9 +263,9 @@
     },
     {
       "id": "apac",
-      "perf": 0.38,
+      "perf": 0.36,
       "avg30": 2.61,
-      "perf6m": 21.5
+      "perf6m": 21.48
     },
     {
       "id": "india",
@@ -281,9 +281,9 @@
     },
     {
       "id": "world",
-      "perf": -0.8,
+      "perf": -0.71,
       "avg30": 1.26,
-      "perf6m": 16.63
+      "perf6m": 16.74
     }
   ],
   "topStocks": [
@@ -4870,5 +4870,6 @@
       "GRRR": "software"
     }
   },
-  "blacklist": {}
+  "blacklist": {},
+  "yahooAt": "2026-09-28T14:00:04.129Z"
 }
