@@ -1,6 +1,6 @@
 {
   "updated": "2026-09-29",
-  "updatedAt": "2026-09-29T18:00:05.507Z",
+  "updatedAt": "2026-09-29T19:00:10.036Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -153,21 +153,21 @@
     },
     {
       "id": "ai_semi",
-      "perf": 10.16,
+      "perf": 10.43,
       "avg30": 6.51,
-      "perf6m": 75.51
+      "perf6m": 75.96
     },
     {
       "id": "hardware",
-      "perf": 4.76,
+      "perf": 4.89,
       "avg30": 2.8,
-      "perf6m": 49.73
+      "perf6m": 49.92
     },
     {
       "id": "comm",
-      "perf": -1.27,
+      "perf": -1.21,
       "avg30": -0.22,
-      "perf6m": 2.98
+      "perf6m": 3.05
     },
     {
       "id": "health",
@@ -183,9 +183,9 @@
     },
     {
       "id": "cons_cycl",
-      "perf": -6.91,
+      "perf": -6.54,
       "avg30": -0.37,
-      "perf6m": 3.21
+      "perf6m": 3.61
     },
     {
       "id": "cons_def",
@@ -195,9 +195,9 @@
     },
     {
       "id": "industrial",
-      "perf": -5.53,
+      "perf": -5.4,
       "avg30": 1.1,
-      "perf6m": 6.1
+      "perf6m": 6.25
     },
     {
       "id": "energy",
@@ -257,15 +257,15 @@
     },
     {
       "id": "em",
-      "perf": 0.04,
+      "perf": 0.31,
       "avg30": 2.18,
-      "perf6m": 21.74
+      "perf6m": 22.07
     },
     {
       "id": "apac",
-      "perf": 0.59,
+      "perf": 0.74,
       "avg30": 2.6,
-      "perf6m": 22
+      "perf6m": 22.18
     },
     {
       "id": "india",
@@ -4869,5 +4869,5 @@
     }
   },
   "blacklist": {},
-  "yahooAt": "2026-09-29T18:00:05.507Z"
+  "yahooAt": "2026-09-29T19:00:10.036Z"
 }
