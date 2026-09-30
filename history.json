@@ -190,7 +190,7 @@
       "peakMs": 1789689600000,
       "highAt": "2026-09-30",
       "targetHitMonth": 1,
-      "targetHitDay": "2026-09-07"
+      "targetHitDay": "2026-09-14"
     },
     "4776": {
       "ticker": "4776",
@@ -613,9 +613,9 @@
       "seenMs": 1790035200000,
       "startPrice": 133900,
       "perf": [],
-      "peakPerf": 10.66,
-      "peakDay": "2026-09-30",
-      "peakMs": 1790726400000,
+      "peakPerf": 8.69,
+      "peakDay": "2026-09-29",
+      "peakMs": 1790640000000,
       "highAt": "2026-09-30"
     },
     "402340": {
@@ -815,9 +815,9 @@
         2.24
       ],
       "sektorHitAtAdd": 0.0951,
-      "peakPerf": 4.25,
-      "peakDay": "2026-09-28",
-      "peakMs": 1790578800000,
+      "peakPerf": 4.6,
+      "peakDay": "2026-09-30",
+      "peakMs": 1790751600000,
       "highAt": "2026-09-30"
     },
     "HYQ.DE": {
@@ -2308,9 +2308,9 @@
         3.77
       ],
       "sektorHitAtAdd": 0.3794,
-      "peakPerf": 17.79,
-      "peakDay": "2026-09-28",
-      "peakMs": 1790578800000,
+      "peakPerf": 19.95,
+      "peakDay": "2026-09-29",
+      "peakMs": 1790665200000,
       "highAt": "2026-09-30"
     },
     "NEAG": {
@@ -3304,9 +3304,9 @@
       "targetHitMonth": 1,
       "targetHitDay": "2026-08-12",
       "sektorHitAtAdd": 0.4762,
-      "peakPerf": 11.52,
-      "peakDay": "2026-09-24",
-      "peakMs": 1790233200000,
+      "peakPerf": 14.31,
+      "peakDay": "2026-09-29",
+      "peakMs": 1790665200000,
       "highAt": "2026-09-30",
       "prov": false,
       "perfHigh": [
@@ -3578,9 +3578,9 @@
       "perf": [],
       "outperformPct": null,
       "sektorHitAtAdd": 0.2841,
-      "peakPerf": 10.71,
-      "peakDay": "2026-09-30",
-      "peakMs": 1790726400000,
+      "peakPerf": 9.96,
+      "peakDay": "2026-09-23",
+      "peakMs": 1790121600000,
       "highAt": "2026-09-30"
     },
     "6531.TW": {
@@ -4233,7 +4233,7 @@
       "peakPerf": 5.09,
       "peakDay": "2026-09-25",
       "peakMs": 1790319600000,
-      "highAt": "2026-09-29"
+      "highAt": "2026-09-30"
     },
     "095610": {
       "ticker": "095610",
@@ -4292,7 +4292,7 @@
       "peakPerf": 14.17,
       "peakDay": "2026-09-29",
       "peakMs": 1790640000000,
-      "highAt": "2026-09-29",
+      "highAt": "2026-09-30",
       "targetHitMonth": 1,
       "targetHitDay": "2026-09-23"
     }
@@ -4301,7 +4301,7 @@
     "factors": [
       {
         "name": "KGV",
-        "spread": 39.5,
+        "spread": 40,
         "best": {
           "k": "40+",
           "avg": 36.2,
@@ -4309,8 +4309,8 @@
         },
         "worst": {
           "k": "<15",
-          "avg": -3.3,
-          "n": 9
+          "avg": -3.8,
+          "n": 10
         }
       },
       {
@@ -4333,7 +4333,7 @@
         "best": {
           "k": "<2%",
           "avg": 7.7,
-          "n": 15
+          "n": 16
         },
         "worst": {
           "k": "4%+",
