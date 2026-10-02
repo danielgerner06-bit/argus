@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-02",
-  "updatedAt": "2026-10-02T17:00:50.809Z",
+  "updatedAt": "2026-10-02T18:01:01.723Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -147,9 +147,9 @@
   "bars30": [
     {
       "id": "software",
-      "perf": 1.93,
+      "perf": 1.89,
       "avg30": -0.36,
-      "perf6m": 35.2
+      "perf6m": 35.15
     },
     {
       "id": "ai_semi",
@@ -165,9 +165,9 @@
     },
     {
       "id": "comm",
-      "perf": -0.92,
+      "perf": -1.02,
       "avg30": -0.2,
-      "perf6m": -0.72
+      "perf6m": -0.83
     },
     {
       "id": "health",
@@ -189,9 +189,9 @@
     },
     {
       "id": "cons_def",
-      "perf": -5.77,
+      "perf": -5.71,
       "avg30": 0.59,
-      "perf6m": -1.9
+      "perf6m": -1.84
     },
     {
       "id": "industrial",
@@ -219,9 +219,9 @@
     },
     {
       "id": "realestate",
-      "perf": -7.2,
+      "perf": -7.19,
       "avg30": 0.25,
-      "perf6m": -0.2
+      "perf6m": -0.18
     }
   ],
   "bars30Region": [
@@ -233,9 +233,9 @@
     },
     {
       "id": "europe",
-      "perf": -5.22,
+      "perf": -5.21,
       "avg30": 0.99,
-      "perf6m": 3.59
+      "perf6m": 3.6
     },
     {
       "id": "germany",
@@ -269,15 +269,15 @@
     },
     {
       "id": "india",
-      "perf": -6.43,
+      "perf": -6.47,
       "avg30": -0.92,
-      "perf6m": -0.44
+      "perf6m": -0.48
     },
     {
       "id": "latam",
-      "perf": -1.85,
-      "avg30": 2.23,
-      "perf6m": -3.4
+      "perf": -1.6,
+      "avg30": 2.24,
+      "perf6m": -3.14
     },
     {
       "id": "world",
@@ -4875,5 +4875,5 @@
     }
   },
   "blacklist": {},
-  "yahooAt": "2026-10-02T17:00:50.809Z"
+  "yahooAt": "2026-10-02T18:01:01.723Z"
 }
