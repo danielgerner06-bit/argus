@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-02",
-  "updatedAt": "2026-10-02T16:01:01.722Z",
+  "updatedAt": "2026-10-02T17:00:50.809Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -147,9 +147,9 @@
   "bars30": [
     {
       "id": "software",
-      "perf": 1.87,
+      "perf": 1.93,
       "avg30": -0.36,
-      "perf6m": 35.13
+      "perf6m": 35.2
     },
     {
       "id": "ai_semi",
@@ -165,9 +165,9 @@
     },
     {
       "id": "comm",
-      "perf": -1.2,
+      "perf": -0.92,
       "avg30": -0.2,
-      "perf6m": -1
+      "perf6m": -0.72
     },
     {
       "id": "health",
@@ -177,9 +177,9 @@
     },
     {
       "id": "finance",
-      "perf": -7.39,
+      "perf": -7.28,
       "avg30": 0.57,
-      "perf6m": 8.01
+      "perf6m": 8.13
     },
     {
       "id": "cons_cycl",
@@ -201,9 +201,9 @@
     },
     {
       "id": "energy",
-      "perf": -3.27,
+      "perf": -3.2,
       "avg30": 3.66,
-      "perf6m": 5.75
+      "perf6m": 5.82
     },
     {
       "id": "materials",
@@ -219,9 +219,9 @@
     },
     {
       "id": "realestate",
-      "perf": -7.35,
+      "perf": -7.2,
       "avg30": 0.25,
-      "perf6m": -0.35
+      "perf6m": -0.2
     }
   ],
   "bars30Region": [
@@ -233,15 +233,15 @@
     },
     {
       "id": "europe",
-      "perf": -5.25,
+      "perf": -5.22,
       "avg30": 0.99,
-      "perf6m": 3.56
+      "perf6m": 3.59
     },
     {
       "id": "germany",
-      "perf": -5.18,
+      "perf": -5.22,
       "avg30": 0.28,
-      "perf6m": 3.42
+      "perf6m": 3.38
     },
     {
       "id": "japan",
@@ -269,15 +269,15 @@
     },
     {
       "id": "india",
-      "perf": -6.42,
+      "perf": -6.43,
       "avg30": -0.92,
-      "perf6m": -0.43
+      "perf6m": -0.44
     },
     {
       "id": "latam",
-      "perf": -2.25,
+      "perf": -1.85,
       "avg30": 2.23,
-      "perf6m": -3.79
+      "perf6m": -3.4
     },
     {
       "id": "world",
@@ -4875,5 +4875,5 @@
     }
   },
   "blacklist": {},
-  "yahooAt": "2026-10-02T16:01:01.722Z"
+  "yahooAt": "2026-10-02T17:00:50.809Z"
 }
