@@ -616,7 +616,9 @@
       "peakPerf": 18.26,
       "peakDay": "2026-10-01",
       "peakMs": 1790812800000,
-      "highAt": "2026-10-02"
+      "highAt": "2026-10-02",
+      "targetHitMonth": 1,
+      "targetHitDay": "2026-10-01"
     },
     "402340": {
       "ticker": "402340",
@@ -1573,7 +1575,9 @@
       "peakPerf": 19.33,
       "peakDay": "2026-09-17",
       "peakMs": 1789628400000,
-      "highAt": "2026-10-02"
+      "highAt": "2026-10-02",
+      "targetHitMonth": 3,
+      "targetHitDay": "2026-09-03"
     },
     "ADMCM.HE": {
       "ticker": "ADMCM.HE",
@@ -2314,9 +2318,9 @@
         3.77
       ],
       "sektorHitAtAdd": 0.3794,
-      "peakPerf": 19.95,
-      "peakDay": "2026-09-29",
-      "peakMs": 1790665200000,
+      "peakPerf": 21.29,
+      "peakDay": "2026-10-01",
+      "peakMs": 1790838000000,
       "highAt": "2026-10-02"
     },
     "NEAG": {
@@ -3592,9 +3596,9 @@
       ],
       "outperformPct": null,
       "sektorHitAtAdd": 0.2841,
-      "peakPerf": 12.41,
-      "peakDay": "2026-10-02",
-      "peakMs": 1790899200000,
+      "peakPerf": 12.03,
+      "peakDay": "2026-10-01",
+      "peakMs": 1790812800000,
       "highAt": "2026-10-02",
       "prov": false,
       "perfHigh": [
@@ -4153,7 +4157,7 @@
       "peakPerf": 0,
       "peakDay": "2026-09-11",
       "peakMs": 1789098300000,
-      "highAt": "2026-10-01"
+      "highAt": "2026-10-02"
     },
     "ALFA": {
       "ticker": "ALFA",
@@ -4209,7 +4213,7 @@
       "seenMs": 1789862400000,
       "startPrice": 159.4000015258789,
       "perf": [],
-      "highAt": "2026-10-01",
+      "highAt": "2026-10-02",
       "peakPerf": 0,
       "peakDay": "2026-09-21",
       "peakMs": 1789974000000
@@ -4353,7 +4357,7 @@
       },
       {
         "name": "Kursziel",
-        "spread": 29,
+        "spread": 27.7,
         "best": {
           "k": "<10%",
           "avg": 22.2,
@@ -4361,17 +4365,17 @@
         },
         "worst": {
           "k": "40%+",
-          "avg": -6.8,
+          "avg": -5.5,
           "n": 26
         }
       },
       {
         "name": "Dividende",
-        "spread": 16.7,
+        "spread": 16.8,
         "best": {
           "k": "<2%",
-          "avg": 7.1,
-          "n": 17
+          "avg": 7.2,
+          "n": 18
         },
         "worst": {
           "k": "keine",
