@@ -4121,7 +4121,7 @@
       "peakPerf": 0.3,
       "peakDay": "2026-09-23",
       "peakMs": 1790135100000,
-      "highAt": "2026-10-03"
+      "highAt": "2026-10-04"
     },
     "CRISIL": {
       "ticker": "CRISIL",
@@ -4180,7 +4180,7 @@
       "peakPerf": 0,
       "peakDay": "2026-09-11",
       "peakMs": 1789098300000,
-      "highAt": "2026-10-03"
+      "highAt": "2026-10-04"
     },
     "ALFA": {
       "ticker": "ALFA",
@@ -4236,7 +4236,7 @@
       "seenMs": 1789862400000,
       "startPrice": 159.4000015258789,
       "perf": [],
-      "highAt": "2026-10-03",
+      "highAt": "2026-10-04",
       "peakPerf": 0,
       "peakDay": "2026-09-21",
       "peakMs": 1789974000000
@@ -4373,8 +4373,8 @@
       "pe": 19.6,
       "perf6mAtAdd": -22.45,
       "perf1mBefore": 4.84,
-      "sektorPsiAtAdd": null,
-      "sektorHitAtAdd": null,
+      "sektorPsiAtAdd": 0.0325,
+      "sektorHitAtAdd": 0.293,
       "analysts": 4,
       "div": 1.14,
       "forwardPe": 19.46,
