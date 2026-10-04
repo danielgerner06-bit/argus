@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-04",
-  "updatedAt": "2026-10-04T00:03:47.497Z",
+  "updatedAt": "2026-10-04T01:01:01.241Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -4942,5 +4942,6 @@
       "NBIX": "health"
     }
   },
-  "blacklist": {}
+  "blacklist": {},
+  "yahooAt": "2026-10-04T01:01:01.241Z"
 }
