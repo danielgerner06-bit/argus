@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-06",
-  "updatedAt": "2026-10-06T20:01:00.050Z",
+  "updatedAt": "2026-10-06T21:00:49.818Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -257,9 +257,9 @@
     },
     {
       "id": "em",
-      "perf": 1.17,
+      "perf": 1.19,
       "avg30": 2.12,
-      "perf6m": 19.52
+      "perf6m": 19.54
     },
     {
       "id": "apac",
@@ -4940,5 +4940,5 @@
     }
   },
   "blacklist": {},
-  "yahooAt": "2026-10-06T20:01:00.050Z"
+  "yahooAt": "2026-10-06T21:00:49.818Z"
 }
