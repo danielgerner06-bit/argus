@@ -338,7 +338,7 @@
       "distTo3yHigh": -0.72,
       "trendR2_24m": 0.86,
       "sektorHitAtAdd": 0.1476,
-      "peakPerf": 5.52,
+      "peakPerf": 5.88,
       "peakDay": "2026-10-07",
       "peakMs": 1791331200000,
       "highAt": "2026-10-07",
@@ -626,9 +626,7 @@
       "peakPerf": 18.26,
       "peakDay": "2026-10-01",
       "peakMs": 1790812800000,
-      "highAt": "2026-10-07",
-      "targetHitMonth": 1,
-      "targetHitDay": "2026-10-01"
+      "highAt": "2026-10-07"
     },
     "402340": {
       "ticker": "402340",
@@ -1290,11 +1288,13 @@
         2.48
       ],
       "sektorHitAtAdd": 0.6369,
-      "peakPerf": 2.48,
-      "peakDay": "2026-06-17",
-      "peakMs": 1781679600000,
+      "peakPerf": 4.09,
+      "peakDay": "2026-10-06",
+      "peakMs": 1791270000000,
       "highAt": "2026-10-07",
-      "earningsGrowth": 76.3
+      "earningsGrowth": 76.3,
+      "targetHitMonth": 4,
+      "targetHitDay": "2026-10-06"
     },
     "ORS": {
       "ticker": "ORS",
@@ -1596,7 +1596,7 @@
       "peakMs": 1789628400000,
       "highAt": "2026-10-07",
       "targetHitMonth": 3,
-      "targetHitDay": "2026-09-03"
+      "targetHitDay": "2026-08-27"
     },
     "ADMCM.HE": {
       "ticker": "ADMCM.HE",
@@ -2337,9 +2337,9 @@
         3.77
       ],
       "sektorHitAtAdd": 0.3794,
-      "peakPerf": 21.56,
-      "peakDay": "2026-10-05",
-      "peakMs": 1791183600000,
+      "peakPerf": 23.45,
+      "peakDay": "2026-10-07",
+      "peakMs": 1791356400000,
       "highAt": "2026-10-07"
     },
     "NEAG": {
@@ -2990,9 +2990,9 @@
         16.37
       ],
       "sektorHitAtAdd": 0.0672,
-      "peakPerf": 16.37,
-      "peakDay": "2026-08-25",
-      "peakMs": 1787641200000,
+      "peakPerf": 20.35,
+      "peakDay": "2026-10-06",
+      "peakMs": 1791270000000,
       "highAt": "2026-10-07"
     },
     "PHN": {
@@ -4311,7 +4311,7 @@
       "peakPerf": 5.09,
       "peakDay": "2026-09-25",
       "peakMs": 1790319600000,
-      "highAt": "2026-10-06"
+      "highAt": "2026-10-07"
     },
     "095610": {
       "ticker": "095610",
@@ -4370,9 +4370,7 @@
       "peakPerf": 22.93,
       "peakDay": "2026-10-01",
       "peakMs": 1790812800000,
-      "highAt": "2026-10-06",
-      "targetHitMonth": 1,
-      "targetHitDay": "2026-09-29"
+      "highAt": "2026-10-07"
     },
     "PAFO": {
       "ticker": "PAFO",
@@ -4428,21 +4426,139 @@
       "seenMs": 1791072000000,
       "startPrice": 359.0749969482422,
       "perf": [],
-      "highAt": "2026-10-06",
+      "highAt": "2026-10-07",
       "peakPerf": 2.05,
       "peakDay": "2026-10-06",
       "peakMs": 1791258300000
+    },
+    "GUNKUL": {
+      "ticker": "GUNKUL",
+      "name": "Gunkul Engineering PCL",
+      "yahoo": "GUNKUL.BK",
+      "sector": "utilities",
+      "region": "world",
+      "buyPct": 100,
+      "strongBuyPct": 0,
+      "upside": 17,
+      "pe": 23,
+      "perf6mAtAdd": 110.42,
+      "perf1mBefore": -1.67,
+      "sektorPsiAtAdd": null,
+      "sektorHitAtAdd": null,
+      "analysts": 6,
+      "div": 2.81,
+      "forwardPe": 19.42,
+      "priceToBook": 2.92,
+      "priceToSales": 5.03,
+      "evEbitda": 22.96,
+      "evRevenue": 6.35,
+      "grossMargin": 30.7,
+      "operatingMargin": 19.51,
+      "profitMargin": 21.83,
+      "ebitdaMargin": 27.65,
+      "roe": 13.26,
+      "roa": 2.83,
+      "revenueGrowth": 50.8,
+      "earningsGrowth": 16.7,
+      "earningsQGrowth": 18.7,
+      "debtToEquity": 97.02,
+      "currentRatio": 1.2,
+      "quickRatio": 0.9,
+      "payoutRatio": 62.38,
+      "heldInsiders": 59.33,
+      "heldInstitutions": 2.02,
+      "marketCap": 1184219169,
+      "beta": 0.89,
+      "distTo52High": -9.01,
+      "pos52Band": 86.8,
+      "distTo50dma": -0.76,
+      "distTo200dma": 43.84,
+      "recMean": 1,
+      "targetSpread": 107.1,
+      "perf12mBefore": 166.31,
+      "vol12m": 44.05,
+      "hitRate24m": 56,
+      "maxDd24m": -53.77,
+      "distTo3yHigh": -8.62,
+      "trendR2_24m": 0.45,
+      "seen": "2026-10-07",
+      "seenMs": 1791331200000,
+      "startPrice": 5.015000104904175,
+      "perf": [],
+      "peakPerf": 0.7,
+      "peakDay": "2026-10-07",
+      "peakMs": 1791342000000,
+      "highAt": "2026-10-07"
+    },
+    "EKTG": {
+      "ticker": "EKTG",
+      "name": "Energiekontor AG",
+      "yahoo": "EKT.DE",
+      "sector": "utilities",
+      "region": "europe",
+      "buyPct": 100,
+      "strongBuyPct": 50,
+      "upside": null,
+      "pe": 28.8,
+      "perf6mAtAdd": -36.16,
+      "perf1mBefore": -4.08,
+      "sektorPsiAtAdd": null,
+      "sektorHitAtAdd": null,
+      "analysts": 2,
+      "div": 4.07,
+      "forwardPe": 6.02,
+      "priceToBook": 1.63,
+      "priceToSales": 1.71,
+      "evEbitda": 17.91,
+      "evRevenue": 5.02,
+      "grossMargin": 49.53,
+      "operatingMargin": 10.09,
+      "profitMargin": 6.02,
+      "ebitdaMargin": 28.02,
+      "roe": 5.58,
+      "roa": 2.08,
+      "revenueGrowth": 31.4,
+      "earningsGrowth": null,
+      "earningsQGrowth": null,
+      "debtToEquity": 397.06,
+      "currentRatio": 1.5,
+      "quickRatio": 0.47,
+      "payoutRatio": 122.5,
+      "heldInsiders": 51.2,
+      "heldInstitutions": 16.42,
+      "marketCap": 327215840,
+      "beta": 0.56,
+      "distTo52High": -53.17,
+      "pos52Band": 0,
+      "distTo50dma": -14.15,
+      "distTo200dma": -34.62,
+      "recMean": 1.5,
+      "targetSpread": 7.7,
+      "perf12mBefore": -47.49,
+      "vol12m": 50.74,
+      "hitRate24m": 52,
+      "maxDd24m": -60.4,
+      "distTo3yHigh": -70.31,
+      "trendR2_24m": 0.5,
+      "seen": "2026-10-07",
+      "seenMs": 1791331200000,
+      "startPrice": 24.074999809265137,
+      "perf": [],
+      "peakPerf": -1.97,
+      "peakDay": "2026-10-07",
+      "peakMs": 1791356400000,
+      "highAt": "2026-10-07"
     }
   },
   "findings": {
     "factors": [
       {
         "name": "Kursziel",
-        "spread": 31,
+        "spread": 36.6,
         "best": {
           "k": "<10%",
-          "avg": 24.6,
-          "n": 6
+          "avg": 30.2,
+          "n": 5
         },
         "worst": {
           "k": "40%+",
@@ -4452,7 +4568,7 @@
       },
       {
         "name": "KGV",
-        "spread": 30,
+        "spread": 29.6,
         "best": {
           "k": "40+",
           "avg": 24.4,
@@ -4460,8 +4576,8 @@
         },
         "worst": {
           "k": "<15",
-          "avg": -5.6,
-          "n": 11
+          "avg": -5.2,
+          "n": 12
         }
       },
       {
