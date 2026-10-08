@@ -189,9 +189,9 @@
       ],
       "outperformPct": null,
       "sektorHitAtAdd": 0.2804,
-      "peakPerf": 52.3,
-      "peakDay": "2026-10-08",
-      "peakMs": 1791417600000,
+      "peakPerf": 47.93,
+      "peakDay": "2026-10-06",
+      "peakMs": 1791244800000,
       "highAt": "2026-10-08",
       "targetHitMonth": 1,
       "targetHitDay": "2026-09-14",
@@ -1670,7 +1670,7 @@
         2.19
       ],
       "sektorHitAtAdd": 0.2031,
-      "peakPerf": 9.69,
+      "peakPerf": 10.42,
       "peakDay": "2026-10-08",
       "peakMs": 1791442800000,
       "highAt": "2026-10-08"
