@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-09",
-  "updatedAt": "2026-10-09T20:00:49.435Z",
+  "updatedAt": "2026-10-09T21:01:06.738Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -189,9 +189,9 @@
     },
     {
       "id": "cons_def",
-      "perf": 0.39,
+      "perf": 0.4,
       "avg30": 0.58,
-      "perf6m": 0.76
+      "perf6m": 0.77
     },
     {
       "id": "industrial",
@@ -201,9 +201,9 @@
     },
     {
       "id": "energy",
-      "perf": 0.25,
+      "perf": 0.23,
       "avg30": 3.66,
-      "perf6m": 13.54
+      "perf6m": 13.52
     },
     {
       "id": "materials",
@@ -257,15 +257,15 @@
     },
     {
       "id": "em",
-      "perf": -2.44,
+      "perf": -2.45,
       "avg30": 2.09,
-      "perf6m": 10.54
+      "perf6m": 10.52
     },
     {
       "id": "apac",
-      "perf": -2,
+      "perf": -2.01,
       "avg30": 2.51,
-      "perf6m": 10.91
+      "perf6m": 10.9
     },
     {
       "id": "india",
@@ -5161,5 +5161,5 @@
     }
   },
   "blacklist": {},
-  "yahooAt": "2026-10-09T20:00:49.435Z"
+  "yahooAt": "2026-10-09T21:01:06.738Z"
 }
