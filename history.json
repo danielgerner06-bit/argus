@@ -421,7 +421,7 @@
         27.35
       ],
       "targetHitMonth": 1,
-      "targetHitDay": "2026-09-09"
+      "targetHitDay": "2026-09-04"
     },
     "8464": {
       "ticker": "8464",
@@ -3003,7 +3003,9 @@
       "peakPerf": 24.34,
       "peakDay": "2026-10-09",
       "peakMs": 1791529200000,
-      "highAt": "2026-10-11"
+      "highAt": "2026-10-11",
+      "targetHitMonth": 3,
+      "targetHitDay": "2026-10-06"
     },
     "PHN": {
       "ticker": "PHN",
@@ -3649,9 +3651,7 @@
       "prov": false,
       "perfHigh": [
         12.03
-      ],
-      "targetHitMonth": 1,
-      "targetHitDay": "2026-10-01"
+      ]
     },
     "6531.TW": {
       "ticker": "6531.TW",
@@ -3975,7 +3975,7 @@
       "peakDay": "2026-09-09",
       "peakMs": 1788937200000,
       "sektorHitAtAdd": 0.2174,
-      "highAt": "2026-10-10",
+      "highAt": "2026-10-11",
       "prov": false,
       "perfHigh": [
         0.7
@@ -4040,8 +4040,11 @@
       "peakPerf": 0.26,
       "peakDay": "2026-09-11",
       "peakMs": 1789098300000,
-      "highAt": "2026-10-10",
-      "prov": false
+      "highAt": "2026-10-11",
+      "prov": false,
+      "perfHigh": [
+        0.26
+      ]
     },
     "GRAVITA": {
       "ticker": "GRAVITA",
@@ -4102,8 +4105,11 @@
       "peakPerf": 0,
       "peakDay": "2026-09-11",
       "peakMs": 1789098300000,
-      "highAt": "2026-10-10",
-      "prov": false
+      "highAt": "2026-10-11",
+      "prov": false,
+      "perfHigh": [
+        0
+      ]
     },
     "SAREGAMA": {
       "ticker": "SAREGAMA",
@@ -4164,8 +4170,11 @@
       "peakPerf": 0.37,
       "peakDay": "2026-09-23",
       "peakMs": 1790135100000,
-      "highAt": "2026-10-10",
-      "prov": false
+      "highAt": "2026-10-11",
+      "prov": false,
+      "perfHigh": [
+        0.37
+      ]
     },
     "CRISIL": {
       "ticker": "CRISIL",
@@ -4226,8 +4235,11 @@
       "peakPerf": 0,
       "peakDay": "2026-09-11",
       "peakMs": 1789098300000,
-      "highAt": "2026-10-10",
-      "prov": false
+      "highAt": "2026-10-11",
+      "prov": false,
+      "perfHigh": [
+        0
+      ]
     },
     "ALFA": {
       "ticker": "ALFA",
@@ -4283,7 +4295,7 @@
       "seenMs": 1789862400000,
       "startPrice": 159.4000015258789,
       "perf": [],
-      "highAt": "2026-10-10",
+      "highAt": "2026-10-11",
       "peakPerf": 1.77,
       "peakDay": "2026-10-09",
       "peakMs": 1791529200000
@@ -4641,22 +4653,78 @@
       "peakPerf": 3.64,
       "peakDay": "2026-10-08",
       "peakMs": 1791442800000
+    },
+    "AAD": {
+      "ticker": "AAD",
+      "name": "Amadeus Fire AG",
+      "yahoo": "AAD.DE",
+      "sector": "finance",
+      "region": "europe",
+      "buyPct": 100,
+      "strongBuyPct": 67,
+      "upside": null,
+      "pe": null,
+      "perf6mAtAdd": -23.94,
+      "perf1mBefore": -6.37,
+      "sektorPsiAtAdd": null,
+      "sektorHitAtAdd": null,
+      "analysts": 3,
+      "div": 0,
+      "forwardPe": 4.96,
+      "priceToBook": 0.74,
+      "priceToSales": 0.27,
+      "evEbitda": 12.52,
+      "evRevenue": 0.68,
+      "grossMargin": 50.18,
+      "operatingMargin": -1.24,
+      "profitMargin": -1.95,
+      "ebitdaMargin": 5.41,
+      "roe": -1.59,
+      "roa": 1.54,
+      "revenueGrowth": -6.8,
+      "earningsGrowth": null,
+      "earningsQGrowth": null,
+      "debtToEquity": 114.08,
+      "currentRatio": 0.36,
+      "quickRatio": 0.32,
+      "payoutRatio": 356.64,
+      "heldInsiders": 0,
+      "heldInstitutions": 54.73,
+      "marketCap": 92998536,
+      "beta": 0.99,
+      "distTo52High": -69.75,
+      "pos52Band": 3.5,
+      "distTo50dma": -11.81,
+      "distTo200dma": -31.75,
+      "recMean": 1.33,
+      "targetSpread": 67.3,
+      "perf12mBefore": -69.04,
+      "vol12m": 43.8,
+      "hitRate24m": 28,
+      "maxDd24m": -83.07,
+      "distTo3yHigh": -86.33,
+      "trendR2_24m": 0.91,
+      "seen": "2026-10-11",
+      "seenMs": 1791676800000,
+      "startPrice": 17.0600004196167,
+      "perf": [],
+      "highAt": "2026-10-11"
     }
   },
   "findings": {
     "factors": [
       {
         "name": "Kursziel",
-        "spread": 39.5,
+        "spread": 40.6,
         "best": {
           "k": "<10%",
           "avg": 33.4,
           "n": 5
         },
         "worst": {
-          "k": "40%+",
-          "avg": -6.1,
-          "n": 29
+          "k": "25-40%",
+          "avg": -7.2,
+          "n": 11
         }
       },
       {
