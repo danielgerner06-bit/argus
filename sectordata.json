@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-11",
-  "updatedAt": "2026-10-11T21:00:54.622Z",
+  "updatedAt": "2026-10-11T21:52:48.663Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -5231,6 +5231,5 @@
       "DSP": "software"
     }
   },
-  "blacklist": {},
-  "yahooAt": "2026-10-11T21:00:54.622Z"
+  "blacklist": {}
 }
