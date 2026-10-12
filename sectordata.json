@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-12",
-  "updatedAt": "2026-10-12T00:50:55.605Z",
+  "updatedAt": "2026-10-12T01:00:12.228Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -5282,5 +5282,6 @@
       "ZVRA": "health"
     }
   },
-  "blacklist": {}
+  "blacklist": {},
+  "yahooAt": "2026-10-12T01:00:12.228Z"
 }
