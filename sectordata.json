@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-14",
-  "updatedAt": "2026-10-14T14:00:11.630Z",
+  "updatedAt": "2026-10-14T15:00:11.601Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -165,9 +165,9 @@
     },
     {
       "id": "comm",
-      "perf": -2.24,
+      "perf": -2.26,
       "avg30": -0.17,
-      "perf6m": -4.36
+      "perf6m": -4.38
     },
     {
       "id": "health",
@@ -233,15 +233,15 @@
     },
     {
       "id": "europe",
-      "perf": -3.39,
+      "perf": -3.65,
       "avg30": 0.82,
-      "perf6m": -2.07
+      "perf6m": -2.33
     },
     {
       "id": "germany",
-      "perf": -4.07,
+      "perf": -4.1,
       "avg30": 0.22,
-      "perf6m": -2.89
+      "perf6m": -2.92
     },
     {
       "id": "japan",
@@ -269,9 +269,9 @@
     },
     {
       "id": "india",
-      "perf": -3.36,
+      "perf": -3.12,
       "avg30": -1.2,
-      "perf6m": -5.82
+      "perf6m": -5.59
     },
     {
       "id": "latam",
@@ -5316,5 +5316,5 @@
     }
   },
   "blacklist": {},
-  "yahooAt": "2026-10-14T14:00:11.630Z"
+  "yahooAt": "2026-10-14T15:00:11.601Z"
 }
