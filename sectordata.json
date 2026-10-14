@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-14",
-  "updatedAt": "2026-10-14T20:00:11.314Z",
+  "updatedAt": "2026-10-14T21:00:11.314Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -207,15 +207,15 @@
     },
     {
       "id": "materials",
-      "perf": -2.12,
+      "perf": -2.09,
       "avg30": 1.31,
-      "perf6m": -4.53
+      "perf6m": -4.5
     },
     {
       "id": "utilities",
-      "perf": -0.22,
+      "perf": -0.24,
       "avg30": -0.9,
-      "perf6m": -10.05
+      "perf6m": -10.07
     },
     {
       "id": "realestate",
@@ -233,7 +233,7 @@
     },
     {
       "id": "europe",
-      "perf": -3.64,
+      "perf": -3.63,
       "avg30": 0.81,
       "perf6m": -2.32
     },
@@ -269,9 +269,9 @@
     },
     {
       "id": "india",
-      "perf": -2.88,
+      "perf": -2.87,
       "avg30": -1.22,
-      "perf6m": -5.36
+      "perf6m": -5.35
     },
     {
       "id": "latam",
@@ -5316,5 +5316,5 @@
     }
   },
   "blacklist": {},
-  "yahooAt": "2026-10-14T20:00:11.314Z"
+  "yahooAt": "2026-10-14T21:00:11.314Z"
 }
