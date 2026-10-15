@@ -1064,9 +1064,9 @@
         118.4
       ],
       "sektorHitAtAdd": 0.5848,
-      "peakPerf": 126.99,
-      "peakDay": "2026-10-15",
-      "peakMs": 1792047600000,
+      "peakPerf": 123.31,
+      "peakDay": "2026-10-13",
+      "peakMs": 1791874800000,
       "highAt": "2026-10-15"
     },
     "IXX.DE": {
@@ -4316,9 +4316,9 @@
       "startPrice": 159.4000015258789,
       "perf": [],
       "highAt": "2026-10-15",
-      "peakPerf": 2.03,
-      "peakDay": "2026-10-13",
-      "peakMs": 1791874800000
+      "peakPerf": 2.28,
+      "peakDay": "2026-10-14",
+      "peakMs": 1791961200000
     },
     "ITD": {
       "ticker": "ITD",
@@ -4806,8 +4806,8 @@
       "pe": 15.3,
       "perf6mAtAdd": -21.1,
       "perf1mBefore": 0.16,
-      "sektorPsiAtAdd": null,
-      "sektorHitAtAdd": null,
+      "sektorPsiAtAdd": 0.0013,
+      "sektorHitAtAdd": 0.118,
       "analysts": 3,
       "div": 1.8,
       "forwardPe": 14.21,
