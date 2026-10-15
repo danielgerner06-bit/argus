@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-15",
-  "updatedAt": "2026-10-15T16:00:51.284Z",
+  "updatedAt": "2026-10-15T17:00:50.813Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -147,9 +147,9 @@
   "bars30": [
     {
       "id": "software",
-      "perf": 3.01,
+      "perf": 3.21,
       "avg30": -0.01,
-      "perf6m": 31.03
+      "perf6m": 31.28
     },
     {
       "id": "ai_semi",
@@ -165,9 +165,9 @@
     },
     {
       "id": "comm",
-      "perf": -1.56,
+      "perf": -1.68,
       "avg30": -0.17,
-      "perf6m": -4.35
+      "perf6m": -4.47
     },
     {
       "id": "health",
@@ -227,9 +227,9 @@
   "bars30Region": [
     {
       "id": "usa",
-      "perf": 1.73,
+      "perf": 1.64,
       "avg30": 1.25,
-      "perf6m": 10.08
+      "perf6m": 9.98
     },
     {
       "id": "europe",
@@ -251,9 +251,9 @@
     },
     {
       "id": "china",
-      "perf": -2.56,
+      "perf": -2.6,
       "avg30": -1.71,
-      "perf6m": -11.16
+      "perf6m": -11.19
     },
     {
       "id": "em",
@@ -281,9 +281,9 @@
     },
     {
       "id": "world",
-      "perf": 0.9,
+      "perf": 0.94,
       "avg30": 1.17,
-      "perf6m": 7.32
+      "perf6m": 7.37
     }
   ],
   "topStocks": [
@@ -5381,5 +5381,5 @@
     }
   },
   "blacklist": {},
-  "yahooAt": "2026-10-15T16:00:51.284Z"
+  "yahooAt": "2026-10-15T17:00:50.813Z"
 }
