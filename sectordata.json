@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-15",
-  "updatedAt": "2026-10-15T15:00:50.969Z",
+  "updatedAt": "2026-10-15T16:00:51.284Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -147,9 +147,9 @@
   "bars30": [
     {
       "id": "software",
-      "perf": 2.59,
+      "perf": 3.01,
       "avg30": -0.01,
-      "perf6m": 30.49
+      "perf6m": 31.03
     },
     {
       "id": "ai_semi",
@@ -165,9 +165,9 @@
     },
     {
       "id": "comm",
-      "perf": -1.64,
+      "perf": -1.56,
       "avg30": -0.17,
-      "perf6m": -4.43
+      "perf6m": -4.35
     },
     {
       "id": "health",
@@ -227,9 +227,9 @@
   "bars30Region": [
     {
       "id": "usa",
-      "perf": 1.62,
+      "perf": 1.73,
       "avg30": 1.25,
-      "perf6m": 9.96
+      "perf6m": 10.08
     },
     {
       "id": "europe",
@@ -251,9 +251,9 @@
     },
     {
       "id": "china",
-      "perf": -2.55,
+      "perf": -2.56,
       "avg30": -1.71,
-      "perf6m": -11.15
+      "perf6m": -11.16
     },
     {
       "id": "em",
@@ -275,15 +275,15 @@
     },
     {
       "id": "latam",
-      "perf": 5.93,
+      "perf": 5.8,
       "avg30": 2.1,
-      "perf6m": -0.86
+      "perf6m": -0.98
     },
     {
       "id": "world",
-      "perf": 0.87,
+      "perf": 0.9,
       "avg30": 1.17,
-      "perf6m": 7.29
+      "perf6m": 7.32
     }
   ],
   "topStocks": [
@@ -5381,5 +5381,5 @@
     }
   },
   "blacklist": {},
-  "yahooAt": "2026-10-15T15:00:50.969Z"
+  "yahooAt": "2026-10-15T16:00:51.284Z"
 }
