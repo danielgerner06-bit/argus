@@ -1064,9 +1064,9 @@
         118.4
       ],
       "sektorHitAtAdd": 0.5848,
-      "peakPerf": 123.31,
-      "peakDay": "2026-10-13",
-      "peakMs": 1791874800000,
+      "peakPerf": 126.99,
+      "peakDay": "2026-10-15",
+      "peakMs": 1792047600000,
       "highAt": "2026-10-15"
     },
     "IXX.DE": {
@@ -1913,14 +1913,14 @@
         15.86,
         34.16,
         34.16,
-        35.85
+        36.03
       ],
       "targetHitMonth": 1,
       "targetHitDay": "2026-07-14",
       "sektorHitAtAdd": 0.3161,
-      "peakPerf": 35.85,
-      "peakDay": "2026-10-09",
-      "peakMs": 1791504000000,
+      "peakPerf": 36.03,
+      "peakDay": "2026-10-15",
+      "peakMs": 1792022400000,
       "highAt": "2026-10-15"
     },
     "300760.SZ": {
@@ -4377,7 +4377,7 @@
       "peakPerf": 5.09,
       "peakDay": "2026-09-25",
       "peakMs": 1790319600000,
-      "highAt": "2026-10-14"
+      "highAt": "2026-10-15"
     },
     "095610": {
       "ticker": "095610",
@@ -4436,7 +4436,7 @@
       "peakPerf": 22.93,
       "peakDay": "2026-10-01",
       "peakMs": 1790812800000,
-      "highAt": "2026-10-14",
+      "highAt": "2026-10-15",
       "targetHitMonth": 1,
       "targetHitDay": "2026-10-01"
     },
@@ -4494,7 +4494,7 @@
       "seenMs": 1791072000000,
       "startPrice": 359.0749969482422,
       "perf": [],
-      "highAt": "2026-10-14",
+      "highAt": "2026-10-15",
       "peakPerf": 3.67,
       "peakDay": "2026-10-14",
       "peakMs": 1791949500000
@@ -4556,7 +4556,7 @@
       "peakPerf": 1.41,
       "peakDay": "2026-10-07",
       "peakMs": 1791342000000,
-      "highAt": "2026-10-14"
+      "highAt": "2026-10-15"
     },
     "EKTG": {
       "ticker": "EKTG",
@@ -4615,7 +4615,7 @@
       "peakPerf": 0.42,
       "peakDay": "2026-10-13",
       "peakMs": 1791874800000,
-      "highAt": "2026-10-14"
+      "highAt": "2026-10-15"
     },
     "ALPAU": {
       "ticker": "ALPAU",
@@ -4671,7 +4671,7 @@
       "seenMs": 1791417600000,
       "startPrice": 1.1474999785423279,
       "perf": [],
-      "highAt": "2026-10-14",
+      "highAt": "2026-10-15",
       "peakPerf": 3.64,
       "peakDay": "2026-10-08",
       "peakMs": 1791442800000
@@ -4730,7 +4730,7 @@
       "seenMs": 1791676800000,
       "startPrice": 17.0600004196167,
       "perf": [],
-      "highAt": "2026-10-14",
+      "highAt": "2026-10-15",
       "peakPerf": 0,
       "peakDay": "2026-10-12",
       "peakMs": 1791788400000
@@ -4789,10 +4789,69 @@
       "seenMs": 1791763200000,
       "startPrice": 3.3674999475479126,
       "perf": [],
-      "highAt": "2026-10-14",
-      "peakPerf": 9.95,
-      "peakDay": "2026-10-14",
-      "peakMs": 1791961200000
+      "highAt": "2026-10-15",
+      "peakPerf": 11.27,
+      "peakDay": "2026-10-15",
+      "peakMs": 1792047600000
+    },
+    "EUZ": {
+      "ticker": "EUZ",
+      "name": "Eckert & Ziegler Strahlen- und Medizintechnik AG",
+      "yahoo": "EUZ.DE",
+      "sector": "health",
+      "region": "europe",
+      "buyPct": 100,
+      "strongBuyPct": 100,
+      "upside": 76,
+      "pe": 15.3,
+      "perf6mAtAdd": -21.1,
+      "perf1mBefore": 0.16,
+      "sektorPsiAtAdd": null,
+      "sektorHitAtAdd": null,
+      "analysts": 3,
+      "div": 1.8,
+      "forwardPe": 14.21,
+      "priceToBook": 2.85,
+      "priceToSales": 2.45,
+      "evEbitda": 7.92,
+      "evRevenue": 2.25,
+      "grossMargin": 48.72,
+      "operatingMargin": 22.71,
+      "profitMargin": 15.92,
+      "ebitdaMargin": 28.37,
+      "roe": 20.14,
+      "roa": 10.3,
+      "revenueGrowth": -5.2,
+      "earningsGrowth": 1.5,
+      "earningsQGrowth": 2.5,
+      "debtToEquity": 15.16,
+      "currentRatio": 3.48,
+      "quickRatio": 2.65,
+      "payoutRatio": 27.85,
+      "heldInsiders": 31.16,
+      "heldInstitutions": 24.69,
+      "marketCap": 767188224,
+      "beta": 1.44,
+      "distTo52High": -30.85,
+      "pos52Band": 6,
+      "distTo50dma": -4.05,
+      "distTo200dma": -15.31,
+      "recMean": 1,
+      "targetSpread": 12.5,
+      "perf12mBefore": -27.69,
+      "vol12m": 31.27,
+      "hitRate24m": 44,
+      "maxDd24m": -47.41,
+      "distTo3yHigh": -46.09,
+      "trendR2_24m": 0.24,
+      "seen": "2026-10-15",
+      "seenMs": 1792022400000,
+      "startPrice": 12.28000020980835,
+      "perf": [],
+      "peakPerf": -0.16,
+      "peakDay": "2026-10-15",
+      "peakMs": 1792047600000,
+      "highAt": "2026-10-15"
     }
   },
   "findings": {
