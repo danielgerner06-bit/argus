@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-16",
-  "updatedAt": "2026-10-16T13:00:51.221Z",
+  "updatedAt": "2026-10-16T14:00:51.513Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -147,143 +147,143 @@
   "bars30": [
     {
       "id": "software",
-      "perf": 3.84,
-      "avg30": 0.01,
-      "perf6m": 32.08
+      "perf": 1.99,
+      "avg30": 0.02,
+      "perf6m": 27.61
     },
     {
       "id": "ai_semi",
-      "perf": 4.12,
-      "avg30": 6.71,
-      "perf6m": 29.25
+      "perf": 2.52,
+      "avg30": 6.69,
+      "perf6m": 26.79
     },
     {
       "id": "hardware",
-      "perf": 3.53,
+      "perf": 2.86,
       "avg30": 2.93,
-      "perf6m": 26.7
+      "perf6m": 24.45
     },
     {
       "id": "comm",
-      "perf": -1.53,
+      "perf": -0.74,
       "avg30": -0.16,
-      "perf6m": -4.33
+      "perf6m": -5.61
     },
     {
       "id": "health",
-      "perf": 3.7,
-      "avg30": 1.43,
-      "perf6m": 17.72
+      "perf": 5.61,
+      "avg30": 1.45,
+      "perf6m": 19.91
     },
     {
       "id": "finance",
-      "perf": -3.57,
-      "avg30": 0.42,
-      "perf6m": 5.36
+      "perf": -1.18,
+      "avg30": 0.41,
+      "perf6m": 5.94
     },
     {
       "id": "cons_cycl",
-      "perf": 1.33,
-      "avg30": -0.54,
-      "perf6m": -4.48
+      "perf": 2.28,
+      "avg30": -0.53,
+      "perf6m": -4.04
     },
     {
       "id": "cons_def",
-      "perf": 2.78,
-      "avg30": 0.64,
-      "perf6m": 5.69
+      "perf": 3.82,
+      "avg30": 0.65,
+      "perf6m": 6.45
     },
     {
       "id": "industrial",
       "perf": -0.57,
-      "avg30": 0.98,
+      "avg30": 0.97,
       "perf6m": -1.92
     },
     {
       "id": "energy",
-      "perf": 4.14,
+      "perf": 4.02,
       "avg30": 3.62,
-      "perf6m": 20.11
+      "perf6m": 20.28
     },
     {
       "id": "materials",
-      "perf": -1.53,
-      "avg30": 1.31,
-      "perf6m": -3.92
+      "perf": -0.3,
+      "avg30": 1.3,
+      "perf6m": -2.3
     },
     {
       "id": "utilities",
       "perf": 0.97,
-      "avg30": -0.88,
-      "perf6m": -9.99
+      "avg30": -0.87,
+      "perf6m": -9.62
     },
     {
       "id": "realestate",
-      "perf": -2.88,
-      "avg30": 0.08,
-      "perf6m": -3.68
+      "perf": -2.21,
+      "avg30": 0.07,
+      "perf6m": -4.15
     }
   ],
   "bars30Region": [
     {
       "id": "usa",
-      "perf": 1.9,
+      "perf": 1.84,
       "avg30": 1.25,
-      "perf6m": 10.27
+      "perf6m": 9.93
     },
     {
       "id": "europe",
-      "perf": -2.98,
-      "avg30": 0.79,
-      "perf6m": -1.95
+      "perf": -1.97,
+      "avg30": 0.78,
+      "perf6m": -0.93
     },
     {
       "id": "germany",
-      "perf": -3.13,
-      "avg30": 0.22,
-      "perf6m": -2.74
+      "perf": -2.33,
+      "avg30": 0.21,
+      "perf6m": -1.94
     },
     {
       "id": "japan",
       "perf": -1.21,
-      "avg30": 1.58,
+      "avg30": 1.57,
       "perf6m": 7.19
     },
     {
       "id": "china",
-      "perf": -2.31,
+      "perf": -2.15,
       "avg30": -1.73,
-      "perf6m": -10.93
+      "perf6m": -12.19
     },
     {
       "id": "em",
-      "perf": -2.08,
-      "avg30": 1.99,
-      "perf6m": 3.45
+      "perf": -2.74,
+      "avg30": 1.97,
+      "perf6m": 2.42
     },
     {
       "id": "apac",
-      "perf": -3.47,
-      "avg30": 2.38,
-      "perf6m": 4.98
+      "perf": -4.06,
+      "avg30": 2.36,
+      "perf6m": 4.34
     },
     {
       "id": "india",
-      "perf": -0.74,
-      "avg30": -1.23,
-      "perf6m": -5.48
+      "perf": 0.76,
+      "avg30": -1.22,
+      "perf6m": -4.1
     },
     {
       "id": "latam",
-      "perf": 5.8,
-      "avg30": 2.07,
-      "perf6m": -0.98
+      "perf": 5.98,
+      "avg30": 2.09,
+      "perf6m": -0.71
     },
     {
       "id": "world",
       "perf": 1.21,
       "avg30": 1.17,
-      "perf6m": 7.64
+      "perf6m": 7.62
     }
   ],
   "topStocks": [
@@ -5454,5 +5454,5 @@
     }
   },
   "blacklist": {},
-  "yahooAt": "2026-10-16T13:00:51.221Z"
+  "yahooAt": "2026-10-16T14:00:51.513Z"
 }
