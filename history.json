@@ -3730,7 +3730,7 @@
       "peakPerf": 12.03,
       "peakDay": "2026-10-01",
       "peakMs": 1790812800000,
-      "highAt": "2026-10-17",
+      "highAt": "2026-10-18",
       "prov": false,
       "perfHigh": [
         12.03
@@ -3796,7 +3796,7 @@
       "peakPerf": 10.24,
       "peakDay": "2026-10-05",
       "peakMs": 1791162000000,
-      "highAt": "2026-10-17",
+      "highAt": "2026-10-18",
       "prov": false,
       "perfHigh": [
         7.63
@@ -3862,7 +3862,7 @@
       "peakPerf": 5.3,
       "peakDay": "2026-10-06",
       "peakMs": 1791248400000,
-      "highAt": "2026-10-17",
+      "highAt": "2026-10-18",
       "prov": false,
       "perfHigh": [
         1.99
@@ -3928,7 +3928,7 @@
       "peakPerf": 0.36,
       "peakDay": "2026-09-01",
       "peakMs": 1788246000000,
-      "highAt": "2026-10-17",
+      "highAt": "2026-10-18",
       "prov": false,
       "perfHigh": [
         0.36
@@ -3993,7 +3993,7 @@
       "peakPerf": 1.31,
       "peakDay": "2026-09-16",
       "peakMs": 1789565400000,
-      "highAt": "2026-10-17",
+      "highAt": "2026-10-18",
       "prov": false,
       "perfHigh": [
         1.31
@@ -4058,7 +4058,7 @@
       "peakDay": "2026-09-09",
       "peakMs": 1788937200000,
       "sektorHitAtAdd": 0.2174,
-      "highAt": "2026-10-17",
+      "highAt": "2026-10-18",
       "prov": false,
       "perfHigh": [
         0.7
@@ -4123,7 +4123,7 @@
       "peakPerf": 0.26,
       "peakDay": "2026-09-11",
       "peakMs": 1789098300000,
-      "highAt": "2026-10-17",
+      "highAt": "2026-10-18",
       "prov": false,
       "perfHigh": [
         0.26
@@ -4188,7 +4188,7 @@
       "peakPerf": 0,
       "peakDay": "2026-09-11",
       "peakMs": 1789098300000,
-      "highAt": "2026-10-17",
+      "highAt": "2026-10-18",
       "prov": false,
       "perfHigh": [
         0
@@ -4253,7 +4253,7 @@
       "peakPerf": 1.08,
       "peakDay": "2026-10-14",
       "peakMs": 1791949500000,
-      "highAt": "2026-10-17",
+      "highAt": "2026-10-18",
       "prov": false,
       "perfHigh": [
         0.37
@@ -4318,7 +4318,7 @@
       "peakPerf": 0,
       "peakDay": "2026-09-11",
       "peakMs": 1789098300000,
-      "highAt": "2026-10-17",
+      "highAt": "2026-10-18",
       "prov": false,
       "perfHigh": [
         0
@@ -4919,7 +4919,7 @@
     "factors": [
       {
         "name": "Kursziel",
-        "spread": 51.5,
+        "spread": 51.4,
         "best": {
           "k": "<10%",
           "avg": 42.9,
@@ -4927,8 +4927,8 @@
         },
         "worst": {
           "k": "40%+",
-          "avg": -8.6,
-          "n": 30
+          "avg": -8.5,
+          "n": 31
         }
       },
       {
