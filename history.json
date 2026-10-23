@@ -1139,9 +1139,9 @@
         118.4
       ],
       "sektorHitAtAdd": 0.5848,
-      "peakPerf": 128.22,
-      "peakDay": "2026-10-21",
-      "peakMs": 1792566000000,
+      "peakPerf": 134.05,
+      "peakDay": "2026-10-23",
+      "peakMs": 1792738800000,
       "highAt": "2026-10-23"
     },
     "IXX.DE": {
@@ -2071,9 +2071,9 @@
         21.38
       ],
       "sektorHitAtAdd": 0.0388,
-      "peakPerf": 22.18,
-      "peakDay": "2026-10-22",
-      "peakMs": 1792632600000,
+      "peakPerf": 26.63,
+      "peakDay": "2026-10-23",
+      "peakMs": 1792719000000,
       "highAt": "2026-10-23"
     },
     "YOC": {
@@ -3099,9 +3099,9 @@
         16.37
       ],
       "sektorHitAtAdd": 0.0672,
-      "peakPerf": 26.99,
-      "peakDay": "2026-10-21",
-      "peakMs": 1792566000000,
+      "peakPerf": 33.19,
+      "peakDay": "2026-10-23",
+      "peakMs": 1792738800000,
       "highAt": "2026-10-23",
       "targetHitMonth": 3,
       "targetHitDay": "2026-10-06"
@@ -3543,7 +3543,7 @@
       "peakPerf": 9.78,
       "peakDay": "2026-09-23",
       "peakMs": 1790146800000,
-      "highAt": "2026-10-22",
+      "highAt": "2026-10-23",
       "prov": false,
       "perfHigh": [
         8.22,
@@ -3616,7 +3616,7 @@
       "peakPerf": 7.51,
       "peakDay": "2026-09-15",
       "peakMs": 1789455600000,
-      "highAt": "2026-10-22",
+      "highAt": "2026-10-23",
       "prov": false,
       "perfHigh": [
         7.51
@@ -3682,7 +3682,7 @@
       "peakPerf": 4.63,
       "peakDay": "2026-09-09",
       "peakMs": 1788937200000,
-      "highAt": "2026-10-22",
+      "highAt": "2026-10-23",
       "prov": false,
       "perfHigh": [
         4.63
@@ -3748,7 +3748,7 @@
       "peakPerf": 12.03,
       "peakDay": "2026-10-01",
       "peakMs": 1790812800000,
-      "highAt": "2026-10-22",
+      "highAt": "2026-10-23",
       "prov": false,
       "perfHigh": [
         12.03
@@ -3814,7 +3814,7 @@
       "peakPerf": 10.24,
       "peakDay": "2026-10-05",
       "peakMs": 1791162000000,
-      "highAt": "2026-10-22",
+      "highAt": "2026-10-23",
       "prov": false,
       "perfHigh": [
         7.63
@@ -3880,7 +3880,7 @@
       "peakPerf": 5.3,
       "peakDay": "2026-10-06",
       "peakMs": 1791248400000,
-      "highAt": "2026-10-22",
+      "highAt": "2026-10-23",
       "prov": false,
       "perfHigh": [
         1.99
@@ -3946,7 +3946,7 @@
       "peakPerf": 0.36,
       "peakDay": "2026-09-01",
       "peakMs": 1788246000000,
-      "highAt": "2026-10-22",
+      "highAt": "2026-10-23",
       "prov": false,
       "perfHigh": [
         0.36
@@ -4011,7 +4011,7 @@
       "peakPerf": 1.31,
       "peakDay": "2026-09-16",
       "peakMs": 1789565400000,
-      "highAt": "2026-10-22",
+      "highAt": "2026-10-23",
       "prov": false,
       "perfHigh": [
         1.31
@@ -4076,7 +4076,7 @@
       "peakDay": "2026-09-09",
       "peakMs": 1788937200000,
       "sektorHitAtAdd": 0.2174,
-      "highAt": "2026-10-22",
+      "highAt": "2026-10-23",
       "prov": false,
       "perfHigh": [
         0.7
@@ -4141,7 +4141,7 @@
       "peakPerf": 0.26,
       "peakDay": "2026-09-11",
       "peakMs": 1789098300000,
-      "highAt": "2026-10-22",
+      "highAt": "2026-10-23",
       "prov": false,
       "perfHigh": [
         0.26
@@ -4206,7 +4206,7 @@
       "peakPerf": 0,
       "peakDay": "2026-09-11",
       "peakMs": 1789098300000,
-      "highAt": "2026-10-22",
+      "highAt": "2026-10-23",
       "prov": false,
       "perfHigh": [
         0
@@ -4271,7 +4271,7 @@
       "peakPerf": 1.08,
       "peakDay": "2026-10-14",
       "peakMs": 1791949500000,
-      "highAt": "2026-10-22",
+      "highAt": "2026-10-23",
       "prov": false,
       "perfHigh": [
         0.37
@@ -4336,7 +4336,7 @@
       "peakPerf": 1.69,
       "peakDay": "2026-10-22",
       "peakMs": 1792640700000,
-      "highAt": "2026-10-22",
+      "highAt": "2026-10-23",
       "prov": false,
       "perfHigh": [
         0
@@ -5132,7 +5132,7 @@
     "factors": [
       {
         "name": "Kursziel",
-        "spread": 39.4,
+        "spread": 39.1,
         "best": {
           "k": "<10%",
           "avg": 30.9,
@@ -5140,8 +5140,8 @@
         },
         "worst": {
           "k": "40%+",
-          "avg": -8.5,
-          "n": 34
+          "avg": -8.2,
+          "n": 33
         }
       },
       {
