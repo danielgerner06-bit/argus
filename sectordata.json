@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-24",
-  "updatedAt": "2026-10-24T23:00:53.851Z",
+  "updatedAt": "2026-10-24T23:43:58.553Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -741,7 +741,7 @@
       "sektorPsiAtAdd": 0.0016,
       "recheckAt": "2026-10-21",
       "miss": 0,
-      "sektorHit": 0.1318,
+      "sektorHit": 0.1317,
       "sektorHitAtAdd": 0.0744
     },
     {
@@ -837,7 +837,7 @@
       "eps": 0.11,
       "div": 0,
       "enrichAt": "2026-10-24",
-      "sektorPsi": 0.0032,
+      "sektorPsi": 0.0036,
       "sektorPsiAtAdd": 0.007,
       "recheckAt": "2026-10-22",
       "miss": 0,
@@ -871,7 +871,7 @@
         "recMean": null,
         "targetSpread": 27
       },
-      "sektorHit": 0.2213,
+      "sektorHit": 0.2458,
       "sektorHitAtAdd": 0.2777
     },
     {
@@ -1228,7 +1228,7 @@
       "eps": 2.59,
       "div": 4.89,
       "enrichAt": "2026-10-21",
-      "sektorPsi": 0.0032,
+      "sektorPsi": 0.0036,
       "sektorPsiAtAdd": 0.004,
       "recheckAt": "2026-10-24",
       "miss": 0,
@@ -1262,7 +1262,7 @@
         "recMean": null,
         "targetSpread": 42.4
       },
-      "sektorHit": 0.2213,
+      "sektorHit": 0.2458,
       "sektorHitAtAdd": 0.2777
     },
     {
@@ -1584,7 +1584,7 @@
       },
       "enrichAt": "2026-10-20",
       "sektorPsi": 0.0016,
-      "sektorHit": 0.1318,
+      "sektorHit": 0.1317,
       "sektorPsiAtAdd": 0.0013,
       "sektorHitAtAdd": 0.118,
       "recheckAt": "2026-10-23",
@@ -1841,8 +1841,8 @@
         "targetSpread": 37.6
       },
       "enrichAt": "2026-10-20",
-      "sektorPsi": 0.0032,
-      "sektorHit": 0.2213,
+      "sektorPsi": 0.0036,
+      "sektorHit": 0.2458,
       "sektorPsiAtAdd": 0.0024,
       "sektorHitAtAdd": 0.2417,
       "recheckAt": "2026-10-19",
@@ -2265,7 +2265,7 @@
       "eps": 0.67,
       "div": 0,
       "enrichAt": "2026-10-20",
-      "sektorPsi": 0.0032,
+      "sektorPsi": 0.0036,
       "sektorPsiAtAdd": 0.0344,
       "recheckAt": "2026-10-19",
       "miss": 0,
@@ -2299,7 +2299,7 @@
         "recMean": null,
         "targetSpread": 12.9
       },
-      "sektorHit": 0.2213,
+      "sektorHit": 0.2458,
       "sektorHitAtAdd": 0.2777
     },
     {
@@ -2882,7 +2882,7 @@
         "recMean": null,
         "targetSpread": 10.5
       },
-      "sektorHit": 0.1318,
+      "sektorHit": 0.1317,
       "sektorHitAtAdd": 0.0744
     },
     {
@@ -3173,7 +3173,7 @@
       "eps": 166.94,
       "div": 3.02,
       "enrichAt": "2026-10-24",
-      "sektorPsi": 0.0032,
+      "sektorPsi": 0.0036,
       "sektorPsiAtAdd": 0.0052,
       "recheckAt": "2026-10-22",
       "miss": 0,
@@ -3207,7 +3207,7 @@
         "recMean": null,
         "targetSpread": 0
       },
-      "sektorHit": 0.2213,
+      "sektorHit": 0.2458,
       "sektorHitAtAdd": 0.2777
     },
     {
@@ -3272,7 +3272,7 @@
         "recMean": 1.2,
         "targetSpread": 46.2
       },
-      "sektorHit": 0.1318,
+      "sektorHit": 0.1317,
       "sektorHitAtAdd": 0.0744
     },
     {
@@ -3661,7 +3661,7 @@
         "recMean": 1,
         "targetSpread": 4.5
       },
-      "sektorHit": 0.1318,
+      "sektorHit": 0.1317,
       "sektorHitAtAdd": 0.0744
     },
     {
@@ -3757,7 +3757,7 @@
       "eps": 10.29,
       "div": 4.6,
       "enrichAt": "2026-10-22",
-      "sektorPsi": 0.0032,
+      "sektorPsi": 0.0036,
       "sektorPsiAtAdd": 0.0043,
       "recheckAt": "2026-10-20",
       "miss": 0,
@@ -3791,7 +3791,7 @@
         "recMean": 1.67,
         "targetSpread": 12
       },
-      "sektorHit": 0.2213,
+      "sektorHit": 0.2458,
       "sektorHitAtAdd": 0.2777
     },
     {
@@ -3887,7 +3887,7 @@
       "eps": 1.43,
       "div": 1.8,
       "enrichAt": "2026-10-22",
-      "sektorPsi": 0.0032,
+      "sektorPsi": 0.0036,
       "sektorPsiAtAdd": 0.0038,
       "recheckAt": "2026-10-22",
       "miss": 0,
@@ -3921,7 +3921,7 @@
         "recMean": null,
         "targetSpread": 22.7
       },
-      "sektorHit": 0.2213,
+      "sektorHit": 0.2458,
       "sektorHitAtAdd": 0.2777
     },
     {
@@ -4047,11 +4047,11 @@
         "targetSpread": 0
       },
       "enrichAt": "2026-10-20",
-      "sektorPsi": 0.0032,
+      "sektorPsi": 0.0036,
       "sektorPsiAtAdd": 0.0051,
       "recheckAt": "2026-10-18",
       "miss": 0,
-      "sektorHit": 0.2213,
+      "sektorHit": 0.2458,
       "sektorHitAtAdd": 0.2777
     },
     {
@@ -4112,7 +4112,7 @@
       },
       "enrichAt": "2026-10-22",
       "sektorPsi": 0.0016,
-      "sektorHit": 0.1318,
+      "sektorHit": 0.1317,
       "sektorPsiAtAdd": 0.002,
       "sektorHitAtAdd": 0.0895,
       "recheckAt": "2026-10-21",
@@ -4176,7 +4176,7 @@
       },
       "enrichAt": "2026-10-21",
       "sektorPsi": 0.0016,
-      "sektorHit": 0.1318,
+      "sektorHit": 0.1317,
       "sektorPsiAtAdd": 0.0014,
       "sektorHitAtAdd": 0.1344,
       "recheckAt": "2026-10-24",
@@ -4209,7 +4209,7 @@
       "eps": 5.13,
       "div": 9.2,
       "enrichAt": "2026-10-23",
-      "sektorPsi": 0.0032,
+      "sektorPsi": 0.0036,
       "sektorPsiAtAdd": 0.0015,
       "recheckAt": "2026-10-24",
       "miss": 0,
@@ -4243,7 +4243,7 @@
         "recMean": null,
         "targetSpread": 0
       },
-      "sektorHit": 0.2213,
+      "sektorHit": 0.2458,
       "sektorHitAtAdd": 0.2777
     },
     {
@@ -4496,7 +4496,7 @@
       },
       "enrichAt": "2026-10-22",
       "sektorPsi": 0.0016,
-      "sektorHit": 0.1318,
+      "sektorHit": 0.1317,
       "sektorPsiAtAdd": 0.0019,
       "sektorHitAtAdd": 0.1019,
       "recheckAt": "2026-10-20",
@@ -4564,6 +4564,69 @@
       "sektorHitAtAdd": 0.6127,
       "recheckAt": "2026-10-21",
       "miss": 0
+    },
+    {
+      "ticker": "ALNTG",
+      "name": "Netgem SA",
+      "yahoo": "ALNTG.PA",
+      "sector": "software",
+      "buyPct": 100,
+      "ratingCounts": {
+        "buy": 0,
+        "outperform": 1,
+        "hold": 0,
+        "underperform": 0,
+        "sell": 0
+      },
+      "analysts": 1,
+      "strongBuyPct": 0,
+      "via": "gemini",
+      "source": "yahoo",
+      "verifiedAt": "2026-10-24",
+      "verifiedSource": "yahoo",
+      "seen": "2026-10-24",
+      "perf6m": 24.01,
+      "perf6mAt": "2026-10-24",
+      "perf1mBefore": -4.08,
+      "upside": 17,
+      "pe": 13.4,
+      "eps": 0.07,
+      "div": 5.32,
+      "factors": {
+        "forwardPe": 11.75,
+        "priceToBook": 1.27,
+        "priceToSales": 0.95,
+        "evEbitda": null,
+        "evRevenue": null,
+        "grossMargin": 73.04,
+        "operatingMargin": 48.5,
+        "profitMargin": 6.46,
+        "ebitdaMargin": 15.07,
+        "roe": null,
+        "roa": null,
+        "revenueGrowth": 8.6,
+        "earningsGrowth": null,
+        "earningsQGrowth": 141,
+        "debtToEquity": null,
+        "currentRatio": null,
+        "quickRatio": null,
+        "payoutRatio": 0,
+        "heldInsiders": 46.61,
+        "heldInstitutions": 9.04,
+        "marketCap": 31457266,
+        "beta": 0.34,
+        "distTo52High": -14.16,
+        "pos52Band": 68.2,
+        "distTo50dma": 0,
+        "distTo200dma": 14.5,
+        "recMean": null,
+        "targetSpread": 0
+      },
+      "enrichAt": "2026-10-24",
+      "sektorPsi": 0.0036,
+      "sektorHit": 0.2458,
+      "sektorPsiAtAdd": 0.0036,
+      "sektorHitAtAdd": 0.2458
     }
   ],
   "psiHistory": [
@@ -4656,6 +4719,11 @@
       "t": "YOC.DE",
       "d": "2026-07-21",
       "v": 0.0035
+    },
+    {
+      "t": "ALNTG",
+      "d": "2026-10-24",
+      "v": 0.0036
     },
     {
       "t": "HIGH.DE",
@@ -5082,27 +5150,23 @@
   "news": {
     "items": [
       {
-        "text": "US-Notenbank hält Leitzins stabil, weitere Erhöhungen erwartet.",
-        "stamp": "23.10.26"
+        "text": "US-Notenbank Federal Reserve setzt Zinserhöhungen fort.",
+        "stamp": "24.10.26"
       },
       {
-        "text": "Ukraine-Krieg: Putin zu Verhandlungen bereit, Verhandlungen unter US-Beteiligung.",
-        "stamp": "23.10.26"
+        "text": "Tech-Aktien stürzen ab, doch Markt ist widerstandsfähig.",
+        "stamp": "24.10.26"
       },
       {
-        "text": "BASF prüft Übernahme von Evonik – Chemiebranche im Umbruch.",
-        "stamp": "23.10.26"
+        "text": "Hauskauf in Deutschland wird teurer, weltweite Zinsen steigen.",
+        "stamp": "24.10.26"
       },
       {
-        "text": "Deutsche Wirtschaft: China-Konkurrenz verschärft strukturelle Krise.",
-        "stamp": "23.10.26"
+        "text": "Micron Technology-Aktie rutscht ab, Sorge wächst im Forum.",
+        "stamp": "24.10.26"
       },
       {
-        "text": "Meta-Aktie vor Split: Was stimmrechtslose Aktien für Anleger bedeuten.",
-        "stamp": "23.10.26"
-      },
-      {
-        "text": "Ölpreis-Prognose: Investor setzt auf steigende Ölpreise – Inflation im Fokus.",
+        "text": "Eurozone: Schwache französische Wirtschaft belastet Unternehmensstimmung.",
         "stamp": "23.10.26"
       }
     ],
@@ -5119,7 +5183,7 @@
     "universe": 8842,
     "scanned": 8842,
     "lastCursor": 5494,
-    "candCursor": 82,
+    "candCursor": 90,
     "candidates": [
       "Gulfport Energy Corporation",
       "Endeavour Silver Corp.",
@@ -5523,7 +5587,7 @@
       "Inventiva S.A."
     ],
     "noteCursor": 10,
-    "focusCursor": 2,
+    "focusCursor": 3,
     "recheckCursor": 16,
     "regionNoteCursor": 6,
     "notesDay": "2026-08-26",
@@ -5531,7 +5595,7 @@
       "cons_cycl": 2057,
       "cons_def": 1089,
       "materials": 1479,
-      "health": 6064,
+      "health": 6065,
       "finance": 4061,
       "energy": 1885,
       "hardware": 1370,
@@ -5547,18 +5611,18 @@
       "cons_cycl": 2063,
       "cons_def": 1093,
       "materials": 1481,
-      "health": 6072,
+      "health": 6073,
       "finance": 4068,
       "energy": 1886,
       "hardware": 1377,
-      "software": 4067,
+      "software": 4068,
       "industrial": 1800,
       "utilities": 755,
       "comm": 895,
       "ai_semi": 827,
       "realestate": 377
     },
-    "heavyAt": "2026-10-24T10:51:23.843Z",
+    "heavyAt": "2026-10-24T23:42:54.204Z",
     "revalidateTag": "multi-source-v9",
     "fmpRetryTag": "grades-summary-fix",
     "heavyDay": "2026-10-23",
@@ -5669,9 +5733,9 @@
       "EVT": "health",
       "AEHR": "ai_semi",
       "MYE": "materials",
-      "ATKR": "industrial"
+      "ATKR": "industrial",
+      "BIVI": "health"
     }
   },
-  "blacklist": {},
-  "yahooAt": "2026-10-24T23:00:53.851Z"
+  "blacklist": {}
 }
