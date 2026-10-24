@@ -1139,9 +1139,9 @@
         118.4
       ],
       "sektorHitAtAdd": 0.5848,
-      "peakPerf": 133.74,
-      "peakDay": "2026-10-22",
-      "peakMs": 1792652400000,
+      "peakPerf": 139.26,
+      "peakDay": "2026-10-23",
+      "peakMs": 1792738800000,
       "highAt": "2026-10-24"
     },
     "IXX.DE": {
@@ -3099,9 +3099,9 @@
         16.37
       ],
       "sektorHitAtAdd": 0.0672,
-      "peakPerf": 26.99,
-      "peakDay": "2026-10-21",
-      "peakMs": 1792566000000,
+      "peakPerf": 32.74,
+      "peakDay": "2026-10-23",
+      "peakMs": 1792738800000,
       "highAt": "2026-10-24",
       "targetHitMonth": 3,
       "targetHitDay": "2026-10-06"
@@ -4400,10 +4400,10 @@
       "perf": [
         3.99
       ],
-      "highAt": "2026-10-23",
-      "peakPerf": 8.73,
-      "peakDay": "2026-10-21",
-      "peakMs": 1792566000000,
+      "highAt": "2026-10-24",
+      "peakPerf": 11.52,
+      "peakDay": "2026-10-22",
+      "peakMs": 1792652400000,
       "prov": false,
       "perfHigh": [
         4.81
@@ -4468,7 +4468,7 @@
       "peakPerf": 5.09,
       "peakDay": "2026-09-25",
       "peakMs": 1790319600000,
-      "highAt": "2026-10-23",
+      "highAt": "2026-10-24",
       "prov": false,
       "perfHigh": [
         5.09
@@ -4533,7 +4533,7 @@
       "peakPerf": 22.93,
       "peakDay": "2026-10-01",
       "peakMs": 1790812800000,
-      "highAt": "2026-10-23",
+      "highAt": "2026-10-24",
       "prov": false,
       "perfHigh": [
         22.93
@@ -4593,7 +4593,7 @@
       "seenMs": 1791072000000,
       "startPrice": 359.0749969482422,
       "perf": [],
-      "highAt": "2026-10-23",
+      "highAt": "2026-10-24",
       "peakPerf": 3.67,
       "peakDay": "2026-10-14",
       "peakMs": 1791949500000
@@ -4655,7 +4655,7 @@
       "peakPerf": 1.41,
       "peakDay": "2026-10-07",
       "peakMs": 1791342000000,
-      "highAt": "2026-10-23"
+      "highAt": "2026-10-24"
     },
     "EKTG": {
       "ticker": "EKTG",
@@ -4714,7 +4714,7 @@
       "peakPerf": 0.42,
       "peakDay": "2026-10-13",
       "peakMs": 1791874800000,
-      "highAt": "2026-10-23"
+      "highAt": "2026-10-24"
     },
     "ALPAU": {
       "ticker": "ALPAU",
@@ -4770,7 +4770,7 @@
       "seenMs": 1791417600000,
       "startPrice": 1.1474999785423279,
       "perf": [],
-      "highAt": "2026-10-23",
+      "highAt": "2026-10-24",
       "peakPerf": 5.45,
       "peakDay": "2026-10-19",
       "peakMs": 1792393200000
@@ -4829,7 +4829,7 @@
       "seenMs": 1791676800000,
       "startPrice": 17.0600004196167,
       "perf": [],
-      "highAt": "2026-10-23",
+      "highAt": "2026-10-24",
       "peakPerf": 0,
       "peakDay": "2026-10-12",
       "peakMs": 1791788400000
@@ -4888,7 +4888,7 @@
       "seenMs": 1791763200000,
       "startPrice": 3.3674999475479126,
       "perf": [],
-      "highAt": "2026-10-23",
+      "highAt": "2026-10-24",
       "peakPerf": 12.47,
       "peakDay": "2026-10-21",
       "peakMs": 1792566000000
@@ -4950,7 +4950,7 @@
       "peakPerf": 8.12,
       "peakDay": "2026-10-21",
       "peakMs": 1792566000000,
-      "highAt": "2026-10-23"
+      "highAt": "2026-10-24"
     },
     "064290": {
       "ticker": "064290",
@@ -5009,7 +5009,7 @@
       "peakPerf": 0,
       "peakDay": "2026-10-21",
       "peakMs": 1792540800000,
-      "highAt": "2026-10-23"
+      "highAt": "2026-10-24"
     },
     "042660": {
       "ticker": "042660",
@@ -5065,7 +5065,7 @@
       "seenMs": 1792454400000,
       "startPrice": 64600,
       "perf": [],
-      "highAt": "2026-10-23",
+      "highAt": "2026-10-24",
       "peakPerf": 0,
       "peakDay": "2026-10-21",
       "peakMs": 1792540800000
@@ -5127,7 +5127,7 @@
       "peakPerf": 0,
       "peakDay": "2026-10-21",
       "peakMs": 1792540800000,
-      "highAt": "2026-10-23"
+      "highAt": "2026-10-24"
     }
   },
   "findings": {
@@ -5162,7 +5162,7 @@
       },
       {
         "name": "Dividende",
-        "spread": 17.6,
+        "spread": 18.6,
         "best": {
           "k": "<2%",
           "avg": 5.9,
@@ -5170,8 +5170,8 @@
         },
         "worst": {
           "k": "keine",
-          "avg": -11.7,
-          "n": 14
+          "avg": -12.7,
+          "n": 13
         }
       },
       {
