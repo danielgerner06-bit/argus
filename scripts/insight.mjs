@@ -58,6 +58,37 @@ Schreibe MAXIMAL 2 sehr knappe deutsche Sätze (zusammen höchstens 30 Wörter),
   return out;
 }
 
+// Schlagzeilen-Geschmack des Besitzers (in der App im Cockpit markiert, seit
+// 2026-10-27). Kommt vom App-Worker; fehlt er, sucht Gemini wie bisher. Kostet
+// keinen zusätzlichen Gemini-Aufruf, nur ~300 Eingabe-Tokens im selben Prompt.
+const TASTE_URL = process.env.NEWS_TASTE_URL ||
+  'https://portfolio-cors-proxy.daniel-gerner06.workers.dev/news-taste';
+
+async function fetchTaste() {
+  try {
+    const r = await fetch(TASTE_URL, { signal: AbortSignal.timeout(8000) });
+    if (!r.ok) return null;
+    const j = await r.json();
+    const clean = a => (Array.isArray(a) ? a : [])
+      .filter(x => typeof x === 'string' && x.trim())
+      .map(x => x.trim().slice(0, 140)).slice(0, 15);
+    const liked = clean(j.liked), skipped = clean(j.skipped);
+    return liked.length ? { liked, skipped } : null;
+  } catch { return null; }
+}
+
+export function tasteBlock(taste) {
+  if (!taste || !taste.liked.length) return '';
+  const list = a => a.map(h => `- ${h}`).join('\n');
+  return `
+
+LESER-INTERESSEN: Diese früheren Schlagzeilen fand der Leser WIRKLICH relevant:
+${list(taste.liked)}${taste.skipped.length ? `
+Diese fand er weniger relevant:
+${list(taste.skipped)}` : ''}
+Wähle die neuen Meldungen nach diesen Themen und dieser Art aus (ähnliche Tragweite und Bereiche), wiederhole sie aber NICHT. Aktualität bleibt Pflicht.`;
+}
+
 // Markt-News-Ticker: die wichtigsten (max 3) marktbewegenden News, sehr knapp.
 // Liefert { items: ["...", "..."], date } per Google-Search-Grounding.
 export async function buildNews(key) {
@@ -72,7 +103,7 @@ WICHTIG: Nimm NUR wirklich aktuelle Meldungen. Lass veraltete/alte Nachrichten w
 Gib bis zu ${COUNT} als JSON-Array zurück, wichtigste zuerst. Jedes Element:
 { "h": "kurze deutsche Schlagzeile (max 9 Wörter, konkret)", "t": "Veröffentlichungsdatum als ISO 8601, z.B. ${today}" }
 Beim Datum das echte Veröffentlichungsdatum aus der Quelle verwenden.
-Nur das JSON-Array, kein weiterer Text.`;
+Nur das JSON-Array, kein weiterer Text.${tasteBlock(await fetchTaste())}`;
   const text = await gen(key, prompt, true);
   let raw = [];
   try {
