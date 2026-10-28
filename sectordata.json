@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-28",
-  "updatedAt": "2026-10-28T12:51:21.070Z",
+  "updatedAt": "2026-10-28T13:00:50.229Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -5753,5 +5753,6 @@
       "ANIK": "health"
     }
   },
-  "blacklist": {}
+  "blacklist": {},
+  "yahooAt": "2026-10-28T13:00:50.229Z"
 }
