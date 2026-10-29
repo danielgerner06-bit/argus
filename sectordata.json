@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-29",
-  "updatedAt": "2026-10-29T12:30:29.056Z",
+  "updatedAt": "2026-10-29T12:30:30.799Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -5180,6 +5180,7 @@
     "lastCursor": 6694,
     "candCursor": 138,
     "candidates": [
+      "Avalo Therapeutics",
       "Webull",
       "DroneShield",
       "AFRY AB (publ)",
@@ -5578,8 +5579,7 @@
       "BBVA",
       "HSBC Holdings plc",
       "Software AG",
-      "Adtran Holdings Inc.",
-      "MorphoSys AG"
+      "Adtran Holdings Inc."
     ],
     "noteCursor": 10,
     "focusCursor": 1,
@@ -5738,6 +5738,10 @@
       "YKY.MI": "software"
     },
     "suggested": [
+      {
+        "name": "Avalo Therapeutics",
+        "at": "2026-10-29T12:30:30.799Z"
+      },
       {
         "name": "Webull",
         "at": "2026-10-29T12:30:29.056Z"
