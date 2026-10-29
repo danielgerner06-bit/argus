@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-29",
-  "updatedAt": "2026-10-29T12:30:30.799Z",
+  "updatedAt": "2026-10-29T12:30:32.682Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -5180,6 +5180,7 @@
     "lastCursor": 6694,
     "candCursor": 138,
     "candidates": [
+      "Scout24",
       "Avalo Therapeutics",
       "Webull",
       "DroneShield",
@@ -5578,8 +5579,7 @@
       "Hallador Energy Company",
       "BBVA",
       "HSBC Holdings plc",
-      "Software AG",
-      "Adtran Holdings Inc."
+      "Software AG"
     ],
     "noteCursor": 10,
     "focusCursor": 1,
@@ -5738,6 +5738,10 @@
       "YKY.MI": "software"
     },
     "suggested": [
+      {
+        "name": "Scout24",
+        "at": "2026-10-29T12:30:32.682Z"
+      },
       {
         "name": "Avalo Therapeutics",
         "at": "2026-10-29T12:30:30.799Z"
