@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-29",
-  "updatedAt": "2026-10-29T17:00:50.489Z",
+  "updatedAt": "2026-10-29T18:00:50.602Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -153,9 +153,9 @@
     },
     {
       "id": "ai_semi",
-      "perf": -9.22,
+      "perf": -9.86,
       "avg30": 6.45,
-      "perf6m": 14.48
+      "perf6m": 13.66
     },
     {
       "id": "hardware",
@@ -201,9 +201,9 @@
     },
     {
       "id": "energy",
-      "perf": 11.09,
+      "perf": 11.1,
       "avg30": 3.87,
-      "perf6m": 15.81
+      "perf6m": 15.82
     },
     {
       "id": "materials",
@@ -257,15 +257,15 @@
     },
     {
       "id": "em",
-      "perf": -6.76,
+      "perf": -6.96,
       "avg30": 1.74,
-      "perf6m": -0.53
+      "perf6m": -0.75
     },
     {
       "id": "apac",
-      "perf": -4.12,
+      "perf": -4.45,
       "avg30": 2.18,
-      "perf6m": 5.86
+      "perf6m": 5.5
     },
     {
       "id": "india",
@@ -281,9 +281,9 @@
     },
     {
       "id": "world",
-      "perf": 0.55,
+      "perf": 0.43,
       "avg30": 1.2,
-      "perf6m": 6.9
+      "perf6m": 6.77
     }
   ],
   "topStocks": [
@@ -5797,5 +5797,5 @@
     ]
   },
   "blacklist": {},
-  "yahooAt": "2026-10-29T17:00:50.489Z"
+  "yahooAt": "2026-10-29T18:00:50.602Z"
 }
