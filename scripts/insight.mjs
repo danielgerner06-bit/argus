@@ -82,11 +82,11 @@ export function tasteBlock(taste) {
   const list = a => a.map(h => `- ${h}`).join('\n');
   return `
 
-LESER-INTERESSEN: Diese früheren Schlagzeilen fand der Leser WIRKLICH relevant:
+GESCHMACK DES LESERS (nur zur AUSWAHL, KEINE Quelle): Diese ALTEN Schlagzeilen fand er wirklich relevant:
 ${list(taste.liked)}${taste.skipped.length ? `
-Diese fand er weniger relevant:
+Diese ALTEN fand er weniger relevant:
 ${list(taste.skipped)}` : ''}
-Wähle die neuen Meldungen nach diesen Themen und dieser Art aus (ähnliche Tragweite und Bereiche), wiederhole sie aber NICHT. Aktualität bleibt Pflicht.`;
+Suche trotzdem über Google nach HEUTIGEN Meldungen und bevorzuge unter ihnen solche mit ähnlichen Themen und ähnlicher Tragweite. Übernimm KEINE dieser alten Schlagzeilen, erfinde nichts, und gib nur Meldungen mit echtem, aktuellem Datum zurück.`;
 }
 
 // Markt-News-Ticker: die wichtigsten (max 3) marktbewegenden News, sehr knapp.
@@ -103,8 +103,24 @@ WICHTIG: Nimm NUR wirklich aktuelle Meldungen. Lass veraltete/alte Nachrichten w
 Gib bis zu ${COUNT} als JSON-Array zurück, wichtigste zuerst. Jedes Element:
 { "h": "kurze deutsche Schlagzeile (max 9 Wörter, konkret)", "t": "Veröffentlichungsdatum als ISO 8601, z.B. ${today}" }
 Beim Datum das echte Veröffentlichungsdatum aus der Quelle verwenden.
-Nur das JSON-Array, kein weiterer Text.${tasteBlock(await fetchTaste())}`;
-  const text = await gen(key, prompt, true);
+Nur das JSON-Array, kein weiterer Text.`;
+  // Erst mit Geschmack; liefert Gemini damit nichts Aktuelles (am 28.10.2026
+  // kamen erfundene Meldungen vom 23.07.2024), noch einmal ohne.
+  const taste = tasteBlock(await fetchTaste());
+  let items = parseNews(await gen(key, prompt + taste, true), now, MAX_AGE_H);
+  if (!items.length && taste) {
+    console.log('News: mit Geschmack nichts Aktuelles, zweiter Versuch ohne.');
+    items = parseNews(await gen(key, prompt, true), now, MAX_AGE_H);
+  }
+  items = items.slice(0, COUNT).map(({ text, stamp }) => ({ text, stamp }));
+  // NIE veraltete Meldungen zeigen — dann bleiben die vorigen stehen.
+  if (!items.length) throw new Error('keine aktuellen News');
+  return { items, date: today };
+}
+
+// Antwort → [{ text, stamp, ms }]: nur Meldungen mit echtem Datum in den
+// letzten maxAgeH Stunden, neueste zuerst. Kein Rückfall auf Altes.
+function parseNews(text, now, maxAgeH) {
   let raw = [];
   try {
     const t = text.replace(/```json/gi, '').replace(/```/g, '');
@@ -124,19 +140,17 @@ Nur das JSON-Array, kein weiterer Text.${tasteBlock(await fetchTaste())}`;
   let items = (Array.isArray(raw) ? raw : []).map(o => {
     if (typeof o === 'string') return { text: o.trim(), stamp: '', ms: null };
     const f = fmt(o.t || o.time || o.date);
-    return { text: String(o.h || o.headline || o.text || '').trim(), stamp: f.stamp, ms: f.ms };
+    // Schlusspunkt weg: eine Schlagzeile endet ohne, und auf dem iPhone
+    // landete der Punkt allein in der nächsten Zeile.
+    const h = String(o.h || o.headline || o.text || '').trim().replace(/[.。]+$/, '');
+    return { text: h, stamp: f.stamp, ms: f.ms };
   }).filter(x => x.text);
 
-  // Veraltete (älter als MAX_AGE_H) verwerfen — aber wenn dadurch NICHTS Aktuelles bleibt,
-  // lieber die (wenigen) vorhandenen behalten, statt eine leere Leiste zu zeigen.
-  const cutoff = now.getTime() - MAX_AGE_H * 3600000;
-  const fresh = items.filter(x => x.ms != null && x.ms >= cutoff);
-  items = (fresh.length ? fresh : items);
-  // neueste zuerst (Items ohne Datum ans Ende), dann auf COUNT begrenzen
-  items.sort((a, b) => (b.ms ?? -Infinity) - (a.ms ?? -Infinity));
-  items = items.slice(0, COUNT).map(({ text, stamp }) => ({ text, stamp }));
-  if (!items.length) throw new Error('keine News geparst');
-  return { items, date: today };
+  // Veraltete und undatierte verwerfen — auch wenn dann nichts bleibt.
+  const cutoff = now.getTime() - maxAgeH * 3600000;
+  const fresh = items.filter(x => x.ms != null && x.ms >= cutoff && x.ms <= now.getTime() + 36 * 3600000);
+  fresh.sort((a, b) => b.ms - a.ms);
+  return fresh;
 }
 
 // Knappe KI-Analyse der stärksten Faktoren/Kombination. `findings` ist ein bereits
