@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-29",
-  "updatedAt": "2026-10-29T11:00:51.018Z",
+  "updatedAt": "2026-10-29T11:30:28.831Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -5180,6 +5180,7 @@
     "lastCursor": 6694,
     "candCursor": 138,
     "candidates": [
+      "DroneShield",
       "AFRY AB (publ)",
       "Vow ASA",
       "Omda AS",
@@ -5578,8 +5579,7 @@
       "Software AG",
       "Adtran Holdings Inc.",
       "MorphoSys AG",
-      "Jenoptik AG",
-      "Hensoldt AG"
+      "Jenoptik AG"
     ],
     "noteCursor": 10,
     "focusCursor": 1,
@@ -5736,7 +5736,13 @@
       "ELMD": "health",
       "ANIK": "health",
       "YKY.MI": "software"
-    }
+    },
+    "suggested": [
+      {
+        "name": "DroneShield",
+        "at": "2026-10-29T11:30:28.831Z"
+      }
+    ]
   },
   "blacklist": {},
   "yahooAt": "2026-10-29T11:00:51.018Z"
