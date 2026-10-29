@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-29",
-  "updatedAt": "2026-10-29T12:30:35.243Z",
+  "updatedAt": "2026-10-29T12:30:36.916Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -5180,6 +5180,7 @@
     "lastCursor": 6694,
     "candCursor": 138,
     "candidates": [
+      "Grindr",
       "Vivani Medical",
       "Scout24",
       "Avalo Therapeutics",
@@ -5578,8 +5579,7 @@
       "Health In Tech, Inc.",
       "Solaris Energy Infrastructure, Inc.",
       "Hallador Energy Company",
-      "BBVA",
-      "HSBC Holdings plc"
+      "BBVA"
     ],
     "noteCursor": 10,
     "focusCursor": 1,
@@ -5738,6 +5738,10 @@
       "YKY.MI": "software"
     },
     "suggested": [
+      {
+        "name": "Grindr",
+        "at": "2026-10-29T12:30:36.916Z"
+      },
       {
         "name": "Vivani Medical",
         "at": "2026-10-29T12:30:35.243Z"
