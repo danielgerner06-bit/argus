@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-29",
-  "updatedAt": "2026-10-29T12:00:51.066Z",
+  "updatedAt": "2026-10-29T12:30:29.056Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -5180,6 +5180,7 @@
     "lastCursor": 6694,
     "candCursor": 138,
     "candidates": [
+      "Webull",
       "DroneShield",
       "AFRY AB (publ)",
       "Vow ASA",
@@ -5578,8 +5579,7 @@
       "HSBC Holdings plc",
       "Software AG",
       "Adtran Holdings Inc.",
-      "MorphoSys AG",
-      "Jenoptik AG"
+      "MorphoSys AG"
     ],
     "noteCursor": 10,
     "focusCursor": 1,
@@ -5738,6 +5738,10 @@
       "YKY.MI": "software"
     },
     "suggested": [
+      {
+        "name": "Webull",
+        "at": "2026-10-29T12:30:29.056Z"
+      },
       {
         "name": "DroneShield",
         "at": "2026-10-29T11:30:28.831Z"
