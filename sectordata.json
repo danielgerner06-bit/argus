@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-29",
-  "updatedAt": "2026-10-29T13:00:29.353Z",
+  "updatedAt": "2026-10-29T13:00:31.771Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -5180,6 +5180,7 @@
     "lastCursor": 6694,
     "candCursor": 138,
     "candidates": [
+      "NanoRepro",
       "Westwing",
       "Dr. Hönle",
       "Grindr",
@@ -5578,8 +5579,7 @@
       "Inventiva S.A.",
       "Pagaya Technologies Ltd.",
       "Vishay Intertechnology, Inc.",
-      "Health In Tech, Inc.",
-      "Solaris Energy Infrastructure, Inc."
+      "Health In Tech, Inc."
     ],
     "noteCursor": 10,
     "focusCursor": 1,
@@ -5738,6 +5738,10 @@
       "YKY.MI": "software"
     },
     "suggested": [
+      {
+        "name": "NanoRepro",
+        "at": "2026-10-29T13:00:31.771Z"
+      },
       {
         "name": "Westwing",
         "at": "2026-10-29T13:00:29.353Z"
