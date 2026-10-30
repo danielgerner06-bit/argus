@@ -89,7 +89,11 @@ async function chart(sym, fromMs, toMs) {
 }
 
 // ── Universum: die groessten Aktien je Region (Yahoo-Screener) ───────────
-const UNIV_VERSION = 2;
+const UNIV_VERSION = 3;
+// US-Freiverkehr (Pink Sheets, OTCQX …): dort stehen vor allem ADRs
+// auslaendischer Firmen ohne eigene Analysten (BPER als BPXXY). Weil die
+// USA zuerst laufen, verdraengten sie sonst die Heimatnotierung.
+const OTC = new Set(['PNK', 'OQB', 'OQX', 'OEM', 'OBB', 'OTC', 'OGM']);
 const REGION_QUOTA = {
   us: 2000, ca: 200, gb: 280, de: 280, fr: 200, ch: 140, nl: 90, it: 110,
   es: 90, se: 150, dk: 60, no: 70, fi: 60, be: 50, at: 30, ie: 20,
@@ -133,6 +137,7 @@ async function buildUniverse() {
       if (!quotes.length) break;
       for (const q of quotes) {
         if (q.quoteType && q.quoteType !== 'EQUITY') continue;
+        if (OTC.has(q.exchange) || /OTC|Pink/i.test(q.fullExchangeName || '')) continue;
         if (!q.symbol || out.has(q.symbol)) continue;
         const nk = nameKey(q.longName || q.shortName);
         if (nk && names.has(nk)) continue;
