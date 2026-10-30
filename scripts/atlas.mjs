@@ -130,7 +130,7 @@ async function buildUniverse() {
     .replace(/\s+/g, ' ').trim();
   for (const [region, quota] of Object.entries(REGION_QUOTA)) {
     let got = 0;
-    for (let off = 0; got < quota && off < quota + 250; off += 250) {
+    for (let off = 0; got < quota && off < quota * 2 + 250; off += 250) {
       let quotes = [];
       try { quotes = await screenerPage(region, off, Math.min(250, quota - got), auth); }
       catch (e) { if (e instanceof Stop) throw e; console.log(`Screener ${region}: ${e.message}`); break; }
