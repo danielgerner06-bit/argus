@@ -96,7 +96,7 @@ async function chart(sym, fromMs, toMs) {
 // Firmen (AXA.F, BNP.F, 1520.F …), „at“ Intel in Wien (INTC.VI), und die USA
 // (zuerst gelaufen) schnappten per Namensabgleich die Heimatnotierung von SAP,
 // ASML, TSMC, Toyota, Novo … als ADR weg (Region „usa“). Regeln:
-//   - Kuerzel-Endung muss zur Heimatboerse passen (de → .DE, nicht .F),
+//   - Kuerzel-Endung muss zur Heimatboerse passen (at → .VI, us → keine),
 //   - Berichtswaehrung (financialCurrency) muss zum Land passen — so faellt
 //     das SAP-ADR (berichtet EUR) aus den USA und Intel (USD) aus Wien,
 //   - Namensabgleich wie bisher (erste Notierung gewinnt), Euro-Boersen mit
@@ -117,7 +117,11 @@ const HOME_SUFFIX = {
   tw: ['TW', 'TWO'], au: ['AX'], in: ['NS', 'BO'], sg: ['SI'], fr: ['PA'],
   nl: ['AS'], it: ['MI'], es: ['MC'], fi: ['HE'], be: ['BR'], at: ['VI'],
   ie: ['IR'], se: ['ST'], dk: ['CO'], no: ['OL'], gb: ['L'], ch: ['SW'],
-  de: ['DE'],
+  // Deutschland: Yahoos Region „de“ fuehrt viele deutsche Aktien nur unter
+  // Frankfurt (SIE.F, ALV.F) — mit .DE allein blieben 5 uebrig. Fremde Firmen
+  // in Frankfurt fallen ueber Berichtswaehrung (EUR) und Namensabgleich
+  // (Euro-Laender laufen vorher) heraus.
+  de: ['DE', 'F'],
 };
 // Berichtswaehrungen, die zu einer Heimatnotierung passen.
 const EUR = ['EUR'];
@@ -327,7 +331,7 @@ function universeReport(list) {
   for (const u of list) by[u.r] = (by[u.r] || 0) + 1;
   console.log('Probe je Region:', JSON.stringify(by), 'gesamt', list.length);
   const has = new Set(list.map((u) => u.s));
-  const probe = ['SAP.DE', 'SAP', 'ASML.AS', 'ASML', '2330.TW', 'TSM', '7203.T', 'TM',
+  const probe = ['SAP.DE', 'SAP.F', 'SAP', 'SIE.F', 'ALV.F', 'AXA.F', 'BNP.F', 'ASML.AS', 'ASML', '2330.TW', 'TSM', '7203.T', 'TM',
     'NOVO-B.CO', 'NVO', 'SIE.DE', 'ALV.DE', 'INTC', 'INTC.VI', 'EBS.VI', 'OMV.VI',
     'RY.TO', 'RY', 'NESN.SW', 'SHEL.L', 'SHEL', '9988.HK', 'BABA', 'AAPL'];
   console.log('Probe Kuerzel:', probe.map((p) => `${p}=${has.has(p) ? 'ja' : 'nein'}`).join(' '));
