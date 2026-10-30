@@ -182,7 +182,7 @@ async function buildUniverse() {
     .replace(/[.,()&'\-\/]/g, ' ')
     .replace(/\b(aktiengesellschaft|ag|se|sa|spa|plc|nv|oyj|ab|asa|as|a s|inc|corp|corporation|co|ltd|limited|holdings?|group|company|kgaa|class [a-z]|the)\b/g, ' ')
     .replace(/\s+/g, ' ').trim();
-  let noFc = 0, seen = 0;
+  let noFc = 0, seen = 0, rejected = 0;
   for (const [region, quota] of Object.entries(REGION_QUOTA)) {
     let got = 0, pages = 0;
     // Immer volle Seiten holen und selbst filtern — vorher wurde nur
@@ -198,7 +198,12 @@ async function buildUniverse() {
         seen++;
         if (!q.financialCurrency) noFc++;
         if (q.quoteType && q.quoteType !== 'EQUITY') continue;
-        if (!homeListing(q, region) || out.has(q.symbol)) continue;
+        if (!homeListing(q, region) || out.has(q.symbol)) {
+          if (DRY && region === 'de' && rejected++ < 40) {
+            console.log(`  de abgelehnt: ${q.symbol} ${q.exchange} fc=${q.financialCurrency} ${q.longName || q.shortName}`);
+          }
+          continue;
+        }
         const nk = nameKey(q.longName || q.shortName);
         if (nk && names.has(nk)) continue;
         if (nk) names.add(nk);
