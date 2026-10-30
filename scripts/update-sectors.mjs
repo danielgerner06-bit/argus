@@ -366,6 +366,37 @@ const today = () => new Date().toISOString().slice(0, 10);
      Finnhub) — auch wenn Gemini gerade ausfällt (503). So hängt keine echte Perle an
      Geminis Verfügbarkeit. Gemini-Counts dienen nur als Fallback, falls keine harte
      Quelle die Aktie kennt. */
+  /* 2a2) Vorschläge aus Atlas (scripts/atlas.mjs) -------------------------
+     Atlas nimmt zufällig Aktien des ganzen Marktes auf; hat eine dabei 100 %
+     Kaufempfehlung (≥ 3 Analysten), steht sie in atlas.json → suggest. Sie wird
+     wie ein Vorschlag aus der App behandelt, aber HINTEN angehängt — die
+     eigenen Vorschläge aus der App gehen immer vor. Schon bekannte Perlen,
+     gesperrte und in den letzten 90 Tagen geprüfte fallen weg. */
+  if (pearlDue) {
+    try {
+      const res = await fetch('https://raw.githubusercontent.com/danielgerner06-bit/argus/atlas/atlas.json?t=' + Date.now());
+      if (res.ok) {
+        const atlas = await res.json();
+        scan.suggested = Array.isArray(scan.suggested) ? scan.suggested : [];
+        const known = new Set(Object.values(db).map(s => nameKeyOf(s.name)));
+        for (const tk of Object.keys(blacklist)) known.add(nameKeyOf(tk));
+        const cutoff = nowMs - 90 * 86400000;
+        const recent = new Set(scan.suggested
+          .filter(sg => sg && (!sg.checkedAt || Date.parse(sg.checkedAt) > cutoff))
+          .map(sg => nameKeyOf(sg.name)));
+        let added = 0;
+        for (const a of (atlas.suggest || [])) {
+          const k = nameKeyOf(a.name);
+          if (!k || known.has(k) || recent.has(k)) continue;
+          scan.suggested.push({ name: a.name, at: a.at || new Date().toISOString(), src: 'atlas' });
+          recent.add(k);
+          added++;
+        }
+        if (added) console.log(`Atlas: ${added} Aktien mit 100 % Kaufempfehlung zur Prüfung vorgemerkt.`);
+      }
+    } catch (e) { console.log('Atlas-Vorschläge nicht lesbar:', e.message); }
+  }
+
   if (pearlDue && candidates.length) {
     try {
       // Erst die offenen Vorschläge aus der App (noch nicht geprüft), dann reihum.
@@ -460,8 +491,11 @@ const today = () => new Date().toISOString().slice(0, 10);
         const c = candByKey[nameKeyOf(sg.name)] || sg.name;
         if (prio.includes(c) && outcome[c]) { sg.checkedAt = stamp; sg.result = outcome[c]; }
       }
-      if (Array.isArray(scan.suggested) && scan.suggested.length > 60) {
-        scan.suggested = scan.suggested.slice(0, 60);
+      if (Array.isArray(scan.suggested) && scan.suggested.length > 120) {
+        // Offene behalten (App-Vorschläge vorn), von den geprüften die jüngsten.
+        const open = scan.suggested.filter(sg => sg && !sg.checkedAt);
+        const done = scan.suggested.filter(sg => sg && sg.checkedAt);
+        scan.suggested = [...open, ...done].slice(0, 120);
       }
       console.log(`Kandidaten: ${slice.length} im Slice, ${tried} geprüft, ${kept} nach Multi-Quellen-Konsens aufgenommen.`);
     } catch (e) { console.error('Kandidatenprüfung fehlgeschlagen:', e.message); }

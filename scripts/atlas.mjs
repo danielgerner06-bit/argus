@@ -89,6 +89,7 @@ async function chart(sym, fromMs, toMs) {
 }
 
 // ── Universum: die groessten Aktien je Region (Yahoo-Screener) ───────────
+const UNIV_VERSION = 2;
 const REGION_QUOTA = {
   us: 2000, ca: 200, gb: 280, de: 280, fr: 200, ch: 140, nl: 90, it: 110,
   es: 90, se: 150, dk: 60, no: 70, fi: 60, be: 50, at: 30, ie: 20,
@@ -115,6 +116,14 @@ async function screenerPage(region, offset, size, auth) {
 async function buildUniverse() {
   const auth = await yahooAuth();
   const out = new Map();
+  // Dieselbe Firma steht oft an mehreren Boersen (Intel auch in Wien als
+  // INTC.VI, ohne Analysten). Die Regionen laufen Heimatmarkt zuerst (USA
+  // vorn), also gewinnt die erste Notierung; Namensschluessel ohne Rechtsform.
+  const names = new Set();
+  const nameKey = (n) => String(n || '').toLowerCase()
+    .replace(/[.,()&'\-]/g, ' ')
+    .replace(/\b(aktiengesellschaft|ag|se|sa|spa|plc|nv|oyj|ab|asa|inc|corp|corporation|co|ltd|limited|holdings?|group|company|kgaa|class [a-z]|the)\b/g, ' ')
+    .replace(/\s+/g, ' ').trim();
   for (const [region, quota] of Object.entries(REGION_QUOTA)) {
     let got = 0;
     for (let off = 0; got < quota && off < quota + 250; off += 250) {
@@ -125,6 +134,9 @@ async function buildUniverse() {
       for (const q of quotes) {
         if (q.quoteType && q.quoteType !== 'EQUITY') continue;
         if (!q.symbol || out.has(q.symbol)) continue;
+        const nk = nameKey(q.longName || q.shortName);
+        if (nk && names.has(nk)) continue;
+        if (nk) names.add(nk);
         out.set(q.symbol, { s: q.symbol, n: q.longName || q.shortName || q.symbol, r: region });
         got++;
       }
@@ -257,12 +269,16 @@ async function main() {
 
   try {
     // Universum zu Beginn eines Zyklus neu bauen (Mitglieder bleiben im Zyklus fest).
-    if (!uni || !Array.isArray(uni.order) || uni.pos >= uni.order.length) {
+    // uv 2: Zweitnotierungen entfernt — ein Universum aelterer Fassung wird
+    // einmal neu gebaut (gleiche Zyklusnummer, von vorn).
+    const stale = uni && uni.uv !== UNIV_VERSION;
+    if (stale) uni = { ...uni, cycle: (uni.cycle || 1) - 1 };
+    if (stale || !uni || !Array.isArray(uni.order) || uni.pos >= uni.order.length) {
       const list = await buildUniverse();
       if (list.length < 500) throw new Error(`Universum zu klein (${list.length})`);
       const n = (uni?.cycle || 0) + 1;
       uni = { cycle: n, startedAt: today(), pos: 0, size: list.length,
-              order: shuffled(list, n * 7919 + list.length), builtAt: today() };
+              order: shuffled(list, n * 7919 + list.length), builtAt: today(), uv: UNIV_VERSION };
       console.log(`Zyklus ${n}: ${list.length} Aktien.`);
     }
 
