@@ -238,6 +238,9 @@ async function buildUniverse() {
         got++;
         const u = { s: q.symbol, n: q.longName || q.shortName || q.symbol, r: region };
         const t = turnover(q), prev = best.get(nk);
+        if (DRY && /^(allianz|erste|omv|verbund|munich re|muenchener)/.test(nk)) {
+          console.log(`  Umsatz ${q.symbol} ${region} ${q.currency} vol=${q.averageDailyVolume3Month}/${q.regularMarketVolume} p=${q.regularMarketPrice} t=${Math.round(t)} name=${nk}`);
+        }
         if (!prev || t > prev.t) best.set(nk, { u, t });
       }
       if (quotes.length < PAGE) break;
