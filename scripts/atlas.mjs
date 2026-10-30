@@ -99,13 +99,13 @@ async function chart(sym, fromMs, toMs) {
 //   - Kuerzel-Endung muss zur Heimatboerse passen (at → .VI, us → keine),
 //   - Berichtswaehrung (financialCurrency) muss zum Land passen — so faellt
 //     das SAP-ADR (berichtet EUR) aus den USA und Intel (USD) aus Wien,
-//   - Namensabgleich wie bisher (erste Notierung gewinnt), Euro-Boersen mit
-//     vielen Fremdnotierungen (Xetra) zuletzt.
+//   - gleicher Firmenname an mehreren Boersen → die mit dem groessten
+//     Handelsumsatz gewinnt (Heimatboerse; SAP sonst in Wien/Zuerich).
 const UNIV_VERSION = 4;
 // US-Freiverkehr (Pink Sheets, OTCQX …): dort stehen vor allem ADRs
 // auslaendischer Firmen ohne eigene Analysten (BPER als BPXXY).
 const OTC = new Set(['PNK', 'OQB', 'OQX', 'OEM', 'OBB', 'OTC', 'OGM']);
-// Reihenfolge = Vorrang beim Namensabgleich.
+// Quote = Kandidaten je Land (ohne Zweitnotierung im selben Land).
 const REGION_QUOTA = {
   us: 2000, ca: 200, jp: 450, hk: 280, kr: 180, tw: 180, au: 180, in: 180,
   sg: 40, fr: 200, nl: 90, it: 110, es: 90, fi: 60, be: 50, at: 30, ie: 20,
@@ -180,19 +180,29 @@ async function screenerPage(region, offset, size, auth, exchange) {
 }
 
 const PAGE = 250;
+// Grobe Umrechnung in Dollar — nur um Handelsumsaetze verschiedener Boersen
+// derselben Firma zu vergleichen (die Heimatboerse liegt um ein Vielfaches vorn).
+const FX_USD = { USD: 1, EUR: 1.1, CHF: 1.15, GBP: 1.3, GBp: 0.013, GBX: 0.013,
+  CAD: 0.73, SEK: 0.095, DKK: 0.15, NOK: 0.095, JPY: 0.0067, HKD: 0.13,
+  KRW: 0.0007, TWD: 0.031, AUD: 0.66, INR: 0.012, SGD: 0.75, CNY: 0.14 };
+const turnover = (q) => (q.averageDailyVolume3Month || q.regularMarketVolume || 0)
+  * (q.regularMarketPrice || 0) * (FX_USD[q.currency] ?? 0);
+
 async function buildUniverse() {
   const auth = await yahooAuth();
-  const out = new Map();
-  // Dieselbe Firma steht oft an mehreren Boersen; die erste Notierung gewinnt
-  // (Reihenfolge von REGION_QUOTA). Namensschluessel ohne Rechtsform.
-  const names = new Set();
+  // Dieselbe Firma steht oft an mehreren Boersen in derselben Waehrung (SAP in
+  // Frankfurt, Wien, Zuerich). Bei gleichem Namen gewinnt die Notierung mit
+  // dem groessten Handelsumsatz — das ist die Heimatboerse. (Vorher gewann die
+  // zuerst gelaufene Region: SAP, Siemens, Allianz landeten in Wien/Zuerich.)
   const nameKey = (n) => String(n || '').toLowerCase()
     .replace(/[.,()&'\-\/]/g, ' ')
     .replace(/\b(aktiengesellschaft|ag|se|sa|spa|plc|nv|oyj|ab|asa|as|a s|inc|corp|corporation|co|ltd|limited|holdings?|group|company|kgaa|class [a-z]|the)\b/g, ' ')
     .replace(/\s+/g, ' ').trim();
+  const best = new Map();   // Name → { u, t }
   let noFc = 0, seen = 0, rejected = 0;
   for (const [region, quota] of Object.entries(REGION_QUOTA)) {
     let got = 0, pages = 0;
+    const local = new Set();
     let exchange = EXCHANGE[region];
     const maxPages = MAX_PAGES[region] || Math.ceil(quota / PAGE) * 3 + 1;
     // Immer volle Seiten holen und selbst filtern — vorher wurde nur
@@ -216,24 +226,26 @@ async function buildUniverse() {
         seen++;
         if (!q.financialCurrency) noFc++;
         if (q.quoteType && q.quoteType !== 'EQUITY') continue;
-        if (!homeListing(q, region) || out.has(q.symbol)) {
-          if (DRY && region === 'de' && rejected++ < 15) {
+        if (!homeListing(q, region)) {
+          if (DRY && region === 'de' && rejected++ < 5) {
             console.log(`  de abgelehnt: ${q.symbol} ${q.exchange} fc=${q.financialCurrency} ${q.longName || q.shortName}`);
           }
           continue;
         }
-        const nk = nameKey(q.longName || q.shortName);
-        if (nk && names.has(nk)) continue;
-        if (nk) names.add(nk);
-        out.set(q.symbol, { s: q.symbol, n: q.longName || q.shortName || q.symbol, r: region });
+        const nk = nameKey(q.longName || q.shortName) || q.symbol;
+        if (local.has(nk)) continue;   // zweite Notierung im selben Land
+        local.add(nk);
         got++;
+        const u = { s: q.symbol, n: q.longName || q.shortName || q.symbol, r: region };
+        const t = turnover(q), prev = best.get(nk);
+        if (!prev || t > prev.t) best.set(nk, { u, t });
       }
       if (quotes.length < PAGE) break;
     }
-    console.log(`Universum ${region}: ${got} (${pages} Seiten)`);
+    console.log(`Universum ${region}: ${got} Kandidaten (${pages} Seiten)`);
   }
   console.log(`Screener-Zeilen ohne financialCurrency: ${noFc} von ${seen}.`);
-  return [...out.values()];
+  return [...best.values()].map((b) => b.u);
 }
 
 // Park-Miller: dieselbe Mischung auf jedem Rechner (Zyklus reproduzierbar).
@@ -357,6 +369,9 @@ function universeReport(list) {
   const probe = ['SAP.DE', 'SAP.F', 'SAP', 'SIE.F', 'ALV.F', 'AXA.F', 'BNP.F', 'ASML.AS', 'ASML', '2330.TW', 'TSM', '7203.T', 'TM',
     'NOVO-B.CO', 'NVO', 'SIE.DE', 'ALV.DE', 'INTC', 'INTC.VI', 'EBS.VI', 'OMV.VI',
     'RY.TO', 'RY', 'NESN.SW', 'SHEL.L', 'SHEL', '9988.HK', 'BABA', 'AAPL'];
+  for (const n of ['SAP', 'Siemens', 'Allianz', 'ASML', 'Nestl']) {
+    console.log(`Probe ${n}:`, list.filter((u) => u.n.startsWith(n)).map((u) => u.s).join(' '));
+  }
   console.log('Probe Kuerzel:', probe.map((p) => `${p}=${has.has(p) ? 'ja' : 'nein'}`).join(' '));
 }
 
