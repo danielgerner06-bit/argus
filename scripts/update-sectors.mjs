@@ -29,6 +29,10 @@ const GEMINI_KEY = process.env.GEMINI_API_KEY;
 
 const SCAN_BUDGET = Number(process.env.SCAN_BUDGET || 300);   // Finnhub-Symbole pro Lauf (kostet KEIN Gemini)
 const CAND_BUDGET = Number(process.env.CAND_BUDGET || 8);     // Kandidaten je Lauf
+// Vorschläge aus der App (Plus in Argus → Worker /suggest → scan.suggested) haben
+// VORRANG: sie ersetzen im nächsten Perlenlauf die reihum fälligen Kandidaten, kein
+// Extra-Lauf. Bis zu SUGG_BUDGET je Lauf (Rest beim nächsten).
+const SUGG_BUDGET = Number(process.env.SUGG_BUDGET || 12);
 
 // Gemini-Budget pro Lauf. Paid Tier (1.500 grounded Calls/Tag frei). verifyNoHold prüft
 // jetzt EINZELN (1 Call/Aktie) -> höheres Budget nötig, damit die Gegenprüfung nicht
@@ -364,11 +368,33 @@ const today = () => new Date().toISOString().slice(0, 10);
      Quelle die Aktie kennt. */
   if (pearlDue && candidates.length) {
     try {
+      // Erst die offenen Vorschläge aus der App (noch nicht geprüft), dann reihum.
+      // Ein Vorschlag, der nicht (mehr) in der Kandidatenliste steht, wird trotzdem
+      // geprüft — die Liste wurde früher vorne gekürzt und verlor so Vorschläge.
+      const candByKey = {};
+      for (const c of candidates) {
+        const k = nameKeyOf(c.replace(/\s*\([^)]*\)\s*$/, ''));
+        if (!(k in candByKey)) candByKey[k] = c;
+      }
+      const prio = [];
+      for (const sg of (scan.suggested || [])) {
+        if (!sg || sg.checkedAt || !sg.name) continue;
+        const c = candByKey[nameKeyOf(sg.name)] || sg.name;
+        if (!prio.includes(c)) prio.push(c);
+        if (prio.length >= SUGG_BUDGET) break;
+      }
       const n = candidates.length;
       const start = (scan.candCursor || 0) % n;
-      const slice = [];
-      for (let i = 0; i < Math.min(CAND_BUDGET, n); i++) slice.push(candidates[(start + i) % n]);
-      scan.candCursor = (start + slice.length) % n;
+      const slice = prio.slice();
+      let taken = 0;
+      for (let i = 0; slice.length < Math.max(CAND_BUDGET, prio.length) && i < n; i++) {
+        const c = candidates[(start + i) % n];
+        taken = i + 1;
+        if (!slice.includes(c)) slice.push(c);
+      }
+      scan.candCursor = (start + taken) % n;
+      if (prio.length) console.log(`Vorschläge aus der App zuerst: ${prio.join(', ')}`);
+      const outcome = {};   // Kandidat -> 'perle' | 'abgelehnt' | 'ohne Sektor' | 'unbekannt'
 
       // Gemini-Metadaten (Sektor/Yahoo/Name) holen — optional, scheitert bei 503 still.
       let hits = [];
@@ -390,7 +416,7 @@ const today = () => new Date().toISOString().slice(0, 10);
         const yahoo = meta.yahoo || (/\.[A-Z]+$/.test(ticker) ? ticker : null);
         const probe = { ticker: meta.ticker || ticker || name, name, yahoo, sector: meta.sector,
                         ratingCounts: meta.ratingCounts, countsBad: meta.countsBad };
-        if (!probe.ticker) continue;
+        if (!probe.ticker) { outcome[cand] = 'unbekannt'; continue; }
         tried++;
         const v = await verifyStock(probe);
         if (process.env.GEMINI_DEBUG) console.log(`  [verify] ${probe.ticker}: ${v.ok ? 'OK ('+v.verifiedSource+')' : 'raus ('+v.reason+')'}`);
@@ -409,9 +435,10 @@ const today = () => new Date().toISOString().slice(0, 10);
           // Je Ticker nur EINMAL, damit wiederholte Prüfungen desselben Kandidaten
           // die Quote nicht verwässern.
           noteRejected({ ticker: probe.ticker, sector });
+          outcome[cand] = 'abgelehnt';
           continue;
         }
-        if (!sector) continue;   // ohne Sektor nicht aufnehmen
+        if (!sector) { outcome[cand] = 'ohne Sektor'; continue; }   // ohne Sektor nicht aufnehmen
         const counts = v.counts || meta.ratingCounts;
         const analysts = v.analysts ?? meta.analysts;
         db[probe.ticker] = {
@@ -424,6 +451,17 @@ const today = () => new Date().toISOString().slice(0, 10);
           seen: db[probe.ticker]?.seen || today(),
         };
         kept++;
+        outcome[cand] = 'perle';
+      }
+      // Geprüfte Vorschläge abhaken (mit Ergebnis), damit sie nicht jeden Lauf vorn stehen.
+      const stamp = new Date().toISOString();
+      for (const sg of (scan.suggested || [])) {
+        if (!sg || sg.checkedAt) continue;
+        const c = candByKey[nameKeyOf(sg.name)] || sg.name;
+        if (prio.includes(c) && outcome[c]) { sg.checkedAt = stamp; sg.result = outcome[c]; }
+      }
+      if (Array.isArray(scan.suggested) && scan.suggested.length > 60) {
+        scan.suggested = scan.suggested.slice(0, 60);
       }
       console.log(`Kandidaten: ${slice.length} im Slice, ${tried} geprüft, ${kept} nach Multi-Quellen-Konsens aufgenommen.`);
     } catch (e) { console.error('Kandidatenprüfung fehlgeschlagen:', e.message); }
@@ -482,7 +520,16 @@ const today = () => new Date().toISOString().slice(0, 10);
   }
 
   // Kandidatenliste begrenzen, damit sie nicht unbegrenzt wächst.
-  if (candidates.length > 400) candidates = candidates.slice(candidates.length - 400);
+  // Offene Vorschläge aus der App nie wegkürzen (vorne eingefügt — slice(-400) warf
+  // genau sie raus, z. B. „Darwin“ am 29.10.2026).
+  if (candidates.length > 400) {
+    const keep = new Set((scan.suggested || []).filter(sg => sg && !sg.checkedAt)
+      .map(sg => nameKeyOf(sg.name)));
+    const isKept = c => keep.has(nameKeyOf(c.replace(/\s*\([^)]*\)\s*$/, '')));
+    const kept = candidates.filter(isKept);
+    const rest = candidates.filter(c => !isKept(c));
+    candidates = kept.concat(rest.slice(Math.max(0, rest.length - (400 - kept.length))));
+  }
   scan.candidates = candidates;
 
   // Top-Liste: nach Kursziel-Potenzial, dann Kauf-%. KEINE Obergrenze — alle
