@@ -1,6 +1,6 @@
 {
   "updated": "2026-10-30",
-  "updatedAt": "2026-10-30T12:17:41.830Z",
+  "updatedAt": "2026-10-30T13:00:50.840Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -5865,5 +5865,6 @@
       }
     ]
   },
-  "blacklist": {}
+  "blacklist": {},
+  "yahooAt": "2026-10-30T13:00:50.840Z"
 }
