@@ -154,11 +154,19 @@ const ATLAS_REGION = {
   no: 'europe', gb: 'europe', ch: 'europe',
 };
 
-async function screenerPage(region, offset, size, auth) {
+// Regionen, deren Screener-Liste oben von Fremdnotierungen verstopft ist
+// (Deutschland: Apple, NVIDIA … je zwei- bis dreimal in Frankfurt/Xetra):
+// nur diese Boerse abfragen und mehr Seiten erlauben.
+const EXCHANGE = { de: 'GER' };
+const MAX_PAGES = { de: 20 };
+
+async function screenerPage(region, offset, size, auth, exchange) {
+  const operands = [{ operator: 'EQ', operands: ['region', region] }];
+  if (exchange) operands.push({ operator: 'EQ', operands: ['exchange', exchange] });
   const body = {
     size, offset, sortField: 'intradaymarketcap', sortType: 'DESC',
     quoteType: 'EQUITY',
-    query: { operator: 'AND', operands: [{ operator: 'EQ', operands: ['region', region] }] },
+    query: { operator: 'AND', operands },
     userId: '', userIdType: 'guid',
   };
   return polite(async () => {
@@ -185,13 +193,23 @@ async function buildUniverse() {
   let noFc = 0, seen = 0, rejected = 0;
   for (const [region, quota] of Object.entries(REGION_QUOTA)) {
     let got = 0, pages = 0;
+    let exchange = EXCHANGE[region];
+    const maxPages = MAX_PAGES[region] || Math.ceil(quota / PAGE) * 3 + 1;
     // Immer volle Seiten holen und selbst filtern — vorher wurde nur
     // `quota − got` angefragt und bei < 250 Treffern aufgehoert: Regionen mit
     // kleiner Quote sahen nur ihre ersten 30–200 Zeilen (Oesterreich: 0).
-    for (let off = 0; got < quota && pages < Math.ceil(quota / PAGE) * 3 + 1; off += PAGE) {
+    for (let off = 0; got < quota && pages < maxPages; off += PAGE) {
       let quotes = [];
-      try { quotes = await screenerPage(region, off, PAGE, auth); }
-      catch (e) { if (e instanceof Stop) throw e; console.log(`Screener ${region}: ${e.message}`); break; }
+      try { quotes = await screenerPage(region, off, PAGE, auth, exchange); }
+      catch (e) { if (e instanceof Stop) throw e; console.log(`Screener ${region}: ${e.message}`); quotes = null; }
+      // Boersen-Filter unbekannt/leer → einmal ohne (alte Abfrage).
+      if (exchange && off === 0 && !quotes?.length) {
+        console.log(`Screener ${region}: Boersen-Filter ${exchange} ohne Treffer — ohne Filter.`);
+        exchange = null;
+        off -= PAGE;
+        continue;
+      }
+      if (quotes == null) break;
       pages++;
       for (const q of quotes) {
         if (got >= quota) break;
@@ -199,7 +217,7 @@ async function buildUniverse() {
         if (!q.financialCurrency) noFc++;
         if (q.quoteType && q.quoteType !== 'EQUITY') continue;
         if (!homeListing(q, region) || out.has(q.symbol)) {
-          if (DRY && region === 'de' && rejected++ < 40) {
+          if (DRY && region === 'de' && rejected++ < 15) {
             console.log(`  de abgelehnt: ${q.symbol} ${q.exchange} fc=${q.financialCurrency} ${q.longName || q.shortName}`);
           }
           continue;
