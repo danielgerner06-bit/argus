@@ -105,10 +105,12 @@ const UNIV_VERSION = 4;
 // US-Freiverkehr (Pink Sheets, OTCQX …): dort stehen vor allem ADRs
 // auslaendischer Firmen ohne eigene Analysten (BPER als BPXXY).
 const OTC = new Set(['PNK', 'OQB', 'OQX', 'OEM', 'OBB', 'OTC', 'OGM']);
-// Quote = Kandidaten je Land (ohne Zweitnotierung im selben Land).
+// Quote = Kandidaten je Land (ohne Zweitnotierung im selben Land). Wien
+// fuehrt oben vor allem deutsche Aktien (ALV.VI …, die verlieren gegen
+// Xetra) — deshalb dort mehr Kandidaten, sonst kaeme Erste/OMV nie dran.
 const REGION_QUOTA = {
   us: 2000, ca: 200, jp: 450, hk: 280, kr: 180, tw: 180, au: 180, in: 180,
-  sg: 40, fr: 200, nl: 90, it: 110, es: 90, fi: 60, be: 50, at: 30, ie: 20,
+  sg: 40, fr: 200, nl: 90, it: 110, es: 90, fi: 60, be: 50, at: 150, ie: 20,
   se: 150, dk: 60, no: 70, gb: 280, ch: 140, de: 280,
 };
 // Heimatboerse je Region: erlaubte Endungen ('' = keine Endung, USA).
@@ -238,9 +240,6 @@ async function buildUniverse() {
         got++;
         const u = { s: q.symbol, n: q.longName || q.shortName || q.symbol, r: region };
         const t = turnover(q), prev = best.get(nk);
-        if (DRY && /^(allianz|erste|omv|verbund|munich re|muenchener)/.test(nk)) {
-          console.log(`  Umsatz ${q.symbol} ${region} ${q.currency} vol=${q.averageDailyVolume3Month}/${q.regularMarketVolume} p=${q.regularMarketPrice} t=${Math.round(t)} name=${nk}`);
-        }
         if (!prev || t > prev.t) best.set(nk, { u, t });
       }
       if (quotes.length < PAGE) break;
