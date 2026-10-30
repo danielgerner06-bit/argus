@@ -103,6 +103,12 @@ async function ensureCrumb() {
   else throw new Error('kein Yahoo-Crumb');
 }
 
+// Cookie + Crumb fuer eigene Yahoo-Aufrufe (Atlas-Screener).
+export async function yahooAuth() {
+  await ensureCrumb();
+  return { cookie: _cookie, crumb: _crumb, ua: UA };
+}
+
 // Wechselkurs in EUR, einmal je Waehrung und Lauf gecacht.
 const _fx = { EUR: 1 };
 async function fxToEur(cur) {
@@ -158,92 +164,105 @@ export async function fetchYahooRatings(symbol) {
 // Liefert { price, target, upside, pe, eps, analysts } für ein Symbol (oder Teilwerte/null).
 export async function enrichStock(symbol) {
   try {
-    await ensureCrumb();
-    const url = `https://query1.finance.yahoo.com/v10/finance/quoteSummary/${encodeURIComponent(symbol)}`
-      + `?modules=financialData,summaryDetail,price,defaultKeyStatistics&crumb=${encodeURIComponent(_crumb)}`;
-    const res = await fetch(url, { headers: { 'User-Agent': UA, 'Cookie': _cookie } });
-    if (res.status === 401 || res.status === 403) { _crumb = null; throw new Error('crumb abgelaufen'); }
-    if (!res.ok) throw new Error('HTTP ' + res.status);
-    const r = (await res.json())?.quoteSummary?.result?.[0];
+    const r = await quoteSummaryRaw(symbol, 'financialData,summaryDetail,price,defaultKeyStatistics');
     if (!r) return null;
-    const fd = r.financialData || {}, sd = r.summaryDetail || {}, pr = r.price || {}, ks = r.defaultKeyStatistics || {};
-    const price = fd.currentPrice?.raw ?? pr.regularMarketPrice?.raw ?? null;
-    const target = fd.targetMeanPrice?.raw ?? null;
-    const upside = (price && target) ? Math.round((target / price - 1) * 100) : null;
-    let pe = sd.trailingPE?.raw ?? fd.trailingPE?.raw ?? null;
-    pe = (pe != null && isFinite(pe) && pe > 0 && pe <= 500) ? +pe.toFixed(1) : null;  // Verlust/absurd -> kein KGV
-    const eps = ks.trailingEps?.raw ?? null;
-    const analysts = fd.numberOfAnalystOpinions?.raw ?? null;
-    // Dividendenrendite in % (Yahoo liefert Dezimal, z. B. 0.0258 -> 2.58)
-    let divYield = sd.dividendYield?.raw ?? sd.trailingAnnualDividendYield?.raw ?? null;
-    divYield = (divYield != null && isFinite(divYield) && divYield >= 0 && divYield < 1) ? +(divYield * 100).toFixed(2) : null;
-    // ── Faktoren fuer die Trendscope-Analyse ────────────────────────────
-    // Kommen aus DEMSELBEN Call, kosten also kein zusaetzliches Kontingent.
-    // Werden in history.mjs EINMALIG beim Aufnehmen einer Perle eingefroren.
-    const n = (x) => (x && typeof x.raw === 'number' && isFinite(x.raw) ? x.raw : null);
-    const p2 = (x) => { const v = n(x); return v == null ? null : +(v * 100).toFixed(2); };
-    const f2 = (x) => { const v = n(x); return v == null ? null : +v.toFixed(2); };
-    const hi52 = n(sd.fiftyTwoWeekHigh), lo52 = n(sd.fiftyTwoWeekLow);
-    const tH = n(fd.targetHighPrice), tL = n(fd.targetLowPrice), tM = n(fd.targetMeanPrice);
-    const rel = (a, b) => (a != null && b) ? +(((a / b) - 1) * 100).toFixed(2) : null;
-    // Marktkapitalisierung IMMER in EUR — Yahoo liefert sie in der
-    // Notierungswaehrung, wodurch eine koreanische Aktie sonst mit dem
-    // 1400-fachen einer deutschen dastand.
-    const mcRaw = n(sd.marketCap) ?? n(pr.marketCap);
-    const mcCur = pr.currency || fd.financialCurrency || null;
-    const fx = mcRaw != null ? await fxToEur(mcCur) : null;
-    const mcEur = (mcRaw != null && fx != null) ? Math.round(mcRaw * fx) : null;
-    const factors = {
-      forwardPe: f2(sd.forwardPE) ?? f2(ks.forwardPE),
-      priceToBook: f2(ks.priceToBook),
-      priceToSales: f2(sd.priceToSalesTrailing12Months),
-      // Negatives EV/EBITDA entsteht bei negativem EBITDA und ist genauso
-      // bedeutungslos wie ein negatives KGV — dann lieber kein Wert. Absurd
-      // hohe Werte (> 200) kommen aus fast null EBITDA und sind ebenso Muell.
-      evEbitda: (() => {
-        const v = f2(ks.enterpriseToEbitda);
-        return (v != null && v > 0 && v <= 200) ? v : null;
-      })(),
-      evRevenue: f2(ks.enterpriseToRevenue),
-      grossMargin: p2(fd.grossMargins),
-      operatingMargin: p2(fd.operatingMargins),
-      profitMargin: p2(fd.profitMargins) ?? p2(ks.profitMargins),
-      ebitdaMargin: p2(fd.ebitdaMargins),
-      roe: p2(fd.returnOnEquity),
-      roa: p2(fd.returnOnAssets),
-      revenueGrowth: p2(fd.revenueGrowth),
-      earningsGrowth: p2(fd.earningsGrowth),
-      earningsQGrowth: p2(ks.earningsQuarterlyGrowth),
-      debtToEquity: f2(fd.debtToEquity),
-      currentRatio: f2(fd.currentRatio),
-      quickRatio: f2(fd.quickRatio),
-      payoutRatio: p2(sd.payoutRatio),
-      heldInsiders: p2(ks.heldPercentInsiders),
-      heldInstitutions: p2(ks.heldPercentInstitutions),
-      marketCap: mcEur,
-      beta: f2(sd.beta),
-      distTo52High: rel(price, hi52),
-      pos52Band: (price != null && hi52 != null && lo52 != null && hi52 > lo52)
-        ? +(((price - lo52) / (hi52 - lo52)) * 100).toFixed(1) : null,
-      distTo50dma: rel(price, n(sd.fiftyDayAverage)),
-      distTo200dma: rel(price, n(sd.twoHundredDayAverage)),
-      recMean: f2(fd.recommendationMean),
-      targetSpread: (tH != null && tL != null && tM)
-        ? +(((tH - tL) / tM) * 100).toFixed(1) : null,
-    };
-
-    return {
-      price, target,
-      // Kursziel-Potenzial plausibel begrenzen (extreme Werte = oft Datenfehler/Penny-Stocks)
-      upside: (upside != null && upside >= -60 && upside <= 100) ? upside : null,
-      pe, eps: (eps != null && isFinite(eps)) ? +eps.toFixed(2) : null,
-      analysts: analysts || null,
-      divYield,
-      factors,
-    };
+    return await stockFromSummary(r);
   } catch {
     return null;
   }
+}
+
+// Ein quoteSummary-Aufruf mit beliebigen Modulen (Cookie + Crumb). Wirft bei
+// 429/5xx einen Fehler mit .status, damit Aufrufer (Atlas) bremsen koennen.
+export async function quoteSummaryRaw(symbol, modules) {
+  await ensureCrumb();
+  const url = `https://query1.finance.yahoo.com/v10/finance/quoteSummary/${encodeURIComponent(symbol)}`
+    + `?modules=${modules}&crumb=${encodeURIComponent(_crumb)}`;
+  const res = await fetch(url, { headers: { 'User-Agent': UA, 'Cookie': _cookie } });
+  if (res.status === 401 || res.status === 403) { _crumb = null; const e = new Error('crumb abgelaufen'); e.status = res.status; throw e; }
+  if (res.status === 404) return null;
+  if (!res.ok) { const e = new Error('HTTP ' + res.status); e.status = res.status; throw e; }
+  return (await res.json())?.quoteSummary?.result?.[0] || null;
+}
+
+// Kennzahlen aus einem quoteSummary-Ergebnis — EINE Rechnung fuer Argus
+// (enrichStock) und Atlas (scripts/atlas.mjs), damit beide gleich messen.
+export async function stockFromSummary(r) {
+  const fd = r.financialData || {}, sd = r.summaryDetail || {}, pr = r.price || {}, ks = r.defaultKeyStatistics || {};
+  const price = fd.currentPrice?.raw ?? pr.regularMarketPrice?.raw ?? null;
+  const target = fd.targetMeanPrice?.raw ?? null;
+  const upside = (price && target) ? Math.round((target / price - 1) * 100) : null;
+  let pe = sd.trailingPE?.raw ?? fd.trailingPE?.raw ?? null;
+  pe = (pe != null && isFinite(pe) && pe > 0 && pe <= 500) ? +pe.toFixed(1) : null;  // Verlust/absurd -> kein KGV
+  const eps = ks.trailingEps?.raw ?? null;
+  const analysts = fd.numberOfAnalystOpinions?.raw ?? null;
+  // Dividendenrendite in % (Yahoo liefert Dezimal, z. B. 0.0258 -> 2.58)
+  let divYield = sd.dividendYield?.raw ?? sd.trailingAnnualDividendYield?.raw ?? null;
+  divYield = (divYield != null && isFinite(divYield) && divYield >= 0 && divYield < 1) ? +(divYield * 100).toFixed(2) : null;
+  // ── Faktoren fuer die Trendscope-Analyse ────────────────────────────
+  // Kommen aus DEMSELBEN Call, kosten also kein zusaetzliches Kontingent.
+  // Werden in history.mjs EINMALIG beim Aufnehmen einer Perle eingefroren.
+  const n = (x) => (x && typeof x.raw === 'number' && isFinite(x.raw) ? x.raw : null);
+  const p2 = (x) => { const v = n(x); return v == null ? null : +(v * 100).toFixed(2); };
+  const f2 = (x) => { const v = n(x); return v == null ? null : +v.toFixed(2); };
+  const hi52 = n(sd.fiftyTwoWeekHigh), lo52 = n(sd.fiftyTwoWeekLow);
+  const tH = n(fd.targetHighPrice), tL = n(fd.targetLowPrice), tM = n(fd.targetMeanPrice);
+  const rel = (a, b) => (a != null && b) ? +(((a / b) - 1) * 100).toFixed(2) : null;
+  // Marktkapitalisierung IMMER in EUR — Yahoo liefert sie in der
+  // Notierungswaehrung, wodurch eine koreanische Aktie sonst mit dem
+  // 1400-fachen einer deutschen dastand.
+  const mcRaw = n(sd.marketCap) ?? n(pr.marketCap);
+  const mcCur = pr.currency || fd.financialCurrency || null;
+  const fx = mcRaw != null ? await fxToEur(mcCur) : null;
+  const mcEur = (mcRaw != null && fx != null) ? Math.round(mcRaw * fx) : null;
+  const factors = {
+    forwardPe: f2(sd.forwardPE) ?? f2(ks.forwardPE),
+    priceToBook: f2(ks.priceToBook),
+    priceToSales: f2(sd.priceToSalesTrailing12Months),
+    // Negatives EV/EBITDA entsteht bei negativem EBITDA und ist genauso
+    // bedeutungslos wie ein negatives KGV — dann lieber kein Wert. Absurd
+    // hohe Werte (> 200) kommen aus fast null EBITDA und sind ebenso Muell.
+    evEbitda: (() => {
+      const v = f2(ks.enterpriseToEbitda);
+      return (v != null && v > 0 && v <= 200) ? v : null;
+    })(),
+    evRevenue: f2(ks.enterpriseToRevenue),
+    grossMargin: p2(fd.grossMargins),
+    operatingMargin: p2(fd.operatingMargins),
+    profitMargin: p2(fd.profitMargins) ?? p2(ks.profitMargins),
+    ebitdaMargin: p2(fd.ebitdaMargins),
+    roe: p2(fd.returnOnEquity),
+    roa: p2(fd.returnOnAssets),
+    revenueGrowth: p2(fd.revenueGrowth),
+    earningsGrowth: p2(fd.earningsGrowth),
+    earningsQGrowth: p2(ks.earningsQuarterlyGrowth),
+    debtToEquity: f2(fd.debtToEquity),
+    currentRatio: f2(fd.currentRatio),
+    quickRatio: f2(fd.quickRatio),
+    payoutRatio: p2(sd.payoutRatio),
+    heldInsiders: p2(ks.heldPercentInsiders),
+    heldInstitutions: p2(ks.heldPercentInstitutions),
+    marketCap: mcEur,
+    beta: f2(sd.beta),
+    distTo52High: rel(price, hi52),
+    pos52Band: (price != null && hi52 != null && lo52 != null && hi52 > lo52)
+      ? +(((price - lo52) / (hi52 - lo52)) * 100).toFixed(1) : null,
+    distTo50dma: rel(price, n(sd.fiftyDayAverage)),
+    distTo200dma: rel(price, n(sd.twoHundredDayAverage)),
+    recMean: f2(fd.recommendationMean),
+    targetSpread: (tH != null && tL != null && tM)
+      ? +(((tH - tL) / tM) * 100).toFixed(1) : null,
+  };
+
+  return {
+    price, target,
+    // Kursziel-Potenzial plausibel begrenzen (extreme Werte = oft Datenfehler/Penny-Stocks)
+    upside: (upside != null && upside >= -60 && upside <= 100) ? upside : null,
+    pe, eps: (eps != null && isFinite(eps)) ? +eps.toFixed(2) : null,
+    analysts: analysts || null,
+    divYield,
+    factors,
+  };
 }
 
 // Performance für eine Liste von { id, etf } (Sektoren ODER Regionen).

@@ -1,0 +1,79 @@
+name: Atlas (alle Aktien)
+
+# Atlas = Argus fuer den ganzen Markt (scripts/atlas.mjs): nimmt reihum Aktien
+# aus den ~5.000 groessten weltweit auf, friert dieselben Kennzahlen ein wie
+# history.json und fuehrt den Kursverlauf weiter. Nur Yahoo, sanfter Takt,
+# keine KI, kein Finnhub, kein Worker. Oeffentliches Repo → keine Minutenkosten.
+#
+# Werktags nach Boersenschluss in den USA (alle Maerkte zu), dazu Samstag
+# fruehmorgens ein Lauf nur fuer faellige Verlaeufe.
+on:
+  schedule:
+    - cron: '23 22 * * 1-5'
+    - cron: '37 7 * * 6'
+  workflow_dispatch:
+    inputs:
+      new:
+        description: 'Neue Aufnahmen in diesem Lauf'
+        default: '50'
+      max_req:
+        description: 'Hoechstens so viele Yahoo-Abrufe'
+        default: '420'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: atlas
+  cancel-in-progress: false
+
+jobs:
+  atlas:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Letzten Stand holen (Zweig `atlas`)
+        run: |
+          if git fetch --depth=1 origin atlas 2>/dev/null; then
+            for f in atlas.json atlas_archive.json atlas_universe.json; do
+              git show origin/atlas:$f > $f 2>/dev/null || rm -f $f
+            done
+            cp atlas.json "$RUNNER_TEMP/atlas.prev.json" 2>/dev/null || true
+          else
+            echo "Noch kein Zweig atlas — erster Lauf."
+          fi
+
+      - name: Atlas-Lauf
+        env:
+          ATLAS_NEW: ${{ github.event_name == 'workflow_dispatch' && inputs.new || '50' }}
+          ATLAS_MAX_REQ: ${{ github.event_name == 'workflow_dispatch' && inputs.max_req || '420' }}
+        run: node scripts/atlas.mjs
+
+      # Wie die Kursreihen (Zweig `prices`): EIN Commit, wird ueberschrieben —
+      # die Daten aendern sich jeden Tag, alte Staende braucht niemand. Der
+      # vorige Stand bleibt als atlas.prev.json daneben (falls ein Lauf
+      # etwas kaputt macht).
+      - name: Veroeffentlichen (Zweig `atlas`, ohne Historie)
+        run: |
+          if [ ! -s atlas.json ]; then echo "Keine atlas.json — nichts zu tun."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          mkdir -p "$RUNNER_TEMP/out"
+          cp atlas.json atlas_archive.json "$RUNNER_TEMP/out/"
+          [ -f atlas_universe.json ] && cp atlas_universe.json "$RUNNER_TEMP/out/"
+          [ -f "$RUNNER_TEMP/atlas.prev.json" ] && cp "$RUNNER_TEMP/atlas.prev.json" "$RUNNER_TEMP/out/atlas.prev.json"
+          git worktree add --detach "$RUNNER_TEMP/aw"
+          cd "$RUNNER_TEMP/aw"
+          git checkout --orphan atlaspub-tmp
+          git rm -rf --cached . >/dev/null 2>&1 || true
+          find . -maxdepth 1 -mindepth 1 ! -name .git -exec rm -rf {} +
+          cp "$RUNNER_TEMP/out/"* .
+          git add -A
+          git commit -m "Atlas ($(date -u +%Y-%m-%d))"
+          git push -f origin HEAD:atlas

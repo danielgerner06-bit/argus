@@ -31,7 +31,7 @@ const dayMs = d => new Date(d + 'T00:00:00Z').getTime();
 const todayStr = () => new Date().toISOString().slice(0, 10);
 
 // Grobe Region aus dem Yahoo-Börsensuffix (US ohne Suffix).
-function regionOf(sym) {
+export function regionOf(sym) {
   if (!sym) return null;
   const suf = sym.includes('.') ? sym.split('.').pop() : '';
   const map = { DE: 'europe', PA: 'europe', AS: 'europe', MI: 'europe', L: 'europe', SW: 'europe', ST: 'europe', HE: 'europe', BR: 'europe', VI: 'europe', MC: 'europe',
