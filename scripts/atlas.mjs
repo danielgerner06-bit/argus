@@ -319,8 +319,10 @@ async function main() {
       e.rk = -1;
       data.entries.push(e);
       added++;
-      // 3) 100 % Kaufempfehlung (mind. 3 Analysten) → Argus prueft sie als Perle.
-      if (e.buyPct === 100 && (e.analysts || 0) >= 3) {
+      // 3) 100 % Kaufempfehlung → Argus prueft sie als Perle. Keine
+      // Mindestzahl an Analysten: Argus prueft ohnehin selbst noch einmal
+      // (Wunsch des Nutzers, 2026-10-30).
+      if (e.buyPct === 100 && (e.analysts || 0) >= 1) {
         data.suggest = (data.suggest || []).filter((s) => s.yahoo !== e.yahoo);
         data.suggest.unshift({ name: e.name, yahoo: e.yahoo, at: new Date(nowMs).toISOString() });
         data.suggest = data.suggest.slice(0, 200);
