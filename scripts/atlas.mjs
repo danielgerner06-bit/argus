@@ -34,6 +34,8 @@ const UNIV = 'atlas_universe.json';
 
 const NEW_PER_RUN = Number(process.env.ATLAS_NEW || 50);
 const MAX_REQ = Number(process.env.ATLAS_MAX_REQ || 420);
+// Probe: nur das Universum bauen und auswerten, nichts speichern.
+const DRY = process.env.ATLAS_DRY === '1';
 const KEEP_DAYS = 185;                 // so lange bleibt eine Aufnahme in atlas.json
 const SERIES_DAYS = 126;               // Boersentage Verlauf je Aufnahme (≈ 6 Monate)
 const REFRESH_AT = [8, 22, 45, 95, 185];   // Kalendertage: dann Verlauf nachziehen
@@ -89,15 +91,63 @@ async function chart(sym, fromMs, toMs) {
 }
 
 // ── Universum: die groessten Aktien je Region (Yahoo-Screener) ───────────
-const UNIV_VERSION = 3;
+// uv 4 (2026-10-30, Pruefung): nur noch die HEIMATBOERSE je Land. Vorher
+// lieferte die Region „de“ vor allem Frankfurt-Zweitnotierungen fremder
+// Firmen (AXA.F, BNP.F, 1520.F …), „at“ Intel in Wien (INTC.VI), und die USA
+// (zuerst gelaufen) schnappten per Namensabgleich die Heimatnotierung von SAP,
+// ASML, TSMC, Toyota, Novo … als ADR weg (Region „usa“). Regeln:
+//   - Kuerzel-Endung muss zur Heimatboerse passen (de → .DE, nicht .F),
+//   - Berichtswaehrung (financialCurrency) muss zum Land passen — so faellt
+//     das SAP-ADR (berichtet EUR) aus den USA und Intel (USD) aus Wien,
+//   - Namensabgleich wie bisher (erste Notierung gewinnt), Euro-Boersen mit
+//     vielen Fremdnotierungen (Xetra) zuletzt.
+const UNIV_VERSION = 4;
 // US-Freiverkehr (Pink Sheets, OTCQX …): dort stehen vor allem ADRs
-// auslaendischer Firmen ohne eigene Analysten (BPER als BPXXY). Weil die
-// USA zuerst laufen, verdraengten sie sonst die Heimatnotierung.
+// auslaendischer Firmen ohne eigene Analysten (BPER als BPXXY).
 const OTC = new Set(['PNK', 'OQB', 'OQX', 'OEM', 'OBB', 'OTC', 'OGM']);
+// Reihenfolge = Vorrang beim Namensabgleich.
 const REGION_QUOTA = {
-  us: 2000, ca: 200, gb: 280, de: 280, fr: 200, ch: 140, nl: 90, it: 110,
-  es: 90, se: 150, dk: 60, no: 70, fi: 60, be: 50, at: 30, ie: 20,
-  jp: 450, hk: 280, kr: 180, tw: 180, au: 180, in: 180, sg: 40,
+  us: 2000, ca: 200, jp: 450, hk: 280, kr: 180, tw: 180, au: 180, in: 180,
+  sg: 40, fr: 200, nl: 90, it: 110, es: 90, fi: 60, be: 50, at: 30, ie: 20,
+  se: 150, dk: 60, no: 70, gb: 280, ch: 140, de: 280,
+};
+// Heimatboerse je Region: erlaubte Endungen ('' = keine Endung, USA).
+const HOME_SUFFIX = {
+  us: [''], ca: ['TO', 'V'], jp: ['T'], hk: ['HK'], kr: ['KS', 'KQ'],
+  tw: ['TW', 'TWO'], au: ['AX'], in: ['NS', 'BO'], sg: ['SI'], fr: ['PA'],
+  nl: ['AS'], it: ['MI'], es: ['MC'], fi: ['HE'], be: ['BR'], at: ['VI'],
+  ie: ['IR'], se: ['ST'], dk: ['CO'], no: ['OL'], gb: ['L'], ch: ['SW'],
+  de: ['DE'],
+};
+// Berichtswaehrungen, die zu einer Heimatnotierung passen.
+const EUR = ['EUR'];
+const HOME_CUR = {
+  us: ['USD'], ca: ['CAD', 'USD'], jp: ['JPY'], hk: ['HKD', 'CNY', 'USD'],
+  kr: ['KRW'], tw: ['TWD'], au: ['AUD', 'USD'], in: ['INR'], sg: ['SGD', 'USD'],
+  fr: EUR, nl: ['EUR', 'USD'], it: EUR, es: EUR, fi: EUR, be: EUR, at: EUR,
+  ie: ['EUR', 'USD'], se: ['SEK', 'EUR'], dk: ['DKK', 'EUR'],
+  no: ['NOK', 'USD', 'EUR'], gb: ['GBP', 'USD', 'EUR'], ch: ['CHF', 'USD', 'EUR'],
+  de: EUR,
+};
+const suffixOf = (sym) => (sym.includes('.') ? sym.split('.').pop() : '');
+
+/// Passt eine Screener-Zeile zur Heimatboerse ihrer Region?
+export function homeListing(q, region) {
+  if (!q?.symbol) return false;
+  if (OTC.has(q.exchange) || /OTC|Pink/i.test(q.fullExchangeName || '')) return false;
+  if (!(HOME_SUFFIX[region] || []).includes(suffixOf(q.symbol))) return false;
+  const fc = q.financialCurrency;
+  return !fc || (HOME_CUR[region] || []).includes(fc);
+}
+
+// Region einer Aufnahme (Kennungen wie Argus). regionOf (history.mjs) kennt
+// Kopenhagen, Oslo, Dublin, Kosdaq, Singapur, Taipeh-OTC nicht (→ „world“).
+const ATLAS_REGION = {
+  us: 'usa', de: 'europe', jp: 'japan', hk: 'china', in: 'india',
+  kr: 'apac', tw: 'apac', au: 'apac', sg: 'apac', ca: 'world',
+  fr: 'europe', nl: 'europe', it: 'europe', es: 'europe', fi: 'europe',
+  be: 'europe', at: 'europe', ie: 'europe', se: 'europe', dk: 'europe',
+  no: 'europe', gb: 'europe', ch: 'europe',
 };
 
 async function screenerPage(region, offset, size, auth) {
@@ -117,38 +167,45 @@ async function screenerPage(region, offset, size, auth) {
   });
 }
 
+const PAGE = 250;
 async function buildUniverse() {
   const auth = await yahooAuth();
   const out = new Map();
-  // Dieselbe Firma steht oft an mehreren Boersen (Intel auch in Wien als
-  // INTC.VI, ohne Analysten). Die Regionen laufen Heimatmarkt zuerst (USA
-  // vorn), also gewinnt die erste Notierung; Namensschluessel ohne Rechtsform.
+  // Dieselbe Firma steht oft an mehreren Boersen; die erste Notierung gewinnt
+  // (Reihenfolge von REGION_QUOTA). Namensschluessel ohne Rechtsform.
   const names = new Set();
   const nameKey = (n) => String(n || '').toLowerCase()
-    .replace(/[.,()&'\-]/g, ' ')
-    .replace(/\b(aktiengesellschaft|ag|se|sa|spa|plc|nv|oyj|ab|asa|inc|corp|corporation|co|ltd|limited|holdings?|group|company|kgaa|class [a-z]|the)\b/g, ' ')
+    .replace(/[.,()&'\-\/]/g, ' ')
+    .replace(/\b(aktiengesellschaft|ag|se|sa|spa|plc|nv|oyj|ab|asa|as|a s|inc|corp|corporation|co|ltd|limited|holdings?|group|company|kgaa|class [a-z]|the)\b/g, ' ')
     .replace(/\s+/g, ' ').trim();
+  let noFc = 0, seen = 0;
   for (const [region, quota] of Object.entries(REGION_QUOTA)) {
-    let got = 0;
-    for (let off = 0; got < quota && off < quota * 2 + 250; off += 250) {
+    let got = 0, pages = 0;
+    // Immer volle Seiten holen und selbst filtern — vorher wurde nur
+    // `quota − got` angefragt und bei < 250 Treffern aufgehoert: Regionen mit
+    // kleiner Quote sahen nur ihre ersten 30–200 Zeilen (Oesterreich: 0).
+    for (let off = 0; got < quota && pages < Math.ceil(quota / PAGE) * 3 + 1; off += PAGE) {
       let quotes = [];
-      try { quotes = await screenerPage(region, off, Math.min(250, quota - got), auth); }
+      try { quotes = await screenerPage(region, off, PAGE, auth); }
       catch (e) { if (e instanceof Stop) throw e; console.log(`Screener ${region}: ${e.message}`); break; }
-      if (!quotes.length) break;
+      pages++;
       for (const q of quotes) {
+        if (got >= quota) break;
+        seen++;
+        if (!q.financialCurrency) noFc++;
         if (q.quoteType && q.quoteType !== 'EQUITY') continue;
-        if (OTC.has(q.exchange) || /OTC|Pink/i.test(q.fullExchangeName || '')) continue;
-        if (!q.symbol || out.has(q.symbol)) continue;
+        if (!homeListing(q, region) || out.has(q.symbol)) continue;
         const nk = nameKey(q.longName || q.shortName);
         if (nk && names.has(nk)) continue;
         if (nk) names.add(nk);
         out.set(q.symbol, { s: q.symbol, n: q.longName || q.shortName || q.symbol, r: region });
         got++;
       }
-      if (quotes.length < 250) break;
+      if (quotes.length < PAGE) break;
     }
-    console.log(`Universum ${region}: ${got}`);
+    console.log(`Universum ${region}: ${got} (${pages} Seiten)`);
   }
+  console.log(`Screener-Zeilen ohne financialCurrency: ${noFc} von ${seen}.`);
   return [...out.values()];
 }
 
@@ -221,7 +278,7 @@ async function observe(u, nowMs) {
     sector: sectorForFinnhub(prof.industry) || sectorForFinnhub(prof.sector) || '',
     ysector: prof.sector || '',
     industry: prof.industry || '',
-    region: regionOf(u.s) || '',
+    region: ATLAS_REGION[u.r] || regionOf(u.s) || '',
     cur: r.price?.currency || '',
     seen: day, seenMs: nowMs,
     sd: new Date(startRow.t).toISOString().slice(0, 10),   // Kurs-Tag 0
@@ -265,6 +322,17 @@ async function refresh(e, nowMs) {
   if (rows) applySeries(e, rows);
 }
 
+function universeReport(list) {
+  const by = {};
+  for (const u of list) by[u.r] = (by[u.r] || 0) + 1;
+  console.log('Probe je Region:', JSON.stringify(by), 'gesamt', list.length);
+  const has = new Set(list.map((u) => u.s));
+  const probe = ['SAP.DE', 'SAP', 'ASML.AS', 'ASML', '2330.TW', 'TSM', '7203.T', 'TM',
+    'NOVO-B.CO', 'NVO', 'SIE.DE', 'ALV.DE', 'INTC', 'INTC.VI', 'EBS.VI', 'OMV.VI',
+    'RY.TO', 'RY', 'NESN.SW', 'SHEL.L', 'SHEL', '9988.HK', 'BABA', 'AAPL'];
+  console.log('Probe Kuerzel:', probe.map((p) => `${p}=${has.has(p) ? 'ja' : 'nein'}`).join(' '));
+}
+
 // ── Hauptlauf ────────────────────────────────────────────────────────────
 async function main() {
   const nowMs = Date.now();
@@ -274,17 +342,27 @@ async function main() {
 
   try {
     // Universum zu Beginn eines Zyklus neu bauen (Mitglieder bleiben im Zyklus fest).
-    // uv 2: Zweitnotierungen entfernt — ein Universum aelterer Fassung wird
-    // einmal neu gebaut (gleiche Zyklusnummer, von vorn).
+    // Ein Universum aelterer Fassung (uv) wird einmal neu gebaut — gleiche
+    // Zyklusnummer, von vorn. `uni` erst nach Erfolg ersetzen: vorher wurde
+    // die Nummer schon vor dem Bau herabgesetzt und bei einem Abbruch so
+    // gespeichert (jeder weitere Fehlversuch zaehlte sie weiter herunter).
     const stale = uni && uni.uv !== UNIV_VERSION;
-    if (stale) uni = { ...uni, cycle: (uni.cycle || 1) - 1 };
-    if (stale || !uni || !Array.isArray(uni.order) || uni.pos >= uni.order.length) {
+    if (DRY || stale || !uni || !Array.isArray(uni.order) || uni.pos >= uni.order.length) {
       const list = await buildUniverse();
+      if (DRY) { universeReport(list); return; }
       if (list.length < 500) throw new Error(`Universum zu klein (${list.length})`);
-      const n = (uni?.cycle || 0) + 1;
+      const n = stale ? (uni.cycle || 1) : (uni?.cycle || 0) + 1;
       uni = { cycle: n, startedAt: today(), pos: 0, size: list.length,
               order: shuffled(list, n * 7919 + list.length), builtAt: today(), uv: UNIV_VERSION };
       console.log(`Zyklus ${n}: ${list.length} Aktien.`);
+      if (stale) {
+        // Aufnahmen aus einem fehlerhaften Universum (Freiverkehr,
+        // Zweitnotierungen), die noch keinen Verlauf haben, fallen weg.
+        const inUni = new Set(list.map((u) => u.s));
+        const before = data.entries.length;
+        data.entries = data.entries.filter((e) => inUni.has(e.yahoo) || (e.r || []).length > 1);
+        console.log(`Aus altem Universum entfernt: ${before - data.entries.length}.`);
+      }
     }
 
     // 1) Faellige Verlaeufe (aelteste zuerst).
@@ -315,6 +393,9 @@ async function main() {
       catch (err) { if (err instanceof Stop) throw err; console.log(`${u.s}: ${err.message}`); }
       uni.pos++;
       if (!e) { skipped++; continue; }
+      // Dieselbe Aktie am selben Tag nur einmal (z. B. zweiter Lauf nach
+      // einem Neubau des Universums) — das Kuerzel ist der Schluessel der App.
+      if (data.entries.some((x) => x.ticker === e.ticker)) { skipped++; continue; }
       applySeries(e, [{ t: Date.parse(e.sd + 'T00:00:00Z'), c: e.startPrice }]);
       e.rk = -1;
       data.entries.push(e);
@@ -333,6 +414,8 @@ async function main() {
     if (!(e instanceof Stop)) console.error('Atlas-Lauf abgebrochen:', e.message);
     else console.log('Lauf beendet (Budget/Drosselung) — Fortschritt bleibt.');
   }
+
+  if (DRY) return;
 
   // Aelteres ins Archiv (mit fertigem Verlauf).
   const keep = [], old = [];
