@@ -1,11 +1,19 @@
 // Gemini-Texte: knappe Lage-Notizen je Sektor/Region (rollierend) + Markt-News-Ticker.
 import { SECTORS, REGIONS } from './sectors.mjs';
 
-const MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash-lite';
+const MODEL0 = process.env.GEMINI_MODEL || 'gemini-2.5-flash-lite';
+// Google schaltet alte Modelle ab (dann 404). Einmal je Lauf auf den
+// laufend gepflegten Namen wechseln statt still keine Texte mehr zu liefern
+// (seit 2026-10-31). Fest waehlbar ueber die Umgebung GEMINI_MODEL.
+const MODEL_FALLBACK = 'gemini-flash-lite-latest';
+let MODEL = MODEL0;
+const modelUrl = (key) => `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${key}`;
+const modelGone = (res) => (res.status === 404 && MODEL !== MODEL_FALLBACK)
+  ? (console.log(`Gemini-Modell ${MODEL} nicht mehr da — weiter mit ${MODEL_FALLBACK}.`), MODEL = MODEL_FALLBACK, true)
+  : false;
 const nameOf = id => (SECTORS.find(s => s.id === id) || REGIONS.find(s => s.id === id) || {}).name || id;
 
 async function gen(key, prompt, useSearch = false) {
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${key}`;
   const payload = {
     contents: [{ parts: [{ text: prompt }] }],
     generationConfig: { temperature: 0.6, maxOutputTokens: 6144, thinkingConfig: { thinkingBudget: 0 } },
@@ -14,7 +22,8 @@ async function gen(key, prompt, useSearch = false) {
   const body = JSON.stringify(payload);
   let lastErr = '';
   for (let attempt = 0; attempt < 5; attempt++) {   // flash-lite liefert sporadisch leer; 429 = RPM-Limit -> Backoff
-    const res = await fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body });
+    const res = await fetch(modelUrl(key), { method: 'POST', headers: { 'Content-Type': 'application/json' }, body });
+    if (modelGone(res)) continue;
     if (res.status === 429) {                        // Minutenlimit -> warten & erneut (statt aufgeben)
       lastErr = 'HTTP 429';
       await new Promise(r => setTimeout(r, 20000 * (attempt + 1)));   // 20s, 40s, 60s, 80s

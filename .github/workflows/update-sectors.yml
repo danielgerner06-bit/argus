@@ -34,7 +34,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
 
       - name: Sektordaten aktualisieren (Yahoo + Finnhub + Gemini)
         env:
@@ -63,11 +63,15 @@ jobs:
             git add sectordata.json history.json
             git commit -m "Sektordaten aktualisiert ($(date -u +%Y-%m-%d))"
             # bis zu 3 Versuche: bei parallelem Push (z. B. manueller Commit) erst rebasen
+            pushed=0
             for i in 1 2 3; do
-              if git push; then break; fi
+              # Nie kaputtes JSON veröffentlichen (seit 2026-10-31).
+              node -e "for (const f of ['sectordata.json','history.json']) JSON.parse(require('fs').readFileSync(f,'utf8'))" || { echo "::error::JSON nach dem Rebase kaputt"; exit 1; }
+              if git push; then pushed=1; break; fi
               echo "Push abgelehnt – rebase und erneut versuchen ($i)…"
               git pull --rebase -X ours origin main || git rebase --abort
             done
+            if [ $pushed -ne 1 ]; then echo "::error::Push dreimal abgelehnt"; exit 1; fi
           fi
 
       # Die Kursreihen (~1 MB) landen NICHT auf main: sie ändern sich jeden

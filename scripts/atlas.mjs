@@ -383,6 +383,8 @@ async function main() {
   const data = readJson(FILE, { v: 1, entries: [], suggest: [] });
   const archive = readJson(ARCHIVE, { v: 1, entries: [] });
   let uni = readJson(UNIV, null);
+  const totalBefore = (data.entries?.length || 0) + (archive.entries?.length || 0);
+  let progress = 0;
 
   try {
     // Universum zu Beginn eines Zyklus neu bauen (Mitglieder bleiben im Zyklus fest).
@@ -429,12 +431,23 @@ async function main() {
     console.log(`Verlaeufe nachgezogen: ${refreshed} von ${due.length} faelligen.`);
 
     // 2) Neue Aufnahmen reihum.
-    let added = 0, skipped = 0;
+    let added = 0, skipped = 0, errStreak = 0;
     while (added < NEW_PER_RUN && uni.pos < uni.order.length) {
       const u = uni.order[uni.pos];
       let e = null;
-      try { e = await observe(u, nowMs); }
-      catch (err) { if (err instanceof Stop) throw err; console.log(`${u.s}: ${err.message}`); }
+      try { e = await observe(u, nowMs); errStreak = 0; }
+      catch (err) {
+        if (err instanceof Stop) throw err;
+        console.log(`${u.s}: ${err.message}`);
+        // Viele Fehler am Stueck (Crumb kaputt, Yahoo umgebaut): nicht das
+        // halbe Universum ueberspringen, sondern diese Aktien beim naechsten
+        // Lauf noch einmal versuchen und aufhoeren (seit 2026-10-31).
+        if (++errStreak >= 5) {
+          uni.pos -= errStreak - 1;
+          console.log('Fuenf Fehler am Stueck — Lauf beendet, die Aktien kommen beim naechsten Mal wieder dran.');
+          break;
+        }
+      }
       uni.pos++;
       if (!e) { skipped++; continue; }
       // Dieselbe Aktie am selben Tag nur einmal (z. B. zweiter Lauf nach
@@ -454,6 +467,7 @@ async function main() {
       }
     }
     console.log(`Neu aufgenommen: ${added} (${skipped} ohne Daten), Zyklus ${uni.cycle}: ${uni.pos}/${uni.order.length}.`);
+    progress = added + refreshed;
   } catch (e) {
     if (!(e instanceof Stop)) console.error('Atlas-Lauf abgebrochen:', e.message);
     else console.log('Lauf beendet (Budget/Drosselung) — Fortschritt bleibt.');
@@ -470,10 +484,24 @@ async function main() {
   data.cycle = uni ? { n: uni.cycle, pos: uni.pos, size: uni.order?.length || 0, startedAt: uni.startedAt } : null;
   data.stats = { requests, throttled, total: keep.length + archive.entries.length };
 
+  // Waechter (seit 2026-10-31): Aufnahmen verschwinden nie. Sind es weniger
+  // als vorher (Stand nicht gelesen, Datei kaputt), NICHT schreiben — der
+  // Lauf wird rot, GitHub schickt eine Mail, der alte Stand bleibt.
+  if (data.stats.total < totalBefore) {
+    console.error(`Weniger Aufnahmen als vorher (${data.stats.total} < ${totalBefore}) — nichts gespeichert.`);
+    process.exit(1);
+  }
   fs.writeFileSync(FILE, JSON.stringify(data));
   fs.writeFileSync(ARCHIVE, JSON.stringify(archive));
   if (uni) fs.writeFileSync(UNIV, JSON.stringify(uni));
   console.log(`Gespeichert: ${keep.length} aktiv, ${archive.entries.length} im Archiv, ${requests} Yahoo-Abrufe, ${throttled}× gebremst.`);
+  // Werktagslauf ohne jeden Fortschritt (weder neu noch nachgezogen) = etwas
+  // ist kaputt (Yahoo, Crumb, Universum). Rot, damit GitHub eine Mail
+  // schickt — vorher blieb der Lauf gruen und Atlas stand still.
+  if (NEW_PER_RUN > 0 && progress === 0) {
+    console.error('Kein Fortschritt in diesem Lauf (Yahoo/Crumb/Universum pruefen).');
+    process.exit(1);
+  }
 }
 
 main().catch((e) => { console.error(e); process.exit(1); });

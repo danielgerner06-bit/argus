@@ -99,7 +99,9 @@ async function ensureCrumb() {
     headers: { 'User-Agent': UA, 'Cookie': _cookie },
   });
   const c = await r2.text();
-  if (c && !c.startsWith('{') && c.length < 40) _crumb = c;
+  // Nur eine echte Antwort (200) ist ein Crumb — ein 429 „Too Many
+  // Requests“ ist auch kurz und beginnt nicht mit „{“ (seit 2026-10-31).
+  if (r2.ok && c && !c.startsWith('{') && !c.includes(' ') && c.length < 40) _crumb = c;
   else throw new Error('kein Yahoo-Crumb');
 }
 

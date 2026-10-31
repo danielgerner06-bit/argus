@@ -13,7 +13,16 @@ import { sectorForFinnhub, SECTOR_IDS } from './sectors.mjs';
 // flash-lite lieferte mit google_search-Grounding nicht-deterministisch LEERE Antworten
 // (alles "thinking", kein Text — auch mit thinkingBudget:0). Das stärkere flash gibt mit
 // Grounding zuverlässig strukturierten Text zurück. News läuft weiter günstig (eigenes Modell).
-const MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
+const MODEL0 = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
+// Google schaltet alte Modelle ab (dann 404). Einmal je Lauf auf den
+// laufend gepflegten Namen wechseln statt still keine Texte mehr zu liefern
+// (seit 2026-10-31). Fest waehlbar ueber die Umgebung GEMINI_MODEL.
+const MODEL_FALLBACK = 'gemini-flash-latest';
+let MODEL = MODEL0;
+const modelUrl = (key) => `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${key}`;
+const modelGone = (res) => (res.status === 404 && MODEL !== MODEL_FALLBACK)
+  ? (console.log(`Gemini-Modell ${MODEL} nicht mehr da — weiter mit ${MODEL_FALLBACK}.`), MODEL = MODEL_FALLBACK, true)
+  : false;
 const SECTOR_LIST = SECTOR_IDS.join(', ');
 
 // Aufnahmekriterium: Kaufempfehlungs-Anteil (Buy + Strong Buy) = 100 %.
@@ -29,7 +38,6 @@ function nameKey(s) {
 }
 
 async function groundedJSON(key, prompt) {
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${MODEL}:generateContent?key=${key}`;
   const body = JSON.stringify({
     contents: [{ parts: [{ text: prompt }] }],
     tools: [{ google_search: {} }],
@@ -39,7 +47,8 @@ async function groundedJSON(key, prompt) {
   });
   let lastErr = '';
   for (let attempt = 0; attempt < 5; attempt++) {
-    const res = await fetch(url, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body });
+    const res = await fetch(modelUrl(key), { method: 'POST', headers: { 'Content-Type': 'application/json' }, body });
+    if (modelGone(res)) continue;
     if (res.status === 429) {                        // RPM-Grounding-Limit -> warten & erneut versuchen
       lastErr = 'Gemini HTTP 429';
       await new Promise(r => setTimeout(r, 20000 * (attempt + 1)));   // 20s, 40s, 60s, 80s

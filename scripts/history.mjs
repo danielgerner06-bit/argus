@@ -23,7 +23,11 @@ const MS_DAY = 86400000;
 const MONTHS = 12;
 
 export function loadHistory() {
-  try { return JSON.parse(fs.readFileSync(FILE, 'utf8')); } catch { return { entries: {} }; }
+  // Fehlt die Datei, beginnt die Historie neu. Ist sie da, aber kaputt,
+  // NICHT still leeren (das ueberschrieb sonst die ganze Rueckschau) —
+  // abbrechen, damit der Lauf rot wird (seit 2026-10-31).
+  if (!fs.existsSync(FILE)) return { entries: {} };
+  return JSON.parse(fs.readFileSync(FILE, 'utf8'));
 }
 export function saveHistory(h) { fs.writeFileSync(FILE, JSON.stringify(h, null, 2)); }
 

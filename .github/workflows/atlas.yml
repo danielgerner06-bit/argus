@@ -40,17 +40,30 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
 
+      # Seit 2026-10-31: ein Netzaussetzer beim Holen darf NICHT als „erster
+      # Lauf“ gelten — sonst begann Atlas bei null und der Force-Push
+      # loeschte alle Aufnahmen. Gibt es den Zweig, muessen beide Dateien da
+      # sein, sonst bricht der Lauf ab (rot, Mail von GitHub).
       - name: Letzten Stand holen (Zweig `atlas`)
         run: |
-          if git fetch --depth=1 origin atlas 2>/dev/null; then
-            for f in atlas.json atlas_archive.json atlas_universe.json; do
-              git show origin/atlas:$f > $f 2>/dev/null || rm -f $f
-            done
-            cp atlas.json "$RUNNER_TEMP/atlas.prev.json" 2>/dev/null || true
-          else
+          set +e
+          git ls-remote --exit-code --heads origin atlas >/dev/null
+          rc=$?
+          set -e
+          if [ $rc -eq 2 ]; then
             echo "Noch kein Zweig atlas — erster Lauf."
+          elif [ $rc -ne 0 ]; then
+            echo "::error::GitHub nicht erreichbar (ls-remote $rc)"; exit 1
+          else
+            for i in 1 2 3; do git fetch --depth=1 origin atlas && break; sleep 20; done
+            git rev-parse --verify origin/atlas >/dev/null
+            git show origin/atlas:atlas.json > atlas.json
+            git show origin/atlas:atlas_archive.json > atlas_archive.json
+            git show origin/atlas:atlas_universe.json > atlas_universe.json 2>/dev/null || rm -f atlas_universe.json
+            node -e "JSON.parse(require('fs').readFileSync('atlas.json'));JSON.parse(require('fs').readFileSync('atlas_archive.json'))"
+            cp atlas.json "$RUNNER_TEMP/atlas.prev.json"
           fi
 
       - name: Atlas-Lauf
