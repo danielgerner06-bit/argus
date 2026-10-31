@@ -57,7 +57,7 @@ jobs:
           elif [ $rc -ne 0 ]; then
             echo "::error::GitHub nicht erreichbar (ls-remote $rc)"; exit 1
           else
-            for i in 1 2 3; do git fetch --depth=1 origin atlas && break; sleep 20; done
+            for i in 1 2 3; do git fetch --depth=1 origin +refs/heads/atlas:refs/remotes/origin/atlas && break; sleep 20; done
             git rev-parse --verify origin/atlas >/dev/null
             git show origin/atlas:atlas.json > atlas.json
             git show origin/atlas:atlas_archive.json > atlas_archive.json

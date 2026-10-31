@@ -384,7 +384,7 @@ async function main() {
   const archive = readJson(ARCHIVE, { v: 1, entries: [] });
   let uni = readJson(UNIV, null);
   const totalBefore = (data.entries?.length || 0) + (archive.entries?.length || 0);
-  let progress = 0;
+  let progress = 0, removedStale = 0;
 
   try {
     // Universum zu Beginn eines Zyklus neu bauen (Mitglieder bleiben im Zyklus fest).
@@ -408,6 +408,7 @@ async function main() {
         const before = data.entries.length;
         data.entries = data.entries.filter((e) => inUni.has(e.yahoo) || (e.r || []).length > 1);
         console.log(`Aus altem Universum entfernt: ${before - data.entries.length}.`);
+        removedStale += before - data.entries.length;
       }
     }
 
@@ -487,7 +488,7 @@ async function main() {
   // Waechter (seit 2026-10-31): Aufnahmen verschwinden nie. Sind es weniger
   // als vorher (Stand nicht gelesen, Datei kaputt), NICHT schreiben — der
   // Lauf wird rot, GitHub schickt eine Mail, der alte Stand bleibt.
-  if (data.stats.total < totalBefore) {
+  if (data.stats.total < totalBefore - removedStale) {
     console.error(`Weniger Aufnahmen als vorher (${data.stats.total} < ${totalBefore}) — nichts gespeichert.`);
     process.exit(1);
   }
