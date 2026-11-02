@@ -8,7 +8,7 @@
 // nur Yahoo, direkt von diesem GitHub-Rechner (oeffentliches Repo = keine
 // Minutenkosten).
 //
-// Ablauf je Lauf (Werktags, nach Boersenschluss):
+// Ablauf je Lauf (taeglich, auch am Wochenende, nach Boersenschluss):
 //   1. faellige Kursverlaeufe nachziehen (Alter 8/22/45/95/185 Tage)
 //   2. neue Aufnahmen aus dem Zyklus (Universum gemischt, reihum)
 //   3. Aktien mit 100 % Kaufempfehlung → Vorschlag an Argus (suggest[])

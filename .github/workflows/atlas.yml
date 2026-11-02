@@ -5,12 +5,12 @@ name: Atlas (alle Aktien)
 # history.json und fuehrt den Kursverlauf weiter. Nur Yahoo, sanfter Takt,
 # keine KI, kein Finnhub, kein Worker. Oeffentliches Repo → keine Minutenkosten.
 #
-# Werktags nach Boersenschluss in den USA (alle Maerkte zu), dazu Samstag
-# fruehmorgens ein Lauf nur fuer faellige Verlaeufe.
+# Jeden Tag nach Boersenschluss in den USA (alle Maerkte zu) — seit
+# 2026-11-02 auch Samstag und Sonntag mit neuen Aufnahmen (Wunsch des
+# Nutzers). Am Wochenende gilt der Freitagsschluss als Kurs-Tag 0 (`sd`).
 on:
   schedule:
-    - cron: '23 22 * * 1-5'
-    - cron: '37 7 * * 6'
+    - cron: '23 22 * * *'
   workflow_dispatch:
     inputs:
       new:
@@ -71,12 +71,7 @@ jobs:
           ATLAS_NEW: ${{ github.event_name == 'workflow_dispatch' && inputs.new || '50' }}
           ATLAS_DRY: ${{ inputs.dry && '1' || '0' }}
           ATLAS_MAX_REQ: ${{ github.event_name == 'workflow_dispatch' && inputs.max_req || '420' }}
-          SCHEDULE: ${{ github.event.schedule }}
-        # Samstag: nur faellige Verlaeufe, keine neuen Aufnahmen (wie oben
-        # beschrieben — vorher nahm auch der Samstagslauf 50 neue auf).
-        run: |
-          if [ "$SCHEDULE" = "37 7 * * 6" ]; then export ATLAS_NEW=0; fi
-          node scripts/atlas.mjs
+        run: node scripts/atlas.mjs
 
       # Wie die Kursreihen (Zweig `prices`): EIN Commit, wird ueberschrieben —
       # die Daten aendern sich jeden Tag, alte Staende braucht niemand. Der
