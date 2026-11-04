@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-04",
-  "updatedAt": "2026-11-04T15:00:50.379Z",
+  "updatedAt": "2026-11-04T16:00:52.365Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -153,9 +153,9 @@
     },
     {
       "id": "ai_semi",
-      "perf": -21.25,
-      "avg30": 6.19,
-      "perf6m": -3.84
+      "perf": -23.04,
+      "avg30": 6.18,
+      "perf6m": -6.02
     },
     {
       "id": "hardware",
@@ -207,9 +207,9 @@
     },
     {
       "id": "materials",
-      "perf": 7.91,
-      "avg30": 1.59,
-      "perf6m": 3.66
+      "perf": 8.34,
+      "avg30": 1.6,
+      "perf6m": 4.08
     },
     {
       "id": "utilities",
@@ -6875,5 +6875,5 @@
     ]
   },
   "blacklist": {},
-  "yahooAt": "2026-11-04T15:00:50.379Z"
+  "yahooAt": "2026-11-04T16:00:52.365Z"
 }
