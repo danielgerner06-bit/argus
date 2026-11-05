@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-05",
-  "updatedAt": "2026-11-05T21:00:50.624Z",
+  "updatedAt": "2026-11-05T22:00:50.585Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -165,33 +165,33 @@
     },
     {
       "id": "comm",
-      "perf": -6.47,
+      "perf": -6.51,
       "avg30": -0.45,
-      "perf6m": -11.04
+      "perf6m": -11.09
     },
     {
       "id": "health",
-      "perf": 10.51,
+      "perf": 10.48,
       "avg30": 1.46,
-      "perf6m": 27.3
+      "perf6m": 27.26
     },
     {
       "id": "finance",
-      "perf": 6.74,
+      "perf": 6.72,
       "avg30": 0.63,
-      "perf6m": 11.48
+      "perf6m": 11.46
     },
     {
       "id": "cons_cycl",
-      "perf": 5.65,
+      "perf": 5.64,
       "avg30": -0.07,
-      "perf6m": -1.85
+      "perf6m": -1.86
     },
     {
       "id": "cons_def",
-      "perf": 11.74,
+      "perf": 11.69,
       "avg30": 1.14,
-      "perf6m": 8.6
+      "perf6m": 8.55
     },
     {
       "id": "industrial",
@@ -219,9 +219,9 @@
     },
     {
       "id": "realestate",
-      "perf": 8.94,
+      "perf": 8.93,
       "avg30": 0.37,
-      "perf6m": -0.21
+      "perf6m": -0.23
     }
   ],
   "bars30Region": [
@@ -233,15 +233,15 @@
     },
     {
       "id": "europe",
-      "perf": 2.45,
+      "perf": 2.48,
       "avg30": 0.77,
-      "perf6m": 1.28
+      "perf6m": 1.31
     },
     {
       "id": "germany",
-      "perf": 3.61,
+      "perf": 3.64,
       "avg30": 0.34,
-      "perf6m": 0.56
+      "perf6m": 0.59
     },
     {
       "id": "japan",
@@ -269,15 +269,15 @@
     },
     {
       "id": "india",
-      "perf": 7.43,
+      "perf": 7.41,
       "avg30": -1.18,
-      "perf6m": 0.42
+      "perf6m": 0.4
     },
     {
       "id": "latam",
-      "perf": -15.77,
+      "perf": -15.8,
       "avg30": 1.63,
-      "perf6m": -12.25
+      "perf6m": -12.27
     },
     {
       "id": "world",
@@ -7198,5 +7198,5 @@
     ]
   },
   "blacklist": {},
-  "yahooAt": "2026-11-05T21:00:50.624Z"
+  "yahooAt": "2026-11-05T22:00:50.585Z"
 }
