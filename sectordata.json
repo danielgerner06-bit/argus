@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-05",
-  "updatedAt": "2026-11-05T19:00:51.498Z",
+  "updatedAt": "2026-11-05T20:00:50.650Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -153,9 +153,9 @@
     },
     {
       "id": "ai_semi",
-      "perf": -23.59,
-      "avg30": 6.06,
-      "perf6m": -8.52
+      "perf": 129.24,
+      "avg30": 8.09,
+      "perf6m": 174.44
     },
     {
       "id": "hardware",
@@ -165,33 +165,33 @@
     },
     {
       "id": "comm",
-      "perf": -6.83,
+      "perf": -6.46,
       "avg30": -0.44,
-      "perf6m": -11.38
+      "perf6m": -11.04
     },
     {
       "id": "health",
-      "perf": 11.11,
+      "perf": 11.13,
       "avg30": 1.48,
-      "perf6m": 27.99
+      "perf6m": 28.01
     },
     {
       "id": "finance",
-      "perf": 6.93,
+      "perf": 7.08,
       "avg30": 0.64,
-      "perf6m": 11.68
+      "perf6m": 11.83
     },
     {
       "id": "cons_cycl",
-      "perf": 5.36,
-      "avg30": -0.08,
-      "perf6m": -2.12
+      "perf": 5.64,
+      "avg30": -0.07,
+      "perf6m": -1.86
     },
     {
       "id": "cons_def",
-      "perf": 11.93,
+      "perf": 12.14,
       "avg30": 1.15,
-      "perf6m": 8.79
+      "perf6m": 8.99
     },
     {
       "id": "industrial",
@@ -219,9 +219,9 @@
     },
     {
       "id": "realestate",
-      "perf": 8.84,
+      "perf": 9.02,
       "avg30": 0.37,
-      "perf6m": -0.3
+      "perf6m": -0.14
     }
   ],
   "bars30Region": [
@@ -233,15 +233,15 @@
     },
     {
       "id": "europe",
-      "perf": 2.97,
+      "perf": 3.05,
       "avg30": 0.78,
-      "perf6m": 1.79
+      "perf6m": 1.87
     },
     {
       "id": "germany",
-      "perf": 3.9,
+      "perf": 4.15,
       "avg30": 0.35,
-      "perf6m": 0.85
+      "perf6m": 1.08
     },
     {
       "id": "japan",
@@ -275,9 +275,9 @@
     },
     {
       "id": "latam",
-      "perf": -15.83,
+      "perf": -15.68,
       "avg30": 1.64,
-      "perf6m": -12.31
+      "perf6m": -12.15
     },
     {
       "id": "world",
@@ -7198,5 +7198,5 @@
     ]
   },
   "blacklist": {},
-  "yahooAt": "2026-11-05T19:00:51.498Z"
+  "yahooAt": "2026-11-05T20:00:50.650Z"
 }
