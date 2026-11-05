@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-05",
-  "updatedAt": "2026-11-05T14:39:28.362Z",
+  "updatedAt": "2026-11-05T15:00:50.570Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -183,9 +183,9 @@
     },
     {
       "id": "cons_cycl",
-      "perf": 9.85,
-      "avg30": -0.06,
-      "perf6m": 2.05
+      "perf": 7.07,
+      "avg30": -0.07,
+      "perf6m": -0.53
     },
     {
       "id": "cons_def",
@@ -201,15 +201,15 @@
     },
     {
       "id": "energy",
-      "perf": 0.58,
-      "avg30": 3.93,
-      "perf6m": 11.96
+      "perf": 1.54,
+      "avg30": 3.94,
+      "perf6m": 13.04
     },
     {
       "id": "materials",
-      "perf": 8.89,
-      "avg30": 1.62,
-      "perf6m": 4.6
+      "perf": 8.39,
+      "avg30": 1.61,
+      "perf6m": 4.12
     },
     {
       "id": "utilities",
@@ -227,21 +227,21 @@
   "bars30Region": [
     {
       "id": "usa",
-      "perf": -1.77,
+      "perf": -2.94,
       "avg30": 1.26,
-      "perf6m": 4.36
+      "perf6m": 3.11
     },
     {
       "id": "europe",
-      "perf": 4.28,
+      "perf": 3.89,
       "avg30": 0.79,
-      "perf6m": 3.09
+      "perf6m": 2.7
     },
     {
       "id": "germany",
-      "perf": 5.12,
+      "perf": 4.53,
       "avg30": 0.35,
-      "perf6m": 2.02
+      "perf6m": 1.46
     },
     {
       "id": "japan",
@@ -275,15 +275,15 @@
     },
     {
       "id": "latam",
-      "perf": -14.55,
+      "perf": -14.98,
       "avg30": 1.64,
-      "perf6m": -10.98
+      "perf6m": -11.42
     },
     {
       "id": "world",
-      "perf": -0.65,
-      "avg30": 1.18,
-      "perf6m": 4.12
+      "perf": -1.96,
+      "avg30": 1.17,
+      "perf6m": 2.74
     }
   ],
   "topStocks": [
@@ -7197,5 +7197,6 @@
       }
     ]
   },
-  "blacklist": {}
+  "blacklist": {},
+  "yahooAt": "2026-11-05T15:00:50.570Z"
 }
