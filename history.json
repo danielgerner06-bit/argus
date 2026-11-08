@@ -1097,8 +1097,8 @@
       "pe": 37.6,
       "perf6mAtAdd": -6.41,
       "perf1mBefore": 7.39,
-      "sektorPsiAtAdd": null,
-      "sektorHitAtAdd": null,
+      "sektorPsiAtAdd": 0.002,
+      "sektorHitAtAdd": 0.1905,
       "analysts": 20,
       "div": 0.4,
       "forwardPe": 33.19,
@@ -2565,7 +2565,7 @@
       "peakMs": 1793669400000,
       "highAt": "2026-11-08",
       "targetHitMonth": 5,
-      "targetHitDay": "2026-10-26"
+      "targetHitDay": "2026-10-23"
     },
     "YOC": {
       "ticker": "YOC",
@@ -6401,8 +6401,8 @@
       "pe": 17.4,
       "perf6mAtAdd": 9.88,
       "perf1mBefore": 7.14,
-      "sektorPsiAtAdd": null,
-      "sektorHitAtAdd": null,
+      "sektorPsiAtAdd": 0.0094,
+      "sektorHitAtAdd": 0.5382,
       "analysts": 3,
       "div": 3.49,
       "forwardPe": 14.18,
