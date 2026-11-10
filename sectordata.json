@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-09",
-  "updatedAt": "2026-11-10T00:00:50.746Z",
+  "updatedAt": "2026-11-10T01:00:50.441Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -148,79 +148,79 @@
     {
       "id": "software",
       "perf": -9.86,
-      "avg30": 0.52,
+      "avg30": 0.56,
       "perf6m": 8.98
     },
     {
       "id": "ai_semi",
-      "perf": -27.28,
-      "avg30": 5.78,
-      "perf6m": -21.28
+      "perf": -29.72,
+      "avg30": 5.92,
+      "perf6m": -19.19
     },
     {
       "id": "hardware",
-      "perf": -17.12,
-      "avg30": 2.63,
-      "perf6m": -6.14
+      "perf": -18.2,
+      "avg30": 2.72,
+      "perf6m": -3.11
     },
     {
       "id": "comm",
-      "perf": -5.82,
-      "avg30": -0.54,
-      "perf6m": -10.39
+      "perf": -6.14,
+      "avg30": -0.52,
+      "perf6m": -10.7
     },
     {
       "id": "health",
-      "perf": 9.54,
-      "avg30": 1.51,
-      "perf6m": 28.87
+      "perf": 9.96,
+      "avg30": 1.48,
+      "perf6m": 27.77
     },
     {
       "id": "finance",
-      "perf": 6.03,
-      "avg30": 0.67,
-      "perf6m": 12.22
+      "perf": 6.46,
+      "avg30": 0.65,
+      "perf6m": 11.54
     },
     {
       "id": "cons_cycl",
       "perf": 5.31,
-      "avg30": -0.03,
+      "avg30": -0.05,
       "perf6m": -1.87
     },
     {
       "id": "cons_def",
-      "perf": 8.95,
-      "avg30": 1.21,
-      "perf6m": 8.23
+      "perf": 11.55,
+      "avg30": 1.17,
+      "perf6m": 8.4
     },
     {
       "id": "industrial",
       "perf": -3.4,
-      "avg30": 0.97,
+      "avg30": 0.99,
       "perf6m": -6.51
     },
     {
       "id": "energy",
-      "perf": -5.3,
-      "avg30": 3.86,
+      "perf": -3.33,
+      "avg30": 3.9,
       "perf6m": 10.15
     },
     {
       "id": "materials",
       "perf": 6.21,
-      "avg30": 1.63,
+      "avg30": 1.61,
       "perf6m": 1.43
     },
     {
       "id": "utilities",
       "perf": 5.22,
-      "avg30": -0.27,
+      "avg30": -0.29,
       "perf6m": -4.03
     },
     {
       "id": "realestate",
       "perf": 8.45,
-      "avg30": 0.45,
+      "avg30": 0.41,
       "perf6m": -0.25
     }
   ],
@@ -228,61 +228,61 @@
     {
       "id": "usa",
       "perf": -5.39,
-      "avg30": 1.19,
-      "perf6m": -0.32
+      "avg30": 1.22,
+      "perf6m": 0.2
     },
     {
       "id": "europe",
       "perf": 3.34,
-      "avg30": 0.78,
-      "perf6m": 0.68
+      "avg30": 0.77,
+      "perf6m": 0.34
     },
     {
       "id": "germany",
       "perf": 4.5,
-      "avg30": 0.35,
-      "perf6m": 0.52
+      "avg30": 0.34,
+      "perf6m": 0.23
     },
     {
       "id": "japan",
-      "perf": -9.81,
-      "avg30": 1.32,
-      "perf6m": -4.29
+      "perf": -10.23,
+      "avg30": 1.37,
+      "perf6m": -3.73
     },
     {
       "id": "china",
       "perf": 0.48,
-      "avg30": -1.86,
+      "avg30": -1.87,
       "perf6m": -11.04
     },
     {
       "id": "em",
-      "perf": -11.18,
-      "avg30": 1.5,
-      "perf6m": -12.61
+      "perf": -11.93,
+      "avg30": 1.55,
+      "perf6m": -12.09
     },
     {
       "id": "apac",
-      "perf": -10.6,
-      "avg30": 1.95,
-      "perf6m": -9.44
+      "perf": -11.38,
+      "avg30": 2,
+      "perf6m": -8.39
     },
     {
       "id": "india",
-      "perf": 10.56,
-      "avg30": -1.09,
-      "perf6m": 2.15
+      "perf": 8.5,
+      "avg30": -1.14,
+      "perf6m": 0.38
     },
     {
       "id": "latam",
       "perf": -14.32,
-      "avg30": 1.49,
-      "perf6m": -11.29
+      "avg30": 1.55,
+      "perf6m": -11.78
     },
     {
       "id": "world",
       "perf": -4.31,
-      "avg30": 1.11,
+      "avg30": 1.14,
       "perf6m": -0.48
     }
   ],
@@ -958,8 +958,8 @@
       "verifiedAt": "2026-11-06",
       "verifiedSource": "yahoo",
       "seen": "2026-11-05",
-      "perf6m": -55.78,
-      "perf6mAt": "2026-11-05",
+      "perf6m": -52.01,
+      "perf6mAt": "2026-11-10",
       "perf1mBefore": -1.51,
       "upside": 92,
       "pe": 20.6,
@@ -1152,8 +1152,8 @@
       "verifiedAt": "2026-11-04",
       "verifiedSource": "yahoo",
       "seen": "2026-09-01",
-      "perf6m": -14.83,
-      "perf6mAt": "2026-11-05",
+      "perf6m": -16.62,
+      "perf6mAt": "2026-11-10",
       "perf1mBefore": -0.33,
       "upside": 90,
       "pe": 11.4,
@@ -1282,8 +1282,8 @@
       "verifiedAt": "2026-11-04",
       "verifiedSource": "yahoo",
       "seen": "2026-09-01",
-      "perf6m": -23.1,
-      "perf6mAt": "2026-11-05",
+      "perf6m": -37.69,
+      "perf6mAt": "2026-11-10",
       "perf1mBefore": 28.58,
       "upside": 87,
       "pe": 37.5,
@@ -1347,8 +1347,8 @@
       "verifiedAt": "2026-11-07",
       "verifiedSource": "stockanalysis+yahoo",
       "seen": "2026-08-07",
-      "perf6m": -27.31,
-      "perf6mAt": "2026-11-05",
+      "perf6m": -23.73,
+      "perf6mAt": "2026-11-10",
       "perf1mBefore": 3.35,
       "upside": 84,
       "pe": 11,
@@ -7789,5 +7789,5 @@
     ]
   },
   "blacklist": {},
-  "yahooAt": "2026-11-10T00:00:50.746Z"
+  "yahooAt": "2026-11-10T01:00:50.441Z"
 }
