@@ -82,20 +82,20 @@ async function fetchTaste() {
       .filter(x => typeof x === 'string' && x.trim())
       .map(x => x.trim().slice(0, 140)).slice(0, 15);
     const liked = clean(j.liked), skipped = clean(j.skipped);
-    return liked.length ? { liked, skipped } : null;
+    return liked.length || skipped.length ? { liked, skipped } : null;
   } catch { return null; }
 }
 
 export function tasteBlock(taste) {
-  if (!taste || !taste.liked.length) return '';
+  if (!taste || !(taste.liked.length || taste.skipped.length)) return '';
   const list = a => a.map(h => `- ${h}`).join('\n');
   return `
 
-GESCHMACK DES LESERS (nur zur AUSWAHL, KEINE Quelle): Diese ALTEN Schlagzeilen fand er wirklich relevant:
-${list(taste.liked)}${taste.skipped.length ? `
-Diese ALTEN fand er weniger relevant:
+GESCHMACK DES LESERS (nur zur AUSWAHL, KEINE Quelle):${taste.liked.length ? ` Diese ALTEN Schlagzeilen fand er wirklich relevant:
+${list(taste.liked)}` : ''}${taste.skipped.length ? `
+Diese ALTEN fand er NICHT relevant:
 ${list(taste.skipped)}` : ''}
-Suche trotzdem über Google nach HEUTIGEN Meldungen und bevorzuge unter ihnen solche mit ähnlichen Themen und ähnlicher Tragweite. Übernimm KEINE dieser alten Schlagzeilen, erfinde nichts, und gib nur Meldungen mit echtem, aktuellem Datum zurück.`;
+Suche trotzdem über Google nach HEUTIGEN Meldungen und bevorzuge unter ihnen solche mit ähnlichen Themen und ähnlicher Tragweite wie die relevanten; meide solche wie die nicht relevanten. Übernimm KEINE dieser alten Schlagzeilen, erfinde nichts, und gib nur Meldungen mit echtem, aktuellem Datum zurück.`;
 }
 
 // Markt-News-Ticker: die wichtigsten (max 3) marktbewegenden News, sehr knapp.
