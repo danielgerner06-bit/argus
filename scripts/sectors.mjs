@@ -73,6 +73,13 @@ const INDUSTRY_MAP = {
   'Chemicals': 'materials',
   'Utilities': 'utilities',
   'Real Estate': 'realestate',
+  // Yahoo-Sektornamen (assetProfile.sector) — ohne sie blieben z. B.
+  // „Packaging & Containers“ / „Consumer Cyclical“ ohne Sektor.
+  'Communication Services': 'comm',
+  'Consumer Cyclical': 'cons_cycl',
+  'Consumer Defensive': 'cons_def',
+  'Healthcare': 'health',
+  'Industrials': 'industrial',
 };
 
 // Liefert unsere Sektor-ID für eine Finnhub-Industrie (per Schlüsselwort-Heuristik).
