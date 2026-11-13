@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-13",
-  "updatedAt": "2026-11-13T18:00:50.464Z",
+  "updatedAt": "2026-11-13T19:00:50.369Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -165,21 +165,21 @@
     },
     {
       "id": "comm",
-      "perf": -3.37,
+      "perf": -3.28,
       "avg30": -0.63,
-      "perf6m": -7.08
+      "perf6m": -6.99
     },
     {
       "id": "health",
-      "perf": 8.19,
+      "perf": 8.37,
       "avg30": 1.65,
-      "perf6m": 28.35
+      "perf6m": 28.57
     },
     {
       "id": "finance",
-      "perf": 6.67,
+      "perf": 6.65,
       "avg30": 0.75,
-      "perf6m": 14.43
+      "perf6m": 14.41
     },
     {
       "id": "cons_cycl",
@@ -233,21 +233,21 @@
     },
     {
       "id": "europe",
-      "perf": 3.01,
+      "perf": 3.07,
       "avg30": 0.83,
-      "perf6m": 1.65
+      "perf6m": 1.7
     },
     {
       "id": "germany",
-      "perf": 3.94,
+      "perf": 3.99,
       "avg30": 0.41,
-      "perf6m": 1.58
+      "perf6m": 1.62
     },
     {
       "id": "japan",
-      "perf": -4.56,
+      "perf": -4.54,
       "avg30": 1.21,
-      "perf6m": -0.64
+      "perf6m": -0.62
     },
     {
       "id": "china",
@@ -275,9 +275,9 @@
     },
     {
       "id": "latam",
-      "perf": -14.04,
+      "perf": -14.24,
       "avg30": 1.21,
-      "perf6m": -8.49
+      "perf6m": -8.7
     },
     {
       "id": "world",
@@ -7968,5 +7968,5 @@
     ]
   },
   "blacklist": {},
-  "yahooAt": "2026-11-13T18:00:50.464Z"
+  "yahooAt": "2026-11-13T19:00:50.369Z"
 }
