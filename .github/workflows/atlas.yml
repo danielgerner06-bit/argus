@@ -85,6 +85,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           mkdir -p "$RUNNER_TEMP/out"
           cp atlas.json atlas_archive.json "$RUNNER_TEMP/out/"
+          [ -f atlas_model.json ] && cp atlas_model.json "$RUNNER_TEMP/out/"
           [ -f atlas_universe.json ] && cp atlas_universe.json "$RUNNER_TEMP/out/"
           [ -f "$RUNNER_TEMP/atlas.prev.json" ] && cp "$RUNNER_TEMP/atlas.prev.json" "$RUNNER_TEMP/out/atlas.prev.json"
           git worktree add --detach "$RUNNER_TEMP/aw"
