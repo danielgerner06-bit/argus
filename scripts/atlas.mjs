@@ -9,7 +9,7 @@
 // Minutenkosten).
 //
 // Ablauf je Lauf (taeglich, auch am Wochenende, nach Boersenschluss):
-//   1. faellige Kursverlaeufe nachziehen (Alter 8/22/45/95/185 Tage)
+//   1. faellige Kursverlaeufe nachziehen (Alter 8/22/35/45/95/185 Tage)
 //   2. neue Aufnahmen aus dem Zyklus (Universum gemischt, reihum)
 //   3. Aktien mit 100 % Kaufempfehlung → Vorschlag an Argus (suggest[])
 //
@@ -38,7 +38,12 @@ const MAX_REQ = Number(process.env.ATLAS_MAX_REQ || 420);
 const DRY = process.env.ATLAS_DRY === '1';
 const KEEP_DAYS = 185;                 // so lange bleibt eine Aufnahme in atlas.json
 const SERIES_DAYS = 126;               // Boersentage Verlauf je Aufnahme (≈ 6 Monate)
-const REFRESH_AT = [8, 22, 45, 95, 185];   // Kalendertage: dann Verlauf nachziehen
+// 35: nach 22 Kalendertagen sind es erst ~15 Boersentage — der erste Monat
+// (21 Boersentage, `perf[0]`) waere sonst erst nach 45 Tagen eingetragen und
+// die Chance-Zahl kaeme zwei Wochen spaeter (seit 2026-11-15). `rk` ist ein
+// Index in diese Liste: nur HINTEN oder zwischen noch nicht erreichten
+// Stufen einfuegen.
+const REFRESH_AT = [8, 22, 35, 45, 95, 185];   // Kalendertage: dann Verlauf nachziehen
 const UNIVERSE_TARGET = 5000;
 const DAY = 86400000;
 
