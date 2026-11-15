@@ -31,19 +31,41 @@ import { regionOf } from './history.mjs';
 const FILE = 'atlas.json';
 const ARCHIVE = 'atlas_archive.json';
 const UNIV = 'atlas_universe.json';
+// Schlanke Datei fuer die Chance der Wertpapierbewertung: nur ausgereifte
+// Aufnahmen (≥ 1 Monat), ohne Tagesverlauf und Texte — damit das Modell auch
+// 12-Monats-Werte aus dem Archiv kennt, ohne das ganze Archiv zu laden.
+const MODEL = 'atlas_model.json';
+const MODEL_MAX = 12000;
+const MODEL_DROP = new Set(['r', 'name', 'industry', 'ysector', 'cur', 'ratingCounts',
+  'sd', 'startPrice', 'rk', 'rkv', 'peakMs', 'yahoo']);
+function modelFile(all, nowMs) {
+  const ripe = all.filter((e) => (e.perfHigh || []).length > 0)
+    .sort((a, b) => b.seenMs - a.seenMs).slice(0, MODEL_MAX);
+  return { v: 1, updated: new Date(nowMs).toISOString(), entries: ripe.map((e) => {
+    const o = {};
+    for (const [k, v] of Object.entries(e)) if (!MODEL_DROP.has(k)) o[k] = v;
+    return o;
+  }) };
+}
 
 const NEW_PER_RUN = Number(process.env.ATLAS_NEW || 50);
 const MAX_REQ = Number(process.env.ATLAS_MAX_REQ || 420);
 // Probe: nur das Universum bauen und auswerten, nichts speichern.
 const DRY = process.env.ATLAS_DRY === '1';
 const KEEP_DAYS = 185;                 // so lange bleibt eine Aufnahme in atlas.json
-const SERIES_DAYS = 126;               // Boersentage Verlauf je Aufnahme (≈ 6 Monate)
-// 35: nach 22 Kalendertagen sind es erst ~15 Boersentage — der erste Monat
-// (21 Boersentage, `perf[0]`) waere sonst erst nach 45 Tagen eingetragen und
-// die Chance-Zahl kaeme zwei Wochen spaeter (seit 2026-11-15). `rk` ist ein
-// Index in diese Liste: nur HINTEN oder zwischen noch nicht erreichten
-// Stufen einfuegen.
-const REFRESH_AT = [8, 22, 35, 45, 95, 185];   // Kalendertage: dann Verlauf nachziehen
+const SERIES_DAYS = 126;               // Tagesverlauf `r` je Aufnahme (≈ 6 Monate)
+// Monatswerte (perf/perfHigh) reichen ein ganzes Jahr: die Chance misst den
+// Hoechststand bzw. den Stand nach bis zu 12 Monaten (seit 2026-11-15,
+// Wunsch des Nutzers). `r` bleibt bei 6 Monaten, sonst wuerde atlas.json zu
+// gross fuer das Handy.
+const PERF_DAYS = 252;
+// Kalendertage, an denen der Verlauf nachgezogen wird. 35: erster Monat (21
+// Boersentage) sicher vorbei; 280/375: 9 bzw. 12 Monate — auch fuer Eintraege,
+// die schon im Archiv liegen. `rk` = Index in diese Liste, `rkv` = Fassung
+// der Liste (alte Indizes werden in `migrateRk` umgerechnet).
+const REFRESH_AT = [8, 35, 95, 185, 280, 375];
+const RK_VERSION = 2;
+const OLD_REFRESH_AT = [8, 22, 35, 45, 95, 185];
 const UNIVERSE_TARGET = 5000;
 const DAY = 86400000;
 
@@ -346,8 +368,9 @@ function applySeries(e, rows) {
   if (i0 < 0) return false;
   const base = rows[i0].c;
   if (!(base > 0)) return false;
-  const pct = rows.slice(i0, i0 + SERIES_DAYS + 1).map((x) => (x.c / base - 1) * 100);
-  e.r = pct.map((v) => Math.round(v * 10));          // 0,1-%-Schritte als ganze Zahlen
+  const pct = rows.slice(i0, i0 + PERF_DAYS + 1).map((x) => (x.c / base - 1) * 100);
+  // 0,1-%-Schritte als ganze Zahlen, nur die ersten 6 Monate.
+  e.r = pct.slice(0, SERIES_DAYS + 1).map((v) => Math.round(v * 10));
   // Monatswerte wie history.json (21 Boersentage = 1 Monat), fuer die
   // Teile der Argus-Analyse, die noch in Monaten rechnen.
   e.perf = []; e.perfHigh = [];
@@ -360,6 +383,17 @@ function applySeries(e, rows) {
   e.peakPerf = r2(peak);
   e.peakMs = rows[i0 + peakDay]?.t ?? null;
   return true;
+}
+
+// Alte `rk` (Index in OLD_REFRESH_AT) auf die neue Liste umrechnen: der
+// zuletzt erledigte Tag bleibt erledigt, spaetere Stufen kommen noch.
+function migrateRk(e) {
+  if (e.rkv === RK_VERSION) return;
+  const done = (e.rk ?? -1) >= 0 ? OLD_REFRESH_AT[e.rk] : -1;
+  let k = -1;
+  for (let i = 0; i < REFRESH_AT.length; i++) if (REFRESH_AT[i] <= done) k = i;
+  e.rk = k;
+  e.rkv = RK_VERSION;
 }
 
 async function refresh(e, nowMs) {
@@ -417,19 +451,24 @@ async function main() {
       }
     }
 
-    // 1) Faellige Verlaeufe (aelteste zuerst).
+    // 1) Faellige Verlaeufe (aelteste zuerst) — auch im Archiv (9/12 Monate).
     const due = [];
-    for (const e of data.entries) {
+    for (const e of [...data.entries, ...archive.entries]) migrateRk(e);
+    for (const e of [...data.entries, ...archive.entries]) {
       const age = (nowMs - e.seenMs) / DAY;
       let k = -1;
       for (let i = 0; i < REFRESH_AT.length; i++) if (age >= REFRESH_AT[i]) k = i;
       if (k > (e.rk ?? -1)) due.push([e, k]);
     }
     due.sort((a, b) => a[0].seenMs - b[0].seenMs);
-    // Die Haelfte des Budgets fuer Verlaeufe, damit neue Aufnahmen nie ganz ausfallen.
+    // Budget fuer Verlaeufe: alles bis auf die neuen Aufnahmen (je 2 Abrufe)
+    // und eine kleine Reserve. Mit 6 Stufen × 50 Aufnahmen am Tag braucht es
+    // ~300 — die alte Haelfte (210) reichte auf Dauer nicht, der Rueckstau
+    // waere ab Mai 2027 still gewachsen (seit 2026-11-15).
+    const refreshBudget = MAX_REQ - 2 * NEW_PER_RUN - 10;
     let refreshed = 0;
     for (const [e, k] of due) {
-      if (requests >= MAX_REQ / 2) break;
+      if (requests >= refreshBudget) break;
       try { await refresh(e, nowMs); } catch (err) { if (err instanceof Stop) throw err; continue; }
       e.rk = k;
       refreshed++;
@@ -461,6 +500,7 @@ async function main() {
       if (data.entries.some((x) => x.ticker === e.ticker)) { skipped++; continue; }
       applySeries(e, [{ t: Date.parse(e.sd + 'T00:00:00Z'), c: e.startPrice }]);
       e.rk = -1;
+      e.rkv = RK_VERSION;
       data.entries.push(e);
       added++;
       // 3) 100 % Kaufempfehlung → Argus prueft sie als Perle. Keine
@@ -499,6 +539,7 @@ async function main() {
   }
   fs.writeFileSync(FILE, JSON.stringify(data));
   fs.writeFileSync(ARCHIVE, JSON.stringify(archive));
+  fs.writeFileSync(MODEL, JSON.stringify(modelFile([...data.entries, ...archive.entries], nowMs)));
   if (uni) fs.writeFileSync(UNIV, JSON.stringify(uni));
   console.log(`Gespeichert: ${keep.length} aktiv, ${archive.entries.length} im Archiv, ${requests} Yahoo-Abrufe, ${throttled}× gebremst.`);
   // Werktagslauf ohne jeden Fortschritt (weder neu noch nachgezogen) = etwas
