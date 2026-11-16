@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-16",
-  "updatedAt": "2026-11-16T16:00:50.946Z",
+  "updatedAt": "2026-11-16T17:00:50.497Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -165,9 +165,9 @@
     },
     {
       "id": "comm",
-      "perf": -2.94,
+      "perf": -2.86,
       "avg30": -0.69,
-      "perf6m": -8.05
+      "perf6m": -7.97
     },
     {
       "id": "health",
@@ -177,9 +177,9 @@
     },
     {
       "id": "finance",
-      "perf": 5.76,
+      "perf": 5.7,
       "avg30": 0.74,
-      "perf6m": 13.97
+      "perf6m": 13.9
     },
     {
       "id": "cons_cycl",
@@ -213,15 +213,15 @@
     },
     {
       "id": "utilities",
-      "perf": 5.56,
+      "perf": 5.51,
       "avg30": -0.07,
-      "perf6m": 0.23
+      "perf6m": 0.18
     },
     {
       "id": "realestate",
-      "perf": 5.67,
+      "perf": 5.64,
       "avg30": 0.62,
-      "perf6m": 1.42
+      "perf6m": 1.39
     }
   ],
   "bars30Region": [
@@ -8374,5 +8374,5 @@
     ]
   },
   "blacklist": {},
-  "yahooAt": "2026-11-16T16:00:50.946Z"
+  "yahooAt": "2026-11-16T17:00:50.497Z"
 }
