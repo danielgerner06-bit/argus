@@ -652,7 +652,7 @@
       "startPrice": 1806.75,
       "perf": [],
       "highAt": "2026-11-17",
-      "peakPerf": 0,
+      "peakPerf": -3.2,
       "peakDay": "2026-11-16",
       "peakMs": 1794787200000
     },
@@ -770,7 +770,7 @@
       "startPrice": 12.260000228881836,
       "perf": [],
       "highAt": "2026-11-17",
-      "peakPerf": 0.65,
+      "peakPerf": 1.05,
       "peakDay": "2026-11-17",
       "peakMs": 1794879000000
     },
@@ -4438,7 +4438,7 @@
       "peakPerf": 12.03,
       "peakDay": "2026-10-01",
       "peakMs": 1790812800000,
-      "highAt": "2026-11-16",
+      "highAt": "2026-11-17",
       "prov": false,
       "perfHigh": [
         12.03,
@@ -4506,7 +4506,7 @@
       "peakPerf": 10.24,
       "peakDay": "2026-10-05",
       "peakMs": 1791162000000,
-      "highAt": "2026-11-16",
+      "highAt": "2026-11-17",
       "prov": false,
       "perfHigh": [
         7.63,
@@ -4574,7 +4574,7 @@
       "peakPerf": 5.3,
       "peakDay": "2026-10-06",
       "peakMs": 1791248400000,
-      "highAt": "2026-11-16",
+      "highAt": "2026-11-17",
       "prov": false,
       "perfHigh": [
         1.99,
@@ -4642,7 +4642,7 @@
       "peakPerf": 3.94,
       "peakDay": "2026-11-04",
       "peakMs": 1793779200000,
-      "highAt": "2026-11-16",
+      "highAt": "2026-11-17",
       "prov": false,
       "perfHigh": [
         0.36,
@@ -4709,7 +4709,7 @@
       "peakPerf": 1.31,
       "peakDay": "2026-09-16",
       "peakMs": 1789565400000,
-      "highAt": "2026-11-16",
+      "highAt": "2026-11-17",
       "prov": false,
       "perfHigh": [
         1.31,
@@ -4776,7 +4776,7 @@
       "peakDay": "2026-11-11",
       "peakMs": 1794384000000,
       "sektorHitAtAdd": 0.2174,
-      "highAt": "2026-11-16",
+      "highAt": "2026-11-17",
       "prov": false,
       "perfHigh": [
         0.7,
@@ -4840,10 +4840,10 @@
         -9.88,
         -6.95
       ],
-      "peakPerf": 2.43,
-      "peakDay": "2026-11-16",
-      "peakMs": 1794800700000,
-      "highAt": "2026-11-16",
+      "peakPerf": 6.17,
+      "peakDay": "2026-11-17",
+      "peakMs": 1794887100000,
+      "highAt": "2026-11-17",
       "prov": false,
       "perfHigh": [
         0.26,
@@ -4910,7 +4910,7 @@
       "peakPerf": 0,
       "peakDay": "2026-09-11",
       "peakMs": 1789098300000,
-      "highAt": "2026-11-16",
+      "highAt": "2026-11-17",
       "prov": false,
       "perfHigh": [
         0,
@@ -4974,10 +4974,10 @@
         -4.24,
         25.45
       ],
-      "peakPerf": 32.63,
-      "peakDay": "2026-11-16",
-      "peakMs": 1794800700000,
-      "highAt": "2026-11-16",
+      "peakPerf": 33.6,
+      "peakDay": "2026-11-17",
+      "peakMs": 1794887100000,
+      "highAt": "2026-11-17",
       "prov": false,
       "perfHigh": [
         0.37,
@@ -5046,7 +5046,7 @@
       "peakPerf": 1.7,
       "peakDay": "2026-10-26",
       "peakMs": 1792986300000,
-      "highAt": "2026-11-16",
+      "highAt": "2026-11-17",
       "prov": false,
       "perfHigh": [
         0,
@@ -5109,7 +5109,7 @@
       "perf": [
         3.99
       ],
-      "highAt": "2026-11-16",
+      "highAt": "2026-11-17",
       "peakPerf": 11.52,
       "peakDay": "2026-10-22",
       "peakMs": 1792652400000,
@@ -5177,7 +5177,7 @@
       "peakPerf": 5.09,
       "peakDay": "2026-09-25",
       "peakMs": 1790319600000,
-      "highAt": "2026-11-16",
+      "highAt": "2026-11-17",
       "prov": false,
       "perfHigh": [
         5.09
@@ -5242,7 +5242,7 @@
       "peakPerf": 22.93,
       "peakDay": "2026-10-01",
       "peakMs": 1790812800000,
-      "highAt": "2026-11-16",
+      "highAt": "2026-11-17",
       "prov": false,
       "perfHigh": [
         22.93
@@ -5304,7 +5304,7 @@
       "perf": [
         4.53
       ],
-      "highAt": "2026-11-16",
+      "highAt": "2026-11-17",
       "peakPerf": 21.11,
       "peakDay": "2026-11-12",
       "peakMs": 1794455100000,
@@ -5374,7 +5374,7 @@
       "peakPerf": 1.41,
       "peakDay": "2026-10-07",
       "peakMs": 1791342000000,
-      "highAt": "2026-11-16",
+      "highAt": "2026-11-17",
       "prov": false,
       "perfHigh": [
         1.41
@@ -5439,7 +5439,7 @@
       "peakPerf": 2.49,
       "peakDay": "2026-11-06",
       "peakMs": 1793952000000,
-      "highAt": "2026-11-16",
+      "highAt": "2026-11-17",
       "prov": false,
       "perfHigh": [
         0.42
@@ -5501,7 +5501,7 @@
       "perf": [
         3.18
       ],
-      "highAt": "2026-11-16",
+      "highAt": "2026-11-17",
       "peakPerf": 5.45,
       "peakDay": "2026-10-19",
       "peakMs": 1792393200000,
@@ -5566,7 +5566,7 @@
       "perf": [
         6.94
       ],
-      "highAt": "2026-11-16",
+      "highAt": "2026-11-17",
       "peakPerf": 16.24,
       "peakDay": "2026-11-05",
       "peakMs": 1793865600000,
@@ -5631,7 +5631,7 @@
       "perf": [
         2.92
       ],
-      "highAt": "2026-11-16",
+      "highAt": "2026-11-17",
       "peakPerf": 17.9,
       "peakDay": "2026-10-27",
       "peakMs": 1793088000000,
@@ -5696,10 +5696,10 @@
       "perf": [
         21.1
       ],
-      "peakPerf": 24.84,
+      "peakPerf": 25.57,
       "peakDay": "2026-11-16",
       "peakMs": 1794816000000,
-      "highAt": "2026-11-16",
+      "highAt": "2026-11-17",
       "prov": false,
       "perfHigh": [
         24.51
@@ -5762,7 +5762,7 @@
       "peakPerf": 11.95,
       "peakDay": "2026-10-28",
       "peakMs": 1793145600000,
-      "highAt": "2026-11-16"
+      "highAt": "2026-11-17"
     },
     "042660": {
       "ticker": "042660",
@@ -5818,7 +5818,7 @@
       "seenMs": 1792454400000,
       "startPrice": 64600,
       "perf": [],
-      "highAt": "2026-11-16",
+      "highAt": "2026-11-17",
       "peakPerf": 0,
       "peakDay": "2026-10-21",
       "peakMs": 1792540800000
@@ -5880,7 +5880,7 @@
       "peakPerf": 5.6,
       "peakDay": "2026-10-29",
       "peakMs": 1793232000000,
-      "highAt": "2026-11-16"
+      "highAt": "2026-11-17"
     },
     "ALNTG": {
       "ticker": "ALNTG",
@@ -5936,10 +5936,10 @@
       "seenMs": 1792800000000,
       "startPrice": 0.9399999976158142,
       "perf": [],
-      "highAt": "2026-11-16",
-      "peakPerf": 0.63,
-      "peakDay": "2026-11-16",
-      "peakMs": 1794816000000
+      "highAt": "2026-11-17",
+      "peakPerf": 0.83,
+      "peakDay": "2026-11-17",
+      "peakMs": 1794902400000
     },
     "ABCA": {
       "ticker": "ABCA",
@@ -5998,7 +5998,7 @@
       "peakPerf": 2.22,
       "peakDay": "2026-10-27",
       "peakMs": 1793088000000,
-      "highAt": "2026-11-16"
+      "highAt": "2026-11-17"
     },
     "ALK B": {
       "ticker": "ALK B",
@@ -6054,8 +6054,8 @@
       "seenMs": 1793404800000,
       "startPrice": 245.10000610351562,
       "perf": [],
-      "highAt": "2026-11-16",
-      "peakPerf": 2.03,
+      "highAt": "2026-11-17",
+      "peakPerf": 2.59,
       "peakDay": "2026-11-16",
       "peakMs": 1794816000000
     },
@@ -6113,7 +6113,7 @@
       "seenMs": 1793404800000,
       "startPrice": 161000,
       "perf": [],
-      "highAt": "2026-11-16",
+      "highAt": "2026-11-17",
       "peakPerf": 5.11,
       "peakDay": "2026-11-02",
       "peakMs": 1793577600000
@@ -6172,7 +6172,7 @@
       "seenMs": 1793404800000,
       "startPrice": 25.255000114440918,
       "perf": [],
-      "highAt": "2026-11-16",
+      "highAt": "2026-11-17",
       "peakPerf": 3.23,
       "peakDay": "2026-11-11",
       "peakMs": 1794384000000
@@ -6231,7 +6231,7 @@
       "seenMs": 1793404800000,
       "startPrice": 107.95000076293945,
       "perf": [],
-      "highAt": "2026-11-16",
+      "highAt": "2026-11-17",
       "peakPerf": 15.02,
       "peakDay": "2026-11-09",
       "peakMs": 1794211200000
@@ -6293,7 +6293,7 @@
       "peakPerf": 2.66,
       "peakDay": "2026-11-04",
       "peakMs": 1793779200000,
-      "highAt": "2026-11-16"
+      "highAt": "2026-11-17"
     },
     "CRN": {
       "ticker": "CRN",
@@ -6352,7 +6352,7 @@
       "peakPerf": 0.65,
       "peakDay": "2026-11-09",
       "peakMs": 1794211200000,
-      "highAt": "2026-11-16"
+      "highAt": "2026-11-17"
     },
     "IRES": {
       "ticker": "IRES",
@@ -6411,7 +6411,7 @@
       "peakPerf": 4.76,
       "peakDay": "2026-11-09",
       "peakMs": 1794211200000,
-      "highAt": "2026-11-16"
+      "highAt": "2026-11-17"
     },
     "012450": {
       "ticker": "012450",
@@ -6470,7 +6470,7 @@
       "peakPerf": 0,
       "peakDay": "2026-11-05",
       "peakMs": 1793836800000,
-      "highAt": "2026-11-16"
+      "highAt": "2026-11-17"
     },
     "CENER": {
       "ticker": "CENER",
@@ -6529,7 +6529,7 @@
       "peakPerf": 7.18,
       "peakDay": "2026-11-12",
       "peakMs": 1794470400000,
-      "highAt": "2026-11-16"
+      "highAt": "2026-11-17"
     },
     "ADRX": {
       "ticker": "ADRX",
@@ -6579,7 +6579,7 @@
       "seenMs": 1793923200000,
       "startPrice": 14.125,
       "perf": [],
-      "highAt": "2026-11-16",
+      "highAt": "2026-11-17",
       "peakPerf": 12.19,
       "peakDay": "2026-11-12",
       "peakMs": 1794493800000
@@ -6638,7 +6638,7 @@
       "seenMs": 1794096000000,
       "startPrice": 13.875,
       "perf": [],
-      "highAt": "2026-11-16",
+      "highAt": "2026-11-17",
       "peakPerf": 5.07,
       "peakDay": "2026-11-12",
       "peakMs": 1794470400000
@@ -6697,7 +6697,7 @@
       "seenMs": 1794182400000,
       "startPrice": 34.94000053405762,
       "perf": [],
-      "highAt": "2026-11-16",
+      "highAt": "2026-11-17",
       "peakPerf": 0.29,
       "peakDay": "2026-11-10",
       "peakMs": 1794274200000
@@ -6756,7 +6756,10 @@
       "seenMs": 1794700800000,
       "startPrice": 83400,
       "perf": [],
-      "highAt": "2026-11-16"
+      "highAt": "2026-11-17",
+      "peakPerf": -0.48,
+      "peakDay": "2026-11-16",
+      "peakMs": 1794787200000
     },
     "SKAN.SW": {
       "ticker": "SKAN.SW",
@@ -6812,10 +6815,10 @@
       "seenMs": 1794700800000,
       "startPrice": 69,
       "perf": [],
-      "highAt": "2026-11-16",
-      "peakPerf": -0.07,
-      "peakDay": "2026-11-16",
-      "peakMs": 1794816000000
+      "highAt": "2026-11-17",
+      "peakPerf": 0.44,
+      "peakDay": "2026-11-17",
+      "peakMs": 1794902400000
     },
     "DOFG.OL": {
       "ticker": "DOFG.OL",
@@ -6871,10 +6874,10 @@
       "seenMs": 1794700800000,
       "startPrice": 127.74999618530273,
       "perf": [],
-      "highAt": "2026-11-16",
-      "peakPerf": 0.04,
-      "peakDay": "2026-11-16",
-      "peakMs": 1794816000000
+      "highAt": "2026-11-17",
+      "peakPerf": 0.63,
+      "peakDay": "2026-11-17",
+      "peakMs": 1794902400000
     }
   },
   "findings": {
