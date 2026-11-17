@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-17",
-  "updatedAt": "2026-11-17T18:00:50.408Z",
+  "updatedAt": "2026-11-17T18:47:14.119Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -275,9 +275,9 @@
     },
     {
       "id": "latam",
-      "perf": -16.1,
+      "perf": -16.24,
       "avg30": 1.06,
-      "perf6m": -8.69
+      "perf6m": -8.85
     },
     {
       "id": "world",
@@ -1383,7 +1383,7 @@
         "targetSpread": 64.3
       },
       "enrichAt": "2026-11-15",
-      "sektorPsi": 0.0045,
+      "sektorPsi": 0.0046,
       "sektorHit": 0.2008,
       "sektorPsiAtAdd": 0.0016,
       "sektorHitAtAdd": 0.1026,
@@ -1904,8 +1904,8 @@
         "targetSpread": 11.7
       },
       "enrichAt": "2026-11-14",
-      "sektorPsi": 0.1584,
-      "sektorHit": 0.7919,
+      "sektorPsi": 0.1808,
+      "sektorHit": 0.904,
       "sektorPsiAtAdd": 0.1225,
       "sektorHitAtAdd": 0.6127,
       "recheckAt": "2026-11-11",
@@ -2227,8 +2227,8 @@
         "targetSpread": 65.6
       },
       "enrichAt": "2026-11-15",
-      "sektorPsi": 0.1584,
-      "sektorHit": 0.7919,
+      "sektorPsi": 0.1808,
+      "sektorHit": 0.904,
       "sektorPsiAtAdd": 0.1651,
       "sektorHitAtAdd": 0.8255,
       "recheckAt": "2026-11-15",
@@ -2262,7 +2262,7 @@
       "eps": 0.36,
       "div": 0,
       "enrichAt": "2026-11-14",
-      "sektorPsi": 0.0045,
+      "sektorPsi": 0.0046,
       "sektorPsiAtAdd": 0.0045,
       "recheckAt": "2026-11-13",
       "miss": 0,
@@ -2422,11 +2422,11 @@
         "targetSpread": 52.8
       },
       "enrichAt": "2026-11-15",
-      "sektorPsi": 0.1584,
+      "sektorPsi": 0.1808,
       "sektorPsiAtAdd": 0.012,
       "recheckAt": "2026-11-11",
       "miss": 0,
-      "sektorHit": 0.7919,
+      "sektorHit": 0.904,
       "sektorHitAtAdd": 0.277
     },
     {
@@ -2551,8 +2551,8 @@
         "targetSpread": 0
       },
       "enrichAt": "2026-11-14",
-      "sektorPsi": 0.1584,
-      "sektorHit": 0.7919,
+      "sektorPsi": 0.1808,
+      "sektorHit": 0.904,
       "sektorPsiAtAdd": 0.1225,
       "sektorHitAtAdd": 0.6127,
       "recheckAt": "2026-11-11",
@@ -2615,11 +2615,11 @@
         "targetSpread": 0
       },
       "enrichAt": "2026-11-15",
-      "sektorPsi": 0.1584,
+      "sektorPsi": 0.1808,
       "sektorPsiAtAdd": 0.012,
       "recheckAt": "2026-11-11",
       "miss": 0,
-      "sektorHit": 0.7919,
+      "sektorHit": 0.904,
       "sektorHitAtAdd": 0.277
     },
     {
@@ -3004,7 +3004,7 @@
         "targetSpread": 36.4
       },
       "enrichAt": "2026-11-15",
-      "sektorPsi": 0.0045,
+      "sektorPsi": 0.0046,
       "sektorHit": 0.2008,
       "sektorPsiAtAdd": 0.0062,
       "sektorHitAtAdd": 0.2016,
@@ -4369,7 +4369,7 @@
         "targetSpread": 20.3
       },
       "enrichAt": "2026-11-15",
-      "sektorPsi": 0.0045,
+      "sektorPsi": 0.0046,
       "sektorHit": 0.2008,
       "sektorPsiAtAdd": 0.0062,
       "sektorHitAtAdd": 0.2016,
@@ -5537,8 +5537,8 @@
         "targetSpread": 89.7
       },
       "enrichAt": "2026-11-15",
-      "sektorPsi": 0.1584,
-      "sektorHit": 0.7919,
+      "sektorPsi": 0.1808,
+      "sektorHit": 0.904,
       "sektorPsiAtAdd": 0.1651,
       "sektorHitAtAdd": 0.8255,
       "recheckAt": "2026-11-15",
@@ -5671,6 +5671,67 @@
       "sektorHitAtAdd": 0.1344,
       "recheckAt": "2026-11-14",
       "miss": 0
+    },
+    {
+      "ticker": "403870",
+      "name": "HPSP Co., Ltd.",
+      "yahoo": "403870.KQ",
+      "sector": "ai_semi",
+      "buyPct": 100,
+      "ratingCounts": {
+        "buy": 2,
+        "outperform": 6,
+        "hold": 0,
+        "underperform": 0,
+        "sell": 0
+      },
+      "analysts": 8,
+      "strongBuyPct": 25,
+      "via": "gemini",
+      "source": "yahoo",
+      "verifiedAt": "2026-11-17",
+      "verifiedSource": "yahoo",
+      "seen": "2026-11-17",
+      "perf6m": -17.45,
+      "perf6mAt": "2026-11-17",
+      "perf1mBefore": -26.14,
+      "pe": null,
+      "div": 1.35,
+      "factors": {
+        "forwardPe": 16.3,
+        "priceToBook": null,
+        "priceToSales": 18.01,
+        "evEbitda": 29.66,
+        "evRevenue": 16.69,
+        "grossMargin": 73.6,
+        "operatingMargin": 53.45,
+        "profitMargin": 52.66,
+        "ebitdaMargin": 56.25,
+        "roe": 29.44,
+        "roa": 15.4,
+        "revenueGrowth": -10.2,
+        "earningsGrowth": 16.7,
+        "earningsQGrowth": 16.4,
+        "debtToEquity": 0.65,
+        "currentRatio": 3.41,
+        "quickRatio": 2.58,
+        "payoutRatio": 47.44,
+        "heldInsiders": 20.46,
+        "heldInstitutions": 48.07,
+        "marketCap": 1992089712,
+        "beta": 1.69,
+        "distTo52High": -60.87,
+        "pos52Band": 39.1,
+        "distTo50dma": -29.65,
+        "distTo200dma": -24.7,
+        "recMean": 1.25,
+        "targetSpread": 25.5
+      },
+      "enrichAt": "2026-11-17",
+      "sektorPsi": 0.1808,
+      "sektorHit": 0.904,
+      "sektorPsiAtAdd": 0.1808,
+      "sektorHitAtAdd": 0.904
     },
     {
       "ticker": "1INN.DE",
@@ -6048,8 +6109,8 @@
         "targetSpread": null
       },
       "enrichAt": "2026-11-14",
-      "sektorPsi": 0.1584,
-      "sektorHit": 0.7919,
+      "sektorPsi": 0.1808,
+      "sektorHit": 0.904,
       "sektorPsiAtAdd": 0.1225,
       "sektorHitAtAdd": 0.6127,
       "recheckAt": "2026-11-11",
@@ -6747,6 +6808,11 @@
       "v": 0.1651
     },
     {
+      "t": "403870",
+      "d": "2026-11-17",
+      "v": 0.1808
+    },
+    {
       "t": "688008",
       "d": "2026-11-04",
       "v": 0.1871
@@ -6851,24 +6917,28 @@
   "news": {
     "items": [
       {
-        "text": "Ölpreise fallen: Angebot übersteigt erstmals wieder Nachfrage",
+        "text": "Explosionen in Straße von Hormus lassen Ölpreise wieder ansteigen",
         "stamp": "17.11.26"
       },
       {
-        "text": "EZB warnt vor KI-Aktien-Boom: Eurozone riskiert Verluste",
-        "stamp": "16.11.26"
+        "text": "US-Inflationsdaten: Kerninflation im Oktober bei 0,3 Prozent",
+        "stamp": "17.11.26"
       },
       {
-        "text": "Goldman Sachs warnt vor Ölmarkt-Überschuss 2027",
-        "stamp": "16.11.26"
+        "text": "EU-Inflation im Oktober auf vier Prozent gestiegen",
+        "stamp": "17.11.26"
       },
       {
-        "text": "Fed modelliert KI-Auswirkungen auf die Wirtschaft",
-        "stamp": "16.11.26"
+        "text": "Deutsche Bank unter Druck nach Medienberichten und Datenleck",
+        "stamp": "17.11.26"
       },
       {
-        "text": "Nvidia fällt hinter Microsoft zurück: Chip-Riese vor Zahlen angeschlagen",
-        "stamp": "16.11.26"
+        "text": "Nvidia: Neue Exportkontrollen für KI-Chips in Asien",
+        "stamp": "17.11.26"
+      },
+      {
+        "text": "EZB warnt vor Big-Tech-Konzentration im Euro-Anleihemarkt",
+        "stamp": "17.11.26"
       }
     ],
     "date": "2026-11-17"
@@ -6886,7 +6956,6 @@
     "lastCursor": 1758,
     "candCursor": 221,
     "candidates": [
-      "BioVie Inc.",
       "Aveanna Healthcare Holdings Inc.",
       "Eos Energy Enterprises, Inc.",
       "ADMA Biologics, Inc.",
@@ -7285,10 +7354,11 @@
       "Talos Energy Inc.",
       "Patterson-UTI Energy Inc.",
       "CNH Industrial N.V.",
-      "Basler AG"
+      "Basler AG",
+      "enCore Energy Corp"
     ],
     "noteCursor": 10,
-    "focusCursor": 1,
+    "focusCursor": 2,
     "recheckCursor": 16,
     "regionNoteCursor": 6,
     "notesDay": "2026-08-26",
@@ -7320,10 +7390,10 @@
       "industrial": 1908,
       "utilities": 798,
       "comm": 955,
-      "ai_semi": 884,
+      "ai_semi": 885,
       "realestate": 398
     },
-    "heavyAt": "2026-11-17T04:10:12.348Z",
+    "heavyAt": "2026-11-17T18:44:51.687Z",
     "revalidateTag": "multi-source-v9",
     "fmpRetryTag": "grades-summary-fix",
     "heavyDay": "2026-11-17",
@@ -7483,6 +7553,11 @@
       "0027": "cons_cycl"
     },
     "suggested": [
+      {
+        "name": "SL Corporation",
+        "at": "2026-11-17T04:38:27.590Z",
+        "src": "atlas"
+      },
       {
         "name": "Darwin",
         "at": "2026-10-29T13:00:33.942Z",
@@ -8308,6 +8383,5 @@
       }
     ]
   },
-  "blacklist": {},
-  "yahooAt": "2026-11-17T18:00:50.408Z"
+  "blacklist": {}
 }
