@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-17",
-  "updatedAt": "2026-11-17T18:47:14.119Z",
+  "updatedAt": "2026-11-17T19:00:50.661Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -275,9 +275,9 @@
     },
     {
       "id": "latam",
-      "perf": -16.24,
+      "perf": -16.3,
       "avg30": 1.06,
-      "perf6m": -8.85
+      "perf6m": -8.91
     },
     {
       "id": "world",
@@ -8383,5 +8383,6 @@
       }
     ]
   },
-  "blacklist": {}
+  "blacklist": {},
+  "yahooAt": "2026-11-17T19:00:50.661Z"
 }
