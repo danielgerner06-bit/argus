@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-19",
-  "updatedAt": "2026-11-19T16:00:50.395Z",
+  "updatedAt": "2026-11-19T17:00:50.508Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -153,21 +153,21 @@
     },
     {
       "id": "ai_semi",
-      "perf": -15.22,
+      "perf": -15.45,
       "avg30": 5.11,
-      "perf6m": -18.21
+      "perf6m": -18.44
     },
     {
       "id": "hardware",
-      "perf": -11.91,
+      "perf": -12.21,
       "avg30": 2.23,
-      "perf6m": -7.53
+      "perf6m": -7.84
     },
     {
       "id": "comm",
-      "perf": -4.29,
+      "perf": -4.39,
       "avg30": -0.77,
-      "perf6m": -9.24
+      "perf6m": -9.34
     },
     {
       "id": "health",
@@ -183,9 +183,9 @@
     },
     {
       "id": "cons_cycl",
-      "perf": 2.29,
+      "perf": 1.71,
       "avg30": 0.06,
-      "perf6m": 0.17
+      "perf6m": -0.39
     },
     {
       "id": "cons_def",
@@ -269,9 +269,9 @@
     },
     {
       "id": "india",
-      "perf": 9.42,
+      "perf": 9.44,
       "avg30": -0.68,
-      "perf6m": 8.01
+      "perf6m": 8.03
     },
     {
       "id": "latam",
@@ -8361,5 +8361,5 @@
     ]
   },
   "blacklist": {},
-  "yahooAt": "2026-11-19T16:00:50.395Z"
+  "yahooAt": "2026-11-19T17:00:50.508Z"
 }
