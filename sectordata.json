@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-19",
-  "updatedAt": "2026-11-20T06:00:50.482Z",
+  "updatedAt": "2026-11-20T07:00:50.238Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -165,9 +165,9 @@
     },
     {
       "id": "comm",
-      "perf": -4.18,
-      "avg30": -0.78,
-      "perf6m": -9.06
+      "perf": -4.39,
+      "avg30": -0.8,
+      "perf6m": -9.34
     },
     {
       "id": "health",
@@ -219,9 +219,9 @@
     },
     {
       "id": "realestate",
-      "perf": 3.46,
-      "avg30": 0.66,
-      "perf6m": -0.73
+      "perf": 3.64,
+      "avg30": 0.68,
+      "perf6m": -1.89
     }
   ],
   "bars30Region": [
@@ -269,9 +269,9 @@
     },
     {
       "id": "india",
-      "perf": 8.18,
-      "avg30": -0.72,
-      "perf6m": 7.78
+      "perf": 9.49,
+      "avg30": -0.68,
+      "perf6m": 8.08
     },
     {
       "id": "latam",
@@ -5046,8 +5046,8 @@
       "verifiedAt": "2026-11-13",
       "verifiedSource": "yahoo",
       "seen": "2026-11-05",
-      "perf6m": 31.47,
-      "perf6mAt": "2026-11-15",
+      "perf6m": 28.68,
+      "perf6mAt": "2026-11-20",
       "perf1mBefore": 0.23,
       "upside": 10,
       "pe": 9.1,
@@ -5111,8 +5111,8 @@
       "verifiedAt": "2026-11-14",
       "verifiedSource": "yahoo",
       "seen": "2026-09-11",
-      "perf6m": 14.7,
-      "perf6mAt": "2026-11-15",
+      "perf6m": 22.22,
+      "perf6mAt": "2026-11-20",
       "perf1mBefore": 0.45,
       "upside": 7,
       "pe": 25.1,
@@ -5241,8 +5241,8 @@
       "verifiedAt": "2026-11-16",
       "verifiedSource": "stockanalysis+yahoo",
       "seen": "2026-11-15",
-      "perf6m": 49.73,
-      "perf6mAt": "2026-11-15",
+      "perf6m": 47.86,
+      "perf6mAt": "2026-11-20",
       "perf1mBefore": -5.48,
       "upside": 5,
       "pe": 51.6,
@@ -5306,8 +5306,8 @@
       "verifiedAt": "2026-11-15",
       "verifiedSource": "yahoo",
       "seen": "2026-10-31",
-      "perf6m": 25.35,
-      "perf6mAt": "2026-11-15",
+      "perf6m": 47.18,
+      "perf6mAt": "2026-11-20",
       "perf1mBefore": -9.58,
       "upside": 1,
       "pe": 15.2,
@@ -8361,5 +8361,5 @@
     ]
   },
   "blacklist": {},
-  "yahooAt": "2026-11-20T06:00:50.482Z"
+  "yahooAt": "2026-11-20T07:00:50.238Z"
 }
