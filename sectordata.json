@@ -1,6 +1,6 @@
 {
-  "updated": "2026-11-21",
-  "updatedAt": "2026-11-22T14:00:50.417Z",
+  "updated": "2026-11-22",
+  "updatedAt": "2026-11-22T14:30:30.595Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -317,17 +317,17 @@
       "pe": null,
       "eps": -0.49,
       "div": 0,
-      "enrichAt": "2026-11-17",
+      "enrichAt": "2026-11-22",
       "sektorPsi": 0.0034,
       "sektorPsiAtAdd": 0.0085,
       "recheckAt": "2026-11-21",
       "miss": 0,
       "factors": {
-        "forwardPe": -47.88,
-        "priceToBook": 3.74,
-        "priceToSales": 1.88,
-        "evEbitda": 54.4,
-        "evRevenue": 1.66,
+        "forwardPe": -46.32,
+        "priceToBook": 3.62,
+        "priceToSales": 1.81,
+        "evEbitda": 52.39,
+        "evRevenue": 1.6,
         "grossMargin": 46.72,
         "operatingMargin": -11.36,
         "profitMargin": -11.72,
@@ -343,13 +343,13 @@
         "payoutRatio": 0,
         "heldInsiders": 64,
         "heldInstitutions": 5.13,
-        "marketCap": 133914392,
+        "marketCap": 129551264,
         "beta": 0.9,
-        "distTo52High": -48.52,
-        "pos52Band": 4.1,
-        "distTo50dma": -3.25,
-        "distTo200dma": -22.71,
-        "recMean": 1,
+        "distTo52High": -50.19,
+        "pos52Band": 1.3,
+        "distTo50dma": -6.27,
+        "distTo200dma": -24.37,
+        "recMean": null,
         "targetSpread": 23.3
       },
       "sektorHit": 0.2758,
@@ -509,41 +509,41 @@
       "perf6mAt": "2026-11-22",
       "perf1mBefore": -3.95,
       "upside": 99,
-      "pe": 36,
+      "pe": 34.9,
       "eps": 0.03,
-      "div": 2.99,
-      "enrichAt": "2026-11-17",
+      "div": 3.22,
+      "enrichAt": "2026-11-22",
       "sektorPsi": 0.0064,
       "sektorPsiAtAdd": 0.0082,
       "recheckAt": "2026-11-18",
       "miss": 0,
       "factors": {
-        "forwardPe": 11.37,
-        "priceToBook": 2.3,
-        "priceToSales": 0.26,
-        "evEbitda": 10.06,
-        "evRevenue": 0.49,
-        "grossMargin": 9.99,
-        "operatingMargin": 4.08,
-        "profitMargin": 0.64,
-        "ebitdaMargin": 4.85,
-        "roe": 6.43,
-        "roa": 3.67,
-        "revenueGrowth": 8.3,
-        "earningsGrowth": -73.9,
-        "earningsQGrowth": -74.2,
-        "debtToEquity": 265.31,
-        "currentRatio": 1.16,
-        "quickRatio": 0.95,
+        "forwardPe": 11.01,
+        "priceToBook": 1.86,
+        "priceToSales": 0.24,
+        "evEbitda": 9.96,
+        "evRevenue": 0.46,
+        "grossMargin": 9.67,
+        "operatingMargin": 3.9,
+        "profitMargin": 0.61,
+        "ebitdaMargin": 4.66,
+        "roe": 6.08,
+        "roa": 3.54,
+        "revenueGrowth": 22.8,
+        "earningsGrowth": 9.1,
+        "earningsQGrowth": 3.3,
+        "debtToEquity": 227.21,
+        "currentRatio": 1.1,
+        "quickRatio": 0.79,
         "payoutRatio": 249.87,
         "heldInsiders": 83.31,
         "heldInstitutions": 1.37,
-        "marketCap": 480392128,
+        "marketCap": 465268672,
         "beta": 1.11,
-        "distTo52High": -28.85,
-        "pos52Band": 13.8,
-        "distTo50dma": -1.52,
-        "distTo200dma": -13.7,
+        "distTo52High": -31.09,
+        "pos52Band": 7.1,
+        "distTo50dma": -3.73,
+        "distTo200dma": -16.03,
         "recMean": 1,
         "targetSpread": 8.7
       },
@@ -737,7 +737,7 @@
       },
       "enrichAt": "2026-11-21",
       "sektorPsi": 0.0283,
-      "sektorHit": 0.5405,
+      "sektorHit": 0.5402,
       "sektorPsiAtAdd": 0.0058,
       "sektorHitAtAdd": 0.5534,
       "recheckAt": "2026-11-18",
@@ -760,7 +760,7 @@
       "strongBuyPct": 100,
       "via": "gemini",
       "source": "stockanalysis+yahoo",
-      "verifiedAt": "2026-11-15",
+      "verifiedAt": "2026-11-22",
       "verifiedSource": "stockanalysis+yahoo",
       "seen": "2026-07-04",
       "perf6m": -29.91,
@@ -773,7 +773,7 @@
       "enrichAt": "2026-11-21",
       "sektorPsi": 0.0034,
       "sektorPsiAtAdd": 0.0019,
-      "recheckAt": "2026-11-15",
+      "recheckAt": "2026-11-22",
       "miss": 0,
       "factors": {
         "forwardPe": 13.18,
@@ -935,7 +935,7 @@
         "recMean": null,
         "targetSpread": 0
       },
-      "sektorHit": 0.5405,
+      "sektorHit": 0.5402,
       "sektorHitAtAdd": 0.4085
     },
     {
@@ -1019,7 +1019,7 @@
       "strongBuyPct": 47,
       "via": "gemini",
       "source": "yahoo",
-      "verifiedAt": "2026-11-15",
+      "verifiedAt": "2026-11-22",
       "verifiedSource": "yahoo",
       "seen": "2026-10-31",
       "perf6m": -32.31,
@@ -1061,10 +1061,10 @@
       },
       "enrichAt": "2026-11-20",
       "sektorPsi": 0.0283,
-      "sektorHit": 0.5405,
+      "sektorHit": 0.5402,
       "sektorPsiAtAdd": 0.02,
       "sektorHitAtAdd": 0.5698,
-      "recheckAt": "2026-11-15",
+      "recheckAt": "2026-11-22",
       "miss": 0
     },
     {
@@ -1092,18 +1092,18 @@
       "perf1mBefore": 5.99,
       "upside": 92,
       "pe": null,
-      "div": 0.2,
-      "enrichAt": "2026-11-17",
+      "div": 0.23,
+      "enrichAt": "2026-11-22",
       "sektorPsi": 0.011,
       "sektorPsiAtAdd": 0.0039,
       "recheckAt": "2026-11-19",
       "miss": 0,
       "factors": {
-        "forwardPe": 1.62,
+        "forwardPe": 1.51,
         "priceToBook": null,
-        "priceToSales": 2.63,
-        "evEbitda": 2.68,
-        "evRevenue": 2.57,
+        "priceToSales": 2.56,
+        "evEbitda": 2.63,
+        "evRevenue": 2.53,
         "grossMargin": 99.18,
         "operatingMargin": 95.85,
         "profitMargin": 94.32,
@@ -1118,15 +1118,15 @@
         "quickRatio": 2.37,
         "payoutRatio": 0.62,
         "heldInsiders": 32.25,
-        "heldInstitutions": 41.68,
-        "marketCap": 62120745398,
+        "heldInstitutions": 41.73,
+        "marketCap": 60931155310,
         "beta": 2.48,
-        "distTo52High": -68.25,
-        "pos52Band": 22.4,
-        "distTo50dma": -27.39,
-        "distTo200dma": -27.12,
+        "distTo52High": -69.07,
+        "pos52Band": 21.4,
+        "distTo50dma": -26.77,
+        "distTo200dma": -29.27,
         "recMean": 1.4,
-        "targetSpread": 60.5
+        "targetSpread": 63.9
       },
       "sektorHit": 0.6231,
       "sektorHitAtAdd": 0.2522
@@ -1189,7 +1189,7 @@
       },
       "enrichAt": "2026-11-21",
       "sektorPsi": 0.0283,
-      "sektorHit": 0.5405,
+      "sektorHit": 0.5402,
       "sektorPsiAtAdd": 0.0058,
       "sektorHitAtAdd": 0.5534,
       "recheckAt": "2026-11-18",
@@ -1483,7 +1483,7 @@
       "eps": 30.85,
       "div": 2.94,
       "enrichAt": "2026-11-18",
-      "sektorPsi": 0.0057,
+      "sektorPsi": 0.0066,
       "sektorPsiAtAdd": 0.0017,
       "recheckAt": "2026-11-18",
       "miss": 0,
@@ -1517,7 +1517,7 @@
         "recMean": null,
         "targetSpread": 0.7
       },
-      "sektorHit": 0.3774,
+      "sektorHit": 0.4397,
       "sektorHitAtAdd": 0.0766
     },
     {
@@ -1666,7 +1666,7 @@
       "strongBuyPct": 40,
       "via": "gemini",
       "source": "yahoo",
-      "verifiedAt": "2026-11-15",
+      "verifiedAt": "2026-11-22",
       "verifiedSource": "yahoo",
       "seen": "2026-10-31",
       "perf6m": -35.33,
@@ -1710,7 +1710,7 @@
       "sektorHit": 0.8979,
       "sektorPsiAtAdd": 0.1651,
       "sektorHitAtAdd": 0.8255,
-      "recheckAt": "2026-11-15",
+      "recheckAt": "2026-11-22",
       "miss": 0
     },
     {
@@ -1859,7 +1859,7 @@
       "strongBuyPct": 17,
       "via": "gemini",
       "source": "yahoo",
-      "verifiedAt": "2026-11-15",
+      "verifiedAt": "2026-11-22",
       "verifiedSource": "yahoo",
       "seen": "2026-10-31",
       "perf6m": -29.73,
@@ -1904,7 +1904,7 @@
       "sektorHit": 0.7231,
       "sektorPsiAtAdd": 0.0122,
       "sektorHitAtAdd": 0.5456,
-      "recheckAt": "2026-11-15",
+      "recheckAt": "2026-11-22",
       "miss": 0
     },
     {
@@ -1914,7 +1914,7 @@
       "buyPct": 100,
       "strongBuyPct": 75,
       "analysts": 4,
-      "upside": 77,
+      "upside": 96,
       "yahoo": "HYQ.DE",
       "peGemini": 20.4,
       "ratingCounts": {
@@ -1934,20 +1934,20 @@
       "perf6m": 2.19,
       "perf6mAt": "2026-11-22",
       "perf1mBefore": 2.18,
-      "pe": 19.4,
+      "pe": 17.5,
       "eps": 4.55,
       "div": 0,
-      "enrichAt": "2026-11-17",
+      "enrichAt": "2026-11-22",
       "sektorPsi": 0.0034,
       "sektorPsiAtAdd": 0.0085,
       "recheckAt": "2026-11-21",
       "miss": 0,
       "factors": {
-        "forwardPe": 16.96,
-        "priceToBook": 1.55,
-        "priceToSales": 0.94,
-        "evEbitda": 16.05,
-        "evRevenue": 1.09,
+        "forwardPe": 15.3,
+        "priceToBook": 1.4,
+        "priceToSales": 0.84,
+        "evEbitda": 14.67,
+        "evRevenue": 0.99,
         "grossMargin": 47.75,
         "operatingMargin": 5.99,
         "profitMargin": 4.86,
@@ -1962,13 +1962,13 @@
         "quickRatio": 1.36,
         "payoutRatio": 0,
         "heldInsiders": 41.66,
-        "heldInstitutions": 42.38,
-        "marketCap": 583206464,
+        "heldInstitutions": 42.05,
+        "marketCap": 526276000,
         "beta": 2.39,
-        "distTo52High": -36.34,
-        "pos52Band": 29.6,
-        "distTo50dma": 13.15,
-        "distTo200dma": 7.93,
+        "distTo52High": -42.56,
+        "pos52Band": 17.5,
+        "distTo50dma": 1.68,
+        "distTo200dma": -2.44,
         "recMean": 1.25,
         "targetSpread": 32.8
       },
@@ -1998,43 +1998,43 @@
       "perf6m": -14.84,
       "perf6mAt": "2026-11-22",
       "perf1mBefore": 6,
-      "upside": 75,
+      "upside": 68,
       "pe": null,
-      "div": 1.59,
-      "enrichAt": "2026-11-17",
+      "div": 1.73,
+      "enrichAt": "2026-11-22",
       "sektorPsi": 0.0105,
       "sektorPsiAtAdd": 0.0102,
       "recheckAt": "2026-11-19",
       "miss": 0,
       "factors": {
-        "forwardPe": 3.1,
+        "forwardPe": 2.71,
         "priceToBook": null,
-        "priceToSales": 0.18,
-        "evEbitda": 9.18,
-        "evRevenue": 1.11,
-        "grossMargin": 12.55,
-        "operatingMargin": 6.39,
-        "profitMargin": 5.73,
-        "ebitdaMargin": 12.1,
-        "roe": 29.37,
-        "roa": 2.49,
-        "revenueGrowth": 39.9,
-        "earningsGrowth": 987.2,
-        "earningsQGrowth": 989.3,
-        "debtToEquity": 65.47,
-        "currentRatio": 1.09,
-        "quickRatio": 0.74,
-        "payoutRatio": 5.21,
+        "priceToSales": 0.17,
+        "evEbitda": 7.4,
+        "evRevenue": 1.03,
+        "grossMargin": 14.39,
+        "operatingMargin": 8.75,
+        "profitMargin": 8.37,
+        "ebitdaMargin": 13.9,
+        "roe": 38.9,
+        "roa": 3.53,
+        "revenueGrowth": 38.4,
+        "earningsGrowth": 488.5,
+        "earningsQGrowth": 491.7,
+        "debtToEquity": 53.97,
+        "currentRatio": 1.04,
+        "quickRatio": 0.69,
+        "payoutRatio": 3.33,
         "heldInsiders": 25.42,
-        "heldInstitutions": 22.47,
-        "marketCap": 17462476567,
-        "beta": 1.63,
-        "distTo52High": -46.55,
-        "pos52Band": 35.8,
-        "distTo50dma": -11.33,
-        "distTo200dma": -6.12,
+        "heldInstitutions": 22.5,
+        "marketCap": 17210943937,
+        "beta": null,
+        "distTo52High": -47.68,
+        "pos52Band": 34.2,
+        "distTo50dma": -11.62,
+        "distTo200dma": -8.7,
         "recMean": 1.55,
-        "targetSpread": 32.7
+        "targetSpread": 38.7
       },
       "sektorHit": 0.7231,
       "sektorHitAtAdd": 0.6301
@@ -2062,46 +2062,46 @@
       "perf6m": -37.29,
       "perf6mAt": "2026-11-22",
       "perf1mBefore": -2.31,
-      "upside": 74,
-      "pe": 15.5,
-      "eps": 2.17,
-      "div": 2.41,
-      "enrichAt": "2026-11-17",
+      "upside": 82,
+      "pe": 17.6,
+      "eps": 1.83,
+      "div": 2.49,
+      "enrichAt": "2026-11-22",
       "sektorPsi": 0.0283,
       "sektorPsiAtAdd": 0.0078,
       "recheckAt": "2026-11-21",
       "miss": 0,
       "factors": {
-        "forwardPe": 12.68,
-        "priceToBook": 2.36,
-        "priceToSales": 0.94,
-        "evEbitda": 7.92,
-        "evRevenue": 0.99,
-        "grossMargin": 34.22,
-        "operatingMargin": 9.86,
-        "profitMargin": 5.56,
-        "ebitdaMargin": 12.49,
-        "roe": 13.74,
-        "roa": 6.78,
-        "revenueGrowth": 43.9,
-        "earningsGrowth": -26.6,
-        "earningsQGrowth": -26.3,
-        "debtToEquity": 52.87,
-        "currentRatio": 1.72,
-        "quickRatio": 1.32,
-        "payoutRatio": 36.87,
+        "forwardPe": 12.13,
+        "priceToBook": 1.89,
+        "priceToSales": 0.89,
+        "evEbitda": 9.21,
+        "evRevenue": 0.96,
+        "grossMargin": 32.42,
+        "operatingMargin": 7.82,
+        "profitMargin": 4.68,
+        "ebitdaMargin": 10.47,
+        "roe": 11.62,
+        "roa": 5.83,
+        "revenueGrowth": 7.7,
+        "earningsGrowth": -61.2,
+        "earningsQGrowth": -57.1,
+        "debtToEquity": 33.51,
+        "currentRatio": 2.05,
+        "quickRatio": 1.45,
+        "payoutRatio": 43.72,
         "heldInsiders": 40.15,
         "heldInstitutions": 14.92,
-        "marketCap": 367287552,
+        "marketCap": 351437376,
         "beta": 1.41,
-        "distTo52High": -39.13,
-        "pos52Band": 14.1,
-        "distTo50dma": -18.99,
-        "distTo200dma": -26.06,
+        "distTo52High": -41.76,
+        "pos52Band": 8.3,
+        "distTo50dma": -20.36,
+        "distTo200dma": -28.76,
         "recMean": 1,
         "targetSpread": 37.6
       },
-      "sektorHit": 0.5405,
+      "sektorHit": 0.5402,
       "sektorHitAtAdd": 0.4085
     },
     {
@@ -2186,7 +2186,7 @@
       "strongBuyPct": 0,
       "via": "gemini",
       "source": "yahoo",
-      "verifiedAt": "2026-11-15",
+      "verifiedAt": "2026-11-22",
       "verifiedSource": "yahoo",
       "seen": "2026-10-31",
       "perf6m": -7.16,
@@ -2227,11 +2227,11 @@
         "targetSpread": 28.9
       },
       "enrichAt": "2026-11-20",
-      "sektorPsi": 0.0057,
-      "sektorHit": 0.3774,
+      "sektorPsi": 0.0066,
+      "sektorHit": 0.4397,
       "sektorPsiAtAdd": 0.0037,
       "sektorHitAtAdd": 0.2661,
-      "recheckAt": "2026-11-15",
+      "recheckAt": "2026-11-22",
       "miss": 0
     },
     {
@@ -2316,22 +2316,22 @@
       "strongBuyPct": 100,
       "via": "gemini",
       "source": "stockanalysis+yahoo",
-      "verifiedAt": "2026-11-15",
+      "verifiedAt": "2026-11-22",
       "verifiedSource": "stockanalysis+yahoo",
       "seen": "2026-08-29",
       "perf6m": -21.06,
       "perf6mAt": "2026-11-22",
       "perf1mBefore": 26.28,
       "upside": 64,
-      "pe": 19.2,
+      "pe": 15.7,
       "eps": 0.49,
-      "div": 1.91,
+      "div": 2.34,
       "factors": {
-        "forwardPe": 7.73,
-        "priceToBook": 1.25,
-        "priceToSales": 0.72,
-        "evEbitda": 11.83,
-        "evRevenue": 0.84,
+        "forwardPe": 6.29,
+        "priceToBook": 1.02,
+        "priceToSales": 0.58,
+        "evEbitda": 10.1,
+        "evRevenue": 0.72,
         "grossMargin": 22.46,
         "operatingMargin": 3.18,
         "profitMargin": 3.31,
@@ -2346,20 +2346,20 @@
         "quickRatio": 0.49,
         "payoutRatio": 36.73,
         "heldInsiders": 2.42,
-        "heldInstitutions": 34.3,
-        "marketCap": 1582475648,
+        "heldInstitutions": 34.82,
+        "marketCap": 1290326272,
         "beta": 1.9,
-        "distTo52High": -29.4,
-        "pos52Band": 34.8,
-        "distTo50dma": -13.46,
-        "distTo200dma": -8.69,
+        "distTo52High": -42.43,
+        "pos52Band": 3.6,
+        "distTo50dma": -26.27,
+        "distTo200dma": -25.01,
         "recMean": 1,
         "targetSpread": 35
       },
-      "enrichAt": "2026-11-17",
+      "enrichAt": "2026-11-22",
       "sektorPsi": 0.0105,
       "sektorPsiAtAdd": 0.034,
-      "recheckAt": "2026-11-15",
+      "recheckAt": "2026-11-22",
       "miss": 0,
       "sektorHit": 0.7231,
       "sektorHitAtAdd": 0.6301
@@ -2509,7 +2509,7 @@
       "strongBuyPct": 86,
       "via": "gemini",
       "source": "stockanalysis+yahoo",
-      "verifiedAt": "2026-11-15",
+      "verifiedAt": "2026-11-22",
       "verifiedSource": "stockanalysis+yahoo",
       "seen": "2026-10-31",
       "perf6m": -20.93,
@@ -2550,11 +2550,11 @@
         "targetSpread": 28.6
       },
       "enrichAt": "2026-11-20",
-      "sektorPsi": 0.0057,
-      "sektorHit": 0.3774,
+      "sektorPsi": 0.0066,
+      "sektorHit": 0.4397,
       "sektorPsiAtAdd": 0.004,
       "sektorHitAtAdd": 0.3324,
-      "recheckAt": "2026-11-15",
+      "recheckAt": "2026-11-22",
       "miss": 0
     },
     {
@@ -2745,8 +2745,8 @@
         "targetSpread": 46.7
       },
       "enrichAt": "2026-11-20",
-      "sektorPsi": 0.0057,
-      "sektorHit": 0.3774,
+      "sektorPsi": 0.0066,
+      "sektorHit": 0.4397,
       "sektorPsiAtAdd": 0.0057,
       "sektorHitAtAdd": 0.3778,
       "recheckAt": "2026-11-21",
@@ -2834,7 +2834,7 @@
       "strongBuyPct": 40,
       "via": "gemini",
       "source": "yahoo",
-      "verifiedAt": "2026-11-21",
+      "verifiedAt": "2026-11-22",
       "verifiedSource": "yahoo",
       "seen": "2026-11-21",
       "perf6m": 3.22,
@@ -2878,7 +2878,9 @@
       "sektorPsi": 0.1796,
       "sektorHit": 0.8979,
       "sektorPsiAtAdd": 0.1796,
-      "sektorHitAtAdd": 0.8979
+      "sektorHitAtAdd": 0.8979,
+      "recheckAt": "2026-11-22",
+      "miss": 0
     },
     {
       "ticker": "F3C.DE",
@@ -2968,16 +2970,16 @@
       "perf6m": -32.49,
       "perf6mAt": "2026-11-22",
       "perf1mBefore": 0.66,
-      "upside": 51,
+      "upside": 58,
       "pe": 0.3,
       "eps": 4.05,
       "div": 0,
       "factors": {
-        "forwardPe": 14.31,
-        "priceToBook": 0.76,
-        "priceToSales": 0.29,
-        "evEbitda": 6.17,
-        "evRevenue": 0.58,
+        "forwardPe": 13.69,
+        "priceToBook": 0.72,
+        "priceToSales": 0.28,
+        "evEbitda": 6.03,
+        "evRevenue": 0.56,
         "grossMargin": 24.27,
         "operatingMargin": 2.57,
         "profitMargin": 0.53,
@@ -2993,16 +2995,16 @@
         "payoutRatio": 0,
         "heldInsiders": 64.76,
         "heldInstitutions": 0,
-        "marketCap": 5284272,
+        "marketCap": 5053518,
         "beta": 0.66,
-        "distTo52High": -36.39,
-        "pos52Band": 20.1,
-        "distTo50dma": 0.13,
-        "distTo200dma": -15.35,
+        "distTo52High": -39.17,
+        "pos52Band": 14,
+        "distTo50dma": -3.96,
+        "distTo200dma": -18.97,
         "recMean": null,
         "targetSpread": 0
       },
-      "enrichAt": "2026-11-17",
+      "enrichAt": "2026-11-22",
       "sektorPsi": 0.0043,
       "sektorHit": 0.4277,
       "sektorPsiAtAdd": 0.0406,
@@ -3092,7 +3094,7 @@
       "strongBuyPct": 58,
       "via": "gemini",
       "source": "yahoo",
-      "verifiedAt": "2026-11-21",
+      "verifiedAt": "2026-11-22",
       "verifiedSource": "yahoo",
       "seen": "2026-11-21",
       "perf6m": -10.02,
@@ -3136,7 +3138,9 @@
       "sektorPsi": 0.0074,
       "sektorHit": 0.2472,
       "sektorPsiAtAdd": 0.0074,
-      "sektorHitAtAdd": 0.2472
+      "sektorHitAtAdd": 0.2472,
+      "recheckAt": "2026-11-22",
+      "miss": 0
     },
     {
       "ticker": "EUZ",
@@ -3265,7 +3269,7 @@
         "recMean": 1.14,
         "targetSpread": 47.1
       },
-      "sektorHit": 0.5405,
+      "sektorHit": 0.5402,
       "sektorHitAtAdd": 0.4085
     },
     {
@@ -3609,7 +3613,7 @@
       "strongBuyPct": 0,
       "via": "gemini",
       "source": "yahoo",
-      "verifiedAt": "2026-11-21",
+      "verifiedAt": "2026-11-22",
       "verifiedSource": "yahoo",
       "seen": "2026-11-21",
       "perf6m": -3.74,
@@ -3653,7 +3657,9 @@
       "sektorPsi": 0.0064,
       "sektorHit": 0.6158,
       "sektorPsiAtAdd": 0.0064,
-      "sektorHitAtAdd": 0.6158
+      "sektorHitAtAdd": 0.6158,
+      "recheckAt": "2026-11-22",
+      "miss": 0
     },
     {
       "ticker": "CENER",
@@ -3743,21 +3749,21 @@
       "perf6m": -8.16,
       "perf6mAt": "2026-11-22",
       "perf1mBefore": -14.29,
-      "upside": 33,
-      "pe": 18.8,
+      "upside": 45,
+      "pe": 17.3,
       "eps": 1.26,
-      "div": 0.46,
-      "enrichAt": "2026-11-17",
+      "div": 0.5,
+      "enrichAt": "2026-11-22",
       "sektorPsi": 0.0105,
       "sektorPsiAtAdd": 0.0109,
       "recheckAt": "2026-11-19",
       "miss": 0,
       "factors": {
-        "forwardPe": 18.6,
-        "priceToBook": 4.25,
-        "priceToSales": 2.57,
-        "evEbitda": 13.1,
-        "evRevenue": 2.61,
+        "forwardPe": 17.11,
+        "priceToBook": 3.91,
+        "priceToSales": 2.37,
+        "evEbitda": 12.07,
+        "evRevenue": 2.41,
         "grossMargin": 51.65,
         "operatingMargin": 19.24,
         "profitMargin": 13.65,
@@ -3772,14 +3778,14 @@
         "quickRatio": 1.81,
         "payoutRatio": 8.73,
         "heldInsiders": 57.45,
-        "heldInstitutions": 22.4,
-        "marketCap": 730491328,
+        "heldInstitutions": 22.43,
+        "marketCap": 672052032,
         "beta": 2.51,
-        "distTo52High": -25.55,
-        "pos52Band": 60.2,
-        "distTo50dma": 3.84,
-        "distTo200dma": 8.03,
-        "recMean": 1,
+        "distTo52High": -31.5,
+        "pos52Band": 50.9,
+        "distTo50dma": -4.54,
+        "distTo200dma": -1.47,
+        "recMean": null,
         "targetSpread": 6.3
       },
       "sektorHit": 0.7231,
@@ -3973,8 +3979,8 @@
         "targetSpread": 41.8
       },
       "enrichAt": "2026-11-20",
-      "sektorPsi": 0.0057,
-      "sektorHit": 0.3774,
+      "sektorPsi": 0.0066,
+      "sektorHit": 0.4397,
       "sektorPsiAtAdd": 0.0061,
       "sektorHitAtAdd": 0.1513,
       "recheckAt": "2026-11-21",
@@ -4068,21 +4074,21 @@
       "perf6m": 14.85,
       "perf6mAt": "2026-11-22",
       "perf1mBefore": 3.68,
-      "upside": 29,
-      "pe": 15.6,
-      "eps": 23.82,
-      "div": 4.46,
-      "enrichAt": "2026-11-17",
+      "upside": 37,
+      "pe": 14.9,
+      "eps": 23.4,
+      "div": 4.6,
+      "enrichAt": "2026-11-22",
       "sektorPsi": 0.0026,
       "sektorPsiAtAdd": 0.004,
       "recheckAt": "2026-11-17",
       "miss": 0,
       "factors": {
-        "forwardPe": 13.96,
-        "priceToBook": 3.54,
-        "priceToSales": 3.46,
-        "evEbitda": 9.38,
-        "evRevenue": 2.97,
+        "forwardPe": 13.12,
+        "priceToBook": 3.33,
+        "priceToSales": 3.25,
+        "evEbitda": 8.88,
+        "evRevenue": 2.81,
         "grossMargin": 59.76,
         "operatingMargin": 28.66,
         "profitMargin": 21.89,
@@ -4096,14 +4102,14 @@
         "currentRatio": 3.97,
         "quickRatio": 3.29,
         "payoutRatio": 68.38,
-        "heldInsiders": 44.82,
-        "heldInstitutions": 35.4,
-        "marketCap": 2985075284,
+        "heldInsiders": 44.48,
+        "heldInstitutions": 35.45,
+        "marketCap": 2816235823,
         "beta": 0.75,
-        "distTo52High": -15.41,
-        "pos52Band": 50.2,
-        "distTo50dma": 1,
-        "distTo200dma": 1.63,
+        "distTo52High": -20.55,
+        "pos52Band": 33.6,
+        "distTo50dma": -5,
+        "distTo200dma": -4.26,
         "recMean": 1.36,
         "targetSpread": 34.8
       },
@@ -4127,7 +4133,7 @@
       "strongBuyPct": 60,
       "via": "gemini",
       "source": "stockanalysis+yahoo",
-      "verifiedAt": "2026-11-15",
+      "verifiedAt": "2026-11-22",
       "verifiedSource": "stockanalysis+yahoo",
       "seen": "2026-10-31",
       "perf6m": 19.16,
@@ -4172,7 +4178,7 @@
       "sektorHit": 0.2758,
       "sektorPsiAtAdd": 0.003,
       "sektorHitAtAdd": 0.2176,
-      "recheckAt": "2026-11-15",
+      "recheckAt": "2026-11-22",
       "miss": 0
     },
     {
@@ -4263,21 +4269,21 @@
       "perf6m": -1.02,
       "perf6mAt": "2026-11-22",
       "perf1mBefore": -1.83,
-      "upside": 26,
-      "pe": 38.4,
+      "upside": 29,
+      "pe": 37.4,
       "eps": 0.64,
-      "div": 1.49,
-      "enrichAt": "2026-11-17",
+      "div": 1.54,
+      "enrichAt": "2026-11-22",
       "sektorPsi": 0.0283,
       "sektorPsiAtAdd": 0.005,
       "recheckAt": "2026-11-16",
       "miss": 0,
       "factors": {
-        "forwardPe": 30.12,
-        "priceToBook": 2.63,
-        "priceToSales": 2.3,
-        "evEbitda": 19.73,
-        "evRevenue": 2.69,
+        "forwardPe": 29.33,
+        "priceToBook": 2.56,
+        "priceToSales": 2.24,
+        "evEbitda": 19.29,
+        "evRevenue": 2.63,
         "grossMargin": 61.16,
         "operatingMargin": 10.64,
         "profitMargin": 6.01,
@@ -4292,17 +4298,17 @@
         "quickRatio": 0.66,
         "payoutRatio": 0,
         "heldInsiders": 53.58,
-        "heldInstitutions": 17.52,
-        "marketCap": 542814464,
+        "heldInstitutions": 17.6,
+        "marketCap": 528471808,
         "beta": 0.99,
-        "distTo52High": -14.29,
-        "pos52Band": 58.8,
-        "distTo50dma": 1.98,
-        "distTo200dma": 1.61,
-        "recMean": 1,
+        "distTo52High": -16.55,
+        "pos52Band": 52.3,
+        "distTo50dma": -0.1,
+        "distTo200dma": -1.23,
+        "recMean": null,
         "targetSpread": 4.9
       },
-      "sektorHit": 0.5405,
+      "sektorHit": 0.5402,
       "sektorHitAtAdd": 0.4085
     },
     {
@@ -4452,7 +4458,7 @@
       "strongBuyPct": 33,
       "via": "gemini",
       "source": "yahoo",
-      "verifiedAt": "2026-11-15",
+      "verifiedAt": "2026-11-22",
       "verifiedSource": "yahoo",
       "seen": "2026-08-22",
       "perf6m": 20.2,
@@ -4465,7 +4471,7 @@
       "enrichAt": "2026-11-20",
       "sektorPsi": 0.0034,
       "sektorPsiAtAdd": 0.0037,
-      "recheckAt": "2026-11-15",
+      "recheckAt": "2026-11-22",
       "miss": 0,
       "factors": {
         "forwardPe": 19.89,
@@ -4653,42 +4659,42 @@
       "perf6m": -0.43,
       "perf6mAt": "2026-11-22",
       "perf1mBefore": 1.19,
-      "upside": 23,
-      "pe": 12.2,
-      "eps": 3.09,
-      "div": 2.7,
-      "enrichAt": "2026-11-17",
+      "upside": 31,
+      "pe": 11.5,
+      "eps": 3.1,
+      "div": 2.95,
+      "enrichAt": "2026-11-22",
       "sektorPsi": 0.0026,
       "sektorPsiAtAdd": 0.0029,
       "recheckAt": "2026-11-19",
       "miss": 0,
       "factors": {
-        "forwardPe": 11.84,
-        "priceToBook": 2.58,
-        "priceToSales": 1.27,
-        "evEbitda": 7.84,
-        "evRevenue": 1.26,
-        "grossMargin": 30.12,
-        "operatingMargin": 13.48,
+        "forwardPe": 11.12,
+        "priceToBook": 2.25,
+        "priceToSales": 1.19,
+        "evEbitda": 7.15,
+        "evRevenue": 1.18,
+        "grossMargin": 29.79,
+        "operatingMargin": 13.34,
         "profitMargin": 10.42,
-        "ebitdaMargin": 16.02,
-        "roe": 22.82,
-        "roa": 7.22,
-        "revenueGrowth": 6.4,
-        "earningsGrowth": 4.4,
-        "earningsQGrowth": 5.6,
-        "debtToEquity": 28.65,
-        "currentRatio": 1.41,
-        "quickRatio": 1.03,
-        "payoutRatio": 33.98,
-        "heldInsiders": 60.92,
+        "ebitdaMargin": 16.5,
+        "roe": 21.45,
+        "roa": 7.26,
+        "revenueGrowth": 2.4,
+        "earningsGrowth": 1.3,
+        "earningsQGrowth": 2.1,
+        "debtToEquity": 27.04,
+        "currentRatio": 1.45,
+        "quickRatio": 0.94,
+        "payoutRatio": 33.92,
+        "heldInsiders": 60.96,
         "heldInstitutions": 22.08,
-        "marketCap": 1340586112,
+        "marketCap": 1259768192,
         "beta": 0.78,
-        "distTo52High": -5.45,
-        "pos52Band": 81.8,
-        "distTo50dma": 3.89,
-        "distTo200dma": 6.03,
+        "distTo52High": -11.15,
+        "pos52Band": 62.7,
+        "distTo50dma": -1.9,
+        "distTo200dma": -0.67,
         "recMean": 1,
         "targetSpread": 9.7
       },
@@ -4777,7 +4783,7 @@
       "strongBuyPct": 0,
       "via": "gemini",
       "source": "yahoo",
-      "verifiedAt": "2026-11-15",
+      "verifiedAt": "2026-11-22",
       "verifiedSource": "yahoo",
       "seen": "2026-10-31",
       "perf6m": -4.5,
@@ -4822,7 +4828,7 @@
       "sektorHit": 0.199,
       "sektorPsiAtAdd": 0.002,
       "sektorHitAtAdd": 0.1452,
-      "recheckAt": "2026-11-15",
+      "recheckAt": "2026-11-22",
       "miss": 0
     },
     {
@@ -4842,7 +4848,7 @@
       "strongBuyPct": 75,
       "via": "gemini",
       "source": "stockanalysis+yahoo",
-      "verifiedAt": "2026-11-21",
+      "verifiedAt": "2026-11-22",
       "verifiedSource": "stockanalysis+yahoo",
       "seen": "2026-11-21",
       "perf6m": 6.8,
@@ -4886,7 +4892,9 @@
       "sektorPsi": 0.0034,
       "sektorHit": 0.2758,
       "sektorPsiAtAdd": 0.0034,
-      "sektorHitAtAdd": 0.2758
+      "sektorHitAtAdd": 0.2758,
+      "recheckAt": "2026-11-22",
+      "miss": 0
     },
     {
       "ticker": "MEDI",
@@ -4970,7 +4978,7 @@
       "strongBuyPct": 0,
       "via": "gemini",
       "source": "yahoo",
-      "verifiedAt": "2026-11-15",
+      "verifiedAt": "2026-11-22",
       "verifiedSource": "yahoo",
       "seen": "2026-10-24",
       "perf6m": 21.71,
@@ -5015,7 +5023,7 @@
       "sektorHit": 0.1825,
       "sektorPsiAtAdd": 0.0036,
       "sektorHitAtAdd": 0.2458,
-      "recheckAt": "2026-11-15",
+      "recheckAt": "2026-11-22",
       "miss": 0
     },
     {
@@ -5145,7 +5153,7 @@
         "recMean": null,
         "targetSpread": 5.8
       },
-      "sektorHit": 0.5405,
+      "sektorHit": 0.5402,
       "sektorHitAtAdd": 0.4085
     },
     {
@@ -5620,7 +5628,7 @@
       "strongBuyPct": 29,
       "via": "gemini",
       "source": "yahoo",
-      "verifiedAt": "2026-11-15",
+      "verifiedAt": "2026-11-22",
       "verifiedSource": "yahoo",
       "seen": "2026-10-31",
       "perf6m": 47.18,
@@ -5661,11 +5669,11 @@
         "targetSpread": 59.2
       },
       "enrichAt": "2026-11-20",
-      "sektorPsi": 0.0057,
-      "sektorHit": 0.3774,
+      "sektorPsi": 0.0066,
+      "sektorHit": 0.4397,
       "sektorPsiAtAdd": 0.0037,
       "sektorHitAtAdd": 0.2661,
-      "recheckAt": "2026-11-15",
+      "recheckAt": "2026-11-22",
       "miss": 0
     },
     {
@@ -5685,7 +5693,7 @@
       "strongBuyPct": 0,
       "via": "gemini",
       "source": "yahoo",
-      "verifiedAt": "2026-11-15",
+      "verifiedAt": "2026-11-22",
       "verifiedSource": "yahoo",
       "seen": "2026-09-05",
       "perf6m": 191.51,
@@ -5728,7 +5736,7 @@
       "enrichAt": "2026-11-19",
       "sektorPsi": 0.0066,
       "sektorPsiAtAdd": 0.0051,
-      "recheckAt": "2026-11-15",
+      "recheckAt": "2026-11-22",
       "miss": 0,
       "sektorHit": 0.1825,
       "sektorHitAtAdd": 0.2777
@@ -5750,7 +5758,7 @@
       "strongBuyPct": 33,
       "via": "gemini",
       "source": "yahoo",
-      "verifiedAt": "2026-11-21",
+      "verifiedAt": "2026-11-22",
       "verifiedSource": "yahoo",
       "seen": "2026-11-21",
       "perf6m": -35.65,
@@ -5793,7 +5801,9 @@
       "sektorPsi": 0.0105,
       "sektorHit": 0.7231,
       "sektorPsiAtAdd": 0.0105,
-      "sektorHitAtAdd": 0.7231
+      "sektorHitAtAdd": 0.7231,
+      "recheckAt": "2026-11-22",
+      "miss": 0
     },
     {
       "ticker": "2160",
@@ -5867,16 +5877,16 @@
       "buyPct": 100,
       "ratingCounts": {
         "buy": 2,
-        "outperform": 5,
+        "outperform": 6,
         "hold": 0,
         "underperform": 0,
         "sell": 0
       },
-      "analysts": 7,
+      "analysts": 8,
       "strongBuyPct": 29,
       "via": "gemini",
       "source": "yahoo",
-      "verifiedAt": "2026-11-15",
+      "verifiedAt": "2026-11-22",
       "verifiedSource": "yahoo",
       "seen": "2026-10-31",
       "perf6m": -56.06,
@@ -5920,7 +5930,7 @@
       "sektorHit": 0.8979,
       "sektorPsiAtAdd": 0.1651,
       "sektorHitAtAdd": 0.8255,
-      "recheckAt": "2026-11-15",
+      "recheckAt": "2026-11-22",
       "miss": 0
     },
     {
@@ -6075,13 +6085,13 @@
       "perf6mAt": "2026-11-22",
       "perf1mBefore": -26.14,
       "pe": null,
-      "div": 1.35,
+      "div": 1.32,
       "factors": {
-        "forwardPe": 16.3,
+        "forwardPe": 16.84,
         "priceToBook": null,
-        "priceToSales": 18.01,
-        "evEbitda": 29.66,
-        "evRevenue": 16.69,
+        "priceToSales": 18.91,
+        "evEbitda": 31.26,
+        "evRevenue": 17.59,
         "grossMargin": 73.6,
         "operatingMargin": 53.45,
         "profitMargin": 52.66,
@@ -6096,23 +6106,24 @@
         "quickRatio": 2.58,
         "payoutRatio": 47.44,
         "heldInsiders": 20.46,
-        "heldInstitutions": 48.07,
-        "marketCap": 1992089712,
+        "heldInstitutions": 49.36,
+        "marketCap": 2102158904,
         "beta": 1.69,
-        "distTo52High": -60.87,
-        "pos52Band": 39.1,
-        "distTo50dma": -29.65,
-        "distTo200dma": -24.7,
+        "distTo52High": -58.91,
+        "pos52Band": 16,
+        "distTo50dma": -24.37,
+        "distTo200dma": -20.74,
         "recMean": 1.25,
-        "targetSpread": 25.5
+        "targetSpread": 47.9
       },
-      "enrichAt": "2026-11-17",
+      "enrichAt": "2026-11-22",
       "sektorPsi": 0.1796,
       "sektorHit": 0.8979,
       "sektorPsiAtAdd": 0.1808,
       "sektorHitAtAdd": 0.904,
       "recheckAt": "2026-11-18",
-      "miss": 0
+      "miss": 0,
+      "upside": 88
     },
     {
       "ticker": "1INN.DE",
@@ -6137,20 +6148,20 @@
       "perf6m": -46.65,
       "perf6mAt": "2026-11-22",
       "perf1mBefore": 28.32,
-      "pe": 8.6,
+      "pe": 8.3,
       "eps": 5.13,
-      "div": 9.2,
-      "enrichAt": "2026-11-17",
+      "div": 9.4,
+      "enrichAt": "2026-11-22",
       "sektorPsi": 0.0066,
       "sektorPsiAtAdd": 0.0015,
       "recheckAt": "2026-11-21",
       "miss": 0,
       "factors": {
-        "forwardPe": 5.9,
-        "priceToBook": 11.48,
-        "priceToSales": 3.6,
-        "evEbitda": 5.57,
-        "evRevenue": 3.45,
+        "forwardPe": 5.7,
+        "priceToBook": 11.09,
+        "priceToSales": 3.48,
+        "evEbitda": 5.37,
+        "evRevenue": 3.33,
         "grossMargin": 72,
         "operatingMargin": 61.72,
         "profitMargin": 41.89,
@@ -6165,13 +6176,13 @@
         "quickRatio": 2.31,
         "payoutRatio": 78.02,
         "heldInsiders": 84.7,
-        "heldInstitutions": 6,
-        "marketCap": 440500000,
+        "heldInstitutions": 6.07,
+        "marketCap": 425500000,
         "beta": null,
-        "distTo52High": -59.95,
+        "distTo52High": -57.79,
         "pos52Band": 16.4,
-        "distTo50dma": -25.7,
-        "distTo200dma": -37.56,
+        "distTo50dma": -23.18,
+        "distTo200dma": -39.14,
         "recMean": null,
         "targetSpread": 0
       },
@@ -6587,6 +6598,68 @@
       "sektorHitAtAdd": 0.254,
       "recheckAt": "2026-11-19",
       "miss": 0
+    },
+    {
+      "ticker": "002380.KS",
+      "name": "KCC Corporation",
+      "yahoo": "002380.KS",
+      "sector": "materials",
+      "buyPct": 100,
+      "ratingCounts": {
+        "buy": 1,
+        "outperform": 3,
+        "hold": 0,
+        "underperform": 0,
+        "sell": 0
+      },
+      "analysts": 4,
+      "strongBuyPct": 25,
+      "via": "gemini",
+      "source": "yahoo",
+      "verifiedAt": "2026-11-22",
+      "verifiedSource": "yahoo",
+      "seen": "2026-11-22",
+      "perf6m": -32.17,
+      "perf6mAt": "2026-11-22",
+      "perf1mBefore": -7.3,
+      "upside": 87,
+      "pe": null,
+      "div": 4.36,
+      "factors": {
+        "forwardPe": 9.27,
+        "priceToBook": null,
+        "priceToSales": 0.38,
+        "evEbitda": 8.87,
+        "evRevenue": 0.99,
+        "grossMargin": 24.33,
+        "operatingMargin": 4.68,
+        "profitMargin": 24.77,
+        "ebitdaMargin": 11.17,
+        "roe": 20.12,
+        "roa": 1.13,
+        "revenueGrowth": 4.1,
+        "earningsGrowth": null,
+        "earningsQGrowth": null,
+        "debtToEquity": 61.88,
+        "currentRatio": 0.98,
+        "quickRatio": 0.61,
+        "payoutRatio": 6.67,
+        "heldInsiders": 35.54,
+        "heldInstitutions": 20.16,
+        "marketCap": 1727877239,
+        "beta": 1.07,
+        "distTo52High": -50.29,
+        "pos52Band": 2.2,
+        "distTo50dma": -18.63,
+        "distTo200dma": -29.27,
+        "recMean": 1.25,
+        "targetSpread": 32.7
+      },
+      "enrichAt": "2026-11-22",
+      "sektorPsi": 0.0066,
+      "sektorHit": 0.4397,
+      "sektorPsiAtAdd": 0.0066,
+      "sektorHitAtAdd": 0.4397
     }
   ],
   "psiHistory": [
@@ -6899,6 +6972,11 @@
       "t": "WAGA",
       "d": "2026-11-21",
       "v": 0.0064
+    },
+    {
+      "t": "002380.KS",
+      "d": "2026-11-22",
+      "v": 0.0066
     },
     {
       "t": "EXL.DE",
@@ -7305,31 +7383,11 @@
   "news": {
     "items": [
       {
-        "text": "Goldpreis stürzt ab: Billionen-Dollar-Verluste in Stunden",
-        "stamp": "21.11.26"
-      },
-      {
-        "text": "US-Notenbank: Fed-Regionalpräsidentin Paulson offen für Zinsschritte",
-        "stamp": "20.11.26"
-      },
-      {
-        "text": "Katar verspricht Deutschland 15 Milliarden Euro Investitionen",
-        "stamp": "20.11.26"
-      },
-      {
-        "text": "Nvidia-Aktie unter Druck nach Bilanzuntersuchung durch SEC",
-        "stamp": "20.11.26"
-      },
-      {
-        "text": "Westafrika plant eigenes Zahlungssystem, unabhängig vom Dollar",
-        "stamp": "20.11.26"
-      },
-      {
-        "text": "Bayer-Aktie steigt nach Einigung im Glyphosat-Streit",
+        "text": "US-Notenbankerin Paulson fordert weitere Zinserhöhungen",
         "stamp": "20.11.26"
       }
     ],
-    "date": "2026-11-21"
+    "date": "2026-11-22"
   },
   "inflation": {
     "year": 2026,
@@ -7746,18 +7804,18 @@
       "Xeris Biopharma Holdings, Inc."
     ],
     "noteCursor": 10,
-    "focusCursor": 6,
+    "focusCursor": 7,
     "recheckCursor": 16,
     "regionNoteCursor": 6,
     "notesDay": "2026-08-26",
     "seenBySector": {
       "cons_cycl": 2195,
       "cons_def": 1164,
-      "materials": 1584,
+      "materials": 1585,
       "health": 6521,
       "finance": 4339,
       "energy": 2018,
-      "hardware": 1472,
+      "hardware": 1473,
       "software": 4375,
       "industrial": 1922,
       "utilities": 807,
@@ -7769,11 +7827,11 @@
     "evaluatedBySector": {
       "cons_cycl": 2200,
       "cons_def": 1169,
-      "materials": 1590,
+      "materials": 1592,
       "health": 6534,
       "finance": 4351,
       "energy": 2023,
-      "hardware": 1480,
+      "hardware": 1481,
       "software": 4383,
       "industrial": 1936,
       "utilities": 812,
@@ -7781,7 +7839,7 @@
       "ai_semi": 891,
       "realestate": 403
     },
-    "heavyAt": "2026-11-21T14:33:22.811Z",
+    "heavyAt": "2026-11-22T14:28:32.355Z",
     "revalidateTag": "multi-source-v9",
     "fmpRetryTag": "grades-summary-fix",
     "heavyDay": "2026-11-20",
@@ -7946,69 +8004,11 @@
       "RAD": "health",
       "MLI": "industrial",
       "GHC": "health",
-      "HQY": "health"
+      "HQY": "health",
+      "3702.TW": "hardware",
+      "EQX.TO": "materials"
     },
     "suggested": [
-      {
-        "name": "Aditya Birla Capital Limited",
-        "at": "2026-11-18T03:44:31.441Z",
-        "src": "atlas"
-      },
-      {
-        "name": "Stoke Therapeutics, Inc.",
-        "at": "2026-11-16T02:15:06.107Z",
-        "src": "atlas"
-      },
-      {
-        "name": "KCC Corporation",
-        "at": "2026-11-16T02:15:06.107Z",
-        "src": "atlas"
-      },
-      {
-        "name": "APi Group Corporation",
-        "at": "2026-11-16T02:15:06.107Z",
-        "src": "atlas"
-      },
-      {
-        "name": "BioGaia AB (publ)",
-        "at": "2026-11-16T02:15:06.107Z",
-        "src": "atlas"
-      },
-      {
-        "name": "Kingboard Laminates Holdings Limited",
-        "at": "2026-11-16T02:15:06.107Z",
-        "src": "atlas"
-      },
-      {
-        "name": "Yankey Engineering Co., Ltd.",
-        "at": "2026-11-16T02:15:06.107Z",
-        "src": "atlas"
-      },
-      {
-        "name": "WPG Holdings Limited",
-        "at": "2026-11-15T01:59:34.384Z",
-        "src": "atlas"
-      },
-      {
-        "name": "Kendrion N.V.",
-        "at": "2026-11-15T01:59:34.384Z",
-        "src": "atlas"
-      },
-      {
-        "name": "Equinox Gold Corp.",
-        "at": "2026-11-21T03:17:51.531Z",
-        "src": "atlas"
-      },
-      {
-        "name": "IG Group Holdings plc",
-        "at": "2026-11-21T03:17:51.531Z",
-        "src": "atlas"
-      },
-      {
-        "name": "China Railway Signal & Communication Corporation Limited",
-        "at": "2026-11-21T03:17:51.531Z",
-        "src": "atlas"
-      },
       {
         "name": "Hexatronic Group AB (publ)",
         "at": "2026-11-21T03:17:51.531Z",
@@ -8123,6 +8123,245 @@
         "name": "Sacyr, S.A.",
         "at": "2026-11-11T01:59:47.932Z",
         "src": "atlas"
+      },
+      {
+        "name": "Wiwynn Corporation",
+        "at": "2026-11-22T02:22:53.124Z",
+        "src": "atlas"
+      },
+      {
+        "name": "The Brink's Company",
+        "at": "2026-11-22T02:22:53.124Z",
+        "src": "atlas"
+      },
+      {
+        "name": "OEM International AB (publ)",
+        "at": "2026-11-22T02:22:53.124Z",
+        "src": "atlas"
+      },
+      {
+        "name": "Danieli & C. Officine Meccaniche S.p.A.",
+        "at": "2026-11-22T02:22:53.124Z",
+        "src": "atlas"
+      },
+      {
+        "name": "International Games System Co.,Ltd.",
+        "at": "2026-11-22T02:22:53.124Z",
+        "src": "atlas"
+      },
+      {
+        "name": "DL E&C Co.,Ltd.",
+        "at": "2026-11-22T02:22:53.124Z",
+        "src": "atlas"
+      },
+      {
+        "name": "Vusion S.A.",
+        "at": "2026-11-22T02:22:53.124Z",
+        "src": "atlas"
+      },
+      {
+        "name": "Posco International Corporation",
+        "at": "2026-11-22T02:22:53.124Z",
+        "src": "atlas"
+      },
+      {
+        "name": "Kinik Company",
+        "at": "2026-11-22T02:22:53.124Z",
+        "src": "atlas"
+      },
+      {
+        "name": "Van Lanschot Kempen NV",
+        "at": "2026-11-22T02:22:53.124Z",
+        "src": "atlas"
+      },
+      {
+        "name": "GeneDx Holdings Corp.",
+        "at": "2026-11-11T01:59:47.932Z",
+        "src": "atlas"
+      },
+      {
+        "name": "Grab Holdings Limited",
+        "at": "2026-11-11T01:59:47.932Z",
+        "src": "atlas"
+      },
+      {
+        "name": "Southwest Gas Holdings, Inc.",
+        "at": "2026-11-11T01:59:47.932Z",
+        "src": "atlas"
+      },
+      {
+        "name": "Remitly Global, Inc.",
+        "at": "2026-11-11T01:59:47.932Z",
+        "src": "atlas"
+      },
+      {
+        "name": "Mercury General Corporation",
+        "at": "2026-11-11T01:59:47.932Z",
+        "src": "atlas"
+      },
+      {
+        "name": "TSK Electrónica y Electricidad, S.A.",
+        "at": "2026-11-10T04:12:19.842Z",
+        "src": "atlas"
+      },
+      {
+        "name": "Universal Microwave Technology, Inc.",
+        "at": "2026-11-10T04:12:19.842Z",
+        "src": "atlas"
+      },
+      {
+        "name": "Verbio SE",
+        "at": "2026-11-10T04:12:19.842Z",
+        "src": "atlas"
+      },
+      {
+        "name": "Sanki Engineering Co., Ltd.",
+        "at": "2026-11-10T04:12:19.842Z",
+        "src": "atlas"
+      },
+      {
+        "name": "Caledonia Investments Ord",
+        "at": "2026-11-10T04:12:19.842Z",
+        "src": "atlas"
+      },
+      {
+        "name": "First Tracks Biotherapeutics, Inc.",
+        "at": "2026-11-10T04:12:19.842Z",
+        "src": "atlas"
+      },
+      {
+        "name": "Kailera Therapeutics, Inc.",
+        "at": "2026-11-10T04:12:19.842Z",
+        "src": "atlas"
+      },
+      {
+        "name": "Galaxy Entertainment Group Limited",
+        "at": "2026-11-09T01:47:00.854Z",
+        "src": "atlas"
+      },
+      {
+        "name": "Enova International, Inc.",
+        "at": "2026-11-09T01:47:00.854Z",
+        "src": "atlas"
+      },
+      {
+        "name": "Smurfit Westrock Plc",
+        "at": "2026-11-09T01:47:00.854Z",
+        "src": "atlas"
+      },
+      {
+        "name": "Sdiptech AB (publ)",
+        "at": "2026-11-08T01:33:50.285Z",
+        "src": "atlas"
+      },
+      {
+        "name": "Huron Consulting Group Inc.",
+        "at": "2026-11-08T01:33:50.285Z",
+        "src": "atlas"
+      },
+      {
+        "name": "Columbia Financial, Inc.",
+        "at": "2026-11-08T01:33:50.285Z",
+        "src": "atlas"
+      },
+      {
+        "name": "Rithm Capital Corp.",
+        "at": "2026-11-07T02:03:49.012Z",
+        "src": "atlas"
+      },
+      {
+        "name": "SG Micro Corp",
+        "at": "2026-11-07T02:03:49.012Z",
+        "src": "atlas"
+      },
+      {
+        "name": "Workiva Inc.",
+        "at": "2026-11-07T02:03:49.012Z",
+        "src": "atlas"
+      },
+      {
+        "name": "Aditya Birla Capital Limited",
+        "at": "2026-11-18T03:44:31.441Z",
+        "src": "atlas",
+        "checkedAt": "2026-11-22T14:29:55.323Z",
+        "result": "ohne Sektor"
+      },
+      {
+        "name": "Stoke Therapeutics, Inc.",
+        "at": "2026-11-16T02:15:06.107Z",
+        "src": "atlas",
+        "checkedAt": "2026-11-22T14:29:55.323Z",
+        "result": "abgelehnt"
+      },
+      {
+        "name": "KCC Corporation",
+        "at": "2026-11-16T02:15:06.107Z",
+        "src": "atlas",
+        "checkedAt": "2026-11-22T14:29:55.323Z",
+        "result": "perle"
+      },
+      {
+        "name": "APi Group Corporation",
+        "at": "2026-11-16T02:15:06.107Z",
+        "src": "atlas",
+        "checkedAt": "2026-11-22T14:29:55.323Z",
+        "result": "ohne Sektor"
+      },
+      {
+        "name": "BioGaia AB (publ)",
+        "at": "2026-11-16T02:15:06.107Z",
+        "src": "atlas",
+        "checkedAt": "2026-11-22T14:29:55.323Z",
+        "result": "ohne Sektor"
+      },
+      {
+        "name": "Kingboard Laminates Holdings Limited",
+        "at": "2026-11-16T02:15:06.107Z",
+        "src": "atlas",
+        "checkedAt": "2026-11-22T14:29:55.323Z",
+        "result": "ohne Sektor"
+      },
+      {
+        "name": "Yankey Engineering Co., Ltd.",
+        "at": "2026-11-16T02:15:06.107Z",
+        "src": "atlas",
+        "checkedAt": "2026-11-22T14:29:55.323Z",
+        "result": "ohne Sektor"
+      },
+      {
+        "name": "WPG Holdings Limited",
+        "at": "2026-11-15T01:59:34.384Z",
+        "src": "atlas",
+        "checkedAt": "2026-11-22T14:29:55.323Z",
+        "result": "abgelehnt"
+      },
+      {
+        "name": "Kendrion N.V.",
+        "at": "2026-11-15T01:59:34.384Z",
+        "src": "atlas",
+        "checkedAt": "2026-11-22T14:29:55.323Z",
+        "result": "ohne Sektor"
+      },
+      {
+        "name": "Equinox Gold Corp.",
+        "at": "2026-11-21T03:17:51.531Z",
+        "src": "atlas",
+        "checkedAt": "2026-11-22T14:29:55.323Z",
+        "result": "abgelehnt"
+      },
+      {
+        "name": "IG Group Holdings plc",
+        "at": "2026-11-21T03:17:51.531Z",
+        "src": "atlas",
+        "checkedAt": "2026-11-22T14:29:55.323Z",
+        "result": "abgelehnt"
+      },
+      {
+        "name": "China Railway Signal & Communication Corporation Limited",
+        "at": "2026-11-21T03:17:51.531Z",
+        "src": "atlas",
+        "checkedAt": "2026-11-22T14:29:55.323Z",
+        "result": "ohne Sektor"
       },
       {
         "name": "Tamarack Valley Energy Ltd.",
@@ -8491,226 +8730,8 @@
         "src": "atlas",
         "checkedAt": "2026-11-03T14:10:42.930Z",
         "result": "abgelehnt"
-      },
-      {
-        "name": "Datang International Power Generation Co., Ltd.",
-        "at": "2026-11-03T03:31:05.528Z",
-        "src": "atlas",
-        "checkedAt": "2026-11-03T14:10:42.930Z",
-        "result": "ohne Sektor"
-      },
-      {
-        "name": "Louis Hachette Group S.A.",
-        "at": "2026-11-03T03:31:05.528Z",
-        "src": "atlas",
-        "checkedAt": "2026-11-03T14:10:42.930Z",
-        "result": "ohne Sektor"
-      },
-      {
-        "name": "KB Financial Group Inc.",
-        "at": "2026-11-03T03:31:05.528Z",
-        "src": "atlas",
-        "checkedAt": "2026-11-03T14:10:42.930Z",
-        "result": "abgelehnt"
-      },
-      {
-        "name": "Nexstar Media Group, Inc.",
-        "at": "2026-11-03T03:31:05.528Z",
-        "src": "atlas",
-        "checkedAt": "2026-11-03T14:10:42.930Z",
-        "result": "abgelehnt"
-      },
-      {
-        "name": "SP Group A/S",
-        "at": "2026-11-03T03:31:05.528Z",
-        "src": "atlas",
-        "checkedAt": "2026-11-03T14:10:42.930Z",
-        "result": "abgelehnt"
-      },
-      {
-        "name": "UGI Corporation",
-        "at": "2026-11-03T03:31:05.528Z",
-        "src": "atlas",
-        "checkedAt": "2026-11-03T14:10:42.930Z",
-        "result": "abgelehnt"
-      },
-      {
-        "name": "Alerion Clean Power S.p.A.",
-        "at": "2026-11-03T03:31:05.528Z",
-        "src": "atlas",
-        "checkedAt": "2026-11-03T14:10:42.930Z",
-        "result": "abgelehnt"
-      },
-      {
-        "name": "Bel Fuse Inc.",
-        "at": "2026-11-03T03:31:05.528Z",
-        "src": "atlas",
-        "checkedAt": "2026-11-03T14:10:42.930Z",
-        "result": "ohne Sektor"
-      },
-      {
-        "name": "ForFarmers N.V.",
-        "at": "2026-11-03T03:31:05.528Z",
-        "src": "atlas",
-        "checkedAt": "2026-11-03T14:10:42.930Z",
-        "result": "perle"
-      },
-      {
-        "name": "Lens Technology Co., Ltd.",
-        "at": "2026-11-04T02:28:39.185Z",
-        "src": "atlas",
-        "checkedAt": "2026-11-04T14:30:56.079Z",
-        "result": "abgelehnt"
-      },
-      {
-        "name": "Cairn Homes plc",
-        "at": "2026-11-04T02:28:39.185Z",
-        "src": "atlas",
-        "checkedAt": "2026-11-04T14:30:56.079Z",
-        "result": "perle"
-      },
-      {
-        "name": "Palvella Therapeutics, Inc.",
-        "at": "2026-11-04T02:28:39.185Z",
-        "src": "atlas",
-        "checkedAt": "2026-11-04T14:30:56.079Z",
-        "result": "abgelehnt"
-      },
-      {
-        "name": "The Bancorp, Inc.",
-        "at": "2026-11-04T02:28:39.185Z",
-        "src": "atlas",
-        "checkedAt": "2026-11-04T14:30:56.079Z",
-        "result": "ohne Sektor"
-      },
-      {
-        "name": "Montage Technology Co., Ltd.",
-        "at": "2026-11-04T02:28:39.185Z",
-        "src": "atlas",
-        "checkedAt": "2026-11-04T14:30:56.079Z",
-        "result": "perle"
-      },
-      {
-        "name": "The GEO Group, Inc.",
-        "at": "2026-11-04T02:28:39.185Z",
-        "src": "atlas",
-        "checkedAt": "2026-11-04T14:30:56.079Z",
-        "result": "abgelehnt"
-      },
-      {
-        "name": "CEWE Stiftung & Co. KGaA",
-        "at": "2026-11-04T02:28:39.185Z",
-        "src": "atlas",
-        "checkedAt": "2026-11-04T14:30:56.079Z",
-        "result": "ohne Sektor"
-      },
-      {
-        "name": "Origin Enterprises plc",
-        "at": "2026-11-05T02:36:24.402Z",
-        "src": "atlas",
-        "checkedAt": "2026-11-05T14:38:56.241Z",
-        "result": "abgelehnt"
-      },
-      {
-        "name": "Sigenergy Technology Co., Ltd",
-        "at": "2026-11-05T02:36:24.402Z",
-        "src": "atlas",
-        "checkedAt": "2026-11-05T14:38:56.241Z",
-        "result": "perle"
-      },
-      {
-        "name": "Brookdale Senior Living Inc.",
-        "at": "2026-11-05T02:36:24.402Z",
-        "src": "atlas",
-        "checkedAt": "2026-11-05T14:38:56.241Z",
-        "result": "abgelehnt"
-      },
-      {
-        "name": "Irish Residential Properties REIT Plc",
-        "at": "2026-11-05T02:36:24.402Z",
-        "src": "atlas",
-        "checkedAt": "2026-11-05T14:38:56.241Z",
-        "result": "perle"
-      },
-      {
-        "name": "Hanwha Aerospace Co., Ltd.",
-        "at": "2026-11-05T02:36:24.402Z",
-        "src": "atlas",
-        "checkedAt": "2026-11-05T14:38:56.241Z",
-        "result": "perle"
-      },
-      {
-        "name": "Co-Tech Development Corporation",
-        "at": "2026-11-05T02:36:24.402Z",
-        "src": "atlas",
-        "checkedAt": "2026-11-05T14:38:56.241Z",
-        "result": "abgelehnt"
-      },
-      {
-        "name": "Vir Biotechnology, Inc.",
-        "at": "2026-11-05T02:36:24.402Z",
-        "src": "atlas",
-        "checkedAt": "2026-11-05T14:38:56.241Z",
-        "result": "ohne Sektor"
-      },
-      {
-        "name": "Cenergy Holdings SA",
-        "at": "2026-11-05T02:36:24.402Z",
-        "src": "atlas",
-        "checkedAt": "2026-11-05T14:38:56.241Z",
-        "result": "perle"
-      },
-      {
-        "name": "Wan Hai Lines Ltd.",
-        "at": "2026-11-06T02:36:07.540Z",
-        "src": "atlas",
-        "checkedAt": "2026-11-06T14:17:22.860Z",
-        "result": "ohne Sektor"
-      },
-      {
-        "name": "Motilal Oswal Financial Services Limited",
-        "at": "2026-11-06T02:36:07.540Z",
-        "src": "atlas",
-        "checkedAt": "2026-11-06T14:17:22.860Z",
-        "result": "ohne Sektor"
-      },
-      {
-        "name": "ADARx Pharmaceuticals, Inc.",
-        "at": "2026-11-06T02:36:07.540Z",
-        "src": "atlas",
-        "checkedAt": "2026-11-06T14:17:22.860Z",
-        "result": "perle"
-      },
-      {
-        "name": "Momenta Global Limited",
-        "at": "2026-11-07T02:03:49.012Z",
-        "src": "atlas",
-        "checkedAt": "2026-11-07T12:54:37.880Z",
-        "result": "ohne Sektor"
-      },
-      {
-        "name": "Tamburi Investment Partners S.p.A.",
-        "at": "2026-11-07T02:03:49.012Z",
-        "src": "atlas",
-        "checkedAt": "2026-11-07T12:54:37.880Z",
-        "result": "ohne Sektor"
-      },
-      {
-        "name": "Korea Investment Holdings Co., Ltd.",
-        "at": "2026-11-07T02:03:49.012Z",
-        "src": "atlas",
-        "checkedAt": "2026-11-07T12:54:37.880Z",
-        "result": "ohne Sektor"
-      },
-      {
-        "name": "NTG Nordic Transport Group A/S",
-        "at": "2026-11-07T02:03:49.012Z",
-        "src": "atlas",
-        "checkedAt": "2026-11-07T12:54:37.880Z",
-        "result": "ohne Sektor"
       }
     ]
   },
-  "blacklist": {},
-  "yahooAt": "2026-11-22T14:00:50.417Z"
+  "blacklist": {}
 }
