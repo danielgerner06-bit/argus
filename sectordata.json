@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-23",
-  "updatedAt": "2026-11-23T21:00:50.413Z",
+  "updatedAt": "2026-11-23T22:00:50.818Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -147,9 +147,9 @@
   "bars30": [
     {
       "id": "software",
-      "perf": -12.53,
+      "perf": -12.46,
       "avg30": 0.06,
-      "perf6m": 1.26
+      "perf6m": 1.33
     },
     {
       "id": "ai_semi",
@@ -189,9 +189,9 @@
     },
     {
       "id": "cons_def",
-      "perf": 2.44,
+      "perf": 2.4,
       "avg30": 1.37,
-      "perf6m": 6.8
+      "perf6m": 6.76
     },
     {
       "id": "industrial",
@@ -233,15 +233,15 @@
     },
     {
       "id": "europe",
-      "perf": -2.57,
+      "perf": -2.59,
       "avg30": 0.68,
-      "perf6m": -4.72
+      "perf6m": -4.74
     },
     {
       "id": "germany",
-      "perf": -2.99,
+      "perf": -3.05,
       "avg30": 0.23,
-      "perf6m": -6.82
+      "perf6m": -6.88
     },
     {
       "id": "japan",
@@ -269,9 +269,9 @@
     },
     {
       "id": "india",
-      "perf": 10.29,
+      "perf": 10.3,
       "avg30": -0.59,
-      "perf6m": 7.74
+      "perf6m": 7.75
     },
     {
       "id": "latam",
@@ -8788,5 +8788,5 @@
     ]
   },
   "blacklist": {},
-  "yahooAt": "2026-11-23T21:00:50.413Z"
+  "yahooAt": "2026-11-23T22:00:50.818Z"
 }
