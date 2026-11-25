@@ -47,6 +47,9 @@ jobs:
           GEMINI_DEBUG: ${{ (github.event_name == 'workflow_dispatch' && inputs.debug) && '1' || '' }}
         run: node scripts/update-sectors.mjs
 
+      - name: Umfeld-Faktoren nachtragen (Perlen)
+        run: node scripts/context.mjs history.json || echo "Umfeld uebersprungen."
+
       - name: Tagesschlusskurse auffrischen
         env:
           # Vier Läufe am Tag × 120 = jede der ~390 Aktien einmal täglich.
