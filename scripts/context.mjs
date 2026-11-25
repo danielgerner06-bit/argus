@@ -40,6 +40,44 @@ export const ECB = ['2025-01-30', '2025-03-06', '2025-04-17', '2025-06-05',
   '2026-09-10', '2026-10-29', '2026-12-17',
   '2027-02-04', '2027-03-18', '2027-04-29', '2027-06-10', '2027-07-22',
   '2027-09-09', '2027-10-28', '2027-12-16'];
+// AUSGANG der Zinsentscheide: Aenderung in Basispunkten und Leitzins danach
+// (Fed: Obergrenze des Zielbands, EZB: Einlagensatz). Recherchiert
+// 2026-11-25 (Fed-Pressemitteilungen, EZB/Sekundaerquellen). Neuer Termin
+// erst eintragen, wenn er stattgefunden hat — fehlt der Ausgang des letzten
+// Termins vor einem Tag, bleibt der Wert leer (nie ein alter Stand).
+export const FED_DECISIONS = {
+  '2025-01-29': [0, 4.50], '2025-03-19': [0, 4.50], '2025-05-07': [0, 4.50],
+  '2025-06-18': [0, 4.50], '2025-07-30': [0, 4.50], '2025-09-17': [-25, 4.25],
+  '2025-10-29': [-25, 4.00], '2025-12-10': [-25, 3.75],
+  '2026-01-28': [0, 3.75], '2026-03-18': [0, 3.75], '2026-04-29': [0, 3.75],
+  '2026-06-17': [0, 3.75], '2026-07-29': [0, 3.75], '2026-09-16': [25, 4.00],
+  '2026-10-28': [0, 4.00],
+};
+export const ECB_DECISIONS = {
+  '2025-01-30': [-25, 2.75], '2025-03-06': [-25, 2.50], '2025-04-17': [-25, 2.25],
+  '2025-06-05': [-25, 2.00], '2025-07-24': [0, 2.00], '2025-09-11': [0, 2.00],
+  '2025-10-30': [0, 2.00], '2025-12-18': [0, 2.00],
+  '2026-02-05': [0, 2.00], '2026-03-19': [0, 2.00], '2026-04-30': [0, 2.00],
+  '2026-06-11': [25, 2.25], '2026-07-23': [0, 2.25], '2026-09-10': [25, 2.50],
+  '2026-10-29': [0, 2.50],
+};
+// Letzter Entscheid bis einschliesslich `day` (bekanntgegeben vor
+// Boersenschluss): {last, rate, sum12m} oder null, wenn sein Ausgang fehlt.
+export function lastDecision(dates, outcomes, day) {
+  const past = dates.filter((d) => d <= day);
+  if (!past.length) return null;
+  const o = outcomes[past[past.length - 1]];
+  if (!o) return null;
+  const from = iso(Date.parse(day) - 365 * DAY);
+  let sum = 0;
+  for (const d of past) {
+    if (d <= from) continue;
+    if (!outcomes[d]) return { last: o[0], rate: o[1], sum12m: null };
+    sum += outcomes[d][0];
+  }
+  return { last: o[0], rate: o[1], sum12m: sum };
+}
+
 // Nationale Wahlen (Parlament/Praesident, Stichwahlen) je Land, ISO-2.
 // „bis“-Termine (Italien) mit dem spaetesten Tag. Neue Termine HINTEN
 // ergaenzen; fehlt ein Land, gibt es fuer seine Aktien keinen Wert.
@@ -285,6 +323,8 @@ export function marketContext(S, day) {
   const tnx = level(S['^TNX'], day), irx = level(S['^IRX'], day);
   const g7 = mean(S.GPR, day, 7), g90 = mean(S.GPR, day, 90);
   const m = Number(day.slice(5, 7));
+  const fed = lastDecision(FOMC, FED_DECISIONS, day);
+  const ecb = lastDecision(ECB, ECB_DECISIONS, day);
   const qStart = Date.UTC(Number(day.slice(0, 4)), Math.floor((m - 1) / 3) * 3, 1);
   return {
     ctxVix: r2(level(S['^VIX'], day)),
@@ -309,6 +349,12 @@ export function marketContext(S, day) {
     ctxFomcDays: daysTo(FOMC, day, true),
     ctxFomcSince: daysTo(FOMC, day, false),
     ctxEcbDays: daysTo(ECB, day, true),
+    ctxFedLast: fed?.last ?? null,
+    ctxFedRate: fed?.rate ?? null,
+    ctxFed12m: fed?.sum12m ?? null,
+    ctxEcbLast: ecb?.last ?? null,
+    ctxEcbRate: ecb?.rate ?? null,
+    ctxEcb12m: ecb?.sum12m ?? null,
     ctxQuarterDay: Math.round((Date.parse(day) - qStart) / DAY),
     ctxMonth: m,
   };
