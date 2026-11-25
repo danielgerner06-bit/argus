@@ -161,14 +161,29 @@ async function gpr() {
 
 async function wgi() {
   const out = { ...WGI_FALLBACK };
-  const codes = Object.values(ISO3).join(';');
-  const j = await getJson(`https://api.worldbank.org/v2/country/${codes}/indicator/`
-    + 'PV.PER.RNK?source=3&format=json&per_page=2000&mrnev=1');
   const back = Object.fromEntries(Object.entries(ISO3).map(([a, b]) => [b, a]));
-  for (const row of (Array.isArray(j) ? j[1] : null) || []) {
-    const cc = back[row?.countryiso3code];
-    if (cc && row.value != null) out[cc] = +(+row.value).toFixed(1);
+  // Die Weltbank fuehrt den Wert unter zwei Kennungen (WGI-Quelle 3 bzw.
+  // WDI); je Land einzeln abgefragt geht keine Liste an einem Land kaputt.
+  const variants = (c) => [
+    `https://api.worldbank.org/v2/country/${c}/indicator/GOV_WGI_PV.PER.RNK?source=3&format=json&per_page=60`,
+    `https://api.worldbank.org/v2/country/${c}/indicator/PV.PER.RNK?format=json&per_page=60`,
+    `https://api.worldbank.org/v2/country/${c}/indicator/PV.PER.RNK?source=3&format=json&per_page=60`,
+  ];
+  let got = 0;
+  for (const [cc, c3] of Object.entries(ISO3)) {
+    for (const url of variants(c3)) {
+      const j = await getJson(url);
+      const rows = (Array.isArray(j) ? j[1] : null) || [];
+      const row = rows.filter((r) => r?.value != null)
+        .sort((a, b) => String(b.date).localeCompare(String(a.date)))[0];
+      if (row && back[row.countryiso3code || c3]) {
+        out[cc] = +(+row.value).toFixed(1);
+        got++;
+        break;
+      }
+    }
   }
+  console.log(`Umfeld: politische Stabilitaet fuer ${got} von ${Object.keys(ISO3).length} Laendern von der Weltbank.`);
   return out;
 }
 
