@@ -74,10 +74,15 @@ export const ELECTIONS = {
 };
 // Politische Stabilitaet und Abwesenheit von Gewalt/Terror, Weltbank (WGI),
 // Perzentil 0–100, Stand 2023. Wird im Lauf von der Weltbank-API frisch
-// geholt; diese Werte sind nur der Rueckfall (belegt: Trading Economics/
-// Macrovedia, WGI 2023).
-const WGI_FALLBACK = { DE: 66.4, JP: 81.5, US: 47.4, GB: 62.1, NZ: 96.2,
-  AE: 70.1, BR: 28.4, ZA: 20.9 };
+// geholt (vom GitHub-Rechner bisher ohne Antwort); diese Werte sind der
+// Rueckfall, recherchiert 2026-11-25 (WGI 2023, Trading Economics/Macrovedia/
+// World Population Review). Taiwan nur eine Quelle.
+const WGI_FALLBACK = {
+  US: 47.4, DE: 66.4, FR: 55.9, NL: 68.7, IT: 64.9, ES: 55.0, GB: 62.1,
+  CH: 88.6, SE: 73.5, NO: 77.7, DK: 76.8, FI: 71.1, IE: 78.7, BE: 58.3,
+  AT: 71.6, PT: 70.6, PL: 64.0, HU: 72.0, JP: 81.5, HK: 69.7, CN: 25.1,
+  KR: 68.3, TW: 74.4, AU: 79.6, IN: 21.3, CA: 76.3, SG: 97.2, TH: 36.0,
+  BR: 28.4, MX: 22.8, ZA: 20.9, NZ: 96.2, AE: 70.1 };
 
 // Yahoo-Endung → Land (ISO-2).
 const SUFFIX_COUNTRY = { '': 'US', DE: 'DE', F: 'DE', PA: 'FR', AS: 'NL',
