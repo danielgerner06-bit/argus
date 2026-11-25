@@ -86,7 +86,14 @@
       "ctxRegion200": -11.41,
       "ctxSectorRel1m": 3.76,
       "ctxSector200": -6.23,
-      "ctxElectionDays": 5
+      "ctxElectionDays": 5,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 74.4
     },
     "1519": {
       "ticker": "1519",
@@ -174,7 +181,14 @@
       "ctxRegion200": -13.23,
       "ctxSectorRel1m": 3.61,
       "ctxSector200": -9.78,
-      "ctxElectionDays": 8
+      "ctxElectionDays": 8,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 74.4
     },
     "2160": {
       "ticker": "2160",
@@ -270,7 +284,14 @@
       "ctxRegion200": -2.17,
       "ctxSectorRel1m": -3.58,
       "ctxSector200": 8.35,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 25,
+      "ctxFedRate": 4,
+      "ctxFed12m": -25,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 69.7
     },
     "2327": {
       "ticker": "2327",
@@ -358,7 +379,14 @@
       "ctxRegion200": 11.11,
       "ctxSectorRel1m": -8.12,
       "ctxSector200": 5.88,
-      "ctxElectionDays": 29
+      "ctxElectionDays": 29,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 74.4
     },
     "3293": {
       "ticker": "3293",
@@ -443,7 +471,14 @@
       "ctxRegion200": -3.55,
       "ctxSectorRel1m": 9.22,
       "ctxSector200": 2.06,
-      "ctxElectionDays": 4
+      "ctxElectionDays": 4,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 74.4
     },
     "3854": {
       "ticker": "3854",
@@ -548,7 +583,13 @@
       "ctxSectorRel1m": 4.96,
       "ctxSector200": 7.83,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 81.5
+      "ctxCountryRisk": 81.5,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25
     },
     "4417": {
       "ticker": "4417",
@@ -648,7 +689,13 @@
       "ctxSectorRel1m": 5.07,
       "ctxSector200": 11.68,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 81.5
+      "ctxCountryRisk": 81.5,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25
     },
     "4776": {
       "ticker": "4776",
@@ -755,7 +802,13 @@
       "ctxSectorRel1m": 4.96,
       "ctxSector200": 7.83,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 81.5
+      "ctxCountryRisk": 81.5,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25
     },
     "5301": {
       "ticker": "5301",
@@ -844,7 +897,13 @@
       "ctxSectorRel1m": 9.78,
       "ctxSector200": 3.26,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 81.5
+      "ctxCountryRisk": 81.5,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50
     },
     "5434": {
       "ticker": "5434",
@@ -932,7 +991,14 @@
       "ctxRegion200": -13.23,
       "ctxSectorRel1m": -13.73,
       "ctxSector200": -23.82,
-      "ctxElectionDays": 8
+      "ctxElectionDays": 8,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 74.4
     },
     "5805": {
       "ticker": "5805",
@@ -1021,7 +1087,13 @@
       "ctxSectorRel1m": 0.39,
       "ctxSector200": -3.41,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 81.5
+      "ctxCountryRisk": 81.5,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50
     },
     "6080": {
       "ticker": "6080",
@@ -1127,7 +1199,13 @@
       "ctxSectorRel1m": -0.64,
       "ctxSector200": 8,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 81.5
+      "ctxCountryRisk": 81.5,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25
     },
     "6082": {
       "ticker": "6082",
@@ -1215,7 +1293,14 @@
       "ctxRegion200": -8.1,
       "ctxSectorRel1m": -14.3,
       "ctxSector200": 0.58,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 69.7
     },
     "6368": {
       "ticker": "6368",
@@ -1304,7 +1389,13 @@
       "ctxSectorRel1m": 2.89,
       "ctxSector200": -2.7,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 81.5
+      "ctxCountryRisk": 81.5,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50
     },
     "6656": {
       "ticker": "6656",
@@ -1392,7 +1483,14 @@
       "ctxRegion200": -5.48,
       "ctxSectorRel1m": 1.31,
       "ctxSector200": 7.65,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 69.7
     },
     "6823": {
       "ticker": "6823",
@@ -1480,7 +1578,14 @@
       "ctxRegion200": -3.17,
       "ctxSectorRel1m": -1.49,
       "ctxSector200": -6.94,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 69.7
     },
     "6855": {
       "ticker": "6855",
@@ -1574,7 +1679,14 @@
       "ctxRegion200": -5.57,
       "ctxSectorRel1m": 3.07,
       "ctxSector200": 12.57,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 25,
+      "ctxFedRate": 4,
+      "ctxFed12m": -25,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 69.7
     },
     "6946": {
       "ticker": "6946",
@@ -1680,7 +1792,13 @@
       "ctxSectorRel1m": -0.18,
       "ctxSector200": 18.61,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 81.5
+      "ctxCountryRisk": 81.5,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25
     },
     "8464": {
       "ticker": "8464",
@@ -1787,7 +1905,14 @@
       "ctxRegion200": 24.9,
       "ctxSectorRel1m": -1.83,
       "ctxSector200": -1.65,
-      "ctxElectionDays": 132
+      "ctxElectionDays": 132,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25,
+      "ctxCountryRisk": 74.4
     },
     "9958": {
       "ticker": "9958",
@@ -1894,7 +2019,14 @@
       "ctxRegion200": 24.9,
       "ctxSectorRel1m": 0.47,
       "ctxSector200": 8.1,
-      "ctxElectionDays": 132
+      "ctxElectionDays": 132,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25,
+      "ctxCountryRisk": 74.4
     },
     "319660": {
       "ticker": "319660",
@@ -1990,7 +2122,14 @@
       "ctxRegion200": 12.63,
       "ctxSectorRel1m": 4.8,
       "ctxSector200": 19.77,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 25,
+      "ctxFedRate": 4,
+      "ctxFed12m": -25,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 68.3
     },
     "402340": {
       "ticker": "402340",
@@ -2098,7 +2237,14 @@
       "ctxRegion200": 64.11,
       "ctxSectorRel1m": -4.5,
       "ctxSector200": -3.43,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2,
+      "ctxEcb12m": 0,
+      "ctxCountryRisk": 68.3
     },
     "403870": {
       "ticker": "403870",
@@ -2186,7 +2332,14 @@
       "ctxRegion200": -21.82,
       "ctxSectorRel1m": -11.26,
       "ctxSector200": -11.88,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 68.3
     },
     "600276": {
       "ticker": "600276",
@@ -2274,7 +2427,14 @@
       "ctxRegion200": -8.41,
       "ctxSectorRel1m": 14.9,
       "ctxSector200": 15.94,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 25.1
     },
     "600801": {
       "ticker": "600801",
@@ -2364,7 +2524,14 @@
       "ctxRegion200": -9.88,
       "ctxSectorRel1m": 9.78,
       "ctxSector200": 3.26,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 25.1
     },
     "688008": {
       "ticker": "688008",
@@ -2452,7 +2619,14 @@
       "ctxRegion200": -9.58,
       "ctxSectorRel1m": -15.56,
       "ctxSector200": -0.41,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 25.1
     },
     "SL": {
       "ticker": "SL",
@@ -2549,7 +2723,14 @@
       "ctxRegion200": 11.4,
       "ctxSectorRel1m": -5.74,
       "ctxSector200": -0.75,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2,
+      "ctxEcb12m": -25,
+      "ctxCountryRisk": 64.9
     },
     "1INN.DE": {
       "ticker": "1INN.DE",
@@ -2646,7 +2827,13 @@
       "ctxSectorRel1m": 8.4,
       "ctxSector200": 1.45,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 66.4
+      "ctxCountryRisk": 66.4,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2,
+      "ctxEcb12m": -25
     },
     "HYQ.DE": {
       "ticker": "HYQ.DE",
@@ -2756,7 +2943,13 @@
       "ctxSectorRel1m": -3.32,
       "ctxSector200": -0.72,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 66.4
+      "ctxCountryRisk": 66.4,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2,
+      "ctxEcb12m": -25
     },
     "SB1": {
       "ticker": "SB1",
@@ -2864,7 +3057,13 @@
       "ctxSectorRel1m": -3.32,
       "ctxSector200": -0.72,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 66.4
+      "ctxCountryRisk": 66.4,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2,
+      "ctxEcb12m": -25
     },
     "A1OS.DE": {
       "ticker": "A1OS.DE",
@@ -2971,7 +3170,13 @@
       "ctxSectorRel1m": 12.15,
       "ctxSector200": 31.74,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 66.4
+      "ctxCountryRisk": 66.4,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2,
+      "ctxEcb12m": -25
     },
     "IXX.DE": {
       "ticker": "IXX.DE",
@@ -3081,7 +3286,13 @@
       "ctxSectorRel1m": 12.15,
       "ctxSector200": 31.74,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 66.4
+      "ctxCountryRisk": 66.4,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2,
+      "ctxEcb12m": -25
     },
     "034730": {
       "ticker": "034730",
@@ -3189,7 +3400,14 @@
       "ctxRegion200": 64.11,
       "ctxSectorRel1m": 1.55,
       "ctxSector200": 8.22,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2,
+      "ctxEcb12m": 0,
+      "ctxCountryRisk": 68.3
     },
     "LUVE": {
       "ticker": "LUVE",
@@ -3298,7 +3516,14 @@
       "ctxRegion200": 13.99,
       "ctxSectorRel1m": 1.65,
       "ctxSector200": 8.36,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25,
+      "ctxCountryRisk": 64.9
     },
     "ORS": {
       "ticker": "ORS",
@@ -3407,7 +3632,14 @@
       "ctxRegion200": 13.99,
       "ctxSectorRel1m": 1.47,
       "ctxSector200": 5.31,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25,
+      "ctxCountryRisk": 64.9
     },
     "GF": {
       "ticker": "GF",
@@ -3515,7 +3747,14 @@
       "ctxRegion200": 13.99,
       "ctxSectorRel1m": 4.78,
       "ctxSector200": 1.51,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25,
+      "ctxCountryRisk": 64.9
     },
     "SIT": {
       "ticker": "SIT",
@@ -3623,7 +3862,14 @@
       "ctxRegion200": 13.99,
       "ctxSectorRel1m": 1.65,
       "ctxSector200": 8.36,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25,
+      "ctxCountryRisk": 64.9
     },
     "GFT": {
       "ticker": "GFT",
@@ -3735,7 +3981,13 @@
       "ctxSectorRel1m": 2.54,
       "ctxSector200": -7.74,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 66.4
+      "ctxCountryRisk": 66.4,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25
     },
     "ADMCM.HE": {
       "ticker": "ADMCM.HE",
@@ -3843,7 +4095,14 @@
       "ctxRegion200": 7.02,
       "ctxSectorRel1m": 2.54,
       "ctxSector200": -7.74,
-      "ctxElectionDays": 308
+      "ctxElectionDays": 308,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25,
+      "ctxCountryRisk": 71.1
     },
     "JST.DE": {
       "ticker": "JST.DE",
@@ -3953,7 +4212,13 @@
       "ctxSectorRel1m": 1.68,
       "ctxSector200": 9.81,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 66.4
+      "ctxCountryRisk": 66.4,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25
     },
     "EXL.DE": {
       "ticker": "EXL.DE",
@@ -4061,7 +4326,13 @@
       "ctxSectorRel1m": 1.54,
       "ctxSector200": -5.66,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 66.4
+      "ctxCountryRisk": 66.4,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25
     },
     "6701.T": {
       "ticker": "6701.T",
@@ -4173,7 +4444,13 @@
       "ctxSectorRel1m": -1.83,
       "ctxSector200": -6.91,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 81.5
+      "ctxCountryRisk": 81.5,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25
     },
     "300760.SZ": {
       "ticker": "300760.SZ",
@@ -4284,7 +4561,14 @@
       "ctxRegion200": 2.41,
       "ctxSectorRel1m": -0.59,
       "ctxSector200": 0.03,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25,
+      "ctxCountryRisk": 25.1
     },
     "YOC": {
       "ticker": "YOC",
@@ -4388,7 +4672,13 @@
       "ctxSectorRel1m": -6.46,
       "ctxSector200": -7.86,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 66.4
+      "ctxCountryRisk": 66.4,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25
     },
     "F3C.DE": {
       "ticker": "F3C.DE",
@@ -4494,7 +4784,13 @@
       "ctxSectorRel1m": -6.3,
       "ctxSector200": 2.96,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 66.4
+      "ctxCountryRisk": 66.4,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25
     },
     "JDC": {
       "ticker": "JDC",
@@ -4601,7 +4897,13 @@
       "ctxSectorRel1m": 9.75,
       "ctxSector200": 5.8,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 66.4
+      "ctxCountryRisk": 66.4,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25
     },
     "KALN.NS": {
       "ticker": "KALN.NS",
@@ -4706,7 +5008,14 @@
       "ctxRegion200": -3.58,
       "ctxSectorRel1m": -0.6,
       "ctxSector200": -0.53,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25,
+      "ctxCountryRisk": 21.3
     },
     "CSH.DE": {
       "ticker": "CSH.DE",
@@ -4812,7 +5121,13 @@
       "ctxSectorRel1m": -3.14,
       "ctxSector200": -4.21,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 66.4
+      "ctxCountryRisk": 66.4,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25
     },
     "NEAG": {
       "ticker": "NEAG",
@@ -4917,7 +5232,14 @@
       "ctxRegion200": 8.53,
       "ctxSectorRel1m": 0.7,
       "ctxSector200": 1.41,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25,
+      "ctxCountryRisk": 88.6
     },
     "001740": {
       "ticker": "001740",
@@ -5023,7 +5345,14 @@
       "ctxRegion200": 23.07,
       "ctxSectorRel1m": 2.9,
       "ctxSector200": 9.04,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25,
+      "ctxCountryRisk": 68.3
     },
     "HABA": {
       "ticker": "HABA",
@@ -5131,7 +5460,13 @@
       "ctxSectorRel1m": 0.11,
       "ctxSector200": 5.68,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 66.4
+      "ctxCountryRisk": 66.4,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25
     },
     "HIGH.DE": {
       "ticker": "HIGH.DE",
@@ -5232,7 +5567,13 @@
       "ctxSectorRel1m": 2.01,
       "ctxSector200": 3.27,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 66.4
+      "ctxCountryRisk": 66.4,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25
     },
     "NOHO": {
       "ticker": "NOHO",
@@ -5337,7 +5678,14 @@
       "ctxRegion200": 7.02,
       "ctxSectorRel1m": -1.78,
       "ctxSector200": -0.85,
-      "ctxElectionDays": 259
+      "ctxElectionDays": 259,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25,
+      "ctxCountryRisk": 71.1
     },
     "ATEA": {
       "ticker": "ATEA",
@@ -5442,7 +5790,14 @@
       "ctxRegion200": 6.27,
       "ctxSectorRel1m": 1.24,
       "ctxSector200": -0.16,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25,
+      "ctxCountryRisk": 77.7
     },
     "ADXR": {
       "ticker": "ADXR",
@@ -5547,7 +5902,14 @@
       "ctxRegion200": 12.64,
       "ctxSectorRel1m": -4.63,
       "ctxSector200": -1.11,
-      "ctxElectionDays": 118
+      "ctxElectionDays": 118,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25,
+      "ctxCountryRisk": 55
     },
     "089970": {
       "ticker": "089970",
@@ -5650,7 +6012,14 @@
       "ctxRegion200": 10.37,
       "ctxSectorRel1m": -2.19,
       "ctxSector200": 11.21,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25,
+      "ctxCountryRisk": 68.3
     },
     "MEDI": {
       "ticker": "MEDI",
@@ -5757,7 +6126,14 @@
       "ctxRegion200": 8.71,
       "ctxSectorRel1m": -1.71,
       "ctxSector200": 7.59,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25,
+      "ctxCountryRisk": 77.7
     },
     "PHN": {
       "ticker": "PHN",
@@ -5862,7 +6238,14 @@
       "ctxRegion200": 13.97,
       "ctxSectorRel1m": -1.71,
       "ctxSector200": 7.59,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25,
+      "ctxCountryRisk": 64.9
     },
     "EQS": {
       "ticker": "EQS",
@@ -5967,7 +6350,14 @@
       "ctxRegion200": 6.13,
       "ctxSectorRel1m": 4.47,
       "ctxSector200": 5.24,
-      "ctxElectionDays": 255
+      "ctxElectionDays": 255,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25,
+      "ctxCountryRisk": 55.9
     },
     "LBIRD": {
       "ticker": "LBIRD",
@@ -6072,7 +6462,14 @@
       "ctxRegion200": 6.29,
       "ctxSectorRel1m": -1.42,
       "ctxSector200": 20.14,
-      "ctxElectionDays": 253
+      "ctxElectionDays": 253,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25,
+      "ctxCountryRisk": 55.9
     },
     "VU": {
       "ticker": "VU",
@@ -6175,7 +6572,14 @@
       "ctxRegion200": 6.39,
       "ctxSectorRel1m": -2.06,
       "ctxSector200": 18.92,
-      "ctxElectionDays": 251
+      "ctxElectionDays": 251,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25,
+      "ctxCountryRisk": 55.9
     },
     "SCANFL": {
       "ticker": "SCANFL",
@@ -6282,7 +6686,14 @@
       "ctxRegion200": 8.39,
       "ctxSectorRel1m": -2.06,
       "ctxSector200": 18.92,
-      "ctxElectionDays": 251
+      "ctxElectionDays": 251,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25,
+      "ctxCountryRisk": 71.1
     },
     "BSL": {
       "ticker": "BSL",
@@ -6388,7 +6799,13 @@
       "ctxSectorRel1m": -0.28,
       "ctxSector200": 8.5,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 66.4
+      "ctxCountryRisk": 66.4,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25
     },
     "DR0G": {
       "ticker": "DR0G",
@@ -6494,7 +6911,13 @@
       "ctxSectorRel1m": 1.28,
       "ctxSector200": 7.95,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 66.4
+      "ctxCountryRisk": 66.4,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25
     },
     "DEZ": {
       "ticker": "DEZ",
@@ -6592,7 +7015,13 @@
       "ctxSectorRel1m": -4.39,
       "ctxSector200": 4.07,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 66.4
+      "ctxCountryRisk": 66.4,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25
     },
     "093520.KQ": {
       "ticker": "093520.KQ",
@@ -6689,7 +7118,14 @@
       "ctxRegion200": 13.47,
       "ctxSectorRel1m": 0.36,
       "ctxSector200": 17.62,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25,
+      "ctxCountryRisk": 68.3
     },
     "6531.TW": {
       "ticker": "6531.TW",
@@ -6786,7 +7222,14 @@
       "ctxRegion200": 25.1,
       "ctxSectorRel1m": 0.36,
       "ctxSector200": 17.62,
-      "ctxElectionDays": 89
+      "ctxElectionDays": 89,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25,
+      "ctxCountryRisk": 74.4
     },
     "6139.TW": {
       "ticker": "6139.TW",
@@ -6883,7 +7326,14 @@
       "ctxRegion200": 25.1,
       "ctxSectorRel1m": -5.24,
       "ctxSector200": 2.83,
-      "ctxElectionDays": 89
+      "ctxElectionDays": 89,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25,
+      "ctxCountryRisk": 74.4
     },
     "ILM1": {
       "ticker": "ILM1",
@@ -6981,7 +7431,13 @@
       "ctxSectorRel1m": 2.29,
       "ctxSector200": 10.04,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 66.4
+      "ctxCountryRisk": 66.4,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25
     },
     "LTRN": {
       "ticker": "LTRN",
@@ -7078,7 +7534,13 @@
       "ctxSectorRel1m": 7.6,
       "ctxSector200": 11.46,
       "ctxElectionDays": 62,
-      "ctxCountryRisk": 47.4
+      "ctxCountryRisk": 47.4,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25
     },
     "TIMA": {
       "ticker": "TIMA",
@@ -7175,7 +7637,13 @@
       "ctxSectorRel1m": 1.33,
       "ctxSector200": -2.19,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 66.4
+      "ctxCountryRisk": 66.4,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.25,
+      "ctxEcb12m": 25
     },
     "THOMASCOOK": {
       "ticker": "THOMASCOOK",
@@ -7273,7 +7741,14 @@
       "ctxRegion200": -4.42,
       "ctxSectorRel1m": -4.34,
       "ctxSector200": -4.3,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 21.3
     },
     "GRAVITA": {
       "ticker": "GRAVITA",
@@ -7369,7 +7844,14 @@
       "ctxRegion200": -4.42,
       "ctxSectorRel1m": -2.89,
       "ctxSector200": 1.11,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 21.3
     },
     "SAREGAMA": {
       "ticker": "SAREGAMA",
@@ -7467,7 +7949,14 @@
       "ctxRegion200": -4.42,
       "ctxSectorRel1m": -4.34,
       "ctxSector200": -4.3,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 21.3
     },
     "CRISIL": {
       "ticker": "CRISIL",
@@ -7563,7 +8052,14 @@
       "ctxRegion200": -4.42,
       "ctxSectorRel1m": 0.16,
       "ctxSector200": 6.15,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 3.75,
+      "ctxFed12m": -75,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 21.3
     },
     "ALFA": {
       "ticker": "ALFA",
@@ -7660,7 +8156,13 @@
       "ctxSectorRel1m": 2.24,
       "ctxSector200": 11.4,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 62.1
+      "ctxCountryRisk": 62.1,
+      "ctxFedLast": 25,
+      "ctxFedRate": 4,
+      "ctxFed12m": -25,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50
     },
     "ITD": {
       "ticker": "ITD",
@@ -7756,7 +8258,14 @@
       "ctxRegion200": 6.15,
       "ctxSectorRel1m": 0.29,
       "ctxSector200": -2.8,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 25,
+      "ctxFedRate": 4,
+      "ctxFed12m": -25,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 64.9
     },
     "095610": {
       "ticker": "095610",
@@ -7852,7 +8361,14 @@
       "ctxRegion200": 12.63,
       "ctxSectorRel1m": 4.8,
       "ctxSector200": 19.77,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 25,
+      "ctxFedRate": 4,
+      "ctxFed12m": -25,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 68.3
     },
     "PAFO": {
       "ticker": "PAFO",
@@ -7946,7 +8462,14 @@
       "ctxRegion200": -7.94,
       "ctxSectorRel1m": -6.58,
       "ctxSector200": -3.82,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 25,
+      "ctxFedRate": 4,
+      "ctxFed12m": -25,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 21.3
     },
     "GUNKUL": {
       "ticker": "GUNKUL",
@@ -8039,7 +8562,14 @@
       "ctxRegion1m": -0.04,
       "ctxRegion200": 6.45,
       "ctxSectorRel1m": -5.76,
-      "ctxSector200": -7.21
+      "ctxSector200": -7.21,
+      "ctxFedLast": 25,
+      "ctxFedRate": 4,
+      "ctxFed12m": -25,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 36
     },
     "EKTG": {
       "ticker": "EKTG",
@@ -8134,7 +8664,13 @@
       "ctxSectorRel1m": -5.76,
       "ctxSector200": -7.21,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 66.4
+      "ctxCountryRisk": 66.4,
+      "ctxFedLast": 25,
+      "ctxFedRate": 4,
+      "ctxFed12m": -25,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50
     },
     "ALPAU": {
       "ticker": "ALPAU",
@@ -8228,7 +8764,14 @@
       "ctxRegion200": -5.64,
       "ctxSectorRel1m": -4.43,
       "ctxSector200": -2.46,
-      "ctxElectionDays": 193
+      "ctxElectionDays": 193,
+      "ctxFedLast": 25,
+      "ctxFedRate": 4,
+      "ctxFed12m": -25,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 55.9
     },
     "AAD": {
       "ticker": "AAD",
@@ -8323,7 +8866,13 @@
       "ctxSectorRel1m": -6.66,
       "ctxSector200": 1.93,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 66.4
+      "ctxCountryRisk": 66.4,
+      "ctxFedLast": 25,
+      "ctxFedRate": 4,
+      "ctxFed12m": -25,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50
     },
     "ALMDT": {
       "ticker": "ALMDT",
@@ -8417,7 +8966,14 @@
       "ctxRegion200": -5.19,
       "ctxSectorRel1m": 0.21,
       "ctxSector200": 8.76,
-      "ctxElectionDays": 189
+      "ctxElectionDays": 189,
+      "ctxFedLast": 25,
+      "ctxFedRate": 4,
+      "ctxFed12m": -25,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 55.9
     },
     "EUZ": {
       "ticker": "EUZ",
@@ -8512,7 +9068,13 @@
       "ctxSectorRel1m": 2,
       "ctxSector200": 10.59,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 66.4
+      "ctxCountryRisk": 66.4,
+      "ctxFedLast": 25,
+      "ctxFedRate": 4,
+      "ctxFed12m": -25,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50
     },
     "064290": {
       "ticker": "064290",
@@ -8606,7 +9168,14 @@
       "ctxRegion200": -10.15,
       "ctxSectorRel1m": -4.81,
       "ctxSector200": 7.06,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 25,
+      "ctxFedRate": 4,
+      "ctxFed12m": -25,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 68.3
     },
     "042660": {
       "ticker": "042660",
@@ -8700,7 +9269,14 @@
       "ctxRegion200": -10.15,
       "ctxSectorRel1m": -4.81,
       "ctxSector200": 7.06,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 25,
+      "ctxFedRate": 4,
+      "ctxFed12m": -25,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 68.3
     },
     "031980": {
       "ticker": "031980",
@@ -8794,7 +9370,14 @@
       "ctxRegion200": -10.15,
       "ctxSectorRel1m": -4.81,
       "ctxSector200": 7.06,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 25,
+      "ctxFedRate": 4,
+      "ctxFed12m": -25,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 68.3
     },
     "ALNTG": {
       "ticker": "ALNTG",
@@ -8888,7 +9471,14 @@
       "ctxRegion200": -5.21,
       "ctxSectorRel1m": 4.25,
       "ctxSector200": 17.87,
-      "ctxElectionDays": 177
+      "ctxElectionDays": 177,
+      "ctxFedLast": 25,
+      "ctxFedRate": 4,
+      "ctxFed12m": -25,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 55.9
     },
     "ABCA": {
       "ticker": "ABCA",
@@ -8979,7 +9569,14 @@
       "ctxRegion200": -5.21,
       "ctxSectorRel1m": 3.56,
       "ctxSector200": 4.11,
-      "ctxElectionDays": 175
+      "ctxElectionDays": 175,
+      "ctxFedLast": 25,
+      "ctxFedRate": 4,
+      "ctxFed12m": -25,
+      "ctxEcbLast": 25,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 55.9
     },
     "ALK B": {
       "ticker": "ALK B",
@@ -9067,7 +9664,14 @@
       "ctxRegion200": 2.93,
       "ctxSectorRel1m": 12.36,
       "ctxSector200": 16.51,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 76.8
     },
     "095340": {
       "ticker": "095340",
@@ -9155,7 +9759,14 @@
       "ctxRegion200": -11.66,
       "ctxSectorRel1m": -14.3,
       "ctxSector200": 0.58,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 68.3
     },
     "UNI": {
       "ticker": "UNI",
@@ -9243,7 +9854,14 @@
       "ctxRegion200": 0.21,
       "ctxSectorRel1m": 6.83,
       "ctxSector200": 5.19,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 64.9
     },
     "PAF": {
       "ticker": "PAF",
@@ -9332,7 +9950,13 @@
       "ctxSectorRel1m": 9.78,
       "ctxSector200": 3.26,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 62.1
+      "ctxCountryRisk": 62.1,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50
     },
     "FFARM.AS": {
       "ticker": "FFARM.AS",
@@ -9420,7 +10044,14 @@
       "ctxRegion200": 7.08,
       "ctxSectorRel1m": 15.14,
       "ctxSector200": 7.49,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 68.7
     },
     "CRN": {
       "ticker": "CRN",
@@ -9509,7 +10140,13 @@
       "ctxSectorRel1m": 10.01,
       "ctxSector200": 0.72,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 62.1
+      "ctxCountryRisk": 62.1,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50
     },
     "IRES": {
       "ticker": "IRES",
@@ -9597,7 +10234,14 @@
       "ctxRegion200": 4.41,
       "ctxSectorRel1m": 11.45,
       "ctxSector200": 4.02,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 78.7
     },
     "012450": {
       "ticker": "012450",
@@ -9685,7 +10329,14 @@
       "ctxRegion200": -12.62,
       "ctxSectorRel1m": 0.43,
       "ctxSector200": -2.26,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 68.3
     },
     "CENER": {
       "ticker": "CENER",
@@ -9773,7 +10424,14 @@
       "ctxRegion200": 7.48,
       "ctxSectorRel1m": 0.43,
       "ctxSector200": -2.26,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 58.3
     },
     "ADRX": {
       "ticker": "ADRX",
@@ -9856,7 +10514,13 @@
       "ctxSectorRel1m": 15.28,
       "ctxSector200": 16.11,
       "ctxElectionDays": 365,
-      "ctxCountryRisk": 47.4
+      "ctxCountryRisk": 47.4,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50
     },
     "ALMA": {
       "ticker": "ALMA",
@@ -9944,7 +10608,14 @@
       "ctxRegion200": 3.11,
       "ctxSectorRel1m": -1.49,
       "ctxSector200": -6.94,
-      "ctxElectionDays": 162
+      "ctxElectionDays": 162,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 71.1
     },
     "0027": {
       "ticker": "0027",
@@ -10032,7 +10703,14 @@
       "ctxRegion200": -3.17,
       "ctxSectorRel1m": 10.26,
       "ctxSector200": 1.82,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 69.7
     },
     "078930.KS": {
       "ticker": "078930.KS",
@@ -10120,7 +10798,14 @@
       "ctxRegion200": -18.89,
       "ctxSectorRel1m": -0.05,
       "ctxSector200": 9.22,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 68.3
     },
     "SKAN.SW": {
       "ticker": "SKAN.SW",
@@ -10208,7 +10893,14 @@
       "ctxRegion200": 9.34,
       "ctxSectorRel1m": 8.94,
       "ctxSector200": 17.88,
-      "ctxElectionDays": 344
+      "ctxElectionDays": 344,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 88.6
     },
     "DOFG.OL": {
       "ticker": "DOFG.OL",
@@ -10296,7 +10988,14 @@
       "ctxRegion200": 2.51,
       "ctxSectorRel1m": -0.05,
       "ctxSector200": 9.22,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 77.7
     },
     "B2I.OL": {
       "ticker": "B2I.OL",
@@ -10384,7 +11083,14 @@
       "ctxRegion200": -0.46,
       "ctxSectorRel1m": 8.2,
       "ctxSector200": 5.71,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 77.7
     },
     "WGX": {
       "ticker": "WGX",
@@ -10472,7 +11178,14 @@
       "ctxRegion200": -1.22,
       "ctxSectorRel1m": 3.79,
       "ctxSector200": -3.56,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 79.6
     },
     "TVE": {
       "ticker": "TVE",
@@ -10560,7 +11273,14 @@
       "ctxRegion200": -4.59,
       "ctxSectorRel1m": -0.62,
       "ctxSector200": 1.3,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 76.3
     },
     "ENENTO": {
       "ticker": "ENENTO",
@@ -10648,7 +11368,14 @@
       "ctxRegion200": -0.81,
       "ctxSectorRel1m": 6.15,
       "ctxSector200": 1.03,
-      "ctxElectionDays": 149
+      "ctxElectionDays": 149,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 71.1
     },
     "WAGA": {
       "ticker": "WAGA",
@@ -10736,7 +11463,14 @@
       "ctxRegion200": -3.37,
       "ctxSectorRel1m": 9.41,
       "ctxSector200": -3.71,
-      "ctxElectionDays": 149
+      "ctxElectionDays": 149,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 55.9
     },
     "002380.KS": {
       "ticker": "002380.KS",
@@ -10824,7 +11558,14 @@
       "ctxRegion200": -25.36,
       "ctxSectorRel1m": 3.35,
       "ctxSector200": -5.65,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 68.3
     },
     "RMS": {
       "ticker": "RMS",
@@ -10912,7 +11653,14 @@
       "ctxRegion200": -2.76,
       "ctxSectorRel1m": 3.35,
       "ctxSector200": -5.65,
-      "ctxElectionDays": 365
+      "ctxElectionDays": 365,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 79.6
     },
     "EXPL": {
       "ticker": "EXPL",
@@ -11000,7 +11748,14 @@
       "ctxRegion200": -1.93,
       "ctxSectorRel1m": 2.32,
       "ctxSector200": -2.59,
-      "ctxElectionDays": 146
+      "ctxElectionDays": 146,
+      "ctxFedLast": 0,
+      "ctxFedRate": 4,
+      "ctxFed12m": 0,
+      "ctxEcbLast": 0,
+      "ctxEcbRate": 2.5,
+      "ctxEcb12m": 50,
+      "ctxCountryRisk": 55.9
     }
   },
   "findings": {
