@@ -37,7 +37,7 @@ const UNIV = 'atlas_universe.json';
 const MODEL = 'atlas_model.json';
 const MODEL_MAX = 12000;
 const MODEL_DROP = new Set(['r', 'name', 'industry', 'ysector', 'cur', 'ratingCounts',
-  'sd', 'startPrice', 'rk', 'rkv', 'peakMs', 'yahoo']);
+  'sd', 'startPrice', 'rk', 'rkv', 'peakMs', 'yahoo', 'rx']);
 function modelFile(all, nowMs) {
   const ripe = all.filter((e) => (e.perfHigh || []).length > 0)
     .sort((a, b) => b.seenMs - a.seenMs).slice(0, MODEL_MAX);
