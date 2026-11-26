@@ -383,6 +383,43 @@ export function entryContext(S, wgiMap, e, day) {
   };
 }
 
+// Rendite GEGEN DEN MARKT (seit 2026-11-26, Wunsch des Nutzers): je
+// Aufnahme dieselben Masse fuer den Heimatindex ab demselben Kurs-Tag 0,
+// abgezogen von denen der Aktie — so faellt das Glueck des Aufnahmetags
+// heraus. rx[i] = r[i] − Index (0,1-%-Schritte), perfX/perfHighX = Stand bzw.
+// Hoechststand der Aktie minus Stand bzw. Hoechststand des Index im selben
+// Fenster (21 Boersentage je Monat). Wird bei JEDEM Lauf neu gerechnet, weil
+// r/perf weiterwachsen. Boersentag i der Aktie = Boersentag i des Index
+// (gleiches Land, gleicher Kalender).
+export function homeIndexOf(S, e) {
+  const cc = countryOf(e);
+  if (cc && COUNTRY_INDEX[cc] && S[COUNTRY_INDEX[cc]]) return COUNTRY_INDEX[cc];
+  const r = REGION_INDEX[e.region];
+  return r && S[r] ? r : null;
+}
+export function relativeFields(S, e) {
+  const sym = homeIndexOf(S, e);
+  const start = e.sd || e.seen;
+  if (!sym || !start || !Array.isArray(e.r) || !e.r.length) return null;
+  const rows = S[sym];
+  const i0 = rows.findIndex((x) => x.d >= start);
+  if (i0 < 0 || (Date.parse(rows[i0].d) - Date.parse(start)) / DAY > 5) return null;
+  const base = rows[i0].c;
+  const idx = rows.slice(i0).map((x) => (x.c / base - 1) * 100);
+  const n = Math.min(e.r.length, idx.length);
+  const rx = [];
+  for (let i = 0; i < n; i++) rx.push(e.r[i] - Math.round(idx[i] * 10));
+  const perfX = [], perfHighX = [];
+  for (let k = 0; k < (e.perf || []).length; k++) {
+    const d = (k + 1) * 21;
+    if (d >= idx.length || e.perf[k] == null) break;
+    perfX.push(r2(e.perf[k] - idx[d]));
+    const hi = e.perfHigh?.[k];
+    perfHighX.push(hi == null ? null : r2(hi - Math.max(...idx.slice(0, d + 1))));
+  }
+  return { ctxIndex: sym, rx, perfX, perfHighX };
+}
+
 const entriesOf = (j) => (Array.isArray(j?.entries) ? j.entries
   : (j?.entries && typeof j.entries === 'object' ? Object.values(j.entries) : []));
 
@@ -418,7 +455,7 @@ async function main(files) {
   const S = await loadSeries([...syms], fromMs);
   const wgiMap = await wgi();
   const marketCache = new Map();
-  let filled = 0;
+  let filled = 0, relN = 0;
   for (const e of all) {
     const day = contextDay(e);
     if (!day) continue;
@@ -431,9 +468,11 @@ async function main(files) {
       any = true;
     }
     if (any) filled++;
+    const rel = relativeFields(S, e);
+    if (rel) { Object.assign(e, rel); relN++; }
   }
   for (const [f, j] of docs) fs.writeFileSync(f, JSON.stringify(j, null, f === 'history.json' ? 2 : 0));
-  console.log(`Umfeld: ${filled} von ${all.length} Eintraegen ergaenzt (${marketCache.size} Tage).`);
+  console.log(`Umfeld: ${filled} von ${all.length} Eintraegen ergaenzt (${marketCache.size} Tage), gegen Markt: ${relN}.`);
 }
 
 if (process.argv[1] && process.argv[1].endsWith('context.mjs')) {
