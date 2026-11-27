@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-26",
-  "updatedAt": "2026-11-27T00:00:49.963Z",
+  "updatedAt": "2026-11-27T01:00:49.859Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -1672,8 +1672,8 @@
       "verifiedAt": "2026-11-25",
       "verifiedSource": "yahoo",
       "seen": "2026-11-17",
-      "perf6m": -29.12,
-      "perf6mAt": "2026-11-22",
+      "perf6m": -24.46,
+      "perf6mAt": "2026-11-27",
       "perf1mBefore": -26.14,
       "pe": null,
       "div": 1.32,
@@ -1736,8 +1736,8 @@
       "verifiedAt": "2026-11-23",
       "verifiedSource": "yahoo",
       "seen": "2026-11-22",
-      "perf6m": -32.17,
-      "perf6mAt": "2026-11-22",
+      "perf6m": -38.82,
+      "perf6mAt": "2026-11-27",
       "perf1mBefore": -7.3,
       "upside": 87,
       "pe": null,
@@ -1993,8 +1993,8 @@
       "verifiedAt": "2026-11-21",
       "verifiedSource": "stockanalysis+yahoo",
       "seen": "2026-06-05",
-      "perf6m": -37.29,
-      "perf6mAt": "2026-11-22",
+      "perf6m": -38.25,
+      "perf6mAt": "2026-11-27",
       "perf1mBefore": -2.31,
       "upside": 82,
       "pe": 17.6,
@@ -2447,8 +2447,8 @@
       "verifiedAt": "2026-11-26",
       "verifiedSource": "yahoo",
       "seen": "2026-06-10",
-      "perf6m": -14.84,
-      "perf6mAt": "2026-11-22",
+      "perf6m": -36.39,
+      "perf6mAt": "2026-11-27",
       "perf1mBefore": 6,
       "upside": 68,
       "pe": null,
@@ -8979,5 +8979,5 @@
     ]
   },
   "blacklist": {},
-  "yahooAt": "2026-11-27T00:00:49.963Z"
+  "yahooAt": "2026-11-27T01:00:49.859Z"
 }
