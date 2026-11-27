@@ -1,6 +1,6 @@
 {
   "updated": "2026-11-27",
-  "updatedAt": "2026-11-27T18:00:49.868Z",
+  "updatedAt": "2026-11-27T19:00:49.952Z",
   "source": "Finnhub · Gemini (Websuche & Analyse)",
   "sectors": [
     {
@@ -171,7 +171,7 @@
     },
     {
       "id": "health",
-      "perf": 2.75,
+      "perf": 2.74,
       "avg30": 1.73,
       "perf6m": 23.24
     },
@@ -9100,5 +9100,5 @@
     ]
   },
   "blacklist": {},
-  "yahooAt": "2026-11-27T18:00:49.868Z"
+  "yahooAt": "2026-11-27T19:00:49.952Z"
 }
